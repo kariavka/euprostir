@@ -1,0 +1,25 @@
+.header
+{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.logo
+{
+    text-align: center;
+}
+.content p
+{
+    font-size: 1.33em;
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #666;
+}
+.content p.flag
+{
+    text-align: right;
+}
+.content a
+{
+    color: #286090;
+    text-decoration: underline;
+}
