@@ -1,7 +1,7 @@
 /* eslint-env node */
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'euprostir',
     environment,
@@ -21,8 +21,49 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+
+    api: {
+      host: 'https://www.livarava.com',
+      path: '/api/v2',
+      key: ''
+    },
+
+    i18n: {
+      defaultLocale: 'uk',
+      allowedLocales: ['uk']
+    },
+
+    neuronet: {
+      site: 122518,
+      ru: {}
+    },
+
+    pageTitle: {
+      replace: true
+    },
+
+    googleAnalytics: {
+      webPropertyId: ''
+    },
+
+    'ember-cli-head': {
+      suppressBrowserRender: true
+    },
   };
+
+  if (environment === 'local') {
+    ENV.api = {
+      host: 'http://local.livarava.com',
+      path: '/api/v2',
+      key: ''
+    };
+
+    ENV.neuronet = {
+      site: 4964,
+      ru: {}
+    };
+  }
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
