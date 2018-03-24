@@ -3,6 +3,9 @@
 # idea
 /.idea
 
+# makefile
+/Makefile
+
 # compiled output
 /dist
 /tmp
@@ -24,3 +27,6 @@ testem.log
 .node_modules.ember-try/
 bower.json.ember-try
 package.json.ember-try
+
+# fastboot
+/server.js
