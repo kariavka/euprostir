@@ -1,4 +1,6 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
+  // Title
+  title: 'Європейський простір',
 });
