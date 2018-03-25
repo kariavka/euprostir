@@ -714,6 +714,7 @@ section.featured-posts .avatar {
 
 section.featured-posts .title,
 section.featured-posts .date,
+section.featured-posts .views,
 section.featured-posts .comments {
   font-size: 0.8em;
   font-weight: 400;
@@ -722,12 +723,14 @@ section.featured-posts .comments {
 
 section.featured-posts .title i,
 section.featured-posts .date i,
+section.featured-posts .views i,
 section.featured-posts .comments i {
   margin-right: 5px;
 }
 
 section.featured-posts .title::after,
 section.featured-posts .date::after,
+section.featured-posts .views::after,
 section.featured-posts .comments::after {
   content: '|';
   display: inline-block;

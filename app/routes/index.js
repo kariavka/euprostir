@@ -18,7 +18,11 @@ export default Route.extend({
   model() {
     const store = get(this, 'store');
     return hash({
-      stories: store.query('post', {page: 1, per_page: 4, lira: config.neuronet.stories}),
+      stories: store.query('post', {
+        page: 1,
+        per_page: 5,
+        lira: getLira('stories')
+      }),
     });
   },
 });

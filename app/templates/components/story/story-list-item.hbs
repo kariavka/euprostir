@@ -1,0 +1,42 @@
+{{#unless isEven}}
+  <div class="image col-lg-5" style="min-height: 380px;">
+    <img src="{{item.image_url}}" alt="">
+  </div>
+{{/unless}}
+<div class="text col-lg-7">
+  <div class="text-inner d-flex align-items-center">
+    <div class="content">
+      <header class="post-header">
+        <div class="category d-none">
+          <a href="http://www.euprostir.org.ua/index.php?id=2#">Business</a>
+          <a href="http://www.euprostir.org.ua/index.php?id=2#">Technology</a>
+        </div>
+        {{#link-to "stories.item" item.id}}
+          <h2 class="h4">{{item.title}}</h2>
+        {{/link-to}}
+      </header>
+      <p>
+        {{item.summary}}
+      </p>
+      <footer class="post-footer d-flex align-items-center">
+        <div class="author d-flex align-items-center flex-wrap">
+          <div class="title"><span><i class="fa fa-user-o"></i> Європейський простір</span></div>
+        </div>
+        <div class="date">
+          <i class="fa fa-clock-o"></i> {{moment-format item.created "YYYY-MM-DD"}}
+        </div>
+        <div class="views">
+          <i class="fa fa-eye"></i> {{item.views}}
+        </div>
+        <div class="comments">
+          <i class="fa fa-comment-o"></i> {{item.comments}}
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+{{#if isEven}}
+  <div class="image col-lg-5" style="min-height: 380px;">
+    <img src="{{item.image_url}}" alt="">
+  </div>
+{{/if}}
