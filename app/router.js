@@ -11,7 +11,7 @@ Router.map(function () {
   this.route('stories', function () {
     this.route('item', {path: '/:id'});
   });
-  this.route('practicies', function () {
+  this.route('practices', function() {
     this.route('item', {path: '/:id'});
   });
   this.route('opportunities', function () {

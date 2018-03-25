@@ -23,10 +23,10 @@ export default Route.extend({
         lira: getLira('stories'),
         sort: '-created',
       }),
-      practicies: store.query('post', {
+      practices: store.query('post', {
         page: 1,
         per_page: 6,
-        lira: getLira('practicies'),
+        lira: getLira('practices'),
         sort: '-created',
       }),
       opportunities: store.query('post', {

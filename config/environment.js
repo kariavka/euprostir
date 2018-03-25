@@ -37,7 +37,7 @@ module.exports = function (environment) {
     neuronet: {
       site: 131961,
       stories: 131968,
-      practicies: 131972,
+      practices: 131972,
       opportunities: 131974,
     },
 
