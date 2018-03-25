@@ -1,5 +1,6 @@
-import Ember from 'ember';
-import DS from 'ember-data';
+import Ember from "ember";
+import DS from "ember-data";
+import isUrl from "euprostir/utils/is-url";
 
 export default DS.Model.extend({
   // Attributes
@@ -41,18 +42,31 @@ export default DS.Model.extend({
   icon_url: DS.attr('string'),
   iconUrl: Ember.computed('icon_url', function () {
     let icon_url = this.get('icon_url');
-    return Ember.String.isHTMLSafe(icon_url);
+
+    if (icon_url && isUrl(icon_url)) {
+      return Ember.String.isHTMLSafe(icon_url);
+    }
+
+    return null;
   }),
 
   // Image
   image_url: DS.attr('string'),
   imageUrl: Ember.computed('image_url', function () {
     let image_url = this.get('image_url');
-    return Ember.String.htmlSafe(image_url);
+
+    if (image_url && isUrl(image_url)) {
+      return Ember.String.htmlSafe(image_url);
+    }
+
+    return null;
   }),
   imageStyle: Ember.computed('imageUrl', function () {
     let imageUrl = this.get('imageUrl');
-    return Ember.String.htmlSafe(`background-image: url(${imageUrl});`);
+    if (imageUrl && isUrl(imageUrl)) {
+      return Ember.String.htmlSafe(`background-image: url(${imageUrl});`);
+    }
+    return null;
   }),
 
   // Video
