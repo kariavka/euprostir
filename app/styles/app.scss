@@ -1,4 +1,6 @@
 @import "ember-bootstrap/bootstrap";
+@import "font-awesome";
+@import "bootstrap.template";
 
 .navbar {
   background: #fff;
@@ -6,6 +8,13 @@
   padding-bottom: 20px !important;
   z-index: 9998;
   border-bottom: 1px solid #ddd;
+}
+
+.navbar .navbar-nav a.nav-link {
+  color: #333;
+  margin: 0 5px;
+  font-weight: 400;
+  font-size: 0.95em;
 }
 
 /* your styles go here */

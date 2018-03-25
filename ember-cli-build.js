@@ -13,7 +13,8 @@ module.exports = function(defaults) {
 
     'ember-font-awesome': {
       useScss: true,
-      includeFontFiles: true
+      includeFontFiles: true,
+      includeFontAwesomeAssets: true
     },
   });
 

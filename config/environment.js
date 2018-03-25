@@ -26,7 +26,7 @@ module.exports = function (environment) {
     api: {
       host: 'https://www.livarava.com',
       path: '/api/v2',
-      key: ''
+      key: '2359a4d8-d8e5-45a7-8878-d9f8eb9637b4'
     },
 
     i18n: {
@@ -35,8 +35,8 @@ module.exports = function (environment) {
     },
 
     neuronet: {
-      site: 122518,
-      ru: {}
+      site: 131961,
+      uk: {}
     },
 
     pageTitle: {
@@ -61,7 +61,7 @@ module.exports = function (environment) {
 
     ENV.neuronet = {
       site: 4964,
-      ru: {}
+      uk: {}
     };
   }
 
