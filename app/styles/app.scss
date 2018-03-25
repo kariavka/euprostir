@@ -1,2 +1,49 @@
-
 @import "ember-bootstrap/bootstrap";
+
+.navbar {
+  background: #fff;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  z-index: 9998;
+  border-bottom: 1px solid #ddd;
+}
+
+/* your styles go here */
+.aligncenter {
+  margin: 0 auto;
+  display: block;
+}
+
+section.latest-posts h3 {
+  font-weight: 400; /*font-family: 'Ubuntu Condensed'; */
+  font-size: 1.2em;
+}
+
+section.featured-posts, section.latest-posts {
+  padding-top: 32px;
+}
+
+section.featured-posts .text-big {
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.8em;
+  color: #111;
+}
+
+div.post-single img {
+  width: 100% !important;
+  height: auto;
+  max-width: inherit !important;
+}
+
+div.post-single iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+@media (max-width: 576px) {
+  h1.post-h1 {
+    font-size: 1.2em !important;
+    line-height: 1.3em;
+  }
+}
