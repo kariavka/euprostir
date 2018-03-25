@@ -7,16 +7,18 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function () {
-  this.route('about');
   this.route('stories', function () {
     this.route('item', {path: '/:id'});
   });
-  this.route('practices', function() {
+  this.route('practices', function () {
     this.route('item', {path: '/:id'});
   });
   this.route('opportunities', function () {
     this.route('item', {path: '/:id'});
   });
+  this.route('page', {path: '/:uid/'});
+  this.route('notfound');
+  this.route('about');
 });
 
 export default Router;

@@ -39,6 +39,7 @@ module.exports = function (environment) {
       stories: 131968,
       practices: 131972,
       opportunities: 131974,
+      about: 132034,
     },
 
     pageTitle: {
