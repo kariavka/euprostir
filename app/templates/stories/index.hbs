@@ -1,1 +1,13 @@
-{{outlet}}
+<section class="featured-posts">
+  <div class="container">
+
+    <header class="text-center">
+      <h1>Історії</h1>
+      <p class="text-big">що надихають</p>
+    </header>
+
+    {{story/story-list
+      items=model.items}}
+
+  </div>
+</section>

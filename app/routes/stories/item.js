@@ -10,7 +10,7 @@ export default Route.extend({
   headData: inject(),
 
   // Title
-  title: 'Європейський простір',
+  title: reads('model.item.title'),
 
   // Model
   model(params) {

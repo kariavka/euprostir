@@ -3,7 +3,6 @@ import {inject} from '@ember/service';
 import {get, set} from '@ember/object';
 import {reads} from '@ember/object/computed';
 import {hash} from 'rsvp';
-import config from 'euprostir/config/environment';
 import getLira from 'euprostir/utils/get-lira';
 
 export default Route.extend({
@@ -21,7 +20,20 @@ export default Route.extend({
       stories: store.query('post', {
         page: 1,
         per_page: 5,
-        lira: getLira('stories')
+        lira: getLira('stories'),
+        sort: '-created',
+      }),
+      practicies: store.query('post', {
+        page: 1,
+        per_page: 6,
+        lira: getLira('practicies'),
+        sort: '-created',
+      }),
+      opportunities: store.query('post', {
+        page: 1,
+        per_page: 6,
+        lira: getLira('opportunities'),
+        sort: '-created',
       }),
     });
   },
