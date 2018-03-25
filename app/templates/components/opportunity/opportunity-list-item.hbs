@@ -1,5 +1,5 @@
 <div class="post-thumbnail">
-  {{#link-to "practices.item" item.id}}
+  {{#link-to "opportunities.item" item.id}}
     <img src="{{item.image_url}}" alt="" class="img-fluid">
   {{/link-to}}
 </div>
@@ -8,7 +8,7 @@
     <div class="date">{{moment-format item.created "DD-MM-YYYY"}}</div>
     <div class="category"><a href="#">Financial</a></div>
   </div>
-  {{#link-to "practices.item" item.id}}
+  {{#link-to "opportunities.item" item.id}}
     <h3 class="text-big text-center mt-3">{{item.title}}</h3>
   {{/link-to}}
   <p class="text-muted"></p>
