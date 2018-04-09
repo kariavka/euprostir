@@ -16,6 +16,7 @@ export default Route.extend({
   // Model
   model() {
     const store = get(this, 'store');
+
     return hash({
       items: store.query('post', {
         page: 1,

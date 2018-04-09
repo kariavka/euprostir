@@ -25,7 +25,7 @@ export default Route.extend({
       }),
       practices: store.query('post', {
         page: 1,
-        per_page: 6,
+        per_page: 3,
         lira: getLira('practices'),
         sort: '-created',
       }),
