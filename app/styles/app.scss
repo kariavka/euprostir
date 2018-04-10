@@ -3,6 +3,15 @@
 @import "style.blue";
 @import "custom";
 
+.loading-slider {
+  z-index: 9999;
+
+  span {
+    background-color: #d9534f;
+    height: 4px;
+  }
+}
+
 .navbar {
   background: #fff;
   padding-top: 20px !important;
