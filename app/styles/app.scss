@@ -1,6 +1,7 @@
 @import "ember-bootstrap/bootstrap";
 @import "font-awesome";
-@import "bootstrap.template";
+@import "style.blue";
+@import "custom";
 
 .navbar {
   background: #fff;
@@ -28,8 +29,15 @@ section.latest-posts h3 {
   font-size: 1.2em;
 }
 
-section.featured-posts, section.latest-posts {
+section.featured-posts,
+section.latest-posts {
   padding-top: 32px;
+
+  .views {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #999;
+  }
 }
 
 section.featured-posts .text-big {
@@ -58,6 +66,8 @@ div.post-single iframe {
 }
 
 header {
+  border-bottom: 1px solid #eee;
+
   a {
     color: #000;
     text-decoration: none;
@@ -71,6 +81,10 @@ header {
   a:hover {
     color: #000;
     text-decoration: none;
+  }
+
+  .navbar {
+    border-bottom: none;
   }
 }
 

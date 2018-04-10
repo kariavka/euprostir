@@ -17,6 +17,14 @@ export default Route.extend({
     const store = get(this, 'store');
     return hash({
       item: store.findRecord('post', params.id),
+      items: store.query('post', {
+        lira: getLira('stories'),
+        per_page: 4,
+        page: 1,
+        sort: '-created',
+      }).then((data) => {
+        return data.rejectBy('id', params.id).slice(0, 3)
+      }),
     });
   },
 });
