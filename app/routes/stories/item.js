@@ -1,6 +1,6 @@
 import Route from '@ember/routing/route';
 import {inject} from '@ember/service';
-import {get, set} from '@ember/object';
+import {get} from '@ember/object';
 import {reads} from '@ember/object/computed';
 import {hash} from 'rsvp';
 
