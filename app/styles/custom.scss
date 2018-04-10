@@ -1,0 +1,81 @@
+/* your styles go here */
+
+.navbar { padding-top: 0px !important; padding-bottom: 0px !important; }
+.aligncenter { margin: 0 auto; display: block; }
+section.latest-posts h3 { font-weight: 400; /*font-family: 'Ubuntu Condensed'; */ font-size: 1.2em; }
+section.featured-posts, section.latest-posts { padding-top: 32px; }
+section.featured-posts .text-big {
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 1.8em;
+    color: #111;
+}
+section.featured-posts .image img { max-width: 100% !important; height: auto !important; }
+section.featured-posts .text-inner { padding-top: 30px !important; }
+div.post-single img {
+	
+	width: 100% !important;
+	height: auto;
+
+	max-width: inherit !important;
+}
+div.post-single iframe {
+	awidth: 100% !important;
+
+
+	max-width: 100% !important;
+}
+@media (max-width: 576px) {
+h1.post-h1 { font-size: 1.2em !important; line-height: 1.3em; }
+}
+
+/* ===================================================================
+    SCROLL TO TOP BUTTON
+===================================================================  */
+#scrollTop {
+  width: 80px;
+  height: 40px;
+  position: fixed;
+  right: -90px;
+  bottom: 50%;
+  background-color: #ef1a1a;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5989e5), to(#37cfdc));
+  background-image: linear-gradient(to right, #5989e5, #37cfdc);
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  font-size: 0.7rem;
+  cursor: pointer;
+  z-index: 9998;
+  padding-right: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#scrollTop.active {
+  right: -50px;
+}
+
+#scrollTop i {
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+
+#scrollTop:hover {
+  right: 0;
+}
+
+/* Scroll Top Media Query ------------------------- */
+@media (max-width: 1199px) {
+  #scrollTop {
+    display: none !important;
+  }
+}
+
+
+
+    

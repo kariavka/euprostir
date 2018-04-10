@@ -16,13 +16,16 @@ export default Route.extend({
   // Model
   model(params) {
     const store = get(this, 'store');
-    let items = store.query('post', { page: 1, per_page: 4, 
-      lira: getLira('opportunities'), sort: '-created',}).
-      then((data) => { 
-      return data.rejectBy('id', params.id).slice(0,3)});
     return hash({
       item: store.findRecord('post', params.id),
-      items: items,
+      items: store.query('post', {
+        lira: getLira('opportunities'),
+        per_page: 4,
+        page: 1,
+        sort: '-created',
+      }).then((data) => {
+        return data.rejectBy('id', params.id).slice(0, 3)
+      }),
     });
   },
 });
