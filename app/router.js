@@ -19,6 +19,8 @@ Router.map(function () {
   this.route('page', {path: '/:uid/'});
   this.route('notfound');
   this.route('about');
+  this.route('about-euprostir');
+  this.route('about-together');
 });
 
 export default Router;
