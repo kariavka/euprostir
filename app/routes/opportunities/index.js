@@ -19,7 +19,7 @@ export default Route.extend({
     return hash({
       items: store.query('post', {
         page: 1,
-        per_page: 6,
+        per_page: 9,
         lira: getLira('opportunities'),
         sort: '-created',
       }),

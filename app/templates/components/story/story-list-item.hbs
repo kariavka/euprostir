@@ -1,8 +1,8 @@
-{{#unless isEven}}
+{{#if isEven}}
   <div class="image col-lg-5" style="min-height: 380px;">
     <img src="{{item.image_url}}" alt="">
   </div>
-{{/unless}}
+{{/if}}
 <div class="text col-lg-7">
   <div class="text-inner d-flex align-items-center">
     <div class="content">
@@ -35,8 +35,8 @@
     </div>
   </div>
 </div>
-{{#if isEven}}
+{{#unless isEven}}
   <div class="image col-lg-5" style="min-height: 380px;">
     <img src="{{item.image_url}}" alt="">
   </div>
-{{/if}}
+{{/unless}}

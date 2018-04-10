@@ -3,7 +3,6 @@ import {inject} from '@ember/service';
 import {get, set} from '@ember/object';
 import {reads} from '@ember/object/computed';
 import {hash} from 'rsvp';
-import getLira from 'euprostir/utils/get-lira';
 
 export default Route.extend({
   // Services
@@ -11,19 +10,13 @@ export default Route.extend({
   headData: inject(),
 
   // Title
-  title: 'Практики - Європейський простір',
+  title: reads('model.item.title'),
 
   // Model
-  model() {
+  model(params) {
     const store = get(this, 'store');
-
     return hash({
-      items: store.query('post', {
-        page: 1,
-        per_page: 6,
-        lira: getLira('practices'),
-        sort: '-created',
-      }),
+      item: store.findRecord('page', 132601),
     });
   },
 });
