@@ -1,5 +1,6 @@
 @import "ember-bootstrap/bootstrap";
 @import "font-awesome";
+@import "bootstrap.template";
 @import "style.blue";
 @import "custom";
 
@@ -122,3 +123,5 @@ header {
     display: none !important;
   }
 }
+
+@import "ember-bootstrap/bootstrap";
