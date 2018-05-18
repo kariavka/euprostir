@@ -3,7 +3,7 @@
   "version": "0.2.3",
   "private": true,
   "description": "Euprostir Website",
-  "license": "MIT",
+  "license": "LivaRava License",
   "author": "",
   "directories": {
     "doc": "doc",
@@ -27,7 +27,6 @@
     "ember-cli-document-title": "^0.3.3",
     "ember-cli-eslint": "^4.2.1",
     "ember-cli-facebook-js-sdk": "^2.0.1",
-    "ember-cli-fastboot": "1.1.2",
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
@@ -51,7 +50,6 @@
     "ember-screen": "^0.2.0",
     "ember-source": "~2.18.0",
     "eslint-plugin-ember": "^5.0.0",
-    "fastboot-app-server": "^1.0.1",
     "loader.js": "^4.2.3",
     "moment": "^2.20.1"
   },
