@@ -1,21 +1,10 @@
-/* eslint-env node */
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    'ember-bootstrap': {
-      bootstrapVersion: 4,
-      importBootstrapFont: false,
-      importBootstrapCSS: false
-    },
-
-    'ember-font-awesome': {
-      useScss: true,
-      includeFontFiles: true,
-      includeFontAwesomeAssets: true
-    },
+    // Add options here
   });
 
   // Use `app.import` to add additional libraries to the generated
