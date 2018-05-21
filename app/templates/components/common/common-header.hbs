@@ -77,31 +77,26 @@
   </div>
 </div>
 
-{{#if media.mobile}}
-  <section class="sect_menu">
-    <div class="container">
-      <div class="row">
+<section class="sect-menu">
+  <div class="container">
+    <div class="row">
+
+      {{#if media.isMobile}}
         <div class="col-md-12 col-sm-12">
           {{#link-to "index"}}
             <img class="logotip" src="/images/logo_mob.png" alt="">
           {{/link-to}}
         </div>
-      </div>
-    </div>
-  </section>
-{{else}}
-  <section class="sect_menu">
-    <div class="container">
-      <div class="row">
+      {{else}}
         <div class="col-md-3 col-sm-3">
           {{#link-to "index"}}
             <img class="logotip" src="/images/logo_mob.png" alt="">
           {{/link-to}}
         </div>
         <div class="col-md-9 col-sm-9 pos_rel">
-          <div id="top_menu">
+          <div id="top-menu">
             <div class="navbar-collapse">
-              <ul class="top_menu nav nav-pills">
+              <ul class="top-menu nav nav-pills">
                 <li>{{#link-to "stories.index"}}Історії{{/link-to}}</li>
                 <li>{{#link-to "practices.index"}}Практики{{/link-to}}</li>
                 <li>{{#link-to "opportunities.index"}}Можливості{{/link-to}}</li>
@@ -121,7 +116,53 @@
             </form>
           </div>
         </div>
-      </div>
+      {{/if}}
+
     </div>
-  </section>
-{{/if}}
+  </div>
+</section>
+
+<div class="menu_fixed">
+  <div class="container">
+    <div class="row">
+
+      {{#if media.isMobile}}
+        <div class="col-md-12 col-sm-12">
+          {{#link-to "index"}}
+            <img class="logotip" src="/images/logo_mob.png" alt="">
+          {{/link-to}}
+        </div>
+      {{else}}
+        <div class="col-md-3 col-sm-3">
+          {{#link-to "index"}}
+            <img class="logotip" src="/images/logo_mob.png" alt="">
+          {{/link-to}}
+        </div>
+        <div class="col-md-9 col-sm-9 pos_rel">
+          <div id="top-menu">
+            <div class="navbar-collapse">
+              <ul class="top-menu nav nav-pills">
+                <li>{{#link-to "stories.index"}}Історії{{/link-to}}</li>
+                <li>{{#link-to "practices.index"}}Практики{{/link-to}}</li>
+                <li>{{#link-to "opportunities.index"}}Можливості{{/link-to}}</li>
+                <li>{{#link-to "studies.index"}}Навчання{{/link-to}}</li>
+                <li>{{#link-to "resources.index"}}Ресурси{{/link-to}}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="block_search disp_n_768">
+            <a onclick="$('.search').toggle('slide');$('.search_btn').hide('');;$('.close_btn').show('');"><img
+              class="search_btn" src="/images/search_btn.png" alt=""></a>
+            <a onclick="$('.search').toggle('slide');$('.close_btn').hide('');;$('.search_btn').show('');"><img
+              class="close_btn" style="display: none;" src="/images/close_btn.png" alt=""></a>
+            <form action="" method="post" class="search" style="display: none;">
+              <input type="search" name="" placeholder="Пошук" class="input">
+              <input type="submit" name="" value="" class="submit">
+            </form>
+          </div>
+        </div>
+      {{/if}}
+
+    </div>
+  </div>
+</div>

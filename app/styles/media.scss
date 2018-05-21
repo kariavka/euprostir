@@ -18,7 +18,7 @@
     display: block;
   }
 
-  .sect_menu #top_menu {
+  .sect-menu #top-menu {
     float: right;
     position: absolute;
     top: -153px;
@@ -41,33 +41,33 @@
     border: 1px solid #000;
   }
 
-  #top_menu {
+  #top-menu {
     display: none;
     float: right;
     margin-top: 3px;
     margin-right: 0;
   }
 
-  .p_category {
+  .category-text {
     max-width: 213px;
     top: 32px;
     padding-bottom: 10px;
   }
 
-  .name_category {
+  .category-name {
     font: 36px UbuntuMedium, sans-serif;
     margin-bottom: 0;
   }
 
-  .slogan_name {
+  .slogan-name {
     position: static !important;
   }
 
-  .sect_menu {
+  .sect-menu {
     padding: 37px 0 20px;
   }
 
-  .cont2_sect_stories {
+  .cont2-sect-stories {
     margin-top: 23px;
   }
 
@@ -106,28 +106,28 @@
     padding: 0 0;
   }
 
-  .sect_practice {
+  .sect-practices {
     margin-top: 92px;
     padding-bottom: 30px;
   }
 
-  .about_post_practice {
+  .summary-practice {
     font: 14px UbuntuRegular, sans-serif;
     margin-top: 14px;
     line-height: 1.3;
     display: none;
   }
 
-  .cont2_sect_practice {
+  .cont2-sect-practices {
     margin-top: 46px;
   }
 
-  .about_practice {
+  .about-practice {
     height: auto;
     padding: 21px 15px 30px;
   }
 
-  .btn_practice {
+  .btn-practices {
     margin-top: 20px;
   }
 
@@ -355,7 +355,7 @@
     padding: 7px 10px 0 4px;
   }
 
-  .block_practice {
+  .block-practice {
     height: auto;
     max-width: 332px;
     margin: 0 auto 30px;
@@ -377,17 +377,13 @@
     }
   }
 
-  .top_menu li a {
-    font: 13px UbuntuRegular, sans-serif;
-  }
-
-  .sect_menu .search_btn {
+  .sect-menu .search_btn {
     float: right;
     margin-top: 22px;
     cursor: pointer;
   }
 
-  .sect_menu .close_btn {
+  .sect-menu .close_btn {
     float: right;
     margin-top: 22px;
     cursor: pointer;
@@ -405,7 +401,7 @@
     top: 15px;
   }
 
-  .sect_stories {
+  .sect-stories {
     padding-top: 30px;
   }
 
@@ -438,27 +434,27 @@
     }
   }
 
-  .sect_menu {
+  .sect-menu {
     padding: 20px 0;
   }
 
-  .about_practice {
+  .about-practice {
     height: 205px;
     padding: 10px 15px;
   }
 
-  .about_post_practice {
+  .summary-practice {
     font: 14px UbuntuRegular, sans-serif;
     margin-top: 14px;
     line-height: 1.3;
   }
 
-  .block_practice {
+  .block-practice {
     height: auto;
     margin-bottom: 30px;
   }
 
-  .sect_practice {
+  .sect-practices {
     margin-top: 120px;
     padding-bottom: 30px;
   }

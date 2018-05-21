@@ -1,32 +1,21 @@
-<section class="sect_stories">
-  <div class="block_name_category text-center">
-    <div class="p_category">
-      <p class="name_category">Історії</p>
-      <p class="slogan_name slogan_history">що надихають</p>
-    </div>
-  </div>
-
-  <div class="container-fluid cont2_sect_stories">
-    <div class="slick-slider">
-      {{#each items as |item|}}
-        <div>
-          <div class="block-story">
-            <div class="top-story">
-              <div class="box-story-cat">
-                <div class="box1"></div>
-                <div class="box2">соціальне підприємництво</div>
-                <div class="box3"></div>
-              </div>
-              <div class="img-story" style="background-image: url({{item.image_url}});"></div>
-              <div class="box_shadow"></div>
-              <p class="title-story">{{item.title}}</p>
-            </div>
-            <div class="summary-story">
-              <p>{{item.summary}}</p>
-            </div>
+<div class="slick-slider">
+  {{#each items as |item|}}
+    <div>
+      <div class="block-story">
+        <div class="top-story">
+          <div class="box-story-cat">
+            <div class="box1"></div>
+            <div class="box2">соціальне підприємництво</div>
+            <div class="box3"></div>
           </div>
+          <div class="img-story" style="background-image: url({{item.image_url}});"></div>
+          <div class="box_shadow"></div>
+          <p class="title-story">{{item.title}}</p>
         </div>
-      {{/each}}
+        <div class="summary-story">
+          <p>{{item.summary}}</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  {{/each}}
+</div>

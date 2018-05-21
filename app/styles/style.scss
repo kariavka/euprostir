@@ -102,39 +102,39 @@ a.en {
   margin-left: 37px;
 }
 
-.sect_menu {
+.sect-menu {
   padding: 40px 0;
 }
 
-.top_menu {
+.top-menu {
   padding: 0;
   margin-top: 0;
+
+  li {
+    list-style-type: none;
+    float: left;
+    margin-right: 0;
+    margin-bottom: 0;
+
+    a {
+      font: 16px UbuntuRegular, sans-serif;
+      color: #3b4256;
+      text-transform: uppercase;
+    }
+
+    a:hover, a:focus {
+      color: #542e91;
+      background-image: url(/images/bg_menu_hover.jpg);
+      background-repeat: repeat;
+      text-decoration: none;
+    }
+  }
 }
 
-#top_menu {
+#top-menu {
   float: left;
   margin-top: 16px;
   margin-left: 50px;
-}
-
-.top_menu li {
-  list-style-type: none;
-  float: left;
-  margin-right: 0;
-  margin-bottom: 0;
-}
-
-.top_menu li a {
-  font: 16px UbuntuRegular, sans-serif;
-  color: #3b4256;
-  text-transform: uppercase;
-}
-
-.top_menu li a:hover, .top_menu li a:focus {
-  color: #542e91;
-  background-image: url(/images/bg_menu_hover.jpg);
-  background-repeat: repeat;
-  text-decoration: none;
 }
 
 a:focus, a:hover {
@@ -182,7 +182,7 @@ a:focus, a:hover {
     text-align: right;
   }
 
-  .top_menu li {
+  .top-menu li {
     list-style-type: none;
     float: none;
     margin-right: 0;
@@ -208,7 +208,7 @@ a:focus, a:hover {
     border-radius: 4px;
   }
 
-  #top_menu {
+  #top-menu {
     float: right;
     margin-top: 0;
     margin-right: 30px;
@@ -273,16 +273,16 @@ input[type="search"] {
   position: relative;
 }
 
-.sect_stories {
+.sect-stories {
   padding-top: 80px;
 }
 
-.block_name_category {
+.block-category-cantainer {
   text-align: center;
   border-bottom: 1px solid #BAAFD6;
 }
 
-.p_category {
+.category-text {
   width: 100%;
   max-width: 332px;
   margin: 0 auto;
@@ -292,19 +292,19 @@ input[type="search"] {
   position: relative;
 }
 
-.slogan_name {
+.slogan-name {
   font: 25px EBGaramondItalic, sans-serif;
   color: #9884be;
 
 }
 
-.slogan_history {
+.slogan-stories {
   position: absolute;
   top: -22px;
   right: -105px;
 }
 
-.slogan_practice {
+.slogan-practices {
   position: absolute;
   top: -22px;
   right: -165px;
@@ -322,7 +322,7 @@ input[type="search"] {
   right: -145px;
 }
 
-.name_category {
+.category-name {
   font: 36px UbuntuMedium, sans-serif;
   color: #3b4256;
   text-transform: uppercase;
@@ -331,7 +331,7 @@ input[type="search"] {
 
 }
 
-.name_category::before {
+.category-name::before {
   background-image: url(/images/icon_history.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -345,7 +345,7 @@ input[type="search"] {
 
 }
 
-.name_category_practice::before {
+.category-practices::before {
   background-image: url(/images/icon_practice.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -386,7 +386,7 @@ input[type="search"] {
   top: -6px;
 }
 
-.cont2_sect_stories {
+.cont2-sect-stories {
   margin-top: 42px;
 
   .box_shadow {
@@ -539,56 +539,69 @@ input[type="search"] {
 
 }
 
-.sect_practice {
+.sect-practices {
   margin-top: 140px;
   padding-bottom: 60px;
 }
 
-.cont2_sect_practice {
+.cont2-sect-practices {
   margin-top: 71px;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    .about-practice {
+      background-color: #614099;
+      box-shadow: none;
+    }
+
+    .title-practice {
+      color: #fff;
+    }
+
+    .summary-practice {
+      color: #d7c5f6;
+    }
+  }
 }
 
-.block_practice {
+.block-practice {
   height: 390px;
   margin-bottom: 30px;
+
+  .top-practice {
+    .img-practice {
+      height: 200px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .about-practice {
+    height: 205px;
+    padding: 20px 25px;
+    box-shadow: 0 3px 13px rgba(0, 0, 0, 0.15);
+
+    .title-practice {
+      font: 19px UbuntuRegular, sans-serif;
+      color: #3b4256;
+    }
+
+    .summary-practice {
+      font: 15px UbuntuRegular, sans-serif;
+      color: #686879;
+      margin-top: 20px;
+      line-height: 1.5;
+      height: 4.5em;
+      overflow: hidden;
+    }
+  }
 }
 
-.name_post_practice {
-  font: 19px UbuntuRegular, sans-serif;
-  color: #3b4256;
-}
-
-.about_post_practice {
-  font: 15px UbuntuRegular, sans-serif;
-  color: #686879;
-  margin-top: 20px;
-  line-height: 1.5;
-}
-
-.about_practice {
-  height: 205px;
-  padding: 20px 25px;
-  box-shadow: 0 3px 13px rgba(0, 0, 0, 0.15);
-}
-
-.cont2_sect_practice a {
-  text-decoration: none;
-}
-
-.cont2_sect_practice a:hover .about_practice {
-  background-color: #614099;
-  box-shadow: none;
-}
-
-.cont2_sect_practice a:hover .name_post_practice {
-  color: #fff;
-}
-
-.cont2_sect_practice a:hover .about_post_practice {
-  color: #d7c5f6;
-}
-
-.btn_more {
+.btn-more {
 
   background-color: transparent;
   border: 1px solid #542E91;
@@ -600,11 +613,11 @@ input[type="search"] {
 
 }
 
-.btn_practice {
+.btn-practices {
   margin-top: 50px;
 }
 
-.btn_more:hover, .btn_more:focus, .btn_more:active {
+.btn-more:hover, .btn-more:focus, .btn-more:active {
   box-shadow: none;
   outline: none !important;
   background-color: #01B1BC;

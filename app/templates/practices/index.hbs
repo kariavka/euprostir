@@ -1,12 +1,25 @@
-<section class="latest-posts">
-  <div class="container">
-    <header class="text-center">
-      <h1>Практики</h1>
-      <p class="text-big">які допомагають</p>
-    </header>
+<section class="sect-practices">
 
+  <div class="block-category-cantainer text-center">
+    <div class="category-text">
+      <p class="category-name category-practices">Практики</p>
+      <p class="slogan-name slogan-practices">які допомагають</p>
+    </div>
+  </div>
+
+  <div class="container cont2-sect-practices">
     {{practice/practice-list
       items=model.items}}
-
   </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{#link-to "practices.index" class="btn btn-more btn-practices"}}
+          відкрити більше
+        {{/link-to}}
+      </div>
+    </div>
+  </div>
+
 </section>
