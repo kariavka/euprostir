@@ -16,6 +16,12 @@ Router.map(function () {
   this.route('opportunities', function () {
     this.route('item', {path: '/:id'});
   });
+  this.route('studies', function () {
+    this.route('item', {path: '/:id'});
+  });
+  this.route('resources', function () {
+    this.route('item', {path: '/:id'});
+  });
   this.route('page', {path: '/:uid/'});
   this.route('notfound');
   this.route('about');

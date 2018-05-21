@@ -1,8 +1,9 @@
 @import "ember-bootstrap/bootstrap";
 @import "font-awesome";
-@import "bootstrap.template";
-@import "style.blue";
-@import "custom";
+@import "slick-theme";
+@import "slick";
+@import "style";
+@import "media";
 
 .loading-slider {
   z-index: 9999;
@@ -12,116 +13,3 @@
     height: 4px;
   }
 }
-
-.navbar {
-  background: #fff;
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-  z-index: 9998;
-  border-bottom: 1px solid #ddd;
-}
-
-.navbar .navbar-nav a.nav-link {
-  color: #333;
-  margin: 0 5px;
-  font-weight: 400;
-  font-size: 0.95em;
-}
-
-/* your styles go here */
-.aligncenter {
-  margin: 0 auto;
-  display: block;
-}
-
-section.latest-posts h3 {
-  font-weight: 400; /*font-family: 'Ubuntu Condensed'; */
-  font-size: 1.2em;
-}
-
-section.featured-posts,
-section.latest-posts {
-  padding-top: 32px;
-
-  .views {
-    font-size: 0.8em;
-    font-weight: 400;
-    color: #999;
-  }
-}
-
-section.featured-posts .text-big {
-  font-size: 1.4em;
-  font-weight: 300;
-  line-height: 1.8em;
-  color: #111;
-}
-
-div.post-single img {
-  width: 100% !important;
-  height: auto;
-  max-width: inherit !important;
-}
-
-div.post-single iframe {
-  width: 100% !important;
-  max-width: 100% !important;
-}
-
-@media (max-width: 576px) {
-  h1.post-h1 {
-    font-size: 1.2em !important;
-    line-height: 1.3em;
-  }
-}
-
-header {
-  border-bottom: 1px solid #eee;
-
-  a {
-    color: #000;
-    text-decoration: none;
-
-    h1 {
-      color: #000;
-      text-decoration: none;
-    }
-  }
-
-  a:hover {
-    color: #000;
-    text-decoration: none;
-  }
-
-  .navbar {
-    border-bottom: none;
-  }
-}
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 200px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #2b90d9;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-#myBtn:hover {
-  background-color: #555;
-}
-
-@media (max-width: 1199px) {
-  #myBtn {
-    display: none !important;
-  }
-}
-
-@import "ember-bootstrap/bootstrap";

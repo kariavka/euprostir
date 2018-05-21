@@ -1,0 +1,579 @@
+@media only screen and (max-width: 1550px) {
+  .header_desktop {
+    display: block;
+  }
+
+  .header_mobile {
+    display: none;
+  }
+
+  .block_history {
+    height: auto;
+    width: 100%;
+    box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
+  }
+
+  .top_history {
+    height: auto;
+    max-height: 265px;
+    position: relative;
+
+  }
+
+  .name_news_history {
+    bottom: 14px;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .header_desktop {
+    display: block;
+  }
+
+  .header_mobile {
+    display: none;
+
+    i {
+      color: #fff;
+    }
+  }
+
+  .top_menu li a {
+    font: 13px UbuntuRegular, sans-serif;
+  }
+
+  .sect_menu .search_btn {
+    float: right;
+    margin-top: 22px;
+    cursor: pointer;
+  }
+
+  .sect_menu .close_btn {
+    float: right;
+    margin-top: 22px;
+    cursor: pointer;
+  }
+
+  .nav > li > a {
+    padding: 7px 9px;
+    border-radius: 150px;
+  }
+
+  .search {
+    width: 80%;
+    position: absolute;
+    right: 60px;
+    top: 15px;
+  }
+
+  .sect_history {
+    padding-top: 30px;
+  }
+  .sect_menu {
+    padding: 20px 0;
+  }
+
+  .about_practice {
+    height: 205px;
+    padding: 10px 15px;
+  }
+
+  .about_post_practice {
+    font: 14px UbuntuRegular, sans-serif;
+    margin-top: 14px;
+    line-height: 1.3;
+  }
+
+  .block_practice {
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .sect_practice {
+    margin-top: 120px;
+    padding-bottom: 30px;
+  }
+
+  .cont2_sect_ability {
+    margin-top: 45px;
+  }
+
+  .about_ability {
+    padding: 10px 10px 0;
+  }
+
+  .sect_study {
+    padding: 40px 0;
+  }
+
+  .block_video {
+    max-width: 400px;
+  }
+
+  .box_big_video {
+    height: 226px;
+  }
+
+  .big_video_text {
+    padding: 10px 10px 0 11px;
+    height: 226px;
+  }
+
+  .title_big_video {
+    font: 21px UbuntuRegular, sans-serif;
+    line-height: 1.1;
+  }
+
+  .arrow_video {
+    margin-top: 2px;
+  }
+
+  .box_video {
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .title_video {
+    font: 15px UbuntuRegular, sans-serif;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    padding-right: 10px;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+
+  .box_events_first {
+    margin-top: 40px;
+  }
+
+  .block_about_events {
+    margin-left: 0;
+  }
+
+  .sect_study {
+    padding: 40px 0 20px;
+  }
+
+  .block_date_events {
+    width: 100px;
+    margin-right: 0;
+    padding-top: 11px;
+    text-align: center;
+  }
+
+  .block_date_events {
+    width: auto;
+    margin-right: 0;
+    padding-top: 0;
+    text-align: center;
+    float: none;
+
+  }
+
+  .box_events {
+    padding: 15px 0;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .block_img_events {
+    float: none;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .title_events {
+    font: 22px UbuntuRegular, sans-serif;
+    color: #3b4256;
+    margin-top: 10px;
+  }
+  .menu_foot2 {
+    margin-left: 0;
+    white-space: normal;
+  }
+
+  .menu_foot li a {
+    font: 14px UbuntuRegular, sans-serif;
+    color: #3b4256;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .header_desktop {
+    display: none;
+  }
+
+  .header_mobile {
+    display: block;
+  }
+
+  .menu_mobile_btn {
+    color: #fff;
+  }
+
+  .logotip {
+    max-width: 217px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .sect_menu #top_menu {
+    float: right;
+    position: absolute;
+    top: -153px;
+    right: 5px;
+    margin: 0;
+  }
+
+  .menu_fixed .logotip {
+    max-width: 112px;
+    float: left;
+  }
+
+  .menu_fixed.show {
+    height: 46px;
+  }
+
+  .menu_fixed .navbar-toggle .icon-bar {
+    width: 22px;
+    height: 2px;
+    border: 1px solid #000;
+  }
+
+  #top_menu {
+    display: none;
+    float: right;
+    margin-top: 3px;
+    margin-right: 0;
+  }
+
+  .p_category {
+    max-width: 213px;
+    top: 32px;
+    padding-bottom: 10px;
+  }
+
+  .name_category {
+    font: 36px UbuntuMedium, sans-serif;
+    margin-bottom: 0;
+  }
+
+  .slogan_name {
+    position: static !important;
+  }
+
+  .sect_menu {
+    padding: 37px 0 20px;
+  }
+
+  .cont2_sect_history {
+    margin-top: 23px;
+  }
+
+  .container-fluid {
+    width: 100%;
+    max-width: 1680px;
+    padding: 0 0;
+  }
+
+  .slick-slide {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .name_news_history {
+    bottom: 14px;
+    font-size: 22px;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  .about_news_history p {
+    font: 14px UbuntuRegular, sans-serif;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .about_news_history {
+    width: 100%;
+    padding: 20px 20px;
+  }
+
+  .slick-dots {
+    bottom: -39px;
+  }
+
+  .sect_practice {
+    margin-top: 92px;
+    padding-bottom: 30px;
+  }
+
+  .about_post_practice {
+    font: 14px UbuntuRegular, sans-serif;
+    margin-top: 14px;
+    line-height: 1.3;
+    display: none;
+  }
+
+  .cont2_sect_practice {
+    margin-top: 46px;
+  }
+
+  .about_practice {
+    height: auto;
+    padding: 21px 15px 30px;
+  }
+
+  .btn_practice {
+    margin-top: 20px;
+  }
+
+  .name_category_ability {
+    font-size: 30px;
+  }
+
+  .top_ability {
+    width: 45%;
+
+    float: left;
+  }
+
+  .about_ability {
+    padding: 10px 10px 0;
+    width: 50%;
+    float: left;
+  }
+
+  .block_ability {
+    height: auto;
+    padding: 15px;
+    margin-bottom: 0;
+  }
+
+  .block_ability:after, .block_ability:before {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .about_post_ability {
+    font: 16px UbuntuRegular, sans-serif;
+    margin-bottom: 0;
+  }
+
+  .cont2_sect_study {
+    margin-top: 48px;
+  }
+
+  .box_big_video {
+    height: 226px;
+    display: none;
+  }
+
+  .cont3_sect_study {
+    margin-top: 0;
+  }
+
+  .box_video {
+    height: auto;
+    width: 100%;
+    max-width: 332px;
+    margin: 0 auto 30px;
+  }
+
+  .btn_study {
+    margin-top: 25px;
+  }
+
+  .block_date_events {
+    width: 63px;
+    margin-right: 0;
+    padding-top: 0;
+    display: block;
+    text-align: left;
+    float: left;
+  }
+
+  .date1_events span, .date2_events span {
+    display: inherit;
+    top: -7px;
+
+  }
+
+  .block_img_events {
+    float: left;
+    width: auto;
+    margin-left: 6px;
+  }
+
+  .block_about_events:after, .block_about_events:before {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .date1_events, .date2_events {
+    font: 53px UbuntuBold, sans-serif;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  .date1_events span, .date2_events span {
+    font: 16px UbuntuRegular, sans-serif;
+  }
+
+  .block_date {
+    width: 370px;
+    margin: 0 auto;
+  }
+
+  .about_events {
+    display: none;
+  }
+
+  .title_events {
+    font: 19px UbuntuRegular, sans-serif;
+    margin-left: 70px;
+  }
+
+  .date1_events, .date2_events {
+    font: 53px UbuntuBold, sans-serif;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  .date2_events {
+    margin-top: 0;
+  }
+
+  .sect_events {
+    padding: 40px 0 97px;
+  }
+
+  .arrow_top {
+    position: absolute;
+    right: 15px;
+    top: -67px;
+  }
+
+  .box_mailing {
+    width: 391px;
+    height: 196px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    padding: 32px 19px 0 24px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  footer {
+    padding: 20px 0 62px;
+    position: relative;
+  }
+
+  .menu_foot {
+    padding: 0;
+    max-width: 350px;
+    margin: 56px auto 0;
+  }
+
+  .menu_foot li a {
+    font: 16px UbuntuRegular, sans-serif;
+  }
+
+  .menu_foot2 {
+    white-space: normal;
+    margin: 60px auto 0;
+  }
+
+  .cont2_footer {
+    text-align: center;
+    margin-top: 64px;
+  }
+
+  .block_ic_foot {
+    float: none;
+    margin-top: 63px;
+  }
+  .under_footer {
+    height: auto;
+    padding: 24px 0 20px;
+    text-align: center;
+  }
+
+  .copy {
+    font: 14px UbuntuRegular, sans-serif;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .block_history {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .slick-slide {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .container-fluid {
+    padding: 0 15px;
+  }
+
+  .box_mailing {
+    width: 330px;
+    height: 196px;
+    margin: 0 auto;
+  }
+
+  .t1_mailing {
+    font: 20px UbuntuRegular, sans-serif;
+  }
+
+  .t2_mailing {
+    font: 14px UbuntuRegular, sans-serif;
+    padding-right: 0;
+  }
+
+  .ic_big_mail {
+    margin-right: 20px;
+  }
+
+  .box_mailing {
+    width: 330px;
+    height: 196px;
+    padding: 32px 13px 0 14px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .box3 {
+    display: none !important;
+  }
+
+  .box_cat_history {
+    position: absolute;
+    right: 4px;
+    top: 12px;
+  }
+
+  .box2 {
+    padding: 7px 10px 0 4px;
+  }
+
+  .block_practice {
+    height: auto;
+    max-width: 332px;
+    margin: 0 auto 30px;
+  }
+
+}
