@@ -1,224 +1,15 @@
-@media only screen and (max-width: 1920px) {
+/* Extra small devices (mobile: phones, 767px and down) */
+@media only screen and (max-width: 767px) {
   .header_desktop {
-    display: block;
-  }
-
-  .header_mobile {
     display: none;
   }
 
-  .slick-slider {
-    .block-story {
-      height: auto;
-      width: 100%;
-      box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
-    }
-
-    .top-story {
-      height: auto;
-      max-height: 265px;
-      position: relative;
-
-    }
-
-    .title-story {
-      bottom: 14px;
-      font-size: 20px;
-      margin-bottom: 0;
-    }
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .header_desktop {
-    display: block;
-  }
-
   .header_mobile {
-    display: none;
+    display: block;
 
     i {
       color: #fff;
     }
-  }
-
-  .top_menu li a {
-    font: 13px UbuntuRegular, sans-serif;
-  }
-
-  .sect_menu .search_btn {
-    float: right;
-    margin-top: 22px;
-    cursor: pointer;
-  }
-
-  .sect_menu .close_btn {
-    float: right;
-    margin-top: 22px;
-    cursor: pointer;
-  }
-
-  .nav > li > a {
-    padding: 7px 9px;
-    border-radius: 150px;
-  }
-
-  .search {
-    width: 80%;
-    position: absolute;
-    right: 60px;
-    top: 15px;
-  }
-
-  .sect_stories {
-    padding-top: 30px;
-  }
-  .sect_menu {
-    padding: 20px 0;
-  }
-
-  .about_practice {
-    height: 205px;
-    padding: 10px 15px;
-  }
-
-  .about_post_practice {
-    font: 14px UbuntuRegular, sans-serif;
-    margin-top: 14px;
-    line-height: 1.3;
-  }
-
-  .block_practice {
-    height: auto;
-    margin-bottom: 30px;
-  }
-
-  .sect_practice {
-    margin-top: 120px;
-    padding-bottom: 30px;
-  }
-
-  .cont2_sect_ability {
-    margin-top: 45px;
-  }
-
-  .about_ability {
-    padding: 10px 10px 0;
-  }
-
-  .sect_study {
-    padding: 40px 0;
-  }
-
-  .block_video {
-    max-width: 400px;
-  }
-
-  .box_big_video {
-    height: 226px;
-  }
-
-  .big_video_text {
-    padding: 10px 10px 0 11px;
-    height: 226px;
-  }
-
-  .title_big_video {
-    font: 21px UbuntuRegular, sans-serif;
-    line-height: 1.1;
-  }
-
-  .arrow_video {
-    margin-top: 2px;
-  }
-
-  .box_video {
-    height: auto;
-    margin-bottom: 30px;
-  }
-
-  .title_video {
-    font: 15px UbuntuRegular, sans-serif;
-    color: #ffffff;
-    position: absolute;
-    bottom: 0;
-    left: 10px;
-    padding-right: 10px;
-    line-height: 1;
-    margin-bottom: 5px;
-  }
-
-  .box_events_first {
-    margin-top: 40px;
-  }
-
-  .block_about_events {
-    margin-left: 0;
-  }
-
-  .sect_study {
-    padding: 40px 0 20px;
-  }
-
-  .block_date_events {
-    width: 100px;
-    margin-right: 0;
-    padding-top: 11px;
-    text-align: center;
-  }
-
-  .block_date_events {
-    width: auto;
-    margin-right: 0;
-    padding-top: 0;
-    text-align: center;
-    float: none;
-
-  }
-
-  .box_events {
-    padding: 15px 0;
-    height: auto;
-    cursor: pointer;
-  }
-
-  .block_img_events {
-    float: none;
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-  }
-
-  .title_events {
-    font: 22px UbuntuRegular, sans-serif;
-    color: #3b4256;
-    margin-top: 10px;
-  }
-  .menu_foot2 {
-    margin-left: 0;
-    white-space: normal;
-  }
-
-  .menu_foot li a {
-    font: 14px UbuntuRegular, sans-serif;
-    color: #3b4256;
-  }
-
-}
-
-@media only screen and (max-width: 768px) {
-  .header_desktop {
-    display: none;
-  }
-
-  .header_mobile {
-    display: block;
-  }
-
-  .menu_mobile_btn {
-    color: #fff;
   }
 
   .logotip {
@@ -280,37 +71,39 @@
     margin-top: 23px;
   }
 
+  .slick-slider {
+    .block-story {
+      margin: 0 auto;
+    }
+
+    .slick-slide {
+      display: block;
+      padding: 20px 0;
+
+      .title-story {
+        bottom: 14px;
+        font-size: 20px;
+        margin-bottom: 0;
+        line-height: 1.1em;
+      }
+
+      .summary-story {
+        width: 100%;
+        padding: 20px 20px;
+
+        p {
+          font: 15px UbuntuRegular, sans-serif;
+          height: 4.5em;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
   .container-fluid {
     width: 100%;
     max-width: 1680px;
     padding: 0 0;
-  }
-
-  .slick-slide {
-    display: block;
-    padding: 20px 0;
-  }
-
-  .title-story {
-    bottom: 14px;
-    font-size: 22px;
-    margin-bottom: 0;
-    line-height: 0.5;
-  }
-
-  .summary-story p {
-    font: 14px UbuntuRegular, sans-serif;
-    height: auto;
-    overflow: hidden;
-  }
-
-  .summary-story {
-    width: 100%;
-    padding: 20px 20px;
-  }
-
-  .slick-dots {
-    bottom: -39px;
   }
 
   .sect_practice {
@@ -517,18 +310,6 @@
     margin-top: 25px;
   }
 
-  .slick-slider {
-    .block-story {
-      max-width: 520px;
-      margin: 0 auto;
-    }
-
-    .slick-slide {
-      display: block;
-      padding: 20px 0;
-    }
-  }
-
   .container-fluid {
     padding: 0 15px;
   }
@@ -580,4 +361,284 @@
     margin: 0 auto 30px;
   }
 
+}
+
+/* Medium devices (tablet: landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .header_desktop {
+    display: block;
+  }
+
+  .header_mobile {
+    display: none;
+
+    i {
+      color: #fff;
+    }
+  }
+
+  .top_menu li a {
+    font: 13px UbuntuRegular, sans-serif;
+  }
+
+  .sect_menu .search_btn {
+    float: right;
+    margin-top: 22px;
+    cursor: pointer;
+  }
+
+  .sect_menu .close_btn {
+    float: right;
+    margin-top: 22px;
+    cursor: pointer;
+  }
+
+  .nav > li > a {
+    padding: 7px 9px;
+    border-radius: 150px;
+  }
+
+  .search {
+    width: 80%;
+    position: absolute;
+    right: 60px;
+    top: 15px;
+  }
+
+  .sect_stories {
+    padding-top: 30px;
+  }
+
+  .slick-slider {
+    .block-story {
+      margin: 0 auto;
+    }
+
+    .slick-slide {
+      display: block;
+      padding: 20px 0;
+
+      .title-story {
+        bottom: 14px;
+        font-size: 20px;
+        margin-bottom: 0;
+        line-height: 1.1em;
+      }
+
+      .summary-story {
+        width: 100%;
+        padding: 20px 20px;
+
+        p {
+          font: 15px UbuntuRegular, sans-serif;
+          height: 4.5em;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  .sect_menu {
+    padding: 20px 0;
+  }
+
+  .about_practice {
+    height: 205px;
+    padding: 10px 15px;
+  }
+
+  .about_post_practice {
+    font: 14px UbuntuRegular, sans-serif;
+    margin-top: 14px;
+    line-height: 1.3;
+  }
+
+  .block_practice {
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .sect_practice {
+    margin-top: 120px;
+    padding-bottom: 30px;
+  }
+
+  .cont2_sect_ability {
+    margin-top: 45px;
+  }
+
+  .about_ability {
+    padding: 10px 10px 0;
+  }
+
+  .sect_study {
+    padding: 40px 0;
+  }
+
+  .block_video {
+    max-width: 400px;
+  }
+
+  .box_big_video {
+    height: 226px;
+  }
+
+  .big_video_text {
+    padding: 10px 10px 0 11px;
+    height: 226px;
+  }
+
+  .title_big_video {
+    font: 21px UbuntuRegular, sans-serif;
+    line-height: 1.1;
+  }
+
+  .arrow_video {
+    margin-top: 2px;
+  }
+
+  .box_video {
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .title_video {
+    font: 15px UbuntuRegular, sans-serif;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    padding-right: 10px;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+
+  .box_events_first {
+    margin-top: 40px;
+  }
+
+  .block_about_events {
+    margin-left: 0;
+  }
+
+  .sect_study {
+    padding: 40px 0 20px;
+  }
+
+  .block_date_events {
+    width: 100px;
+    margin-right: 0;
+    padding-top: 11px;
+    text-align: center;
+  }
+
+  .block_date_events {
+    width: auto;
+    margin-right: 0;
+    padding-top: 0;
+    text-align: center;
+    float: none;
+  }
+
+  .box_events {
+    padding: 15px 0;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .block_img_events {
+    float: none;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .title_events {
+    font: 22px UbuntuRegular, sans-serif;
+    color: #3b4256;
+    margin-top: 10px;
+  }
+  .menu_foot2 {
+    margin-left: 0;
+    white-space: normal;
+  }
+
+  .menu_foot li a {
+    font: 14px UbuntuRegular, sans-serif;
+    color: #3b4256;
+  }
+}
+
+/* Large devices (desktop: laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header_desktop {
+    display: block;
+  }
+
+  .header_mobile {
+    display: none;
+  }
+
+  .slick-slider {
+    .block-story {
+      height: auto;
+      width: 100%;
+      box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
+    }
+
+    .top-story {
+      height: auto;
+      max-height: 300px;
+      position: relative;
+
+    }
+
+    .img-story {
+      height: 300px;
+    }
+
+    .title-story {
+      bottom: 14px;
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Extra large devices (jumbo: large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .header_desktop {
+    display: block;
+  }
+
+  .header_mobile {
+    display: none;
+  }
+
+  .slick-slider {
+    .block-story {
+      height: auto;
+      width: 100%;
+      box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
+    }
+
+    .top-story {
+      height: auto;
+      max-height: 300px;
+      position: relative;
+
+    }
+
+    .img-story {
+      height: 300px;
+    }
+
+    .title-story {
+      bottom: 14px;
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+  }
 }

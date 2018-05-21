@@ -22,7 +22,7 @@ export default Component.extend({
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 769,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2
