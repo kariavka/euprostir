@@ -1,46 +1,46 @@
 @font-face {
   font-family: 'UbuntuMedium';
-  src: url('../fonts/UbuntuMedium.eot');
-  src: url('../fonts/UbuntuMedium.eot') format('embedded-opentype'),
-  url('../fonts/UbuntuMedium.woff2') format('woff2'),
-  url('../fonts/UbuntuMedium.woff') format('woff'),
-  url('../fonts/UbuntuMedium.ttf') format('truetype'),
-  url('../fonts/UbuntuMedium.svg#UbuntuMedium') format('svg');
+  src: url('/fonts/UbuntuMedium.eot');
+  src: url('/fonts/UbuntuMedium.eot') format('embedded-opentype'),
+  url('/fonts/UbuntuMedium.woff2') format('woff2'),
+  url('/fonts/UbuntuMedium.woff') format('woff'),
+  url('/fonts/UbuntuMedium.ttf') format('truetype'),
+  url('/fonts/UbuntuMedium.svg#UbuntuMedium') format('svg');
 }
 
 @font-face {
   font-family: 'UbuntuRegular';
-  src: url('../fonts/UbuntuRegular.eot');
-  src: url('../fonts/UbuntuRegular.eot') format('embedded-opentype'),
-  url('../fonts/UbuntuRegular.woff2') format('woff2'),
-  url('../fonts/UbuntuRegular.woff') format('woff'),
-  url('../fonts/UbuntuRegular.ttf') format('truetype'),
-  url('../fonts/UbuntuRegular.svg#UbuntuRegular') format('svg');
+  src: url('/fonts/UbuntuRegular.eot');
+  src: url('/fonts/UbuntuRegular.eot') format('embedded-opentype'),
+  url('/fonts/UbuntuRegular.woff2') format('woff2'),
+  url('/fonts/UbuntuRegular.woff') format('woff'),
+  url('/fonts/UbuntuRegular.ttf') format('truetype'),
+  url('/fonts/UbuntuRegular.svg#UbuntuRegular') format('svg');
 }
 
 @font-face {
   font-family: 'EBGaramondItalic';
-  src: url('../fonts/EBGaramond-Italic.eot');
-  src: url('../fonts/EBGaramond-Italic.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/EBGaramond-Italic.woff2') format('woff2'),
-  url('../fonts/EBGaramond-Italic.woff') format('woff'),
-  url('../fonts/EBGaramond-Italic.ttf') format('truetype');
+  src: url('/fonts/EBGaramond-Italic.eot');
+  src: url('/fonts/EBGaramond-Italic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/EBGaramond-Italic.woff2') format('woff2'),
+  url('/fonts/EBGaramond-Italic.woff') format('woff'),
+  url('/fonts/EBGaramond-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'UbuntuBold';
-  src: url('../fonts/UbuntuBold.eot');
-  src: url('../fonts/UbuntuBold.eot') format('embedded-opentype'),
-  url('../fonts/UbuntuBold.woff2') format('woff2'),
-  url('../fonts/UbuntuBold.woff') format('woff'),
-  url('../fonts/UbuntuBold.ttf') format('truetype'),
-  url('../fonts/UbuntuBold.svg#UbuntuBold') format('svg');
+  src: url('/fonts/UbuntuBold.eot');
+  src: url('/fonts/UbuntuBold.eot') format('embedded-opentype'),
+  url('/fonts/UbuntuBold.woff2') format('woff2'),
+  url('/fonts/UbuntuBold.woff') format('woff'),
+  url('/fonts/UbuntuBold.ttf') format('truetype'),
+  url('/fonts/UbuntuBold.svg#UbuntuBold') format('svg');
 }
 
 body {
-  font-family: UbuntuRegular;
+  font-family: UbuntuRegular, serif;
   position: relative;
   margin: 0;
 }
@@ -104,7 +104,6 @@ a.en {
 
 .sect_menu {
   padding: 40px 0;
-  margin-bottom: 40px;
 }
 
 .top_menu {
@@ -260,7 +259,7 @@ a:focus, a:hover {
   height: 100%;
   background: transparent;
   cursor: pointer;
-  background-image: url(../images/search_btn_form.png);
+  background-image: url(/images/search_btn_form.png);
   background-repeat: no-repeat;
   background-position: top center;
 
@@ -274,7 +273,7 @@ input[type="search"] {
   position: relative;
 }
 
-.sect_history {
+.sect_stories {
   padding-top: 80px;
 }
 
@@ -333,7 +332,7 @@ input[type="search"] {
 }
 
 .name_category::before {
-  background-image: url(../images/icon_history.png);
+  background-image: url(/images/icon_history.png);
   background-repeat: no-repeat;
   background-position: top center;
   width: 19px;
@@ -347,7 +346,7 @@ input[type="search"] {
 }
 
 .name_category_practice::before {
-  background-image: url(../images/icon_practice.png);
+  background-image: url(/images/icon_practice.png);
   background-repeat: no-repeat;
   background-position: top center;
   width: 22px;
@@ -361,7 +360,7 @@ input[type="search"] {
 }
 
 .name_category_ability::before {
-  background-image: url(../images/icon_ability.png);
+  background-image: url(/images/icon_ability.png);
   background-repeat: no-repeat;
   background-position: top center;
   width: 18px;
@@ -375,7 +374,7 @@ input[type="search"] {
 }
 
 .name_category_study::before {
-  background-image: url(../images/icon_study.png);
+  background-image: url(/images/icon_study.png);
   background-repeat: no-repeat;
   background-position: top center;
   width: 25px;
@@ -387,34 +386,46 @@ input[type="search"] {
   top: -6px;
 }
 
-.block_history {
-  height: 388px;
+.slick-slider {
   width: 100%;
-  box-shadow: 0px 3px 13px rgba(15, 15, 16, 0.15);
+  //overflow: hidden;
+
+  .block-story {
+    height: 388px;
+    width: 100%;
+    box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
+  }
+
+  .top-story {
+    height: 265px;
+    position: relative;
+  }
+
+  .img-story {
+    height: 215px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title-story {
+    position: absolute;
+    bottom: 24px;
+    left: 22px;
+    font-family: UbuntuRegular, sans-serif;
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+
+  .summary-story {
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+  }
 }
 
-.top_history {
-  height: 265px;
-  position: relative;
-
-}
-
-.name_news_history {
-  position: absolute;
-  bottom: 24px;
-  left: 22px;
-  font: 26px UbuntuRegular, sans-serif;
-  color: #ffffff;
-  margin-bottom: 0;
-}
-
-.about_news_history {
-  width: 100%;
-
-  padding: 25px;
-}
-
-.cont2_sect_history {
+.cont2_sect_stories {
   margin-top: 42px;
 }
 
@@ -429,20 +440,20 @@ img {
   bottom: 0;
   width: 100%;
   height: 217px;
-  background-image: url(../images/bg_shadow.png);
+  background-image: url(/images/bg_shadow.png);
   background-repeat: no-repeat;
   background-position: top center;
 }
 
-.about_news_history p {
+.summary-story p {
   font: 16px UbuntuRegular, sans-serif;
   color: #686879;
-  height: 61px;
+  height: 73px;
   overflow: hidden;
 }
 
 .box1 {
-  background-image: url(../images/box_cat_history1.png);
+  background-image: url(/images/box_cat_history1.png);
   background-repeat: no-repeat;
   background-position: top center;
   height: 27px;
@@ -452,7 +463,7 @@ img {
 }
 
 .box2 {
-  background-image: url(../images/box_cat_history2.png);
+  background-image: url(/images/box_cat_history2.png);
   background-repeat: repeat-x;
   background-position: top center;
   height: 27px;
@@ -467,20 +478,20 @@ img {
 }
 
 .box3 {
-  background-image: url(../images/box_cat_history3.png);
+  background-image: url(/images/box_cat_history3.png);
   background-repeat: no-repeat;
   background-position: top center;
   height: 27px;
   width: 14px;
 }
 
-.box_cat_history {
+.box-story-cat {
   position: absolute;
   right: -7px;
   top: 12px;
 }
 
-.box_cat_history div {
+.box-story-cat div {
   display: inline-block;
 }
 
@@ -488,7 +499,7 @@ img {
   padding: 0;
 }
 
-.trusted-slider img {
+.slick-slider img {
   margin: 0 auto;
 }
 
@@ -497,19 +508,19 @@ img {
   display: inline-block;
   width: 15px;
   height: 15px;
-  margin: 0px 4px;
-  padding: 0px;
+  margin: 0 4px;
+  padding: 0;
   cursor: pointer;
 }
 
-.trusted-slider .slick-dots li {
+.slick-slider .slick-dots li {
   position: relative;
   display: inline-block;
   width: 15px;
   height: 15px;
 }
 
-.trusted-slider .slick-dots li button {
+.slick-slider .slick-dots li button {
   width: 15px;
   height: 15px;
   display: block;
@@ -520,7 +531,7 @@ img {
   -webkit-border-radius: 50px;
 }
 
-.trusted-slider .slick-dots .slick-active button {
+.slick-slider .slick-dots .slick-active button {
 
   background-color: #7C62AB;
   opacity: 1;
@@ -573,7 +584,7 @@ img {
 .about_practice {
   height: 205px;
   padding: 20px 25px;
-  box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 13px rgba(0, 0, 0, 0.15);
 }
 
 .cont2_sect_practice a {
@@ -712,7 +723,7 @@ img {
 
 .big_video_text {
   padding: 26px 15px 0 21px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   height: 390px;
 }
 
@@ -763,7 +774,7 @@ img {
 }
 
 .name_category_events::before {
-  background-image: url(../images/icon_events.png);
+  background-image: url(/images/icon_events.png);
   background-repeat: no-repeat;
   background-position: top center;
   width: 18px;
@@ -918,7 +929,7 @@ footer {
 }
 
 .icon_f {
-  background-image: url(../images/icon_f.png);
+  background-image: url(/images/icon_f.png);
   background-repeat: no-repeat;
   background-position: top center;
   height: 24px;
@@ -931,7 +942,7 @@ footer {
 }
 
 .icon_tw {
-  background-image: url(../images/icon_tw.png);
+  background-image: url(/images/icon_tw.png);
   background-repeat: no-repeat;
   background-position: top center;
   height: 24px;
@@ -953,7 +964,7 @@ footer {
   width: 391px;
   height: 196px;
   background-color: #fff;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   padding: 32px 19px 0 24px;
   float: right;
 }
@@ -1037,6 +1048,7 @@ footer {
   margin-top: 38px;
 }
 
+//noinspection CssUnknownProperty
 .menu_fixed {
   position: fixed;
   top: 0;
@@ -1053,7 +1065,6 @@ footer {
 }
 
 .menu_fixed.show {
-  position: absolute;
   top: 0;
   left: 0;
   transform: translate3d(0px, 0, 0);
@@ -1158,9 +1169,8 @@ footer {
 }
 
 .search_mob .submit {
-  background: none;
   border: 0;
-  background-image: url(../images/search_btn_form.png);
+  background-image: url(/images/search_btn_form.png);
   background-repeat: no-repeat;
   background-position: top center;
   height: 19px;

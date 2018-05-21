@@ -1,4 +1,4 @@
-<section class="sect_history">
+<section class="sect_stories">
   <div class="block_name_category text-center">
     <div class="p_category">
       <p class="name_category">Історії</p>
@@ -6,55 +6,31 @@
     </div>
   </div>
 
-  <div class="container-fluid cont2_sect_history">
+  <div class="container cont2_sect_stories">
     <div class="row">
-      <div class="trusted-slider">
-        <div class="slides slick-initialized slick-slider" role="toolbar">
 
-
-          <div aria-live="polite" class="slick-list draggable">
-            <div class="slick-track" role="listbox"
-                 style="opacity: 1; width: 7050px; transform: translate3d(-4230px, 0px, 0px);">
-
-              {{#each items as |item|}}
-                <div class="col-md-4 slick-slide slick-cloned" tabindex="-1" role="option"
-                     aria-describedby="slick-slide06" style="width: 470px;" data-slick-index="-3" aria-hidden="true">
-                  <div class="block_history">
-                    <div class="top_history">
-                      <div class="box_cat_history">
-                        <div class="box1"></div>
-                        <div class="box2">соціальне підприємництво</div>
-                        <div class="box3"></div>
-                      </div>
-                      <img class="img_history" src="{{item.image_url}}" alt="">
-                      <div class="box_shadow"></div>
-                      <p class="name_news_history">{{item.header}}</p>
-                    </div>
-                    <div class="about_news_history">
-                      <p>{{item.summary}}</p>
-                    </div>
-                  </div>
+      <div class="slick-slider">
+        {{#each items as |item|}}
+          <div class="col-md-4">
+            <div class="block-story">
+              <div class="top-story">
+                <div class="box-story-cat">
+                  <div class="box1"></div>
+                  <div class="box2">соціальне підприємництво</div>
+                  <div class="box3"></div>
                 </div>
-              {{/each}}
-
+                <div class="img-story" style="background-image: url({{item.image_url}});"></div>
+                <div class="box_shadow"></div>
+                <p class="title-story">{{item.title}}</p>
+              </div>
+              <div class="summary-story">
+                <p>{{item.summary}}</p>
+              </div>
             </div>
           </div>
-          <ul class="slick-dots" style="display: block;" role="tablist">
-            <li class="" aria-hidden="true" role="presentation" aria-selected="true" aria-controls="navigation00"
-                id="slick-slide00">
-              <button type="button" data-role="none" role="button" aria-required="false" tabindex="0">1</button>
-            </li>
-            <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01"
-                id="slick-slide01" class="">
-              <button type="button" data-role="none" role="button" aria-required="false" tabindex="0">2</button>
-            </li>
-            <li aria-hidden="false" class="slick-active" role="presentation" aria-selected="false"
-                aria-controls="navigation02" id="slick-slide02">
-              <button type="button" data-role="none" role="button" aria-required="false" tabindex="0">3</button>
-            </li>
-          </ul>
-        </div>
+        {{/each}}
       </div>
+
     </div>
   </div>
 </section>

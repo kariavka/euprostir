@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1920px) {
   .header_desktop {
     display: block;
   }
@@ -7,23 +7,25 @@
     display: none;
   }
 
-  .block_history {
-    height: auto;
-    width: 100%;
-    box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
-  }
+  .slick-slider {
+    .block-story {
+      height: auto;
+      width: 100%;
+      box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
+    }
 
-  .top_history {
-    height: auto;
-    max-height: 265px;
-    position: relative;
+    .top-story {
+      height: auto;
+      max-height: 265px;
+      position: relative;
 
-  }
+    }
 
-  .name_news_history {
-    bottom: 14px;
-    font-size: 20px;
-    margin-bottom: 0;
+    .title-story {
+      bottom: 14px;
+      font-size: 20px;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -68,7 +70,7 @@
     top: 15px;
   }
 
-  .sect_history {
+  .sect_stories {
     padding-top: 30px;
   }
   .sect_menu {
@@ -274,7 +276,7 @@
     padding: 37px 0 20px;
   }
 
-  .cont2_sect_history {
+  .cont2_sect_stories {
     margin-top: 23px;
   }
 
@@ -289,20 +291,20 @@
     padding: 20px 0;
   }
 
-  .name_news_history {
+  .title-story {
     bottom: 14px;
     font-size: 22px;
     margin-bottom: 0;
-    line-height: 1;
+    line-height: 0.5;
   }
 
-  .about_news_history p {
+  .summary-story p {
     font: 14px UbuntuRegular, sans-serif;
     height: auto;
     overflow: hidden;
   }
 
-  .about_news_history {
+  .summary-story {
     width: 100%;
     padding: 20px 20px;
   }
@@ -515,14 +517,16 @@
     margin-top: 25px;
   }
 
-  .block_history {
-    max-width: 520px;
-    margin: 0 auto;
-  }
+  .slick-slider {
+    .block-story {
+      max-width: 520px;
+      margin: 0 auto;
+    }
 
-  .slick-slide {
-    display: block;
-    padding: 20px 0;
+    .slick-slide {
+      display: block;
+      padding: 20px 0;
+    }
   }
 
   .container-fluid {
@@ -560,7 +564,7 @@
     display: none !important;
   }
 
-  .box_cat_history {
+  .box-story-cat {
     position: absolute;
     right: 4px;
     top: 12px;
