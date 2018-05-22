@@ -38,6 +38,8 @@ a:focus, a:hover {
 // Header Top Begin
 
 .header-top {
+  margin-bottom: 190px;
+
   a.ua {
     font: 14px UbuntuRegular, sans-serif;
     color: #ffffff;
@@ -74,7 +76,7 @@ a:focus, a:hover {
   background: linear-gradient(to left, #542E91, #765AA7);
 
   .block-lang {
-    margin-top: 12px;
+    margin-top: 10px;
   }
 
   .block-social-desktop {
@@ -82,7 +84,7 @@ a:focus, a:hover {
     margin: 12px -3px 0 0;
 
     img {
-      margin-left: 20px;
+      margin-left: 30px;
     }
   }
 }
@@ -110,7 +112,7 @@ a:focus, a:hover {
 
 .sect-menu {
   position: absolute;
-  top: 40px;
+  top: 65px;
   width: 100%;
   padding: 40px 0;
 
@@ -164,7 +166,7 @@ a:focus, a:hover {
   z-index: 200;
   background: #fff;
   overflow: hidden;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .menu-fixed:hover {
@@ -297,7 +299,7 @@ a:focus, a:hover {
     max-width: 332px;
     margin: 0 auto;
     background-color: #fff;
-    top: 18px;
+    top: 24px;
     padding-bottom: 10px;
     position: relative;
   }
