@@ -31,7 +31,7 @@ export default Route.extend({
       }),
       opportunities: store.query('post', {
         page: 1,
-        per_page: 6,
+        per_page: 4,
         lira: getLira('opportunities'),
         sort: '-created',
       }),

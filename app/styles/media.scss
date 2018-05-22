@@ -1,10 +1,10 @@
 /* Extra small devices (mobile: phones, 767px and down) */
 @media only screen and (max-width: 767px) {
-  .header_desktop {
+  .header-desktop {
     display: none;
   }
 
-  .header_mobile {
+  .header-mobile {
     display: block;
 
     i {
@@ -26,16 +26,16 @@
     margin: 0;
   }
 
-  .menu_fixed .logotip {
+  .menu-fixed .logotip {
     max-width: 112px;
     float: left;
   }
 
-  .menu_fixed.show {
+  .menu-fixed.show {
     height: 46px;
   }
 
-  .menu_fixed .navbar-toggle .icon-bar {
+  .menu-fixed .navbar-toggle .icon-bar {
     width: 22px;
     height: 2px;
     border: 1px solid #000;
@@ -48,7 +48,7 @@
     margin-right: 0;
   }
 
-  .category-text {
+  .text-category {
     max-width: 213px;
     top: 32px;
     padding-bottom: 10px;
@@ -67,125 +67,131 @@
     padding: 37px 0 20px;
   }
 
-  .cont2-sect-stories {
-    margin-top: 23px;
-  }
-
-  .slick-slider {
-    .block-story {
-      margin: 0 auto;
-    }
-
-    .slick-slide {
-      display: block;
-      padding: 20px 0;
-
-      .title-story {
-        bottom: 14px;
-        font-size: 20px;
-        margin-bottom: 0;
-        line-height: 1.1em;
-      }
-
-      .summary-story {
-        width: 100%;
-        padding: 20px 20px;
-
-        p {
-          font: 15px UbuntuRegular, sans-serif;
-          height: 4.5em;
-          overflow: hidden;
-        }
-      }
-    }
-  }
-
   .container-fluid {
     width: 100%;
     max-width: 1680px;
     padding: 0 0;
   }
 
+  .sect-stories {
+    .cont2-sect-stories {
+      margin-top: 23px;
+    }
+
+    .slick-slider {
+      .block-story {
+        margin: 0 auto;
+      }
+
+      .slick-slide {
+        display: block;
+        padding: 20px 0;
+
+        .title-story {
+          bottom: 14px;
+          font-size: 20px;
+          margin-bottom: 0;
+          line-height: 1.1em;
+        }
+
+        .summary-story {
+          width: 100%;
+          padding: 20px 20px;
+
+          p {
+            font: 15px UbuntuRegular, sans-serif;
+            height: 4.5em;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+
   .sect-practices {
     margin-top: 92px;
     padding-bottom: 30px;
+
+    .cont2-sect-practices {
+      margin-top: 46px;
+
+      .about-practice {
+        height: auto;
+        padding: 21px 15px 30px;
+      }
+
+      .btn-practices {
+        margin-top: 20px;
+      }
+    }
+
+    .summary-practice {
+      font: 14px UbuntuRegular, sans-serif;
+      margin-top: 14px;
+      line-height: 1.3;
+      display: none;
+    }
   }
 
-  .summary-practice {
-    font: 14px UbuntuRegular, sans-serif;
-    margin-top: 14px;
-    line-height: 1.3;
-    display: none;
+  .sect-opportunities {
+    .category-name-opportunities {
+      font-size: 30px;
+    }
+
+    .block-opportunity {
+      height: auto;
+      padding: 15px;
+      margin-bottom: 0;
+
+      .top-opportunity {
+        width: 45%;
+        float: left;
+      }
+
+      .about-opportunity {
+        padding: 10px 10px 0;
+        width: 50%;
+        float: left;
+      }
+
+      .title-opportunity {
+        font: 16px UbuntuRegular, sans-serif;
+        margin-bottom: 0;
+      }
+    }
+
+    .block-opportunity:after,
+    .block-opportunity:before {
+      content: "";
+      clear: both;
+      display: table;
+    }
   }
 
-  .cont2-sect-practices {
-    margin-top: 46px;
-  }
+  .sect_study {
+    .cont2_sect_study {
+      margin-top: 48px;
+    }
 
-  .about-practice {
-    height: auto;
-    padding: 21px 15px 30px;
-  }
+    .box_big_video {
+      height: 226px;
+      display: none;
+    }
 
-  .btn-practices {
-    margin-top: 20px;
-  }
+    .cont3_sect_study {
+      margin-top: 0;
+    }
 
-  .name_category_ability {
-    font-size: 30px;
-  }
+    .box_video {
+      height: auto;
+      width: 100%;
+      max-width: 332px;
+      margin: 0 auto 30px;
+    }
 
-  .top_ability {
-    width: 45%;
-
-    float: left;
-  }
-
-  .about_ability {
-    padding: 10px 10px 0;
-    width: 50%;
-    float: left;
-  }
-
-  .block_ability {
-    height: auto;
-    padding: 15px;
-    margin-bottom: 0;
-  }
-
-  .block_ability:after, .block_ability:before {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .about_post_ability {
-    font: 16px UbuntuRegular, sans-serif;
-    margin-bottom: 0;
-  }
-
-  .cont2_sect_study {
-    margin-top: 48px;
-  }
-
-  .box_big_video {
-    height: 226px;
-    display: none;
-  }
-
-  .cont3_sect_study {
-    margin-top: 0;
-  }
-
-  .box_video {
-    height: auto;
-    width: 100%;
-    max-width: 332px;
-    margin: 0 auto 30px;
-  }
-
-  .btn_study {
-    margin-top: 25px;
+    .btn_study {
+      margin-top: 25px;
+    }
   }
 
   .block_date_events {
@@ -365,11 +371,11 @@
 
 /* Medium devices (tablet: landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .header_desktop {
+  .header-desktop {
     display: block;
   }
 
-  .header_mobile {
+  .header-mobile {
     display: none;
 
     i {
@@ -377,13 +383,13 @@
     }
   }
 
-  .sect-menu .search_btn {
+  .sect-menu .btn-search {
     float: right;
     margin-top: 22px;
     cursor: pointer;
   }
 
-  .sect-menu .close_btn {
+  .sect-menu .btn-close {
     float: right;
     margin-top: 22px;
     cursor: pointer;
@@ -459,11 +465,11 @@
     padding-bottom: 30px;
   }
 
-  .cont2_sect_ability {
+  .cont2-sect-opportunities {
     margin-top: 45px;
   }
 
-  .about_ability {
+  .about-opportunity {
     padding: 10px 10px 0;
   }
 
@@ -569,11 +575,11 @@
 
 /* Large devices (desktop: laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .header_desktop {
+  .header-desktop {
     display: block;
   }
 
-  .header_mobile {
+  .header-mobile {
     display: none;
   }
 
@@ -605,11 +611,11 @@
 
 /* Extra large devices (jumbo: large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .header_desktop {
+  .header-desktop {
     display: block;
   }
 
-  .header_mobile {
+  .header-mobile {
     display: none;
   }
 
