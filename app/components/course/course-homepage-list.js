@@ -1,7 +1,12 @@
 import Component from '@ember/component';
+import {inject} from '@ember/service';
 import {computed, get} from '@ember/object';
 
 export default Component.extend({
+  // Services
+  media: inject(),
+
+  // Properties
   first: computed('items', function () {
     return get(this, 'items.firstObject');
   }),

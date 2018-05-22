@@ -1,25 +1,45 @@
-<div class="container cont2-sect-courses">
-  <div class="row">
-    <div class="col-md-12 col-sm-12">
-      <div class="box-video-big media">
-        <div class="visual-video-big">
-          {{#link-to "courses.item" first.id}}
-            <div class="image-video-big" style="{{first.imageStyle}}"></div>
-            <div class="shadow-video-big"></div>
-          {{/link-to}}
-        </div>
-        <div class="text-video-big media-body">
-          <p class="title-video-big">{{first.title}}</p>
-          <p class="summary-video-big">{{first.summary}}</p>
-          {{#link-to "courses.item" first.id}}
-            <img class="arrow-video-big" src="/images/arrow_video.png" alt="">
-          {{/link-to}}
-        </div>
-        <div class="clearfix"></div>
+{{#if media.isMobile}}
+  <div class="container cont3-sect-courses mt-5">
+    <div class="row">
+
+      <div class="col-md-4 col-sm-4">
+        {{#link-to "courses.item" first.id}}
+          <div class="box-video-small">
+            <div class="image-video-small" style="{{first.imageStyle}}"></div>
+            <div class="shadow-video-small"></div>
+            <p class="title-video-small">{{first.title}}</p>
+          </div>
+        {{/link-to}}
       </div>
+
     </div>
   </div>
-</div>
+{{else}}
+  <div class="container cont2-sect-courses">
+    <div class="row">
+
+      <div class="col-md-12 col-sm-12">
+        <div class="box-video-big media">
+          <div class="visual-video-big">
+            {{#link-to "courses.item" first.id}}
+              <div class="image-video-big" style="{{first.imageStyle}}"></div>
+              <div class="shadow-video-big"></div>
+            {{/link-to}}
+          </div>
+          <div class="text-video-big media-body">
+            <p class="title-video-big">{{first.title}}</p>
+            <p class="summary-video-big">{{first.summary}}</p>
+            {{#link-to "courses.item" first.id}}
+              <img class="arrow-video-big" src="/images/arrow_video.png" alt="">
+            {{/link-to}}
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+{{/if}}
 
 <div class="container cont3-sect-courses">
   <div class="row">
