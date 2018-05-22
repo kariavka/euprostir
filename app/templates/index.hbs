@@ -90,4 +90,72 @@
 
 </section>
 
+<section class="sect-events">
+
+  <div class="block-category-container text-center">
+    <div class="text-category">
+      <p class="category-name category-name-events">події</p>
+      <p class="slogan-name slogan-events">які вражають</p>
+    </div>
+  </div>
+
+  <div class="cont2-sect-events">
+
+    {{#each model.events as |item|}}
+      {{#link-to "events.item" item.id}}
+        <div class="block-event-container">
+          <div class="container">
+
+            <div class="block-event">
+              <div class="row">
+
+                <div class="col-md-6 col-sm-12 col-12">
+
+                  <div class="dates-event">
+
+                    <div class="date1-event">
+                      <div class="date1-event-day">20</div>
+                      <div class="date1-event-month">Бер</div>
+                    </div>
+
+                    <div class="date2-event">
+                      <div class="date2-event-day">07</div>
+                      <div class="date2-event-month">Тра</div>
+                    </div>
+
+                  </div>
+
+                  <div class="image-event" style="{{item.imageStyle}}"></div>
+
+                </div>
+
+                <div class="col-md-6 col-sm-12 col-12">
+
+                  <div class="about-event">
+                    <p class="title-event">{{item.title}}</p>
+                    <p class="summary-event">{{item.summary}}</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      {{/link-to}}
+    {{/each}}
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <a class="btn btn-more btn-events">відкрити більше</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
 {{outlet}}

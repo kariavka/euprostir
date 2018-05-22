@@ -39,6 +39,7 @@ module.exports = function (environment) {
       practices: 131972,
       opportunities: 131974,
       courses: 131968,
+      events: 131968,
       about: 132034,
     },
 

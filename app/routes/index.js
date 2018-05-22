@@ -41,6 +41,12 @@ export default Route.extend({
         lira: getLira('courses'),
         sort: '-created',
       }),
+      events: store.query('post', {
+        page: 1,
+        per_page: 3,
+        lira: getLira('events'),
+        sort: '-created',
+      }),
     });
   },
 });
