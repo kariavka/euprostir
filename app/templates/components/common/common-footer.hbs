@@ -1,96 +1,82 @@
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-long-arrow-up"></i> Догори</button>
+<footer>
+  <a href="#top"><img class="arrow_top" src="/images/arrow_top.png" alt=""></a>
 
-<section class="newsletter no-padding-top">
   <div class="container">
     <div class="row">
-      <div class="offset-lg-1 col-lg-10">
-        <h2 class="text-center">Підписатися на розсилку</h2>
-        <p class="text-big text-center">Будьте у курсі подій Європейського Простору та отримуйте першими корисну і
-          цікаву інформацію про нові практики та можливості.</p>
+
+      <div class="col-md-3 order-md-1 col-sm-3 order-2">
+        <ul class="menu_foot">
+          <li><a href="">Про Європейський Простір</a></li>
+          <li><a href="">Про Together EU4Civil Society </a></li>
+          <li>{{#link-to "stories.index"}}Історії{{/link-to}}</li>
+          <li>{{#link-to "practices.index"}}Практики{{/link-to}}</li>
+          <li>{{#link-to "opportunities.index"}}Можливості {{/link-to}}</li>
+          <li>{{#link-to "courses.index"}}Навчання{{/link-to}}</li>
+          <li>{{#link-to "resources.index"}}Ресурси{{/link-to}}</li>
+        </ul>
       </div>
-      <div class="offset-lg-3 col-lg-6">
-        <div class="form-holder">
-          <form action="https://prostir.us12.list-manage.com/subscribe?u=d413bd349b5700b3385999b59&id=00098ff31e"
-                method="post">
-            <div class="form-group">
-              <input type="email" name="EMAIL" id="email" placeholder="Введіть свій e-mail">
-              <button type="submit" class="submit">Підписатися</button>
+
+      <div class="col-md-3 order-md-2 col-sm-3 order-3">
+        <ul class="menu_foot menu_foot2">
+          <li><img class="ic_tel" src="/images/ic_tel.png" alt=""> +380 (44) 220 0764</li>
+          <li><img class="ic_tel" src="/images/ic_mail.png" alt=""> eu@prostir.ua</li>
+          <li>&nbsp;</li>
+          <li><a class="icon_f" href=""></a><a class="icon_tw" href=""></a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-6 order-md-3 col-sm-6 order-1">
+        <div class="box_mailing">
+          <div class="media">
+            <img class="pull-left ic_big_mail" src="/images/ic_big_mail.png" alt="">
+            <div class="media-body">
+              <p class="t1_mailing">Підписатися на розсилку</p>
+              <p class="t2_mailing">Отримуйте першими корисну та цікаву інформацію!</p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <form action="/" method="post" class="form1">
+            <div class="row">
+              <div class="col-md-12">
+                <input name="" placeholder="Ваш Email" type="text">
+                <button type="submit" class="btn btn-default ">
+                  Підписатись
+                </button>
+              </div>
             </div>
           </form>
         </div>
       </div>
+
     </div>
   </div>
-</section>
 
-<footer class="pt-3 text-center mb-5 mb-lg-0"
-        style="background-color: #ffffff; border-top: 1px #dddddd solid; font-size: 80%;">
+  <div class="container cont2_footer">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <img class="ic_es" src="/images/ic_es.png" alt="">
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="block_ic_foot">
+          <img src="/images/ic1_foot.png" alt="">
+          <img src="/images/ic2_foot.png" alt="">
+          <img src="/images/ic3_foot.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<div class="under_footer">
   <div class="container">
     <div class="row">
-      <div class="col-md mb-3 order-md-2">
-        <span style="font-size: 200%;">
-          <a href="https://www.facebook.com/EuProstir/">
-            <i class="fa fa-facebook-square" style="color: #3b5998;"></i>
-          </a>
-          <a href="https://twitter.com/EuProstir?lang=uk">
-            <i class="fa fa-twitter-square" style="color: #2b90d9;"></i>
-          </a>
-        </span>
+      <div class="col-md-6 col-sm-6">
+        <img src="/images/logo_EP.png" alt="">
       </div>
-      <div class="col-md mb-3 order-md-1">
-        {{#link-to "about-euprostir"}}Про EU.Prostir{{/link-to}} &middot;
-        {{#link-to "about-together"}}Про Together EU4Civil Society{{/link-to}}
-      </div>
-      <div class="col-md mb-3 order-md-3">
-        {{#link-to "stories"}}Історії{{/link-to}} &middot;
-        {{#link-to "practices"}}Практики{{/link-to}} &middot;
-        {{#link-to "opportunities"}}Можливості{{/link-to}}
-      </div>
-      <div class="col d-none">
-        <p class="text-center"><img src="/img/feu2.png" style="max-width: 100%;"></p>
-        <p class="m-0">(044) 2200764 <a href="mailto:eu@prostir.ua">eu@prostir.ua</a> <a href="#">Twitter</a> <a
-          href="#">Facebook</a></p>
-        <p class="m-0 d-none"><a href="#"><i class="fa fa-facebook"></i></a> &nbsp;&nbsp; <a href="#"><i
-          class="fa fa-twitter"></i></a></p>
-        <p class="m-0"><a href="index.php?id=28">Про проект</a> | <a href="index.php?id=2">Історії</a> | <a
-          href="index.php?id=7">Практики</a> | <a href="index.php?id=8">Можливості</a></p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md mb-3"><img src="/img/feu2.png" style="max-width: 100%; max-height: 40px;"></div>
-      <div class="col-md mb-3 pt-md-2 offset-md-4"><img src="/img/fcg3.png" style="max-width: 100%; max-height: 24px;">
-      </div>
-      <div class="col d-none">
-        <p class="text-center"><img src="/img/feu2.png" style="max-width: 100%;"></p>
-        <p class="m-0">(044) 2200764 <a href="mailto:eu@prostir.ua">eu@prostir.ua</a> <a href="#">Twitter</a> <a
-          href="#">Facebook</a></p>
-        <p class="m-0 d-none"><a href="#"><i class="fa fa-facebook"></i></a> &nbsp;&nbsp; <a href="#"><i
-          class="fa fa-twitter"></i></a></p>
-        <p class="m-0"><a href="index.php?id=28">Про проект</a> | <a href="index.php?id=2">Історії</a> | <a
-          href="index.php?id=7">Практики</a> | <a href="index.php?id=8">Можливості</a></p>
+      <div class="col-md-6 col-sm-6">
+        <p class="copy">© 2018 Європейський Простір</p>
       </div>
     </div>
   </div>
-  <div class="copyrights m-0" style="background-color: #ffffff;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center m-0">
-          <p class="mb-1">© 2018 Європейський Простір</p>
-          <p class="text-muted">
-            <small>
-              Powered by
-              <a href="https://www.livarava.com/" target="_blank">LivaRava</a>
-              <a href="https://www.livarava.com/cloud/" target="_blank">Cloud</a> and
-              <a href="https://www.livarava.com/framework/">Framework</a>
-            </small>
-          </p>
-        </div>
-        <div class="col-md-6 text-right d-none">
-          <p>Template By <a href="https://bootstraptemple.com" class="text-white">Bootstrap Temple</a>
-            <!-- Please do not remove the backlink to Bootstrap Temple unless you purchase an attribution-free license @ Bootstrap Temple or support us at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)                         -->
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+</div>

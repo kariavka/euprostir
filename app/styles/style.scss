@@ -1032,155 +1032,155 @@ footer {
   background-color: #F0F0F3;
   padding: 77px 0 42px;
   position: relative;
-}
 
-.arrow_top {
-  position: absolute;
-  right: 44px;
-  top: -25px;
-}
+  .arrow_top {
+    position: absolute;
+    right: 44px;
+    top: -25px;
+  }
 
-.menu_foot {
-  padding: 0;
-}
+  .menu_foot {
+    padding: 0;
+  }
 
-.menu_foot li {
-  list-style-type: none;
-  margin-bottom: 10px;
-}
+  .menu_foot li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
 
-.menu_foot li a {
-  font: 16px UbuntuRegular, sans-serif;
-  color: #3b4256;
-}
+  .menu_foot li a {
+    font: 16px UbuntuRegular, sans-serif;
+    color: #3b4256;
+  }
 
-.menu_foot li {
-  font: 16px UbuntuRegular, sans-serif;
-  color: #3b4256;
-}
+  .menu_foot li {
+    font: 16px UbuntuRegular, sans-serif;
+    color: #3b4256;
+  }
 
-.menu_foot2 .ic_tel {
-  margin-right: 13px;
-}
+  .menu_foot2 .ic_tel {
+    margin-right: 13px;
+  }
 
-.icon_f {
-  background-image: url(/images/icon_f.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  height: 24px;
-  width: 24px;
-  display: inline-block;
-}
+  .icon_f {
+    background-image: url(/images/icon_f.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+  }
 
-.icon_f:hover {
-  background-position: center -24px;
-}
+  .icon_f:hover {
+    background-position: center -24px;
+  }
 
-.icon_tw {
-  background-image: url(/images/icon_tw.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  height: 24px;
-  width: 24px;
-  display: inline-block;
-  margin-left: 17px;
-}
+  .icon_tw {
+    background-image: url(/images/icon_tw.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    margin-left: 17px;
+  }
 
-.icon_tw:hover {
-  background-position: center -24px;
-}
+  .icon_tw:hover {
+    background-position: center -24px;
+  }
 
-.menu_foot2 {
-  margin-left: 75px;
-  white-space: nowrap;
-}
+  .menu_foot2 {
+    margin-left: 75px;
+    white-space: nowrap;
+  }
 
-.box_mailing {
-  width: 391px;
-  height: 196px;
-  background-color: #fff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-  padding: 32px 19px 0 24px;
-  float: right;
-}
+  .box_mailing {
+    width: 391px;
+    height: 196px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    padding: 32px 19px 0 24px;
+    float: right;
+  }
 
-.ic_big_mail {
-  margin-right: 28px;
-}
+  .ic_big_mail {
+    margin-right: 28px;
+  }
 
-.t1_mailing {
-  font: 21px UbuntuRegular, sans-serif;
-  color: #542e91;
-}
+  .t1_mailing {
+    font: 21px UbuntuRegular, sans-serif;
+    color: #542e91;
+  }
 
-.t2_mailing {
-  font: 14px UbuntuRegular, sans-serif;
-  color: #686879;
-  padding-right: 70px;
-}
+  .t2_mailing {
+    font: 14px UbuntuRegular, sans-serif;
+    color: #686879;
+    padding-right: 70px;
+  }
 
-.form1 input {
-  height: 40px;
-  border-radius: 150px;
-  font: 14px UbuntuRegular, sans-serif;
-  color: #afaeb8;
-  border: 0;
-  background-color: #F6F6F8;
-  padding: 0 130px 0 21px;
-  width: 100%;
-}
+  .form1 input {
+    height: 40px;
+    border-radius: 150px;
+    font: 14px UbuntuRegular, sans-serif;
+    color: #afaeb8;
+    border: 0;
+    background-color: #F6F6F8;
+    padding: 0 130px 0 21px;
+    width: 100%;
+  }
 
-.form1 {
-  position: relative;
-  padding: 0 19px 0 0;
-  margin-top: 22px;
-}
+  .form1 {
+    position: relative;
+    padding: 0 19px 0 0;
+    margin-top: 22px;
+  }
 
-.form1 button {
-  height: 40px;
-  font: 14px UbuntuRegular, sans-serif;
-  color: #fff;
-  background-color: #542E91;
-  width: 121px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  border: 0;
-  border-radius: 0;
-  border-top-right-radius: 150px;
-  border-bottom-right-radius: 150px;
-  line-height: 15px;
-  padding-top: 4px;
-}
+  .form1 button {
+    height: 40px;
+    font: 14px UbuntuRegular, sans-serif;
+    color: #fff;
+    background-color: #542E91;
+    width: 121px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    border-radius: 0;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    line-height: 15px;
+    padding-top: 4px;
+  }
 
-.cont2_footer {
-  margin-top: 75px;
-}
+  .cont2_footer {
+    margin-top: 75px;
+  }
 
-.form1 button:hover {
-  background-color: #6FCAE7;
-  color: #fff;
-}
+  .form1 button:hover {
+    background-color: #6FCAE7;
+    color: #fff;
+  }
 
-.block_ic_foot {
-  float: right;
-}
+  .block_ic_foot {
+    float: right;
+  }
 
-.block_ic_foot img {
-  margin-left: 24px;
+  .block_ic_foot img {
+    margin-left: 24px;
+  }
 }
 
 .under_footer {
   height: 106px;
   background-color: #66469C;
   padding-top: 24px;
-}
 
-.copy {
-  font: 14px UbuntuRegular, sans-serif;
-  color: #fff;
-  text-align: right;
-  margin-top: 38px;
+  .copy {
+    font: 14px UbuntuRegular, sans-serif;
+    color: #fff;
+    text-align: right;
+    margin-top: 38px;
+  }
 }
 
 // Footer End

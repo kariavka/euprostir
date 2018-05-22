@@ -325,70 +325,57 @@
     }
   }
 
-  .arrow_top {
-    position: absolute;
-    right: 15px;
-    top: -67px;
-  }
-
-  .box_mailing {
-    width: 391px;
-    height: 196px;
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-    padding: 32px 19px 0 24px;
-    float: none;
-    margin: 0 auto;
-  }
-
   footer {
     padding: 20px 0 62px;
     position: relative;
-  }
 
-  .menu_foot {
-    padding: 0;
-    max-width: 350px;
-    margin: 56px auto 0;
-  }
+    .arrow_top {
+      position: absolute;
+      right: 15px;
+      top: -67px;
+    }
 
-  .menu_foot li a {
-    font: 16px UbuntuRegular, sans-serif;
-  }
+    .box_mailing {
+      width: 391px;
+      height: 196px;
+      background-color: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      padding: 32px 19px 0 24px;
+      float: none;
+      margin: 0 auto;
+    }
 
-  .menu_foot2 {
-    white-space: normal;
-    margin: 60px auto 0;
-  }
+    .menu_foot {
+      padding: 0;
+      max-width: 350px;
+      margin: 56px auto 0;
+    }
 
-  .cont2_footer {
-    text-align: center;
-    margin-top: 64px;
-  }
+    .menu_foot li a {
+      font: 16px UbuntuRegular, sans-serif;
+    }
 
-  .block_ic_foot {
-    float: none;
-    margin-top: 63px;
-  }
+    .menu_foot2 {
+      white-space: normal;
+      margin: 60px auto 0;
+    }
 
-  .under_footer {
-    height: auto;
-    padding: 24px 0 20px;
-    text-align: center;
-  }
+    .cont2_footer {
+      text-align: center;
+      margin-top: 64px;
+    }
 
-  .copy {
-    font: 14px UbuntuRegular, sans-serif;
-    text-align: center;
-    margin-top: 25px;
-  }
+    .block_ic_foot {
+      float: none;
+      margin-top: 63px;
+    }
 
-  .container-fluid {
+    .container-fluid {
     padding: 0 15px;
   }
 
   .box_mailing {
-    width: 330px;
+    width: 100% !important;
     height: 196px;
     margin: 0 auto;
   }
@@ -412,6 +399,19 @@
     padding: 32px 13px 0 14px;
     float: none;
     margin: 0 auto;
+  }
+  }
+
+  .under_footer {
+    height: auto;
+    padding: 24px 0 20px;
+    text-align: center;
+
+    .copy {
+      font: 14px UbuntuRegular, sans-serif;
+      text-align: center;
+      margin-top: 25px;
+    }
   }
 
   .box3 {
