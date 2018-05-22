@@ -1,6 +1,6 @@
 <section class="sect-stories">
 
-  <div class="block-category-cantainer text-center">
+  <div class="block-category-container text-center">
     <div class="text-category">
       <p class="category-name category-name-stories">Історії</p>
       <p class="slogan-name slogan-name-stories">що надихають</p>
@@ -16,7 +16,7 @@
 
 <section class="sect-practices">
 
-  <div class="block-category-cantainer text-center">
+  <div class="block-category-container text-center">
     <div class="text-category">
       <p class="category-name category-name-practices">Практики</p>
       <p class="slogan-name slogan-name-practices">які допомагають</p>
@@ -42,7 +42,7 @@
 
 <section class="sect-opportunities">
 
-  <div class="block-category-cantainer text-center">
+  <div class="block-category-container text-center">
     <div class="text-category">
       <p class="category-name category-name-opportunities">Можливості</p>
       <p class="slogan-name slogan-name-opportunities">що змінюють</p>
@@ -57,7 +57,33 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <a class="btn btn-more btn-opportunity">відкрити більше</a>
+        {{#link-to "opportunities.index" class="btn btn-more btn-opportunities"}}
+          відкрити більше
+        {{/link-to}}
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="sect-courses">
+
+  <div class="block-category-container text-center">
+    <div class="text-category">
+      <p class="category-name category-name-courses">навчання</p>
+      <p class="slogan-name slogan-courses">що збагачують</p>
+    </div>
+  </div>
+
+  {{course/course-homepage-list
+    items=model.courses}}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{#link-to "courses.index" class="btn btn-more btn-courses"}}
+          відкрити більше
+        {{/link-to}}
       </div>
     </div>
   </div>

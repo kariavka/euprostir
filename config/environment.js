@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'euprostir',
     environment,
@@ -38,6 +38,7 @@ module.exports = function(environment) {
       stories: 131968,
       practices: 131972,
       opportunities: 131974,
+      courses: 131968,
       about: 132034,
     },
 
@@ -46,7 +47,7 @@ module.exports = function(environment) {
     },
 
     googleAnalytics: {
-      webPropertyId: ''
+      webPropertyId: '',
     },
 
     'ember-cli-head': {
