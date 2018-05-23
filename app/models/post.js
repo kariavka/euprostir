@@ -1,4 +1,5 @@
-import Ember from 'ember';
+import {computed, get} from '@ember/object';
+import {htmlSafe} from '@ember/string';
 import DS from 'ember-data';
 
 export default DS.Model.extend({
@@ -13,10 +14,10 @@ export default DS.Model.extend({
   // Image
   image: DS.belongsTo('neuron'),
   image_url: DS.attr('string'),
-  imageStyle: Ember.computed('image_url', function () {
-    let url = this.get('image_url');
+  imageStyle: computed('image_url', function () {
+    let url = get(this, 'image_url');
     if (!url) return;
-    return Ember.String.htmlSafe(`background-image: url(${url});`);
+    return htmlSafe(`background-image: url(${url});`);
   }),
 
   // Relationships

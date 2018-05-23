@@ -19,7 +19,7 @@ export default Route.extend({
     return hash({
       stories: store.query('post', {
         page: 1,
-        per_page: 5,
+        per_page: 9,
         lira: getLira('stories'),
         sort: '-created',
       }),
@@ -31,8 +31,20 @@ export default Route.extend({
       }),
       opportunities: store.query('post', {
         page: 1,
-        per_page: 6,
+        per_page: 4,
         lira: getLira('opportunities'),
+        sort: '-created',
+      }),
+      courses: store.query('post', {
+        page: 1,
+        per_page: 4,
+        lira: getLira('courses'),
+        sort: '-created',
+      }),
+      events: store.query('post', {
+        page: 1,
+        per_page: 3,
+        lira: getLira('events'),
         sort: '-created',
       }),
     });
