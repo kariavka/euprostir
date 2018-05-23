@@ -1,4 +1,3 @@
-/* eslint-env node */
 'use strict';
 
 module.exports = function (environment) {
@@ -39,6 +38,8 @@ module.exports = function (environment) {
       stories: 131968,
       practices: 131972,
       opportunities: 131974,
+      courses: 131968,
+      events: 131968,
       about: 132034,
     },
 
@@ -47,7 +48,7 @@ module.exports = function (environment) {
     },
 
     googleAnalytics: {
-      webPropertyId: ''
+      webPropertyId: '',
     },
 
     'ember-cli-head': {
@@ -85,10 +86,11 @@ module.exports = function (environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+    ENV.APP.autoboot = false;
   }
 
   if (environment === 'production') {
-
+    // here you can enable a production-specific feature
   }
 
   return ENV;

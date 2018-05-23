@@ -1,15 +1,11 @@
-<div class="post-thumbnail">
-  {{#link-to "practices.item" item.id}}
-    <img src="{{item.image_url}}" alt="" class="img-fluid">
-  {{/link-to}}
-</div>
-<div class="post-details">
-  <div class="post-meta d-none ad-flex justify-content-between">
-    <div class="date">{{moment-format item.created "DD-MM-YYYY"}}</div>
-    <div class="category"><a href="#">Financial</a></div>
+{{#link-to "practices.item" item.id}}
+  <div class="block-practice">
+    <div class="top-practice">
+      <div class="img-practice" style="background-image: url({{item.image_url}});"></div>
+    </div>
+    <div class="about-practice">
+      <p class="title-practice">{{item.title}}</p>
+      <p class="summary-practice">{{item.summary}}</p>
+    </div>
   </div>
-  {{#link-to "practices.item" item.id}}
-    <h3 class="text-big text-center mt-3">{{item.title}}</h3>
-  {{/link-to}}
-  <p class="text-muted"></p>
-</div>
+{{/link-to}}
