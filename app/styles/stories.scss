@@ -55,7 +55,7 @@
   font-size: 16px;
   background: #614099 url(/images/select-arrow-close.png) no-repeat 151px 16px;
   display: inline-block;
-  border: 0;
+  border-bottom: 1px solid #614099;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -83,7 +83,7 @@ a.activetrigger {
   font-size: 16px;
   color: #777;
   position: absolute;
-  margin-left: -18px;
+  margin-left: -17px;
 
   ul {
     font-size: 16px;
