@@ -84,55 +84,51 @@ a.activetrigger {
   color: #777;
   position: absolute;
   margin-left: -18px;
-}
 
-.dropcontainer ul {
-  font-size: 16px;
-  border: 0;
-  border-top: none;
-  background: #614099;
-  color: #fff;
-  list-style-type: none;
-  padding: 20px 0;
-  z-index: 100;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 340px;
-  margin: -5px 0 0 126px;
-}
+  ul {
+    font-size: 16px;
+    border: 0;
+    border-top: none;
+    background: #614099;
+    color: #fff;
+    list-style-type: none;
+    padding: 20px 0;
+    z-index: 100;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 340px;
+    margin: -5px 0 0 126px;
 
-.dropcontainer ul li {
-  background-color: #614099;
-  color: #fff;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
+    li {
+      background-color: #614099;
+      color: #fff;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
 
-.dropcontainer ul li a {
-  color: #fff;
-  padding: 10px 25px;
-  text-decoration: none;
-  display: block;
-}
+      a {
+        color: #fff;
+        padding: 10px 25px;
+        text-decoration: none;
+        display: block;
+      }
+    }
 
-.dropcontainer ul li:hover {
-  background: #542E91;
-  outline: none;
-}
+    li:hover {
+      background: #542E91;
+      outline: none;
+    }
 
-.dropcontainer ul li:first-child {
-  display: none;
-}
+    li:first-child {
+      display: none;
+    }
 
-.dropcontainer ul li:last-child {
-  border-bottom: none;
-}
-
-.dropdownhidden {
-  display: none;
+    li:last-child {
+      border-bottom: none;
+    }
+  }
 }
 
 .dropdownvisible {
@@ -140,20 +136,23 @@ a.activetrigger {
   background-color: #614099;
 }
 
-.img_box_stories {
-  max-width: 331px;
+.img-box-stories {
+  width: 331px;
   height: 188px;
   overflow: hidden;
   margin-right: 27px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title-box-stories-list {
   font: 18px UbuntuRegular, sans-serif;
   color: #3b4256;
-  height: 66px;
-  overflow: hidden;
   line-height: 1.3em;
-  margin-bottom: 19px;
+  height: 3.9em;
+  overflow: hidden;
+  margin-bottom: 14px;
 }
 
 .title-box-stories-list a {
@@ -164,14 +163,17 @@ a.activetrigger {
 .about-box-stories-list {
   font: 16px UbuntuRegular, sans-serif;
   color: #686879;
-  height: 60px;
+  line-height: 1.4em;
+  height: 4.2em;
   overflow: hidden;
   margin-bottom: 0;
-  line-height: 1.4em;
 }
 
 .box-stories-list {
-  padding: 16px 0 0 30px;
+  padding-top: 24px;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
 }
 
 .block-stories-list {
@@ -212,25 +214,27 @@ a.activetrigger {
   clear: both;
   display: table;
   margin-bottom: 20px;
+
+  .img-box-popular {
+    width: 73px;
+    height: 71px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .box1-popular {
   margin-top: 38px;
 }
 
-.box-popular img {
-  height: 71px;
-  max-width: 73px;
-
-}
-
 .title-box-popular {
   font: 14px UbuntuRegular, sans-serif;
   color: #3b4256;
-  height: 70px;
+  line-height: 1.3em;
+  height: 4.9em;
   overflow: hidden;
-  padding-left: 10px;
-  line-height: 1.2;
+  padding-left: 12px;
   margin-bottom: 0;
 }
 
@@ -269,7 +273,7 @@ a.activetrigger {
 
   }
 
-  .img_box_stories {
+  .img-box-stories {
     float: none !important;
     margin: 0 auto;
     display: block;

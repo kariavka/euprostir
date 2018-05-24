@@ -22,6 +22,12 @@ export default Route.extend({
         per_page: 4,
         lira: getLira('stories')
       }),
+      popular: store.query('post', {
+        page: 1,
+        per_page: 3,
+        lira: getLira('stories'),
+        sort: '-views'
+      }),
     });
   },
 });

@@ -12,6 +12,7 @@
       <div class="col-md-9 col-sm-9">
         <span class="t_cat">Перегляд за:</span>
         <span class="trigger {{if showDropdown 'activetrigger'}}" {{action 'toggleDropdown'}}>Темою</span>
+
         {{#if showDropdown}}
           <div class="dropcontainer">
             <ul class="dropdownvisible">
@@ -24,46 +25,18 @@
             </ul>
           </div>
         {{/if}}
-        <div class="block-stories-list block1-stories-list">
-          <img class="pull-left img_box_stories" src="/images/img_box_stories.jpg" alt="">
-          <div class="media-body box-stories-list">
-            <div class="title-box-stories-list"><a href="">Громадський Простір спільно з Проектом ЄС для розвитку
-              громадянського суспільства перезапускають сайт EuProstir</a></div>
-            <div class="about-box-stories-list">Українським громадським організаціям варто активніше використовувати вже
-              здобутий позитивний імідж, бути
+
+        <div class="block1-stories-list"></div>
+
+        {{#each model.items as |item|}}
+          <div class="block-stories-list">
+            <div class="pull-left img-box-stories" style="{{item.imageStyle}}"></div>
+            <div class="media-body box-stories-list">
+              <div class="title-box-stories-list"><a href="">{{item.title}}</a></div>
+              <div class="about-box-stories-list">{{item.summary}}</div>
             </div>
           </div>
-        </div>
-        <div class="block-stories-list">
-          <img class="pull-left img_box_stories" src="/images/img_box_stories.jpg" alt="">
-          <div class="media-body box-stories-list">
-            <div class="title-box-stories-list"><a href="">Громадський Простір спільно з Проектом ЄС для розвитку
-              громадянського суспільства перезапускають сайт EuProstir</a></div>
-            <div class="about-box-stories-list">Українським громадським організаціям варто активніше використовувати вже
-              здобутий позитивний імідж, бути
-            </div>
-          </div>
-        </div>
-        <div class="block-stories-list">
-          <img class="pull-left img_box_stories" src="/images/img_box_stories.jpg" alt="">
-          <div class="media-body box-stories-list">
-            <div class="title-box-stories-list"><a href="">Громадський Простір спільно з Проектом ЄС для розвитку
-              громадянського суспільства перезапускають сайт EuProstir</a></div>
-            <div class="about-box-stories-list">Українським громадським організаціям варто активніше використовувати вже
-              здобутий позитивний імідж, бути
-            </div>
-          </div>
-        </div>
-        <div class="block-stories-list">
-          <img class="pull-left img_box_stories" src="/images/img_box_stories.jpg" alt="">
-          <div class="media-body box-stories-list">
-            <div class="title-box-stories-list"><a href="">Громадський Простір спільно з Проектом ЄС для розвитку
-              громадянського суспільства перезапускають сайт EuProstir</a></div>
-            <div class="about-box-stories-list">Українським громадським організаціям варто активніше використовувати вже
-              здобутий позитивний імідж, бути
-            </div>
-          </div>
-        </div>
+        {{/each}}
 
         <div class="text-center">
           <a class="btn btn-more btn-stories">відкрити більше</a>
@@ -73,31 +46,18 @@
 
       <div class="col-md-3 col-sm-3">
         <div class="block-popular">
-          <p class="t-popular">популярне</p>
-          <div class="box-popular box1-popular">
-            <img class="pull-left" src="/images/img_popular.jpg" alt="">
-            <div class=" media-body">
-              <div class="title-box-popular">Громадський Простір спільно з Проектом ЄС для розвитку громадянського
-                суспільства перезапускають сайт EuProstir
+          <div class="t-popular">популярне</div>
+
+          <div class="box1-popular"></div>
+
+          {{#each model.popular as |item|}}
+            <div class="box-popular">
+              <div class="pull-left img-box-popular" style="{{item.imageStyle}}"></div>
+              <div class="media-body">
+                <div class="title-box-popular">{{item.title}}</div>
               </div>
             </div>
-          </div>
-          <div class="box-popular">
-            <img class="pull-left" src="/images/img_popular.jpg" alt="">
-            <div class=" media-body">
-              <div class="title-box-popular">Громадський Простір спільно з Проектом ЄС для розвитку громадянського
-                суспільства перезапускають сайт EuProstir
-              </div>
-            </div>
-          </div>
-          <div class="box-popular">
-            <img class="pull-left" src="/images/img_popular.jpg" alt="">
-            <div class=" media-body">
-              <div class="title-box-popular">Громадський Простір спільно з Проектом ЄС для розвитку громадянського
-                суспільства перезапускають сайт EuProstir
-              </div>
-            </div>
-          </div>
+          {{/each}}
 
         </div>
       </div>
