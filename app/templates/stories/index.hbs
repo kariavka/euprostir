@@ -17,15 +17,9 @@
           <div class="dropcontainer">
             <ul class="dropdownvisible">
               <li><a href="#">Темою</a></li>
-              <li><a href="#">Візії розвитку громадянського суспільства</a></li>
-              <li>
-                {{#link-to "stories.filter" 38405}}
-                  Соціальне підприємництво
-                {{/link-to}}
-              </li>
-              <li><a href="#">Соціальні послуги стратегії</a></li>
-              <li><a href="#">Управління організаціями</a></li>
-              <li><a href="#">Ефективні комунікації</a></li>
+              {{#each filters as |filter|}}
+                <li>{{#link-to "stories.index" (query-params f=filter.lira)}}{{filter.name}}{{/link-to}}</li>
+              {{/each}}
             </ul>
           </div>
         {{/if}}

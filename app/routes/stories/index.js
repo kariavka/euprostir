@@ -13,19 +13,33 @@ export default Route.extend({
   // Title
   title: 'Історії - Європейський простір',
 
+  // Params
+  queryParams: {
+    f: {
+      refreshModel: true,
+    }
+  },
+
   // Model
-  model() {
+  model(params) {
     const store = get(this, 'store');
+    let lira = getLira('stories');
+    let filter = params.f;
+
+    if (filter) {
+      lira = lira + ',' + filter;
+    }
+
     return hash({
       items: store.query('post', {
         page: 1,
         per_page: 4,
-        lira: getLira('stories')
+        lira: lira
       }),
       popular: store.query('post', {
         page: 1,
         per_page: 3,
-        lira: getLira('stories'),
+        lira: lira,
         sort: '-views'
       }),
     });

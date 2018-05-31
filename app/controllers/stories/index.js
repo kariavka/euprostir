@@ -9,13 +9,46 @@ export default Controller.extend({
   // Services
   store: inject(),
 
+  // Params
+  queryParams: ['f'],
+  f: null,
+
   // Properties
   items: null,
   page: 1,
   pages: reads('model.items.meta.total_pages'),
+
+  // Filters
+  filters: null,
+
+  // Flags
   canLoadMore: computed('page', 'pages', function () {
     return get(this, 'page') < get(this, 'pages');
   }),
+
+  // Init
+  init: function () {
+    this._super();
+
+    const filters = [{
+      name: 'Візії розвитку громадянського суспільства',
+      lira: 133129,
+    }, {
+      name: 'Соціальне підприємництво',
+      lira: 38405,
+    }, {
+      name: 'Соціальні послуги стратегії',
+      lira: 133132,
+    }, {
+      name: 'Управління організаціями',
+      lira: 133134,
+    }, {
+      name: 'Ефективні комунікації',
+      lira: 133136,
+    }];
+
+    set(this, 'filters', filters);
+  },
 
   // Actions
   actions: {
@@ -27,8 +60,12 @@ export default Controller.extend({
       const store = get(this, 'store');
       let page = get(this, 'page');
       let pages = get(this, 'pages');
+      let lira = getLira('stories');
+      let filter = get(this, 'f');
 
-      debugger;
+      if (filter) {
+        lira = lira + ',' + filter;
+      }
 
       if (page <= pages) {
         page = page + 1;
@@ -36,7 +73,7 @@ export default Controller.extend({
         store.query('post', {
           page: page,
           per_page: 4,
-          lira: getLira('stories')
+          lira: lira
         }).then((newItems) => {
           let items = A();
           const oldItems = get(this, 'items');

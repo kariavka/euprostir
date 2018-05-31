@@ -10,7 +10,6 @@ const Router = EmberRouter.extend(RouterScroll, {
 Router.map(function () {
   this.route('stories', function () {
     this.route('item', {path: '/:id'});
-    this.route('filter', {path: '/f/:id'});
   });
   this.route('practices', function () {
     this.route('item', {path: '/:id'});
