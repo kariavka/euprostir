@@ -18,7 +18,11 @@
             <ul class="dropdownvisible">
               <li><a href="#">Темою</a></li>
               <li><a href="#">Візії розвитку громадянського суспільства</a></li>
-              <li><a href="#">Соціальне підприємництво</a></li>
+              <li>
+                {{#link-to "stories.filter" 38405}}
+                  Соціальне підприємництво
+                {{/link-to}}
+              </li>
               <li><a href="#">Соціальні послуги стратегії</a></li>
               <li><a href="#">Управління організаціями</a></li>
               <li><a href="#">Ефективні комунікації</a></li>
@@ -28,19 +32,18 @@
 
         <div class="block1-stories-list"></div>
 
-        {{#each model.items as |item|}}
-          <div class="block-stories-list">
-            <div class="pull-left img-box-stories" style="{{item.imageStyle}}"></div>
-            <div class="media-body box-stories-list">
-              <div class="title-box-stories-list"><a href="">{{item.title}}</a></div>
-              <div class="about-box-stories-list">{{item.summary}}</div>
-            </div>
-          </div>
+        {{#each items as |item|}}
+          {{story/story-list-item item=item}}
         {{/each}}
 
-        <div class="text-center">
-          <a class="btn btn-more btn-stories">відкрити більше</a>
-        </div>
+        {{#if canLoadMore}}
+          <div class="text-center">
+            <div {{action "loadMore"}}
+              class="btn btn-more btn-stories">
+              відкрити більше
+            </div>
+          </div>
+        {{/if}}
 
       </div>
 
@@ -51,12 +54,7 @@
           <div class="box1-popular"></div>
 
           {{#each model.popular as |item|}}
-            <div class="box-popular">
-              <div class="pull-left img-box-popular" style="{{item.imageStyle}}"></div>
-              <div class="media-body">
-                <div class="title-box-popular">{{item.title}}</div>
-              </div>
-            </div>
+            {{story/story-popular-list-item item=item}}
           {{/each}}
 
         </div>

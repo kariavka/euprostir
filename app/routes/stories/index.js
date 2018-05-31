@@ -30,4 +30,9 @@ export default Route.extend({
       }),
     });
   },
+
+  setupController: function (controller, model) {
+    controller.set('model', model);
+    controller.set('items', model.items);
+  },
 });
