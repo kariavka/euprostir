@@ -1,14 +1,19 @@
 import Component from '@ember/component';
 import {inject} from '@ember/service';
-import {get, set} from '@ember/object';
+import {get, set, computed} from '@ember/object';
 import $ from 'jquery';
 
 export default Component.extend({
   // Services
   media: inject(),
+  router: inject(),
 
   // Properties
   isFixedMenu: false,
+  isStoryItem: computed('router.currentRouteName', function () {
+    const currentRoute = get(this, 'router.currentRouteName');
+    return (currentRoute === 'stories.item');
+  }),
 
   // Hooks
   didRender() {

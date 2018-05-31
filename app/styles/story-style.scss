@@ -1,0 +1,277 @@
+@font-face {
+  font-family: 'UbuntuItalic';
+  src: url('/fonts/UbuntuItalic.eot');
+  src: url('/fonts/UbuntuItalic.eot') format('embedded-opentype'),
+  url('/fonts/UbuntuItalic.woff2') format('woff2'),
+  url('/fonts/UbuntuItalic.woff') format('woff'),
+  url('/fonts/UbuntuItalic.ttf') format('truetype'),
+  url('/fonts/UbuntuItalic.svg#UbuntuItalic') format('svg');
+}
+
+.story-top {
+  background-image: url(/images/banner-story.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  background-size: cover;
+  margin-top: -190px;
+  padding-top: 0;
+  box-shadow: inset 0 0 0 2000px rgba(40, 29, 74, 0.7);
+
+  .story-title {
+    margin-top: 80px;
+  }
+}
+
+.story-top .top_menu li a {
+  font: 16px UbuntuRegular, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.story-top .top_menu li a:hover, .story-top .top_menu li a:focus {
+  color: #fff;
+  background-image: none;
+  background-color: #542E91;
+  background-repeat: repeat;
+}
+
+.title-story {
+  font-size: 64px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.1;
+  margin-top: 160px;
+}
+
+.cat-story {
+  background-image: url(/images/bg-category-story.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 23px;
+  margin: 0 auto;
+  width: 106px;
+  font: 12px UbuntuMedium, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 3px;
+  margin-top: 50px;
+}
+
+.summary-story-page {
+  font: 29px EBGaramondItalic, sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+  line-height: 1;
+}
+
+.story {
+  position: relative;
+  padding: 95px 0 0;
+}
+
+.time-story {
+  font-size: 14px;
+  color: #888796;
+  text-align: center;
+  margin: 10px 0 0 60px;
+}
+
+.time-story img {
+  margin-right: 15px;
+}
+
+.title2-story {
+  font: 30px UbuntuBold, sans-serif;
+  color: #3b4256;
+  text-transform: uppercase;
+}
+
+.block-right-story {
+  margin-left: -30px;
+}
+
+.text-story {
+  font-size: 17px;
+  color: #3b4256;
+  margin-top: 34px;
+  margin-bottom: 0;
+}
+
+.text-story span {
+  text-decoration: underline;
+}
+
+.title2-story-mar {
+  margin-top: 40px;
+}
+
+.block-photo1 {
+  margin-top: 75px;
+}
+
+.photo-story {
+  text-align: right;
+}
+
+.name-photo {
+  font: 14px UbuntuBold, sans-serif;
+  color: #3b4256;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.about-photo {
+  font-size: 14px;
+  color: #79788b;
+  margin-top: 15px;
+}
+
+.summary-photo {
+  font: 31px EBGaramondItalic, sans-serif;
+  color: #3b4256;
+  padding-left: 31px;
+  border-left: 1px solid #BAAFD6;
+  line-height: 1.3;
+  padding-right: 50px;
+}
+
+.img1-story {
+  margin: 80px 0;
+}
+
+.list-story {
+  padding: 0;
+}
+
+.list-story li {
+  font-size: 17px;
+  color: #3b4256;
+  margin-top: 0;
+  margin-bottom: 16px;
+  position: relative;
+  list-style-type: none;
+}
+
+.list-story li::before {
+  content: "";
+  background-image: url(/images/check-list-story.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 12px;
+  width: 13px;
+  position: absolute;
+  left: -50px;
+  top: 7px;
+}
+
+.title-img2-story {
+  font-size: 13px;
+  color: #888796;
+  position: relative;
+  top: -17px;
+}
+
+.summary-img2-story {
+  font: 13px UbuntuItalic, sans-serif;
+  color: #888796;
+  max-width: 410px;
+  margin-left: 45px;
+  display: inline-block;
+}
+
+.img2-story {
+  margin: 50px 0 15px;
+}
+
+.block_video-story {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 65px 0 15px;
+}
+
+.big_video_shadow-story {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  transition: all 0.5s ease-out;
+
+}
+
+.block_video-story:hover .big_video_shadow-story {
+  opacity: 0.7;
+}
+
+.name_category-story {
+  font: 36px UbuntuMedium, sans-serif;
+  color: #3b4256;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+
+.others-story {
+  padding: 80px 0;
+}
+
+.block-share {
+  position: absolute;
+  left: 30px;
+  top: 85px;
+  width: 48px;
+  text-align: center;
+}
+
+.block-share span {
+  display: block;
+  font: 10px UbuntuRegular, sans-serif;
+  color: #542e91;
+  margin-top: 3px;
+
+}
+
+.box-f-share {
+  width: 48px;
+}
+
+.box-f-share a {
+  width: 48px;
+  height: 48px;
+  display: block;
+  border-radius: 150px;
+
+  padding-top: 12px;
+}
+
+.box-f-share a:hover {
+  background-color: #F7F6FA;
+}
+
+.box-tw-share {
+  width: 48px;
+}
+
+.box-tw-share a {
+  width: 48px;
+  height: 48px;
+  display: block;
+  border-radius: 150px;
+
+  padding-top: 12px;
+  margin-top: 20px;
+}
+
+.box-tw-share a:hover {
+  background-color: #F7F6FA;
+}
+
+.disp_b_768 {
+  display: none;
+}

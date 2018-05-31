@@ -156,6 +156,22 @@ a:focus, a:hover {
   }
 }
 
+.sect-menu-inverted {
+  .top-menu {
+    ul {
+      li {
+        a {
+          color: #fff !important;
+        }
+        a:hover, a:focus {
+          color: #542e91 !important;
+        }
+      }
+    }
+
+  }
+}
+
 .menu-fixed {
   position: fixed !important;
   left: 0;
