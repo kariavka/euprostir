@@ -117,7 +117,11 @@ a:focus, a:hover {
   padding: 40px 0;
 
   .logotip {
+    background-image: url(/images/logotip.png);
     max-width: 183px;
+    max-height: 66px;
+    width: 183px;
+    height: 66px;
   }
 
   .top-menu {
@@ -157,6 +161,10 @@ a:focus, a:hover {
 }
 
 .sect-menu-inverted {
+  .logotip {
+    background-image: url(/images/logotip-white.png) !important;
+  }
+
   .top-menu {
     ul {
       li {
@@ -168,7 +176,6 @@ a:focus, a:hover {
         }
       }
     }
-
   }
 }
 
@@ -183,6 +190,23 @@ a:focus, a:hover {
   background: #fff;
   overflow: hidden;
   opacity: 0.95;
+
+  .logotip {
+    background-image: url(/images/logotip.png) !important;
+  }
+
+  .top-menu {
+    ul {
+      li {
+        a {
+          color: #3b4256 !important;
+        }
+        a:hover, a:focus {
+          color: #542e91 !important;
+        }
+      }
+    }
+  }
 }
 
 .menu-fixed:hover {
@@ -479,6 +503,10 @@ a:focus, a:hover {
       .slick-slide {
         display: block;
         padding: 20px 15px;
+
+        a:hover {
+          text-decoration: none;
+        }
       }
 
     }

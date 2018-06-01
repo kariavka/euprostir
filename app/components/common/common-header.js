@@ -24,13 +24,17 @@ export default Component.extend({
 
     $(window).scroll(function () {
       const isFixedMenu = get(this, 'isFixedMenu');
+      const isStoryItem = get(this, 'isStoryItem');
       const scroll = $(window).scrollTop();
       const sectMenu = $('.sect-menu');
 
       if (media.isMobile) return;
 
       if (scroll < hideStart) {
+        // if (isStoryItem) sectMenu.addClass('sect-menu-inverted');
+
         sectMenu.removeClass('menu-fixed');
+        // sectMenu.removeClass('sect-menu-inverted');
         sectMenu.show();
         set(this, 'isFixedMenu', false);
       } else if (scroll >= showStart) {
