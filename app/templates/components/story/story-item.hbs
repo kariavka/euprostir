@@ -1,11 +1,11 @@
-<section class="story-top" style="{{item.imageStyle}}">
+<section class="story-header" style="{{item.imageStyle}}">
 
-  <div class="container story-title">
+  <div class="container story-title-container">
     <div class="row">
       <div class="col-md-10 offset-md-1">
-        <div class="title-story text-center">{{item.title}}</div>
-        <div class="cat-story">історії</div>
-        <div class="time-story disp_b_768">
+        <div class="story-title text-center">{{item.title}}</div>
+        <div class="story-category">історії</div>
+        <div class="story-time disp_b_768">
           <i class="fa fa-clock-o"></i> {{moment-format item.created "DD.MM.YYYY"}}
         </div>
       </div>
@@ -15,22 +15,22 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="summary-story-page">{{item.summary}}</div>
+        <div class="story-summary">{{item.summary}}</div>
       </div>
     </div>
   </div>
 
 </section>
 
-<section class="story">
+<section class="story-body">
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-sm-3">
-        <div class="time-story disp_n_768">
+        <div class="story-time disp_n_768">
           <i class="fa fa-clock-o"></i> {{moment-format item.created "DD.MM.YYYY"}}
         </div>
       </div>
-      <div class="col-md-7 col-sm-9 block-right-story">
+      <div class="col-md-7 col-sm-9 story-description">
         {{{item.description}}}
       </div>
     </div>
