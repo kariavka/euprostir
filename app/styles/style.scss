@@ -54,13 +54,13 @@ a:focus, a:hover {
   }
 
   .btn_wetipp {
-    box-shadow: 0 3px 8px rgba(15, 15, 16, 0.12);
+    story-shadow: 0 3px 8px rgba(15, 15, 16, 0.12);
     float: right;
     margin-right: 0;
   }
 
   .btn_wetipp:hover {
-    box-shadow: none;
+    story-shadow: none;
     float: right;
   }
 }
@@ -117,7 +117,11 @@ a:focus, a:hover {
   padding: 40px 0;
 
   .logotip {
+    background-image: url(/images/logotip.png);
     max-width: 183px;
+    max-height: 66px;
+    width: 183px;
+    height: 66px;
   }
 
   .top-menu {
@@ -156,6 +160,25 @@ a:focus, a:hover {
   }
 }
 
+.sect-menu-inverted {
+  .logotip {
+    background-image: url(/images/logotip-white.png) !important;
+  }
+
+  .top-menu {
+    ul {
+      li {
+        a {
+          color: #fff !important;
+        }
+        a:hover, a:focus {
+          color: #542e91 !important;
+        }
+      }
+    }
+  }
+}
+
 .menu-fixed {
   position: fixed !important;
   left: 0;
@@ -167,6 +190,23 @@ a:focus, a:hover {
   background: #fff;
   overflow: hidden;
   opacity: 0.95;
+
+  .logotip {
+    background-image: url(/images/logotip.png) !important;
+  }
+
+  .top-menu {
+    ul {
+      li {
+        a {
+          color: #3b4256 !important;
+        }
+        a:hover, a:focus {
+          color: #542e91 !important;
+        }
+      }
+    }
+  }
 }
 
 .menu-fixed:hover {
@@ -238,7 +278,7 @@ a:focus, a:hover {
   text-align: center;
   border-bottom: 1px solid #BAAFD6;
 
-  .text-category {
+  .category-text {
     width: 100%;
     max-width: 332px;
     margin: 0 auto;
@@ -294,7 +334,7 @@ a:focus, a:hover {
 .btn-more:hover,
 .btn-more:focus,
 .btn-more:active {
-  box-shadow: none;
+  story-shadow: none;
   outline: none !important;
   background-color: #01B1BC;
   border: 1px solid #01B1BC;
@@ -319,7 +359,7 @@ a:focus, a:hover {
   .cont2-sect-stories {
     margin-top: 42px;
 
-    .box-shadow {
+    .story-shadow {
       position: absolute;
       left: 0;
       right: 0;
@@ -331,7 +371,7 @@ a:focus, a:hover {
       background-position: top center;
     }
 
-    .summary-story p {
+    .story-summary p {
       font: 16px UbuntuRegular, sans-serif;
       color: #686879;
       height: 73px;
@@ -371,50 +411,17 @@ a:focus, a:hover {
       width: 14px;
     }
 
-    .box-story-cat {
+    .story-category {
       position: absolute;
       right: -7px;
       top: 12px;
     }
 
-    .box-story-cat div {
+    .story-category div {
       display: inline-block;
     }
 
     .slick-slider {
-      .block-story {
-        width: 100%;
-        height: 388px;
-        box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
-      }
-
-      .top-story {
-        height: 265px;
-        position: relative;
-      }
-
-      .img-story {
-        height: 265px;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .title-story {
-        position: absolute;
-        bottom: 24px;
-        left: 22px;
-        font: 26px UbuntuRegular, sans-serif;
-        color: #ffffff;
-        margin-bottom: 0;
-      }
-
-      .summary-story {
-        width: 100%;
-        padding: 20px;
-        overflow: hidden;
-      }
-
       .slides {
         padding: 0;
       }
@@ -463,6 +470,10 @@ a:focus, a:hover {
       .slick-slide {
         display: block;
         padding: 20px 15px;
+
+        a:hover {
+          text-decoration: none;
+        }
       }
 
     }
@@ -509,7 +520,7 @@ a:focus, a:hover {
     a:hover {
       .about-practice {
         background-color: #614099;
-        box-shadow: none;
+        story-shadow: none;
       }
 
       .title-practice {
@@ -536,7 +547,7 @@ a:focus, a:hover {
     .about-practice {
       height: 205px;
       padding: 20px 25px;
-      box-shadow: 0 3px 13px rgba(0, 0, 0, 0.15);
+      story-shadow: 0 3px 13px rgba(0, 0, 0, 0.15);
 
       .title-practice {
         font: 19px UbuntuRegular, sans-serif;
@@ -708,7 +719,7 @@ a:focus, a:hover {
 
       .text-video-big {
         padding: 26px 15px 0 21px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+        story-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
         height: 390px;
 
         .title-video-big {
@@ -1098,7 +1109,7 @@ footer {
     width: 391px;
     height: 196px;
     background-color: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    story-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     padding: 32px 19px 0 24px;
     float: right;
   }

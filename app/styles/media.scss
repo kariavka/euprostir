@@ -102,7 +102,7 @@
     margin-right: 0;
   }
 
-  .text-category {
+  .category-text {
     max-width: 213px;
     top: 32px;
     padding-bottom: 10px;
@@ -133,7 +133,7 @@
     }
 
     .slick-slider {
-      .block-story {
+      .story-block {
         margin: 0 auto;
       }
 
@@ -141,14 +141,14 @@
         display: block;
         padding: 20px 0;
 
-        .title-story {
+        .story-title {
           bottom: 14px;
           font-size: 20px;
           margin-bottom: 0;
           line-height: 1.1em;
         }
 
-        .summary-story {
+        .story-summary {
           width: 100%;
           padding: 20px 20px;
 
@@ -339,7 +339,7 @@
       width: 391px;
       height: 196px;
       background-color: #fff;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      story-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
       padding: 32px 19px 0 24px;
       float: none;
       margin: 0 auto;
@@ -371,35 +371,35 @@
     }
 
     .container-fluid {
-    padding: 0 15px;
-  }
+      padding: 0 15px;
+    }
 
-  .box_mailing {
-    width: 100% !important;
-    height: 196px;
-    margin: 0 auto;
-  }
+    .box_mailing {
+      width: 100% !important;
+      height: 196px;
+      margin: 0 auto;
+    }
 
-  .t1_mailing {
-    font: 20px UbuntuRegular, sans-serif;
-  }
+    .t1_mailing {
+      font: 20px UbuntuRegular, sans-serif;
+    }
 
-  .t2_mailing {
-    font: 14px UbuntuRegular, sans-serif;
-    padding-right: 0;
-  }
+    .t2_mailing {
+      font: 14px UbuntuRegular, sans-serif;
+      padding-right: 0;
+    }
 
-  .ic_big_mail {
-    margin-right: 20px;
-  }
+    .ic_big_mail {
+      margin-right: 20px;
+    }
 
-  .box_mailing {
-    width: 330px;
-    height: 196px;
-    padding: 32px 13px 0 14px;
-    float: none;
-    margin: 0 auto;
-  }
+    .box_mailing {
+      width: 330px;
+      height: 196px;
+      padding: 32px 13px 0 14px;
+      float: none;
+      margin: 0 auto;
+    }
   }
 
   .under_footer {
@@ -418,7 +418,7 @@
     display: none !important;
   }
 
-  .box-story-cat {
+  .story-category {
     position: absolute;
     right: 4px;
     top: 12px;
@@ -479,7 +479,7 @@
   }
 
   .slick-slider {
-    .block-story {
+    .story-block {
       margin: 0 auto;
     }
 
@@ -487,14 +487,14 @@
       display: block;
       padding: 20px 0;
 
-      .title-story {
+      .story-title {
         bottom: 14px;
         font-size: 20px;
         margin-bottom: 0;
         line-height: 1.1em;
       }
 
-      .summary-story {
+      .story-summary {
         width: 100%;
         padding: 20px 20px;
 
@@ -608,27 +608,27 @@
   }
 
   .slick-slider {
-    .block-story {
+    .story-block {
       height: auto;
       width: 100%;
-      box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
-    }
+      story-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
 
-    .top-story {
-      height: auto;
-      max-height: 300px;
-      position: relative;
+      .story-top {
+        height: auto;
+        max-height: 300px;
+        position: relative;
 
-    }
+      }
 
-    .img-story {
-      height: 300px;
-    }
+      .story-image {
+        height: 300px;
+      }
 
-    .title-story {
-      bottom: 14px;
-      font-size: 24px !important;
-      margin-bottom: 0;
+      .story-title {
+        bottom: 14px;
+        font-size: 24px !important;
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -644,24 +644,24 @@
   }
 
   .slick-slider {
-    .block-story {
+    .story-block {
       height: auto;
       width: 100%;
-      box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
+      story-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
     }
 
-    .top-story {
+    .story-top {
       height: auto;
       max-height: 300px;
       position: relative;
 
     }
 
-    .img-story {
+    .story-image {
       height: 300px;
     }
 
-    .title-story {
+    .story-title {
       bottom: 14px;
       font-size: 26px !important;
       margin-bottom: 0;

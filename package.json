@@ -1,6 +1,6 @@
 {
   "name": "euprostir",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "private": true,
   "description": "Euprostir Website",
   "license": "LivaRava License",
@@ -37,6 +37,7 @@
     "ember-cli-moment-shim": "^3.5.0",
     "ember-cli-qunit": "^4.1.1",
     "ember-cli-reset-scroll": "0.0.1",
+    "ember-cli-routing-service": "^0.0.1",
     "ember-cli-sass": "^7.0.0",
     "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.0",
@@ -54,6 +55,7 @@
     "ember-router-scroll": "^0.7.0",
     "ember-screen": "^0.2.0",
     "ember-source": "~3.1.0",
+    "ember-truth-helpers": "^2.0.0",
     "eslint-plugin-ember": "^5.0.0",
     "loader.js": "^4.2.3",
     "moment": "^2.20.1"
