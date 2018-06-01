@@ -1,12 +1,24 @@
 {{story/story-item
   item=model.item}}
 
-<section>
-  <div class="container">
-    <div class="row mt-5">
-      <div class="col-12"><h3 class="text-big text-center text-uppercase">Ще публікації:</h3></div>
-      {{opportunity/opportunity-list
-        items=model.items}}
+<section class="story-footer sect-stories">
+  <div class="block-category-container text-center">
+    <div class="category-text">
+      <p class="category-name category-name-stories">Інші історії</p>
     </div>
   </div>
+
+  {{story/story-list-horizontal
+    items=model.items}}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{#link-to "stories.index" class="btn btn-more btn-stories"}}
+          відкрити більше
+        {{/link-to}}
+      </div>
+    </div>
+  </div>
+
 </section>

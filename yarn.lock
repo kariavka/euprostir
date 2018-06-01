@@ -2823,6 +2823,12 @@ ember-cli-reset-scroll@0.0.1:
   dependencies:
     ember-cli-babel "^5.0.0"
 
+ember-cli-routing-service@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/ember-cli-routing-service/-/ember-cli-routing-service-0.0.1.tgz#eb569446c0680e225100cb3bc00596a7e959ca84"
+  dependencies:
+    ember-cli-babel "^5.0.0"
+
 ember-cli-sass@^7.0.0:
   version "7.1.7"
   resolved "https://registry.yarnpkg.com/ember-cli-sass/-/ember-cli-sass-7.1.7.tgz#66899134788ec8d2406a45f5346d4db47a2aa012"
@@ -3299,6 +3305,12 @@ ember-source@~3.1.0:
     inflection "^1.12.0"
     jquery "^3.3.1"
     resolve "^1.5.0"
+
+ember-truth-helpers@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ember-truth-helpers/-/ember-truth-helpers-2.0.0.tgz#f3e2eef667859197f1328bb4f83b0b35b661c1ac"
+  dependencies:
+    ember-cli-babel "^6.8.2"
 
 ember-try-config@^2.2.0:
   version "2.2.0"

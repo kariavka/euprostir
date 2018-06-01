@@ -50,12 +50,12 @@
     </div>
   </section>
 {{else}}
-  <section class="sect-menu sect-menu-desktop">
+  <section class="sect-menu sect-menu-desktop {{if isStoryItem 'sect-menu-inverted' ''}}">
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-sm-3">
           {{#link-to "index"}}
-            <img class="logotip" src="/images/logo_mob.png" alt="">
+            <div class="logotip" alt=""></div>
           {{/link-to}}
         </div>
         <div class="col-md-9 col-sm-9 pos_rel">

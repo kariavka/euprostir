@@ -26,9 +26,8 @@
 
         <div class="block1-stories-list"></div>
 
-        {{#each items as |item|}}
-          {{story/story-list-item item=item}}
-        {{/each}}
+        {{story/story-list-vertical
+          items=items}}
 
         {{#if canLoadMore}}
           <div class="text-center">
@@ -47,9 +46,8 @@
 
           <div class="box1-popular"></div>
 
-          {{#each model.popular as |item|}}
-            {{story/story-popular-list-item item=item}}
-          {{/each}}
+          {{story/story-list-popular
+            items=model.popular}}
 
         </div>
       </div>
