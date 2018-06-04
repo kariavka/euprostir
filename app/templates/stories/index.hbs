@@ -17,6 +17,7 @@
           <div class="dropcontainer">
             <ul class="dropdownvisible">
               <li><a href="#">Темою</a></li>
+              <li>{{#link-to "stories.index" (query-params f=null)}}Всі{{/link-to}}</li>
               {{#each filters as |filter|}}
                 <li>{{#link-to "stories.index" (query-params f=filter.lira)}}{{filter.name}}{{/link-to}}</li>
               {{/each}}
