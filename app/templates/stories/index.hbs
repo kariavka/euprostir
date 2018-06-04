@@ -27,16 +27,20 @@
 
         <div class="block1-stories-list"></div>
 
-        {{story/story-list-vertical
-          items=items}}
+        {{#if items}}
+          {{story/story-list-vertical
+            items=items}}
 
-        {{#if canLoadMore}}
-          <div class="text-center">
-            <div {{action "loadMore"}}
-              class="btn btn-more btn-stories">
-              відкрити більше
+          {{#if canLoadMore}}
+            <div class="text-center">
+              <div {{action "loadMore"}}
+                class="btn btn-more btn-stories">
+                відкрити більше
+              </div>
             </div>
-          </div>
+          {{/if}}
+        {{else}}
+          <div>Ничего не найдено.</div>
         {{/if}}
 
       </div>
