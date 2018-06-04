@@ -5,7 +5,7 @@
     padding-bottom: 20px;
   }
 
-  .title-practice-page {
+  .practice-title {
     font: 30px UbuntuRegular, sans-serif;
     margin-top: 25px;
   }
@@ -16,7 +16,7 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .time-practice::before {
+  .practice-time::before {
     display: none;
   }
 }

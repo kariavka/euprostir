@@ -1,16 +1,16 @@
-.title-practice-page {
+.practice-title {
   font: 42px UbuntuRegular, sans-serif;
   color: #3b4256;
   margin-top: 35px;
   margin-bottom: 0;
 }
 
-.practice {
+.practice-body {
   position: relative;
   padding-bottom: 120px;
 }
 
-.cat-practice {
+.practice-category {
   background-image: url(/images/bg-category-practice.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -38,11 +38,11 @@
   z-index: 101;
 }
 
-.time-practice {
+.practice-time {
   position: relative;
 }
 
-.time-practice::before {
+.practice-time::before {
   content: "";
   height: 1px;
   width: 510px;

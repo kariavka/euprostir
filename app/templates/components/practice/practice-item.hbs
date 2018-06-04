@@ -1,25 +1,25 @@
-<section class="practice-top">
+<section class="practice-header">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
         <img src="{{item.image_url}}" alt="" class="img-fluid" style="width: 100%; height: auto;">
-        <div class="title-practice-page">{{item.title}}</div>
-        <div class="cat-practice">практики</div>
+        <div class="practice-title">{{item.title}}</div>
+        <div class="practice-category">практики</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="practice">
+<section class="practice-body">
   <div class="container cont2-practice">
     <div class="row">
       <div class="col-md-4 col-sm-3">
-        <div class="time-story time-practice disp_n_768">
-          <img class="icon-time" src="images/icon-time.png" alt=""> 23.04.2018
+        <div class="practice-time disp_n_768">
+          <i class="fa fa-clock-o"></i> {{moment-format item.created "DD.MM.YYYY"}}
         </div>
       </div>
       <div class="col-md-7 col-sm-9">
-        <div class="block-right-story">
+        <div class="block-practice-right">
           {{{item.description}}}
         </div>
       </div>
@@ -29,11 +29,11 @@
     <div class=""
          style="background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); background-blend-mode: normal; border: 0px none rgb(51, 51, 51); border-radius: 0px; border-collapse: separate; box-shadow: none; outline: rgb(51, 51, 51) none 0px; outline-offset: 0px; overflow-anchor: auto; overflow-wrap: normal; overflow: visible; padding: 0px; box-sizing: border-box; width: 48px;">
       <div class="box-f-share">
-        <a href="f-share"><img src="images/f-share.png" alt=""></a>
+        <a href="f-share"><img src="/images/f-share.png" alt=""></a>
         <span>241</span>
       </div>
       <div class="box-tw-share">
-        <a href="tw-share"><img src="images/tw-share.png" alt=""></a>
+        <a href="tw-share"><img src="/images/tw-share.png" alt=""></a>
         <span>0</span>
       </div>
     </div>
