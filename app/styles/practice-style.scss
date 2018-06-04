@@ -1,0 +1,57 @@
+.title-practice-page {
+  font: 42px UbuntuRegular, sans-serif;
+  color: #3b4256;
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+
+.practice {
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.cat-practice {
+  background-image: url(/images/bg-category-practice.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 23px;
+  width: 130px;
+  margin: 38px auto 0;
+  font: 12px UbuntuMedium, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.cont2-practice {
+  margin-top: 90px;
+}
+
+.sticky {
+  position: fixed;
+  z-index: 101;
+}
+
+.stop {
+  position: relative;
+  z-index: 101;
+}
+
+.time-practice {
+  position: relative;
+}
+
+.time-practice::before {
+  content: "";
+  height: 1px;
+  width: 510px;
+  background-color: #BAAFD6;
+  position: absolute;
+  left: -570px;
+  top: 9px;
+}
+
+#block-share-practice {
+  top: 75px;
+}
