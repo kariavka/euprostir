@@ -15,9 +15,7 @@ export default Route.extend({
 
   // Params
   queryParams: {
-    f: {
-      refreshModel: true,
-    }
+    f: {refreshModel: true}
   },
 
   // Model
@@ -46,6 +44,7 @@ export default Route.extend({
   },
 
   setupController: function (controller, model) {
+    controller.set('showDropdown', false);
     controller.set('model', model);
     controller.set('items', model.items);
   },
