@@ -1,4 +1,12 @@
-{{#each items as |item|}}
-  {{opportunity/opportunity-list-popular-item
-    item=item}}
-{{/each}}
+{{#if items}}
+
+  {{#each items as |item|}}
+    {{opportunity/opportunity-list-popular-item
+      item=item}}
+  {{/each}}
+
+{{else}}
+
+  Нічого не знайдено
+
+{{/if}}

@@ -1,5 +1,13 @@
-{{#each items as |item index|}}
-  {{opportunity/opportunity-list-vertical-item
-    item=item
-    class="row d-flex align-items-stretch"}}
-{{/each}}
+{{#if items}}
+
+  {{#each items as |item index|}}
+    {{opportunity/opportunity-list-vertical-item
+      item=item
+      class="row d-flex align-items-stretch"}}
+  {{/each}}
+
+{{else}}
+
+  Нічого не знайдено.
+
+{{/if}}
