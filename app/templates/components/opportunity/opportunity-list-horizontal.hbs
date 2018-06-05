@@ -1,0 +1,17 @@
+<div class="row">
+
+  {{#if items}}
+
+    {{#each items as |item|}}
+      {{opportunity/opportunity-list-item
+        class="col-md-3 col-sm-3"
+        item=item}}
+    {{/each}}
+
+  {{else}}
+
+    Нічого не знайдено.
+
+  {{/if}}
+
+</div>
