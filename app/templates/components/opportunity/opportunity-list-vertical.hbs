@@ -1,1 +1,5 @@
-{{yield}}
+{{#each items as |item index|}}
+  {{opportunity/opportunity-list-vertical-item
+    item=item
+    class="row d-flex align-items-stretch"}}
+{{/each}}
