@@ -22,7 +22,7 @@ export default Route.extend({
   model(params) {
     const store = get(this, 'store');
     let lira = getLira('properties');
-    let liraliraWithFilter = getLira('properties');
+    let liraWithFilter;
     let filter = params.f;
 
     if (filter) {
@@ -33,7 +33,7 @@ export default Route.extend({
       items: store.query('post', {
         page: 1,
         per_page: 4,
-        lira: lira
+        lira: liraWithFilter
       }),
       popular: store.query('post', {
         page: 1,
