@@ -1,1 +1,57 @@
-{{outlet}}
+<section class="sect-stories-list">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="name-stories-list">Можливості</p>
+      </div>
+    </div>
+  </div>
+  <div class="container cont2-sect-stories-list">
+    <div class="row">
+
+      <div class="col-md-9 col-sm-9">
+        <span class="t_cat">Перегляд за:</span>
+        <span class="trigger {{if showDropdown 'activetrigger'}}" {{action 'toggleDropdown'}}>Темою</span>
+
+        {{#if showDropdown}}
+          <div class="dropcontainer">
+            <ul class="dropdownvisible">
+              <li><a href="#">Темою</a></li>
+              <li>{{#link-to "opportunities.index" (query-params f=null)}}Всі{{/link-to}}</li>
+              {{#each filters as |filter|}}
+                <li>{{#link-to "opportunities.index" (query-params f=filter.lira)}}{{filter.name}}{{/link-to}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/if}}
+
+        <div class="block1-stories-list"></div>
+
+        {{opportunity/opportunity-list-vertical
+          items=items}}
+
+        {{#if canLoadMore}}
+          <div class="text-center">
+            <div {{action "loadMore"}}
+              class="btn btn-more btn-stories">
+              відкрити більше
+            </div>
+          </div>
+        {{/if}}
+
+      </div>
+
+      <div class="col-md-3 col-sm-3">
+        <div class="block-popular">
+          <div class="t-popular">популярне</div>
+
+          <div class="box1-popular"></div>
+
+          {{opportunity/opportunity-list-popular
+            items=model.popular}}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
