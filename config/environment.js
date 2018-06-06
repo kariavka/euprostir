@@ -54,6 +54,10 @@ module.exports = function (environment) {
     'ember-cli-head': {
       suppressBrowserRender: true
     },
+
+    moment: {
+      includeLocales: true
+    },
   };
 
   if (environment === 'local') {

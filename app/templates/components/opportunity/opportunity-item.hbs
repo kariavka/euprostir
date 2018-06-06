@@ -1,40 +1,78 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-12 px-0">
-      <img src="{{item.image_url}}" alt="" class="img-fluid" style="width: 100%; height: auto;">
-      <div class="position-absolute"
-           style="top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
-        <div class="container d-flex" style="height: 100%; color: #eeeeee;">
-          <div class="m-auto">
-            <h1 class="text-center post-h1 mb-lg-5 mb-1"
-                style="font-size: 2.5em; font-weight: normal;">{{item.title}}</h1>
-            <div class="text-center" style="font-size: 80%;">
-              <span>Європейський простір</span>
-              <span><i class="fa fa-clock-0"></i> {{moment-format item.created "DD-MM-YYYY"}}</span>
-              <span><i class="fa fa-eye"></i> {{item.views}}</span>
-              <span><i class="fa fa-comment-o"></i> {{item.comments}}</span>
+<section class="opportunity">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-3 col-sm-3 col-12 pos_rel">
+        <div class="row">
+          <div class="col-12 text-right">
+            <img class="opportunity-icon" src="/images/icon-opportunity.png" alt="">
+          </div>
+        </div>
+        <div class="row opportunity-date">
+          <div class="col-sm-6 col-6 opportunity-actual">
+            Актуально до:
+          </div>
+          <div class="col-sm-6 col-6">
+            <div class="opportunity-day">
+              {{moment-format item.created "DD"}}
+            </div>
+            <div class="opportunity-year">
+              {{moment-format item.created "MMM"}}
+              {{moment-format item.created "YYYY"}}
             </div>
           </div>
-
         </div>
+      </div>
 
+      <div class="col-md-6 offset-md-1 col-sm-9 offset-sm-1 col-xs-12">
+        <div class="opportunity-category">Можливості</div>
+        <div class="opportunity-title">{{item.title}}</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container cont2-opportunity">
+
+    <div class="row">
+
+      <div class="col-md-3 col-sm-3">
+        <div class="block-opportunity">
+          <div class="organizers">Організатори</div>
+          <ul class="list-organizers">
+            <li>Проект ЄС для розвитку громадянського суспільства в Україні</li>
+            <li>Представництво ЄС в Україні</li>
+            <li>Міністерство закордонних справ України</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-7 offset-md-1 col-sm-9">
+        <img src="{{item.image_url}}" class="img-fluid" alt="Заглавна картинка">
+        <div class="opportunity-description">
+          {{{item.description}}}
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="block-share" id="block-share-opportunity" style="height: 144px; padding: 0px; border: 0px;">
+    <div class=""
+         style="background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); background-blend-mode: normal; border: 0px none rgb(51, 51, 51); border-radius: 0px; border-collapse: separate; box-shadow: none; outline: rgb(51, 51, 51) none 0px; outline-offset: 0px; overflow-anchor: auto; overflow-wrap: normal; overflow: visible; padding: 0px; box-sizing: border-box; width: 48px;">
+      <div class="box-f-share">
+        <a href="f-share"><img src="/images/f-share.png" alt=""></a>
+        <span>241</span>
+      </div>
+      <div class="box-tw-share">
+        <a href="tw-share"><img src="/images/tw-share.png" alt=""></a>
+        <span>0</span>
       </div>
     </div>
   </div>
-</div>
 
-<div class="container">
-  <div class="row">
-    <!-- Latest Posts -->
-    <main class="post blog-post col-lg-12">
-      <div class="container">
-        <div class="row post-single">
-          <div class="post-body col-lg-10 offset-lg-1">
-            {{{item.description}}}
-          </div>
-        </div>
-      </div>
-    </main>
-    <!-- Sidebar was here -->
-  </div>
-</div>
+</section>
