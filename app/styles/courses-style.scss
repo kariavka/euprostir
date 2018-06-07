@@ -136,8 +136,13 @@
       height: 375px;
 
       .courses-list-tile-item-picture {
+        height: 135px;
         margin: 0 auto;
         display: block;
+        overflow: hidden;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
 
       .courses-list-tile-item-about {
