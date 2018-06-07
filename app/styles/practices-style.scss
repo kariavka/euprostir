@@ -1,0 +1,120 @@
+.practices-section {
+  padding: 55px 0;
+
+  .practices-section-header {
+    font: 38px UbuntuRegular, sans-serif;
+    color: #3b4256;
+  }
+
+  .practices-section-container2 {
+    margin-top: 25px;
+  }
+
+  .img-box-stories {
+    width: 331px;
+    height: 188px;
+    overflow: hidden;
+    margin-right: 27px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title-box-stories-list {
+    font: 18px UbuntuRegular, sans-serif;
+    color: #3b4256;
+    line-height: 1.3em;
+    height: 3.9em;
+    overflow: hidden;
+    margin-bottom: 14px;
+  }
+
+  .title-box-stories-list a {
+    font: 18px UbuntuRegular, sans-serif;
+    color: #3b4256;
+  }
+
+  .about-box-stories-list {
+    font: 16px UbuntuRegular, sans-serif;
+    color: #686879;
+    line-height: 1.4em;
+    height: 4.2em;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+
+  .box-stories-list {
+    padding-top: 24px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .block-stories-list {
+    margin-bottom: 34px;
+    clear: both;
+    display: table;
+  }
+
+  .block1-stories-list {
+    margin-top: 40px;
+  }
+
+  .sect-stories-list {
+    overflow-x: hidden;
+  }
+
+  .block-popular {
+    margin-top: 21px;
+    margin-left: 4px;
+
+    .t-popular {
+      font: 18px UbuntuBold, sans-serif;
+      color: #3b4256;
+      margin-top: 60px;
+      text-transform: uppercase;
+    }
+
+    .box-popular {
+      clear: both;
+      display: table;
+      margin-bottom: 20px;
+
+      .img-box-popular {
+        width: 73px;
+        height: 71px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .title-box-popular {
+        font: 14px UbuntuRegular, sans-serif;
+        color: #3b4256;
+        line-height: 1.3em;
+        height: 5.0em;
+        overflow: hidden;
+        padding-left: 12px;
+        margin-bottom: 0;
+      }
+    }
+
+    .box1-popular {
+      margin-top: 38px;
+    }
+  }
+
+  .block-popular::before {
+    background-color: #BAAFD6;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 700px;
+  }
+
+  .btn-stories {
+    max-width: 207px;
+    display: block;
+    margin: 80px auto 0;
+  }
+}

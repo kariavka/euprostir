@@ -1,5 +1,3 @@
-/***************  Begin Stories Styles ****************/
-
 .sect-stories-list {
   padding: 55px 0;
 
@@ -17,6 +15,7 @@
 
   .cont2-sect-stories-list {
     margin-top: 25px;
+    min-height: 400px;
   }
 
   .trigger {
@@ -243,70 +242,3 @@
     margin: 80px auto 0;
   }
 }
-
-@media only screen and (max-width: 768px) {
-  .sect-stories-list {
-    padding: 60px 0;
-
-    .t_cat {
-      display: block;
-    }
-
-    .trigger {
-      margin-left: 0;
-    }
-
-    .activetrigger {
-      margin-left: 0;
-    }
-
-    .dropcontainer ul {
-      margin-left: 0;
-      width: 100%;
-      max-width: 400px;
-    }
-
-    .block-stories-list {
-      display: block;
-      max-width: 360px;
-      margin: 0 auto;
-
-    }
-
-    .img-box-stories {
-      float: none !important;
-      margin: 0 auto;
-      display: block;
-    }
-
-    .box-stories-list {
-      padding: 10px 20px;
-    }
-
-    .about-box-stories-list {
-      font: 14px UbuntuRegular, sans-serif;
-    }
-
-    .block-stories-list {
-      margin-bottom: 20px;
-    }
-
-    .block1-stories-list {
-      margin-top: 40px;
-    }
-
-    .btn-stories {
-      margin-top: 53px;
-    }
-
-    .block-popular::before {
-      width: 100%;
-    }
-
-    .block-popular {
-      margin-top: 85px;
-    }
-  }
-}
-
-/***************  Begin Stories Styles ****************/

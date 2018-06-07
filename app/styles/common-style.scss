@@ -1,0 +1,129 @@
+.filter {
+  .filter-label {
+    font: 14px UbuntuBold, sans-serif;
+    color: #3b4256;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+
+  .filter-trigger {
+    font-family: UbuntuRegular, sans-serif;
+    color: #7c62ab;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 0;
+    padding-bottom: 4px;
+    font-size: 16px;
+    background: #fff url(/images/select-arrow-open.png) no-repeat 136px 16px;
+    display: inline-block;
+    border-bottom: 1px solid #BAAFD6;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    width: auto;
+    min-width: 150px;
+    margin-left: 19px;
+    cursor: pointer;
+  }
+
+  .filter-trigger:hover {
+    color: #7c62ab;
+    text-decoration: none;
+  }
+
+  .filter-trigger-active {
+    color: #fff !important;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 4px;
+    font-size: 16px;
+    background: #614099 url(/images/select-arrow-close.png) no-repeat 151px 16px !important;
+    display: inline-block;
+    border-bottom: 1px solid #614099;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    width: auto;
+    min-width: 180px;
+    margin-left: 4px;
+  }
+
+  a.filter-trigger-active {
+    background-color: #614099;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .filter-trigger-active:hover {
+    color: #fff;
+  }
+
+  .filter-trigger-active:active {
+    color: #fff;
+  }
+
+  .filter-dropdown-container {
+    font-size: 16px;
+    color: #777;
+    position: absolute;
+    margin-left: -17px;
+    z-index: 1000;
+
+    ul {
+      font-size: 16px;
+      border: 0;
+      border-top: none;
+      background: #614099;
+      color: #fff;
+      list-style-type: none;
+      padding: 20px 0;
+      z-index: 100;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 340px;
+      margin: -5px 0 0 126px;
+
+      li {
+        background-color: #614099;
+        color: #fff;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+
+        a {
+          color: #fff;
+          padding: 10px 25px;
+          text-decoration: none;
+          display: block;
+        }
+      }
+
+      li:hover {
+        background: #542E91;
+        outline: none;
+      }
+
+      li:first-child {
+        display: none;
+      }
+
+      li:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .filter-dropdown-visible {
+    height: auto;
+    background-color: #614099;
+  }
+}
+
+.pos-rel {
+  position: relative;
+}

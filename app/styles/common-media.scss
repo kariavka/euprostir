@@ -1,0 +1,21 @@
+@media only screen and (max-width: 768px) {
+  .filter {
+    .filter-label {
+      display: block;
+    }
+
+    .filter-trigger {
+      margin-left: 0;
+    }
+
+    .activetrigger {
+      margin-left: 0;
+    }
+
+    .filter-dropdown-container ul {
+      margin-left: 0;
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+}

@@ -11,7 +11,7 @@
     padding-top: 45px;
   }
 
-  .courses-list-popular, .courses-header2 {
+  .courses-list-popular, .courses-popular-header {
     display: none;
   }
 }
@@ -26,11 +26,11 @@
     height: 130px;
   }
 
-  .block-icon-courses {
+  .courses-list-tile-item-info {
     margin-top: 13px;
   }
 
-  .box-courses {
+  .courses-list-tile-item {
     padding: 15px;
     height: 375px;
     max-width: 300px;
