@@ -1,0 +1,50 @@
+@media only screen and (max-width: 992px) {
+}
+
+/* Extra small devices (mobile: phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .courses-category {
+    position: static;
+  }
+
+  .courses {
+    padding-top: 45px;
+  }
+
+  .courses-list-popular, .courses-header2 {
+    display: none;
+  }
+}
+
+/* Medium devices (tablet: landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (desktop: laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+  .courses-list-popular-item-picture {
+    height: 130px;
+  }
+
+  .block-icon-courses {
+    margin-top: 13px;
+  }
+
+  .box-courses {
+    padding: 15px;
+    height: 375px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .courses-list-popular-item-about {
+    padding: 14px 20px 0 20px;
+  }
+}
+
+/* Extra large devices (jumbo: large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1450px) {
+}
