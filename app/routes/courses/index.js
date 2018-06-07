@@ -21,17 +21,18 @@ export default Route.extend({
   model(params) {
     const store = get(this, 'store');
     let lira = getLira('courses');
+    let liraWithFilter = lira;
     let filter = params.f;
 
     if (filter) {
-      lira = lira + ',' + filter;
+      liraWithFilter = lira + ',' + filter;
     }
 
     return hash({
       items: store.query('post', {
         page: 1,
-        per_page: 12,
-        lira: lira
+        per_page: 8,
+        lira: liraWithFilter
       }),
       popular: store.query('post', {
         page: 1,

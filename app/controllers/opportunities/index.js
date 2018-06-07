@@ -62,10 +62,7 @@ export default Controller.extend({
       let pages = get(this, 'pages');
       let lira = getLira('opportunities');
       let filter = get(this, 'f');
-
-      if (filter) {
-        lira = lira + ',' + filter;
-      }
+      let liraWithFilter = (filter) ? lira + ',' + filter : lira;
 
       if (page <= pages) {
         page = page + 1;
@@ -73,7 +70,7 @@ export default Controller.extend({
         store.query('post', {
           page: page,
           per_page: 4,
-          lira: lira
+          lira: liraWithFilter
         }).then((newItems) => {
           let items = A();
           const oldItems = get(this, 'items');

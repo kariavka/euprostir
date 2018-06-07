@@ -51,16 +51,31 @@
       </div>
     </div>
 
-    {{course/course-list-tile
-      items=model.items}}
+    {{#if items}}
+      {{course/course-list-tile
+        items=items}}
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <a class="btn btn-more">відкрити більше</a>
+      {{#if canLoadMore}}
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div {{action "loadMore"}} class="btn btn-more">відкрити більше</div>
+            </div>
+          </div>
+        </div>
+      {{/if}}
+
+    {{else}}
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mt-4">
+            Нічого не знайдено.
+          </div>
         </div>
       </div>
-    </div>
+
+    {{/if}}
+
   </div>
 
 </section>

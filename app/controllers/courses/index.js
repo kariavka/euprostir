@@ -22,8 +22,10 @@ export default Controller.extend({
   filters: null,
 
   // Flags
-  canLoadMore: computed('page', 'pages', function () {
-    return get(this, 'page') < get(this, 'pages');
+  canLoadMore: computed('model.items.meta.total_results', 'items.length', function () {
+    const totalResults = get(this, 'model.items.meta.total_results');
+    const loadedResults = get(this, 'items.length');
+    return loadedResults < totalResults;
   }),
 
   // Init
@@ -62,18 +64,15 @@ export default Controller.extend({
       let pages = get(this, 'pages');
       let lira = getLira('courses');
       let filter = get(this, 'f');
-
-      if (filter) {
-        lira = lira + ',' + filter;
-      }
+      let liraWithFilter = (filter) ? lira + ',' + filter : lira;
 
       if (page <= pages) {
         page = page + 1;
         set(this, 'page', page);
         store.query('post', {
           page: page,
-          per_page: 4,
-          lira: lira
+          per_page: 8,
+          lira: liraWithFilter
         }).then((newItems) => {
           let items = A();
           const oldItems = get(this, 'items');

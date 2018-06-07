@@ -21,7 +21,7 @@ export default Route.extend({
   // Model
   model(params) {
     const store = get(this, 'store');
-    let lira = getLira('properties');
+    let lira = getLira('opportunities');
     let liraWithFilter;
     let filter = params.f;
 
