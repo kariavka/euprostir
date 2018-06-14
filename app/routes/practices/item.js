@@ -8,7 +8,6 @@ import getLira from 'euprostir/utils/get-lira';
 export default Route.extend({
   // Services
   store: inject(),
-  headData: inject(),
 
   // Title
   title: reads('model.item.title'),
@@ -16,8 +15,9 @@ export default Route.extend({
   // Model
   model(params) {
     const store = get(this, 'store');
+
     return hash({
-      item: store.findRecord('post', params.id)
+      item: store.findRecord('post', params.id, {reload: true})
         .then((item) => {
           set(this, 'title', item.title);
           return item;

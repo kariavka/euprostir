@@ -10,20 +10,13 @@
     <div class="row">
 
       <div class="col-md-9 col-sm-9">
-        <span class="t_cat">Перегляд за:</span>
-        <span class="trigger {{if showDropdown 'activetrigger'}}" {{action 'toggleDropdown'}}>Темою</span>
 
-        {{#if showDropdown}}
-          <div class="dropcontainer">
-            <ul class="dropdownvisible">
-              <li><a href="#">Темою</a></li>
-              <li>{{#link-to "opportunities.index" (query-params f=null)}}Всі{{/link-to}}</li>
-              {{#each filters as |filter|}}
-                <li>{{#link-to "opportunities.index" (query-params f=filter.lira)}}{{filter.name}}{{/link-to}}</li>
-              {{/each}}
-            </ul>
-          </div>
-        {{/if}}
+        {{common/common-filter
+          class="filter"
+          filters=filters
+          endpoint="opportunities.index"
+          showDropdown=showDropdown
+          currentFilter=f}}
 
         <div class="block1-stories-list"></div>
 
