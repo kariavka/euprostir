@@ -1,4 +1,5 @@
 import DS from 'ember-data';
+import {computed} from '@ember/object';
 import config from 'euprostir/config/environment';
 
 export default DS.JSONAPIAdapter.extend({
@@ -6,7 +7,7 @@ export default DS.JSONAPIAdapter.extend({
   namespace: 'api/v2',
 
   // Headers
-  headers: function () {
+  headers: computed('config', function () {
     return {'X-LivaRava-ApiKey': config.api.key};
-  }.property(),
+  }),
 });

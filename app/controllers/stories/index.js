@@ -52,10 +52,6 @@ export default Controller.extend({
 
   // Actions
   actions: {
-    toggleDropdown() {
-      this.toggleProperty('showDropdown');
-    },
-
     loadMore() {
       const store = get(this, 'store');
       let page = get(this, 'page');
