@@ -4,7 +4,8 @@ import $ from 'jquery';
 export default Component.extend({
   didRender() {
     this._super(...arguments);
-    $('.slick-slider').slick({
+
+    $('.slick-slider').not('.slick-initialized').slick({
       autoplay: true,
       autoplaySpeed: 2000,
       slidesToShow: 3,
