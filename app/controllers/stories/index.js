@@ -21,6 +21,19 @@ export default Controller.extend({
   // Filters
   filters: null,
 
+  // Computed
+  currentFilterLabel: computed('filters', 'f', function () {
+    const filters = get(this, 'filters');
+    const currentFilter = parseInt(get(this, 'f'));
+    let currentLabel;
+    for (let i = 0; i < filters.length; i++) {
+      if (filters[i].lira === currentFilter) {
+        currentLabel = filters[i].name;
+      }
+    }
+    return currentLabel;
+  }),
+
   // Flags
   canLoadMore: computed('page', 'pages', function () {
     return get(this, 'page') < get(this, 'pages');
@@ -52,10 +65,6 @@ export default Controller.extend({
 
   // Actions
   actions: {
-    toggleDropdown() {
-      this.toggleProperty('showDropdown');
-    },
-
     loadMore() {
       const store = get(this, 'store');
       let page = get(this, 'page');
