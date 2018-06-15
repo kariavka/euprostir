@@ -32,4 +32,9 @@ export default Route.extend({
       }),
     });
   },
+
+  // After Model
+  afterModel(model) {
+    set(this, 'title', get(model, 'title'));
+  },
 });

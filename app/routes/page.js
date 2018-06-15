@@ -30,23 +30,6 @@ export default Route.extend({
 
   // After Model
   afterModel(model) {
-    const url = config.site.url + get(this, 'router.url');
-    const description = get(model, 'summary');
-    set(this, 'headTags', [{
-      type: 'meta',
-      tagId: 'meta-description',
-      attrs: {
-        name: 'description',
-        content: description,
-      }
-    }, {
-      type: 'link',
-      tagId: 'canonical-link',
-      attrs: {
-        rel: 'canonical',
-        content: url
-      }
-    }]);
+    set(this, 'title', get(model, 'title'));
   },
-
 });

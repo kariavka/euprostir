@@ -1,50 +1,39 @@
-{{#if item.image_url}}
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 px-0">
-        <img src="{{item.image_url}}" alt="" class="img-fluid" style="width: 100%; height: auto;">
-        <div class="position-absolute"
-             style="top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
-          <div class="container d-flex" style="height: 100%;">
-            <h1 class="text-center m-auto post-h1" style="color: #eeeeee; font-size: 2.5em; font-weight: normal;">
-              {{item.title}}
-            </h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-{{else}}
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 px-0">
-        <h1 class="text-center mt-5">{{item.title}}</h1>
-      </div>
-    </div>
-  </div>
-{{/if}}
+<section class="static mb-3">
 
-<div class="container">
-  <div class="row">
-    <!-- Latest Posts -->
-    <main class="post blog-post col-lg-12">
-      <div class="container">
-        <div class="row post-single">
-          <div class="post-thumbnail col-lg-12 d-none">
-            <img src="{{item.image_url}}" alt="" class="img-fluid">
-          </div>
-          <div class="post-details">
-            <div class="post-meta d-flex justify-content-between">
-              <div class="category d-none"><a href="#">Business</a><a href="#">Financial</a></div>
-            </div>
-            <h1 class="text-center d-none">{{item.title}}</h1>
-            <div class="post-body col-lg-10 offset-lg-1">
-              {{{item.description}}}
-            </div>
-          </div>
+  <div class="container cont1-static pos_rel">
+    <div class="row">
+      <div class="col-md-11 col-sm-11 pos_rel">
+
+        <div class="static-title">
+          {{item.title}}
         </div>
+
       </div>
-    </main>
-    <!-- Sidebar was here -->
+    </div>
   </div>
-</div>
+
+  <div class="container cont2-static">
+    <div class="row">
+      <div class="col-md12 col-sm-12">
+
+        {{{item.description}}}
+
+      </div>
+    </div>
+  </div>
+
+  <div class="block-share" id="block-share-static">
+    <div class=""
+         style="background: none 0 0 / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); background-blend-mode: normal; border: 0 none rgb(51, 51, 51); border-radius: 0; border-collapse: separate; box-shadow: none; outline: rgb(51, 51, 51) none 0px; outline-offset: 0; overflow-anchor: auto; overflow-wrap: normal; overflow: visible; padding: 0; box-sizing: border-box; width: 48px;">
+      <div class="box-f-share">
+        <a href="f-share"><img src="/images/f-share.png" alt=""></a>
+        <span>241</span>
+      </div>
+      <div class="box-tw-share">
+        <a href="tw-share"><img src="/images/tw-share.png" alt=""></a>
+        <span>0</span>
+      </div>
+    </div>
+  </div>
+
+</section>

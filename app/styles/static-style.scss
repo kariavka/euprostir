@@ -1,0 +1,179 @@
+.sticky {
+  position: fixed;
+  z-index: 101;
+}
+
+.stop {
+  position: relative;
+  z-index: 101;
+}
+
+.static {
+  position: relative;
+  padding-top: 55px;
+  padding-bottom: 120px;
+
+  .static-title {
+    font: 38px UbuntuRegular, sans-serif;
+    color: #3b4256;
+    margin-top: 0;
+    min-height: 3em;
+  }
+
+  .cont2-static {
+    margin-top: 80px;
+  }
+
+  .team-photo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .box-team-static {
+    padding-top: 30px;
+    text-align: right;
+    border-bottom: 1px solid #BAAFD6;
+    padding-bottom: 20px;
+  }
+
+  .block-mail-team {
+    margin-top: 15px;
+  }
+
+  .block-mail-team a {
+    font: 14px UbuntuRegular, sans-serif;
+    color: #7c62ab;
+  }
+
+  .block-team-static {
+    position: relative;
+    margin-top: 20px;
+    padding-top: 30px;
+
+    .team-name {
+      font: 13px UbuntuBold, sans-serif;
+      color: #3b4256;
+      text-transform: uppercase
+    }
+
+    .team-about {
+      font: 14px UbuntuRegular, sans-serif;
+      color: #79788b;
+      margin-top: 10px;
+      width: 100px;
+      text-align: right;
+      float: right;
+      margin-bottom: 10px;
+    }
+
+    .team-email {
+      clear: both;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+  }
+
+  .box-team-static:last-child {
+    border-bottom: 0;
+  }
+
+  .block-team-static::before {
+    content: "";
+    height: 1px;
+    width: 610px;
+    background-color: #BAAFD6;
+    position: absolute;
+    top: -20px;
+    right: 0;
+  }
+
+  .block-contact-static {
+    margin-top: 60px;
+    position: relative;
+    padding-top: 30px;
+  }
+
+  .block-contact-static::before {
+    content: "";
+    height: 1px;
+    width: 610px;
+    background-color: #BAAFD6;
+    position: absolute;
+    top: -20px;
+    right: 0;
+  }
+
+  .box-contact {
+    font: 16px UbuntuRegular, sans-serif;
+    color: #3b4256;
+    margin-bottom: 12px;
+
+    img {
+      margin-right: 10px;
+    }
+
+  }
+
+  .contacts-static {
+    margin-bottom: 20px;
+  }
+
+  .block-share {
+    position: absolute;
+    width: 48px;
+    height: 144px;
+    left: 30px;
+    top: 55px;
+    padding: 0;
+    border: 0;
+    text-align: center;
+
+    span {
+      display: block;
+      font: 10px UbuntuRegular, sans-serif;
+      color: #542e91;
+      margin-top: 3px;
+    }
+
+    .block-soc-static {
+      margin-top: 0;
+
+      a {
+        margin-right: 15px;
+      }
+    }
+
+    .box-f-share {
+      width: 48px;
+
+      a {
+        width: 48px;
+        height: 48px;
+        display: block;
+        border-radius: 150px;
+        padding-top: 12px;
+      }
+
+      a:hover {
+        background-color: #F7F6FA;
+      }
+    }
+
+    .box-tw-share {
+      width: 48px;
+
+      a {
+        width: 48px;
+        height: 48px;
+        display: block;
+        border-radius: 150px;
+        padding-top: 12px;
+        margin-top: 20px;
+      }
+
+      a:hover {
+        background-color: #F7F6FA;
+      }
+    }
+  }
+}
