@@ -247,57 +247,54 @@
     padding: 20px;
     overflow: hidden;
   }
-}
 
-.block-share {
-  position: absolute;
-  left: 30px;
-  top: 85px;
-  width: 48px;
-  text-align: center;
-}
+  .block-share {
+    position: absolute;
+    left: 30px;
+    top: 85px;
+    width: 48px;
+    text-align: center;
 
-.block-share span {
-  display: block;
-  font: 10px UbuntuRegular, sans-serif;
-  color: #542e91;
-  margin-top: 3px;
+    span {
+      display: block;
+      font: 10px UbuntuRegular, sans-serif;
+      color: #542e91;
+      margin-top: 3px;
+    }
 
-}
+    .box-f-share {
+      width: 48px;
 
-.box-f-share {
-  width: 48px;
-}
+      a {
+        width: 48px;
+        height: 48px;
+        display: block;
+        border-radius: 150px;
+        padding-top: 12px;
+      }
 
-.box-f-share a {
-  width: 48px;
-  height: 48px;
-  display: block;
-  border-radius: 150px;
+      a:hover {
+        background-color: #F7F6FA;
+      }
+    }
 
-  padding-top: 12px;
-}
+    .box-tw-share {
+      width: 48px;
 
-.box-f-share a:hover {
-  background-color: #F7F6FA;
-}
+      a {
+        width: 48px;
+        height: 48px;
+        display: block;
+        border-radius: 150px;
+        padding-top: 12px;
+        margin-top: 20px;
+      }
 
-.box-tw-share {
-  width: 48px;
-}
-
-.box-tw-share a {
-  width: 48px;
-  height: 48px;
-  display: block;
-  border-radius: 150px;
-
-  padding-top: 12px;
-  margin-top: 20px;
-}
-
-.box-tw-share a:hover {
-  background-color: #F7F6FA;
+      a:hover {
+        background-color: #F7F6FA;
+      }
+    }
+  }
 }
 
 .disp_b_768 {
