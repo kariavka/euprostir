@@ -51,83 +51,83 @@
     color: #3b4256;
     margin-top: 20px;
   }
-}
 
-.cont2-opportunity {
-  margin-top: 80px;
-}
+  .cont2-opportunity {
+    margin-top: 80px;
+  }
 
-.organizers {
-  font: 18px UbuntuBold, sans-serif;
-  color: #3b4256;
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
+  .organizers {
+    font: 18px UbuntuBold, sans-serif;
+    color: #3b4256;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
 
-.list-organizers {
-  margin-top: 40px;
-}
+  .list-organizers {
+    margin-top: 40px;
+  }
 
-.list-organizers li {
-  list-style-type: none;
-  font: 14px UbuntuRegular, sans-serif;
-  color: #777787;
-  text-transform: uppercase;
-  margin-bottom: 25px;
-  position: relative;
-}
+  .list-organizers li {
+    list-style-type: none;
+    font: 14px UbuntuRegular, sans-serif;
+    color: #777787;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    position: relative;
+  }
 
-.list-organizers li::before {
-  content: "";
-  background-image: url(/images/icon-organizers.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: -38px;
-  top: 5px;
-}
+  .list-organizers li::before {
+    content: "";
+    background-image: url(/images/icon-organizers.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: -38px;
+    top: 5px;
+  }
 
-.list-organizers li:hover {
-  color: #3b4256;
-}
+  .list-organizers li:hover {
+    color: #3b4256;
+  }
 
-.list-organizers li:hover:before {
-  background-position: 0 -18px;
-}
+  .list-organizers li:hover:before {
+    background-position: 0 -18px;
+  }
 
-.opportunity-description {
-  font-size: 17px;
-  color: #3b4256;
-  margin-top: 34px;
-  margin-bottom: 0;
-}
+  .opportunity-description {
+    font-size: 17px;
+    color: #3b4256;
+    margin-top: 34px;
+    margin-bottom: 0;
+  }
 
-.block-opportunity {
-  margin-top: 70px;
-}
+  .block-opportunity {
+    margin-top: 70px;
+  }
 
-.block-opportunity::before {
-  content: "";
-  height: 1px;
-  width: 610px;
-  background-color: #BAAFD6;
-  position: absolute;
-  top: 9px;
-  right: 0;
-}
+  .block-opportunity::before {
+    content: "";
+    height: 1px;
+    width: 610px;
+    background-color: #BAAFD6;
+    position: absolute;
+    top: 9px;
+    right: 0;
+  }
 
-.pos_rel {
-  position: relative;
-}
+  .pos_rel {
+    position: relative;
+  }
 
-.sticky {
-  position: fixed;
-  z-index: 101;
-}
+  .sticky {
+    position: fixed;
+    z-index: 101;
+  }
 
-.stop {
-  position: relative;
-  z-index: 101;
+  .stop {
+    position: relative;
+    z-index: 101;
+  }
 }
