@@ -36,11 +36,16 @@ Router.map(function () {
 
   this.route('notfound');
 
-  this.route('about');
-
-  this.route('about-euprostir');
-
-  this.route('about-together');
+  this.route('en', function () {
+    this.route('stories', function () {
+      this.route('item', {path: '/:id'});
+    });
+    this.route('practices', function () {
+      this.route('item', {path: '/:id'});
+    });
+    this.route('page', {path: '/:uid/'});
+    this.route('notfound');
+  });
 });
 
 export default Router;

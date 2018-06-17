@@ -20,6 +20,7 @@ export default Route.extend({
       per_page: 1,
       page: 1,
     }).then((pages) => {
+      set(this, 'title', 'Test');
       let page = get(pages, 'firstObject');
       if (!page) {
         this.transitionTo('notfound');
@@ -30,6 +31,7 @@ export default Route.extend({
 
   // After Model
   afterModel(model) {
-    set(this, 'title', get(model, 'title'));
+    const title = get(model, 'title');
+    set(this, 'title', title);
   },
 });
