@@ -1,6 +1,6 @@
 {{#click-outside action=(action 'closeDropdown')}}
   <div class="filter">
-    <span class="t_cat">Перегляд за:</span>
+    <span class="label">Перегляд за:</span>
     <span class="trigger {{if showDropdown 'activetrigger'}}" {{action 'toggleDropdown'}}>
     {{if currentFilterLabel currentFilterLabel 'Темою'}}
       <i class="fa fa-caret-{{if showDropdown 'up' 'down'}}"></i>
