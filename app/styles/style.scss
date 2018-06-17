@@ -77,6 +77,18 @@ a:focus, a:hover {
 
   .block-lang {
     margin-top: 10px;
+
+    a {
+      font: 14px UbuntuRegular, sans-serif;
+      color: #ccc;
+      margin-right: 15px;
+    }
+
+    a.active {
+      font: 14px UbuntuRegular, sans-serif;
+      color: #fff;
+    }
+
   }
 
   .block-social-desktop {
@@ -101,6 +113,17 @@ a:focus, a:hover {
 
   .block-lang {
     margin-top: 12px;
+
+    a {
+      font: 14px UbuntuRegular, sans-serif;
+      color: #ccc;
+      margin-right: 15px;
+    }
+
+    a.active {
+      font: 14px UbuntuRegular, sans-serif;
+      color: #fff;
+    }
   }
 }
 
@@ -955,22 +978,23 @@ a:focus, a:hover {
     cursor: pointer;
   }
 
-  a.ua {
-    font: 14px UbuntuRegular, sans-serif;
-    color: #542e91;
-  }
-
-  a.en {
-    font: 14px UbuntuRegular, sans-serif;
-    color: #9884be;
-  }
-
   .p30 {
     padding: 0 30px;
   }
 
   .block-lang {
     margin-top: 0;
+
+    a {
+      font: 14px UbuntuRegular, sans-serif;
+      color: #9884be;
+      margin-right: 15px;
+    }
+
+    a.active {
+      font: 14px UbuntuRegular, sans-serif;
+      color: #542e91;
+    }
   }
 
   .menu-mobile-list {
