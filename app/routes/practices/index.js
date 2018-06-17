@@ -7,7 +7,6 @@ import getLira from 'euprostir/utils/get-lira';
 export default Route.extend({
   // Services
   store: inject(),
-  headData: inject(),
 
   // Title
   title: 'Практики - Європейський простір',

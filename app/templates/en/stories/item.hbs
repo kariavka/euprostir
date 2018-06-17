@@ -1,1 +1,24 @@
-{{outlet}}
+{{story/story-item
+  item=model.item}}
+
+<section class="story-footer sect-stories">
+  <div class="block-category-container text-center">
+    <div class="category-text">
+      <p class="category-name category-name-stories">Інші історії</p>
+    </div>
+  </div>
+
+  {{story/story-list-horizontal
+    items=model.items}}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{#link-to "stories.index" class="btn btn-more btn-stories"}}
+          відкрити більше
+        {{/link-to}}
+      </div>
+    </div>
+  </div>
+
+</section>
