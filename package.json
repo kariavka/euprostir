@@ -55,6 +55,7 @@
     "ember-responsive": "^3.0.0-beta.3",
     "ember-router-scroll": "^0.7.0",
     "ember-screen": "^0.2.0",
+    "ember-social-share": "^0.3.3",
     "ember-source": "~3.1.0",
     "ember-truth-helpers": "^2.0.0",
     "eslint-plugin-ember": "^5.0.0",

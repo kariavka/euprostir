@@ -247,54 +247,6 @@
     padding: 20px;
     overflow: hidden;
   }
-
-  .block-share {
-    position: absolute;
-    left: 30px;
-    top: 85px;
-    width: 48px;
-    text-align: center;
-
-    span {
-      display: block;
-      font: 10px UbuntuRegular, sans-serif;
-      color: #542e91;
-      margin-top: 3px;
-    }
-
-    .box-f-share {
-      width: 48px;
-
-      a {
-        width: 48px;
-        height: 48px;
-        display: block;
-        border-radius: 150px;
-        padding-top: 12px;
-      }
-
-      a:hover {
-        background-color: #F7F6FA;
-      }
-    }
-
-    .box-tw-share {
-      width: 48px;
-
-      a {
-        width: 48px;
-        height: 48px;
-        display: block;
-        border-radius: 150px;
-        padding-top: 12px;
-        margin-top: 20px;
-      }
-
-      a:hover {
-        background-color: #F7F6FA;
-      }
-    }
-  }
 }
 
 .disp_b_768 {
