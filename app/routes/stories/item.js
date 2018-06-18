@@ -29,11 +29,12 @@ export default Route.extend({
     const title = get(model, 'item.title');
     set(this, 'title', title);
 
+    // eslint-disable-next-line
     addthis_share = {
       url: window.location.href,
       title: title,
       description: get(model, 'item.description'),
       media: get(model, 'item.image_url')
-    }
+    };
   },
 });
