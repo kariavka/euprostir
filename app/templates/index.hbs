@@ -10,7 +10,8 @@
 
     <div class="container-fluid cont2-sect-stories">
       {{story/story-list-slider
-        items=model.stories}}
+        items=model.stories
+        endpoint="stories.item"}}
     </div>
 
   </section>
@@ -26,7 +27,8 @@
 
     <div class="container cont2-sect-practices">
       {{practice/practice-list-horizontal
-        items=model.practices}}
+        items=model.practices
+        endpoint="practices.item"}}
     </div>
 
     <div class="container">
@@ -52,7 +54,8 @@
 
     <div class="container cont2-sect-opportunities">
       {{opportunity/opportunity-list-horizontal
-        items=model.opportunities}}
+        items=model.opportunities
+        endpoint="opportunities.item"}}
     </div>
 
     <div class="container">

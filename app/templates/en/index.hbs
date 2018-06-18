@@ -9,7 +9,8 @@
 
   <div class="container-fluid cont2-sect-stories">
     {{story/story-list-slider
-      items=model.stories}}
+      items=model.stories
+      endpoint="en.stories.item"}}
   </div>
 
 </section>
@@ -25,13 +26,14 @@
 
   <div class="container cont2-sect-practices">
     {{practice/practice-list-horizontal
-      items=model.practices}}
+      items=model.practices
+      endpoint="en.practices.item"}}
   </div>
 
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        {{#link-to "practices.index" class="btn btn-more btn-practices"}}
+        {{#link-to "en.practices.index" class="btn btn-more btn-practices"}}
           open more
         {{/link-to}}
       </div>
