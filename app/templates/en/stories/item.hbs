@@ -4,18 +4,19 @@
 <section class="story-footer sect-stories">
   <div class="block-category-container text-center">
     <div class="category-text">
-      <p class="category-name category-name-stories">Інші історії</p>
+      <p class="category-name category-name-stories">Other stories</p>
     </div>
   </div>
 
   {{story/story-list-horizontal
-    items=model.items}}
+    items=model.items
+    endpoint="en.stories.item"}}
 
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
         {{#link-to "stories.index" class="btn btn-more btn-stories"}}
-          відкрити більше
+          open more
         {{/link-to}}
       </div>
     </div>

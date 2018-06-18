@@ -2,11 +2,12 @@
 
   {{#each items as |item|}}
     {{practice/practice-list-popular-item
-      item=item}}
+      item=item
+      endpoint=endpoint}}
   {{/each}}
 
 {{else}}
 
-  Нічого не знайдено.
+  {{t "nothingfound"}}
 
 {{/if}}

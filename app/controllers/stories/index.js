@@ -29,7 +29,7 @@ export default Controller.extend({
   // Init
   init: function () {
     this._super();
-    const filters = config.neuronet.uk.filters;
+    const filters = config.neuronet.uk.filters.stories;
     set(this, 'filters', filters);
   },
 

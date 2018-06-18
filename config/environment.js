@@ -42,46 +42,111 @@ module.exports = function (environment) {
         courses: '131961,131968',
         events: '131961,131968',
         about: '131961,132034',
-        filters: [
-          {
-            name: 'Візії розвитку громадянського суспільства',
-            lira: '133129',
-          }, {
-            name: 'Соціальне підприємництво',
-            lira: '38405',
-          }, {
-            name: 'Соціальні послуги',
-            lira: '133132',
-          }, {
-            name: 'Управління організаціями',
-            lira: '133134',
-          }, {
-            name: 'Ефективні комунікації',
-            lira: '133136',
-          }
-        ],
+        filters: {
+          stories: [
+            {
+              name: 'Візії розвитку громадянського суспільства',
+              lira: '133129',
+            }, {
+              name: 'Соціальне підприємництво',
+              lira: '38405',
+            }, {
+              name: 'Соціальні послуги',
+              lira: '133132',
+            }, {
+              name: 'Управління організаціями',
+              lira: '133134',
+            }, {
+              name: 'Ефективні комунікації',
+              lira: '133136',
+            }, {
+              name: 'Історії проектів ЄС',
+              lira: '133742',
+            }
+          ],
+          practices: [
+            {
+              name: 'Візії розвитку громадянського суспільства',
+              lira: '133129',
+            }, {
+              name: 'Соціальне підприємництво',
+              lira: '38405',
+            }, {
+              name: 'Соціальні послуги',
+              lira: '133132',
+            }, {
+              name: 'Управління організаціями',
+              lira: '133134',
+            }, {
+              name: 'Ефективні комунікації',
+              lira: '133136',
+            }
+          ],
+          opportunities: [
+            {
+              name: 'Візії розвитку громадянського суспільства',
+              lira: '133129',
+            }, {
+              name: 'Соціальне підприємництво',
+              lira: '38405',
+            }, {
+              name: 'Соціальні послуги',
+              lira: '133132',
+            }, {
+              name: 'Управління організаціями',
+              lira: '133134',
+            }, {
+              name: 'Ефективні комунікації',
+              lira: '133136',
+            }
+          ],
+        },
+
       },
       en: {
         stories: '131961,133614',
         practices: '131961,133616',
-        filters: [
-          {
-            name: 'Vision of civil society',
-            lira: '133603',
-          }, {
-            name: 'Social entrepreneurship',
-            lira: '133605',
-          }, {
-            name: 'Social services',
-            lira: '133607',
-          }, {
-            name: 'Management of CSOs',
-            lira: '133609',
-          }, {
-            name: 'Effective communication',
-            lira: '133611',
-          }
-        ],
+        filters: {
+          stories: [
+            {
+              name: 'Vision of civil society',
+              lira: '133603',
+            }, {
+              name: 'Social entrepreneurship',
+              lira: '133605',
+            }, {
+              name: 'Social services',
+              lira: '133607',
+            }, {
+              name: 'Management of CSOs',
+              lira: '133609',
+            }, {
+              name: 'Effective communication',
+              lira: '133611',
+            }, {
+              name: 'Stories of EU projects',
+              lira: '133745',
+            }
+          ],
+          practices: [
+            {
+              name: 'Vision of civil society',
+              lira: '133603',
+            }, {
+              name: 'Social entrepreneurship',
+              lira: '133605',
+            }, {
+              name: 'Social services',
+              lira: '133607',
+            }, {
+              name: 'Management of CSOs',
+              lira: '133609',
+            }, {
+              name: 'Effective communication',
+              lira: '133611',
+            }
+          ],
+        }
       },
     },
 

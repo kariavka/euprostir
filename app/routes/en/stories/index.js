@@ -7,10 +7,9 @@ import config from 'euprostir/config/environment';
 export default Route.extend({
   // Services
   store: inject(),
-  headData: inject(),
 
   // Title
-  title: 'Історії - Європейський простір',
+  title: 'Stories - EU.Prostir',
 
   // Params
   queryParams: {

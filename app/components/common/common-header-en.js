@@ -12,7 +12,7 @@ export default Component.extend({
   isFixedMenu: false,
   isStoryItem: computed('router.currentRouteName', function () {
     const currentRoute = get(this, 'router.currentRouteName');
-    return (currentRoute === 'stories.item');
+    return (currentRoute === 'en.stories.item');
   }),
 
   // Hooks
