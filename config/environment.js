@@ -62,12 +62,8 @@ module.exports = function (environment) {
         ],
       },
       en: {
-        stories: '131961,131968',
-        practices: '131961,131972',
-        opportunities: '131961,131974',
-        courses: '131961,131968',
-        events: '131961,131968',
-        about: '131961,132034',
+        stories: '131961,133614',
+        practices: '131961,133616',
         filters: [
           {
             name: 'Vision of civil society',
