@@ -45,19 +45,19 @@ module.exports = function (environment) {
         filters: [
           {
             name: 'Візії розвитку громадянського суспільства',
-            lira: '131961,133129',
+            lira: '133129',
           }, {
             name: 'Соціальне підприємництво',
-            lira: '131961,38405',
+            lira: '38405',
           }, {
             name: 'Соціальні послуги',
-            lira: '131961,133132',
+            lira: '133132',
           }, {
             name: 'Управління організаціями',
-            lira: '131961,133134',
+            lira: '133134',
           }, {
             name: 'Ефективні комунікації',
-            lira: '131961,133136',
+            lira: '133136',
           }
         ],
       },
@@ -71,19 +71,19 @@ module.exports = function (environment) {
         filters: [
           {
             name: 'Vision of civil society',
-            lira: '131961,133603',
+            lira: '133603',
           }, {
             name: 'Social entrepreneurship',
-            lira: '131961,133605',
+            lira: '133605',
           }, {
             name: 'Social services',
-            lira: '131961,133607',
+            lira: '133607',
           }, {
             name: 'Management of CSOs',
-            lira: '131961,133609',
+            lira: '133609',
           }, {
             name: 'Effective communication',
-            lira: '131961,133611',
+            lira: '133611',
           }
         ],
       },
