@@ -28,5 +28,12 @@ export default Route.extend({
   afterModel(model) {
     const title = get(model, 'item.title');
     set(this, 'title', title);
+
+    addthis_share = {
+      url: window.location.href,
+      title: title,
+      description: get(model, 'item.description'),
+      media: get(model, 'item.image_url')
+    }
   },
 });
