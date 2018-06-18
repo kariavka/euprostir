@@ -30,17 +30,63 @@ module.exports = function (environment) {
 
     i18n: {
       defaultLocale: 'uk',
-      allowedLocales: ['uk']
+      allowedLocales: ['uk', 'en']
     },
 
     neuronet: {
       site: 131961,
-      stories: 131968,
-      practices: 131972,
-      opportunities: 131974,
-      courses: 131968,
-      events: 131968,
-      about: 132034,
+      uk: {
+        stories: '131961,131968',
+        practices: '131961,131972',
+        opportunities: '131961,131974',
+        courses: '131961,131968',
+        events: '131961,131968',
+        about: '131961,132034',
+        filters: [
+          {
+            name: 'Візії розвитку громадянського суспільства',
+            lira: '131961,133129',
+          }, {
+            name: 'Соціальне підприємництво',
+            lira: '131961,38405',
+          }, {
+            name: 'Соціальні послуги',
+            lira: '131961,133132',
+          }, {
+            name: 'Управління організаціями',
+            lira: '131961,133134',
+          }, {
+            name: 'Ефективні комунікації',
+            lira: '131961,133136',
+          }
+        ],
+      },
+      en: {
+        stories: '131961,131968',
+        practices: '131961,131972',
+        opportunities: '131961,131974',
+        courses: '131961,131968',
+        events: '131961,131968',
+        about: '131961,132034',
+        filters: [
+          {
+            name: 'Vision of civil society',
+            lira: '131961,133603',
+          }, {
+            name: 'Social entrepreneurship',
+            lira: '131961,133605',
+          }, {
+            name: 'Social services',
+            lira: '131961,133607',
+          }, {
+            name: 'Management of CSOs',
+            lira: '131961,133609',
+          }, {
+            name: 'Effective communication',
+            lira: '131961,133611',
+          }
+        ],
+      },
     },
 
     pageTitle: {

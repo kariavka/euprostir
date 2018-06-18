@@ -3,7 +3,7 @@ import {inject} from '@ember/service';
 import {get, set} from '@ember/object';
 import {reads} from '@ember/object/computed';
 import {hash} from 'rsvp';
-import getLira from 'euprostir/utils/get-lira';
+import config from 'euprostir/config/environment';
 
 export default Route.extend({
   // Services
@@ -19,7 +19,7 @@ export default Route.extend({
     return hash({
       item: store.findRecord('post', params.id, {reload: true}),
       items: store.query('post', {
-        lira: getLira('practices'),
+        lira: config.neuronet.en.practices,
         per_page: 4,
         page: 1,
         sort: '-created',

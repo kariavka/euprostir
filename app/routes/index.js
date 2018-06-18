@@ -2,7 +2,7 @@ import Route from '@ember/routing/route';
 import {inject} from '@ember/service';
 import {get,} from '@ember/object';
 import {hash} from 'rsvp';
-import getLira from 'euprostir/utils/get-lira';
+import config from 'euprostir/config/environment';
 
 export default Route.extend({
   // Services
@@ -19,35 +19,35 @@ export default Route.extend({
       stories: store.query('post', {
         page: 1,
         per_page: 9,
-        lira: getLira('stories'),
+        lira: config.neuronet.uk.stories,
         sort: '-created',
         'filter[featured]': true,
       }),
       practices: store.query('post', {
         page: 1,
         per_page: 3,
-        lira: getLira('practices'),
+        lira: config.neuronet.uk.practices,
         sort: '-created',
         'filter[featured]': true,
       }),
       opportunities: store.query('post', {
         page: 1,
         per_page: 4,
-        lira: getLira('opportunities'),
+        lira: config.neuronet.uk.opportunities,
         sort: '-created',
         'filter[featured]': true,
       }),
       courses: store.query('post', {
         page: 1,
         per_page: 4,
-        lira: getLira('courses'),
+        lira: config.neuronet.uk.courses,
         sort: '-created',
         'filter[featured]': true,
       }),
       events: store.query('post', {
         page: 1,
         per_page: 3,
-        lira: getLira('events'),
+        lira: config.neuronet.uk.events,
         sort: '-created',
         'filter[featured]': true,
       }),
