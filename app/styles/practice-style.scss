@@ -10,6 +10,24 @@
   padding-bottom: 120px;
 }
 
+.practice-article {
+  display: block;
+}
+
+.practice-aside {
+  display: block;
+  float: left;
+  width: 100px;
+  font-size: 25px;
+  color: #542E91;
+  padding-top: 40px;
+
+  a {
+    color: #542E91;
+    text-decoration: none;
+  }
+}
+
 .practice-category {
   background-image: url(/images/bg-category-practice.png);
   background-repeat: no-repeat;

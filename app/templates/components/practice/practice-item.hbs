@@ -11,7 +11,20 @@
 </section>
 
 <section class="practice-body">
-  <div class="container cont2-practice">
+  <aside id="practice-aside" class="practice-aside">
+    <div class="ml-3">
+      <div>
+        {{share/share-facebook
+          item=item}}
+      </div>
+      <div class="mt-3">
+        {{share/share-twitter
+          item=item}}
+      </div>
+    </div>
+  </aside>
+
+  <div id="practice-article" class="container cont2-practice practice-article">
     <div class="row">
       <div class="col-md-4 col-sm-3">
         <div class="practice-time disp_n_768">
