@@ -1,9 +1,8 @@
 import Route from '@ember/routing/route';
 import {inject} from '@ember/service';
-import {get, set} from '@ember/object';
-import {reads} from '@ember/object/computed';
+import {get} from '@ember/object';
 import {hash} from 'rsvp';
-import getLira from 'euprostir/utils/get-lira';
+import config from 'euprostir/config/environment';
 
 export default Route.extend({
   // Services
@@ -21,13 +20,9 @@ export default Route.extend({
   // Model
   model(params) {
     const store = get(this, 'store');
-    let lira = getLira('properties');
-    let liraWithFilter;
+    let lira = config.neuronet.uk.opportunities;
     let filter = params.f;
-
-    if (filter) {
-      liraWithFilter = lira + ',' + filter;
-    }
+    let liraWithFilter = (filter) ? lira + ',' + filter : lira;
 
     return hash({
       items: store.query('post', {

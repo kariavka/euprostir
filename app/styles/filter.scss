@@ -1,4 +1,12 @@
 .filter {
+  .label {
+    min-width: 101px;
+    font: 14px UbuntuBold, sans-serif;
+    color: #3b4256;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+
   .trigger {
     font-family: UbuntuRegular, sans-serif;
     color: #7c62ab;
@@ -121,7 +129,7 @@
   .filter {
     padding: 60px 0;
 
-    .t_cat {
+    .label {
       display: block;
     }
 

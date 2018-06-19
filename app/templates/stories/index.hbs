@@ -20,7 +20,8 @@
         <div class="block1-stories-list"></div>
 
         {{story/story-list-vertical
-          items=items}}
+          items=items
+          endpoint="stories.item"}}
 
         {{#if canLoadMore}}
           <div class="text-center">
@@ -40,7 +41,8 @@
           <div class="box1-popular"></div>
 
           {{story/story-list-popular
-            items=model.popular}}
+            items=model.popular
+            endpoint="stories.item"}}
 
         </div>
       </div>
