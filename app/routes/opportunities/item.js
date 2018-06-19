@@ -3,7 +3,7 @@ import {inject} from '@ember/service';
 import {get, set} from '@ember/object';
 import {reads} from '@ember/object/computed';
 import {hash} from 'rsvp';
-import getLira from 'euprostir/utils/get-lira';
+import config from 'euprostir/config/environment';
 
 export default Route.extend({
   // Services
@@ -23,7 +23,7 @@ export default Route.extend({
           return item;
         }),
       items: store.query('post', {
-        lira: getLira('opportunities'),
+        lira: config.neuronet.uk.opportunities,
         per_page: 4,
         page: 1,
         sort: '-created',
@@ -35,6 +35,7 @@ export default Route.extend({
 
   // After Model
   afterModel(model) {
-    set(this, 'title', get(model, 'title'));
+    const title = get(model, 'item.title');
+    set(this, 'title', title);
   },
 });

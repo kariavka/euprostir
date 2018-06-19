@@ -21,7 +21,8 @@
         <div class="block1-stories-list"></div>
 
         {{practice/practice-list-vertical
-          items=items}}
+          items=items
+          endpoint="practices.item"}}
 
         {{#if canLoadMore}}
           <div class="text-center">
@@ -41,7 +42,8 @@
           <div class="box1-popular"></div>
 
           {{practice/practice-list-popular
-            items=model.popular}}
+            items=model.popular
+            endpoint="practices.item"}}
 
         </div>
       </div>

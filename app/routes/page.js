@@ -6,7 +6,6 @@ import config from 'euprostir/config/environment';
 export default Route.extend({
   // Services
   store: inject(),
-  router: inject(),
 
   // Model
   model(params) {
@@ -20,16 +19,17 @@ export default Route.extend({
       per_page: 1,
       page: 1,
     }).then((pages) => {
+      set(this, 'title', 'Test');
       let page = get(pages, 'firstObject');
-      if (!page) {
-        this.transitionTo('notfound');
-      }
-      return store.findRecord('page', page.id);
+      if (!page) this.transitionTo('notfound');
+      const pageId = page.id;
+      return store.findRecord('page', pageId);
     });
   },
 
   // After Model
   afterModel(model) {
-    set(this, 'title', get(model, 'title'));
+    const title = get(model, 'title');
+    set(this, 'title', title);
   },
 });

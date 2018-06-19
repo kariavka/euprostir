@@ -1,69 +1,72 @@
-<section class="sect-stories">
+{{#common/common-content}}
+  <section class="sect-stories">
 
-  <div class="block-category-container text-center">
-    <div class="category-text">
-      <p class="category-name category-name-stories">Історії</p>
-      <p class="slogan-name slogan-name-stories">що надихають</p>
-    </div>
-  </div>
-
-  <div class="container-fluid cont2-sect-stories">
-    {{story/story-list-slider
-      items=model.stories}}
-  </div>
-
-</section>
-
-<section class="sect-practices">
-
-  <div class="block-category-container text-center">
-    <div class="category-text">
-      <p class="category-name category-name-practices">Практики</p>
-      <p class="slogan-name slogan-name-practices">які допомагають</p>
-    </div>
-  </div>
-
-  <div class="container cont2-sect-practices">
-    {{practice/practice-list-horizontal
-      items=model.practices}}
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        {{#link-to "practices.index" class="btn btn-more btn-practices"}}
-          відкрити більше
-        {{/link-to}}
+    <div class="block-category-container text-center">
+      <div class="category-text">
+        <p class="category-name category-name-stories">Історії</p>
+        <p class="slogan-name slogan-name-stories">що надихають</p>
       </div>
     </div>
-  </div>
 
-</section>
-
-<section class="sect-opportunities mb-5">
-
-  <div class="block-category-container text-center">
-    <div class="category-text">
-      <p class="category-name category-name-opportunities">Можливості</p>
-      <p class="slogan-name slogan-name-opportunities">що змінюють</p>
+    <div class="container-fluid cont2-sect-stories">
+      {{story/story-list-slider
+        items=model.stories
+        endpoint="stories.item"}}
     </div>
-  </div>
 
-  <div class="container cont2-sect-opportunities">
-    {{opportunity/opportunity-list-horizontal
-      items=model.opportunities}}
-  </div>
+  </section>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        {{#link-to "opportunities.index" class="btn btn-more btn-opportunities"}}
-          відкрити більше
-        {{/link-to}}
+  <section class="sect-practices">
+
+    <div class="block-category-container text-center">
+      <div class="category-text">
+        <p class="category-name category-name-practices">Практики</p>
+        <p class="slogan-name slogan-name-practices">які допомагають</p>
       </div>
     </div>
-  </div>
 
-</section>
+    <div class="container cont2-sect-practices">
+      {{practice/practice-list-horizontal
+        items=model.practices
+        endpoint="practices.item"}}
+    </div>
 
-{{outlet}}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          {{#link-to "practices.index" class="btn btn-more btn-practices"}}
+            відкрити більше
+          {{/link-to}}
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="sect-opportunities mb-5">
+
+    <div class="block-category-container text-center">
+      <div class="category-text">
+        <p class="category-name category-name-opportunities">Можливості</p>
+        <p class="slogan-name slogan-name-opportunities">що змінюють</p>
+      </div>
+    </div>
+
+    <div class="container cont2-sect-opportunities">
+      {{opportunity/opportunity-list-horizontal
+        items=model.opportunities
+        endpoint="opportunities.item"}}
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          {{#link-to "opportunities.index" class="btn btn-more btn-opportunities"}}
+            відкрити більше
+          {{/link-to}}
+        </div>
+      </div>
+    </div>
+
+  </section>
+{{/common/common-content}}
