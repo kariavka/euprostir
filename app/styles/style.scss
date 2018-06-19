@@ -268,7 +268,7 @@ a:focus, a:hover {
       border-radius: 20px;
       background: #F3F4F6;
       font: 14px UbuntuRegular, sans-serif;
-      color: #a6a4af;
+      color: #555;
       outline: none;
     }
 
@@ -287,6 +287,32 @@ a:focus, a:hover {
 
     input[type="search"] {
       -webkit-appearance: none;
+    }
+
+    .search-results {
+      position: absolute;
+      width: calc(100% - 20px);
+      margin-left: 10px;
+      background-color: #F3F4F6;
+      border: 1px solid #F3F4F6;
+      border-radius: 5px;
+      z-index: 10000;
+      //padding: 0 10px;
+
+      a {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 5px 10px;
+        cursor: pointer;
+        font: 14px UbuntuRegular, sans-serif;
+        color: #555;
+      }
+
+      a:hover {
+        background-color: #ddd;
+        text-decoration: none;
+      }
     }
   }
 }
