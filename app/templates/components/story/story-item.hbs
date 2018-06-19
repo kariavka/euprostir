@@ -22,8 +22,21 @@
 
 </section>
 
-<section class="story-body">
-  <div class="container">
+<section id="story-body" class="story-body">
+  <aside id="story-aside" class="story-aside">
+    <div class="ml-3">
+      <div>
+        {{share/share-facebook
+          item=item}}
+      </div>
+      <div class="mt-3">
+        {{share/share-twitter
+          item=item}}
+      </div>
+    </div>
+  </aside>
+
+  <div id="story-article" class="story-article container">
     <div class="row">
       <div class="col-md-4 col-sm-3">
         <div class="story-time disp_n_768">
