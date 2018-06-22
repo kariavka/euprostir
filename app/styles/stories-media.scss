@@ -1,0 +1,57 @@
+@media only screen and (max-width: 768px) {
+  .sect-stories-list {
+    padding: 60px 0;
+
+    .block-stories-list {
+      display: block;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+
+    .img-box-stories {
+      float: none !important;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .box-stories-list {
+      padding: 10px 20px;
+    }
+
+    .about-box-stories-list {
+      font: 14px UbuntuRegular, sans-serif;
+    }
+
+    .block-stories-list {
+      margin-bottom: 20px;
+    }
+
+    .block1-stories-list {
+      margin-top: 40px;
+    }
+
+    .btn-stories {
+      margin-top: 53px;
+    }
+
+    .block-popular::before {
+      width: 100%;
+    }
+
+    .block-popular {
+      margin-top: 85px;
+    }
+  }
+
+  .story-list-horizontal {
+    .row {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .col-md-4 {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+}

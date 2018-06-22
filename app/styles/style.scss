@@ -54,13 +54,13 @@ a:focus, a:hover {
   }
 
   .btn_wetipp {
-    story-shadow: 0 3px 8px rgba(15, 15, 16, 0.12);
+    box-shadow: 0 3px 8px rgba(15, 15, 16, 0.12);
     float: right;
     margin-right: 0;
   }
 
   .btn_wetipp:hover {
-    story-shadow: none;
+    box-shadow: none;
     float: right;
   }
 }
@@ -181,6 +181,11 @@ a:focus, a:hover {
       }
     }
   }
+}
+
+.sect-menu-mobile {
+  padding: 0;
+  margin: 0;
 }
 
 .sect-menu-inverted {
@@ -383,7 +388,7 @@ a:focus, a:hover {
 .btn-more:hover,
 .btn-more:focus,
 .btn-more:active {
-  story-shadow: none;
+  box-shadow: none;
   outline: none !important;
   background-color: #01B1BC;
   border: 1px solid #01B1BC;
@@ -391,146 +396,6 @@ a:focus, a:hover {
 }
 
 // More Button End
-//------------------
-
-//------------------
-// Stories Begin
-
-.sect-stories {
-  padding-top: 80px;
-
-  .slogan-name-stories {
-    position: absolute;
-    top: -22px;
-    right: -105px;
-  }
-
-  .cont2-sect-stories {
-    margin-top: 42px;
-
-    .story-shadow {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 217px;
-      background-image: url(/images/bg_shadow.png);
-      background-repeat: no-repeat;
-      background-position: top center;
-    }
-
-    .story-summary p {
-      font: 16px UbuntuRegular, sans-serif;
-      color: #686879;
-      height: 73px;
-      overflow: hidden;
-    }
-
-    .box1 {
-      background-image: url(/images/box_cat_history1.png);
-      background-repeat: no-repeat;
-      background-position: top center;
-      height: 27px;
-      width: 14px;
-      position: relative;
-      right: -13px;
-    }
-
-    .box2 {
-      background-image: url(/images/box_cat_history2.png);
-      background-repeat: repeat-x;
-      background-position: top center;
-      height: 27px;
-      width: auto;
-      font: 12px UbuntuRegular, sans-serif;
-      color: #fff;
-      text-transform: uppercase;
-      position: relative;
-      top: -8px;
-      right: -5px;
-      padding: 7px 2px 0;
-    }
-
-    .box3 {
-      background-image: url(/images/box_cat_history3.png);
-      background-repeat: no-repeat;
-      background-position: top center;
-      height: 27px;
-      width: 14px;
-    }
-
-    .story-category {
-      position: absolute;
-      right: -7px;
-      top: 12px;
-    }
-
-    .story-category div {
-      display: inline-block;
-    }
-
-    .slick-slider {
-      .slides {
-        padding: 0;
-      }
-
-      .slick-slider img {
-        margin: 0 auto;
-      }
-
-      .slick-dots {
-        bottom: -36px;
-
-        li {
-          position: relative;
-          display: inline-block;
-          width: 15px;
-          height: 15px;
-          margin: 0 4px;
-          padding: 0;
-          cursor: pointer;
-
-          button {
-            width: 15px;
-            height: 15px;
-            display: block;
-            background-color: transparent;
-            border: 1px solid #AFAEB8;
-            border-radius: 50px;
-            -moz-border-radius: 50px;
-            -webkit-border-radius: 50px;
-          }
-        }
-
-        .slick-active {
-          button {
-            background-color: #7C62AB;
-            opacity: 1;
-            border: 1px solid transparent;
-          }
-
-          button::before {
-            opacity: 0 !important;
-          }
-        }
-      }
-
-      .slick-slide {
-        display: block;
-        padding: 20px 15px;
-
-        a:hover {
-          text-decoration: none;
-        }
-      }
-
-    }
-
-  }
-}
-
-// Stories End
 //------------------
 
 //------------------
@@ -569,7 +434,7 @@ a:focus, a:hover {
     a:hover {
       .about-practice {
         background-color: #614099;
-        story-shadow: none;
+        box-shadow: none;
       }
 
       .title-practice {
@@ -596,7 +461,7 @@ a:focus, a:hover {
     .about-practice {
       height: 205px;
       padding: 20px 25px;
-      story-shadow: 0 3px 13px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 3px 13px rgba(0, 0, 0, 0.15);
 
       .title-practice {
         font: 19px UbuntuRegular, sans-serif;
@@ -768,7 +633,7 @@ a:focus, a:hover {
 
       .text-video-big {
         padding: 26px 15px 0 21px;
-        story-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
         height: 390px;
 
         .title-video-big {
@@ -1160,7 +1025,7 @@ footer {
     width: 391px;
     height: 196px;
     background-color: #fff;
-    story-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     padding: 32px 19px 0 24px;
     float: right;
   }
