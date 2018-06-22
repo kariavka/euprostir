@@ -54,13 +54,13 @@ a:focus, a:hover {
   }
 
   .btn_wetipp {
-    story-shadow: 0 3px 8px rgba(15, 15, 16, 0.12);
+    box-shadow: 0 3px 8px rgba(15, 15, 16, 0.12);
     float: right;
     margin-right: 0;
   }
 
   .btn_wetipp:hover {
-    story-shadow: none;
+    box-shadow: none;
     float: right;
   }
 }
@@ -181,6 +181,11 @@ a:focus, a:hover {
       }
     }
   }
+}
+
+.sect-menu-mobile {
+  padding: 0;
+  margin: 0;
 }
 
 .sect-menu-inverted {
@@ -383,7 +388,7 @@ a:focus, a:hover {
 .btn-more:hover,
 .btn-more:focus,
 .btn-more:active {
-  story-shadow: none;
+  box-shadow: none;
   outline: none !important;
   background-color: #01B1BC;
   border: 1px solid #01B1BC;
@@ -569,7 +574,7 @@ a:focus, a:hover {
     a:hover {
       .about-practice {
         background-color: #614099;
-        story-shadow: none;
+        box-shadow: none;
       }
 
       .title-practice {
@@ -596,7 +601,7 @@ a:focus, a:hover {
     .about-practice {
       height: 205px;
       padding: 20px 25px;
-      story-shadow: 0 3px 13px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 3px 13px rgba(0, 0, 0, 0.15);
 
       .title-practice {
         font: 19px UbuntuRegular, sans-serif;
@@ -768,7 +773,7 @@ a:focus, a:hover {
 
       .text-video-big {
         padding: 26px 15px 0 21px;
-        story-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
         height: 390px;
 
         .title-video-big {
@@ -1160,7 +1165,7 @@ footer {
     width: 391px;
     height: 196px;
     background-color: #fff;
-    story-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     padding: 32px 19px 0 24px;
     float: right;
   }

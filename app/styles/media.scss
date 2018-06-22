@@ -128,6 +128,8 @@
   }
 
   .sect-stories {
+    padding-top: 0;
+
     .cont2-sect-stories {
       margin-top: 23px;
     }
@@ -339,7 +341,7 @@
       width: 391px;
       height: 196px;
       background-color: #fff;
-      story-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
       padding: 32px 19px 0 24px;
       float: none;
       margin: 0 auto;
@@ -611,7 +613,7 @@
     .story-block {
       height: auto;
       width: 100%;
-      story-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
+      box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
 
       .story-top {
         height: auto;
@@ -647,7 +649,7 @@
     .story-block {
       height: auto;
       width: 100%;
-      story-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
+      box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
     }
 
     .story-top {
