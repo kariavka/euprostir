@@ -305,9 +305,9 @@
       top: -67px;
     }
 
-    .box_mailing {
-      width: 391px;
-      height: 196px;
+    .box-mailing {
+      width: 100% !important;
+      height: 226px !important;
       background-color: #fff;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
       padding: 32px 19px 0 24px;
@@ -344,12 +344,6 @@
       padding: 0 15px;
     }
 
-    .box_mailing {
-      width: 100% !important;
-      height: 196px;
-      margin: 0 auto;
-    }
-
     .t1_mailing {
       font: 20px UbuntuRegular, sans-serif;
     }
@@ -363,7 +357,7 @@
       margin-right: 20px;
     }
 
-    .box_mailing {
+    .box-mailing {
       width: 330px;
       height: 196px;
       padding: 32px 13px 0 14px;
