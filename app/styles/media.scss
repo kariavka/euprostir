@@ -1,5 +1,10 @@
 /* Extra small devices (mobile: phones, 767px and down) */
 @media only screen and (max-width: 767px) {
+  .sect-menu-mobile {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
   .header-desktop {
     display: none;
   }
@@ -125,43 +130,6 @@
     width: 100%;
     max-width: 1680px;
     padding: 0 0;
-  }
-
-  .sect-stories {
-    padding-top: 0;
-
-    .cont2-sect-stories {
-      margin-top: 23px;
-    }
-
-    .slick-slider {
-      .story-block {
-        margin: 0 auto;
-      }
-
-      .slick-slide {
-        display: block;
-        padding: 20px 0;
-
-        .story-title {
-          bottom: 14px;
-          font-size: 20px;
-          margin-bottom: 0;
-          line-height: 1.1em;
-        }
-
-        .story-summary {
-          width: 100%;
-          padding: 20px 20px;
-
-          p {
-            font: 15px UbuntuRegular, sans-serif;
-            height: 4.5em;
-            overflow: hidden;
-          }
-        }
-      }
-    }
   }
 
   .sect-practices {
@@ -420,12 +388,6 @@
     display: none !important;
   }
 
-  .story-category {
-    position: absolute;
-    right: 4px;
-    top: 12px;
-  }
-
   .box2 {
     padding: 7px 10px 0 4px;
   }
@@ -474,39 +436,6 @@
     position: absolute;
     right: 60px;
     top: 15px;
-  }
-
-  .sect-stories {
-    padding-top: 30px;
-  }
-
-  .slick-slider {
-    .story-block {
-      margin: 0 auto;
-    }
-
-    .slick-slide {
-      display: block;
-      padding: 20px 0;
-
-      .story-title {
-        bottom: 14px;
-        font-size: 20px;
-        margin-bottom: 0;
-        line-height: 1.1em;
-      }
-
-      .story-summary {
-        width: 100%;
-        padding: 20px 20px;
-
-        p {
-          font: 15px UbuntuRegular, sans-serif;
-          height: 4.5em;
-          overflow: hidden;
-        }
-      }
-    }
   }
 
   .sect-menu {
@@ -608,31 +537,6 @@
   .header-mobile {
     display: none;
   }
-
-  .slick-slider {
-    .story-block {
-      height: auto;
-      width: 100%;
-      box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
-
-      .story-top {
-        height: auto;
-        max-height: 300px;
-        position: relative;
-
-      }
-
-      .story-image {
-        height: 300px;
-      }
-
-      .story-title {
-        bottom: 14px;
-        font-size: 24px !important;
-        margin-bottom: 0;
-      }
-    }
-  }
 }
 
 /* Extra large devices (jumbo: large laptops and desktops, 1200px and up) */
@@ -643,30 +547,5 @@
 
   .header-mobile {
     display: none;
-  }
-
-  .slick-slider {
-    .story-block {
-      height: auto;
-      width: 100%;
-      box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
-    }
-
-    .story-top {
-      height: auto;
-      max-height: 300px;
-      position: relative;
-
-    }
-
-    .story-image {
-      height: 300px;
-    }
-
-    .story-title {
-      bottom: 14px;
-      font-size: 26px !important;
-      margin-bottom: 0;
-    }
   }
 }

@@ -5,7 +5,7 @@
       <div class="col-md-10 offset-md-1">
         <div class="story-title text-center">{{item.title}}</div>
         <div class="story-category">{{t "stories"}}</div>
-        <div class="story-time disp_b_768">
+        <div class="story-time">
           <i class="fa fa-clock-o"></i> {{moment-format item.created "DD.MM.YYYY"}}
         </div>
       </div>
@@ -38,14 +38,20 @@
 
   <div id="story-article" class="story-article container">
     <div class="row">
-      <div class="col-md-4 col-sm-3">
-        <div class="story-time disp_n_768">
-          <i class="fa fa-clock-o"></i> {{moment-format item.created "DD.MM.YYYY"}}
+      {{#if media.isMobile}}
+        <div class="col-md-12 story-description">
+          {{{item.description}}}
         </div>
-      </div>
-      <div class="col-md-7 col-sm-9 story-description">
-        {{{item.description}}}
-      </div>
+      {{else}}
+        <div class="col-md-4 col-sm-3">
+          <div class="story-time">
+            <i class="fa fa-clock-o"></i> {{moment-format item.created "DD.MM.YYYY"}}
+          </div>
+        </div>
+        <div class="col-md-7 col-sm-9 story-description">
+          {{{item.description}}}
+        </div>
+      {{/if}}
     </div>
   </div>
 </section>

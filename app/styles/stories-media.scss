@@ -42,4 +42,16 @@
       margin-top: 85px;
     }
   }
+
+  .story-list-horizontal {
+    .row {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .col-md-4 {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
 }

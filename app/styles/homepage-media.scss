@@ -1,0 +1,119 @@
+/* Extra small devices (mobile: phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .sect-stories {
+    padding-top: 0;
+
+    .cont2-sect-stories {
+      margin-top: 23px;
+    }
+
+    .slick-slider {
+      .story-list-block {
+        margin: 0 auto;
+      }
+
+      .slick-slide {
+        display: block;
+        padding: 20px 0;
+
+        .story-title {
+          bottom: 14px;
+          font-size: 20px;
+          margin-bottom: 0;
+          line-height: 1.1em;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (tablet: landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .sect-stories {
+    padding-top: 30px;
+  }
+
+  .slick-slider {
+    .story-list-block {
+      margin: 0 auto;
+    }
+
+    .slick-slide {
+      display: block;
+      padding: 20px 0;
+
+      .story-title {
+        bottom: 14px;
+        font-size: 20px;
+        margin-bottom: 0;
+        line-height: 1.1em;
+      }
+
+      .story-summary {
+        width: 100%;
+        padding: 20px 20px;
+
+        p {
+          font: 15px UbuntuRegular, sans-serif;
+          height: 4.5em;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+/* Large devices (desktop: laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .slick-slider {
+    .story-list-block {
+      height: auto;
+      width: 100%;
+      box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
+
+      .story-top {
+        height: auto;
+        max-height: 300px;
+        position: relative;
+      }
+
+      .story-image {
+        height: 300px;
+      }
+
+      .story-title {
+        bottom: 14px;
+        font-size: 24px !important;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/* Extra large devices (jumbo: large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .slick-slider {
+    .story-list-block {
+      height: auto;
+      width: 100%;
+      box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
+    }
+
+    .story-top {
+      height: auto;
+      max-height: 300px;
+      position: relative;
+
+    }
+
+    .story-image {
+      height: 300px;
+    }
+
+    .story-title {
+      bottom: 14px;
+      font-size: 26px !important;
+      margin-bottom: 0;
+    }
+  }
+}
