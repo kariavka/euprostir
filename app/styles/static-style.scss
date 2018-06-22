@@ -21,7 +21,12 @@
   }
 
   .cont2-static {
-    margin-top: 80px;
+    margin-top: 0;
+
+    .container {
+      margin: 0;
+      padding: 0;
+    }
   }
 
   .team-photo {
@@ -175,5 +180,10 @@
         background-color: #F7F6FA;
       }
     }
+  }
+
+  strong, b {
+    font-family: "UbuntuBold", sans-serif !important;
+    font-weight: bold;
   }
 }
