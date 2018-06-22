@@ -38,12 +38,12 @@
 </header>
 
 {{#if media.isMobile}}
-  <section class="sect-menu sect-menu-mobile">
+  <section class="sect-menu sect-menu-mobile {{if isStoryItem 'sect-menu-inverted' ''}}">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12">
           {{#link-to "index"}}
-            <img class="logotip" src="/images/logo_mob.png" alt="">
+            <div class="logotip" alt=""></div>
           {{/link-to}}
         </div>
       </div>

@@ -1,0 +1,65 @@
+//------------------
+// Stories Begin
+
+.sect-stories {
+  padding-top: 80px;
+
+  .slogan-name-stories {
+    position: absolute;
+    top: -22px;
+    right: -105px;
+  }
+
+  .cont2-sect-stories {
+    margin-top: 42px;
+
+    .story-shadow {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 217px;
+      background-image: url(/images/bg_shadow.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    .box1 {
+      background-image: url(/images/box_cat_history1.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      height: 27px;
+      width: 14px;
+      position: relative;
+      right: -13px;
+    }
+
+    .box2 {
+      background-image: url(/images/box_cat_history2.png);
+      background-repeat: repeat-x;
+      background-position: top center;
+      height: 27px;
+      width: auto;
+      font: 12px UbuntuRegular, sans-serif;
+      color: #fff;
+      text-transform: uppercase;
+      position: relative;
+      top: -8px;
+      right: -5px;
+      padding: 7px 2px 0;
+    }
+
+    .box3 {
+      background-image: url(/images/box_cat_history3.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      height: 27px;
+      width: 14px;
+    }
+
+  }
+}
+
+// Stories End
+//------------------

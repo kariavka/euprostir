@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'UbuntuItalic';
-  src: url('/fonts/UbuntuItalic.eot');
-  src: url('/fonts/UbuntuItalic.eot') format('embedded-opentype'),
-  url('/fonts/UbuntuItalic.woff2') format('woff2'),
-  url('/fonts/UbuntuItalic.woff') format('woff'),
-  url('/fonts/UbuntuItalic.ttf') format('truetype'),
-  url('/fonts/UbuntuItalic.svg#UbuntuItalic') format('svg');
-}
-
 .story-header {
   background-image: url(/images/banner-story.jpg);
   background-repeat: no-repeat;
@@ -59,6 +49,7 @@
   padding: 95px 0 0;
 
   .story-time {
+    display: block;
     font-size: 14px;
     color: #888796;
     text-align: center;
@@ -232,41 +223,4 @@
   a {
     text-decoration: none;
   }
-}
-
-.story-block {
-  width: 100%;
-  height: 388px;
-  story-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
-
-  .story-top {
-    height: 265px;
-    position: relative;
-  }
-
-  .story-image {
-    height: 265px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .story-title {
-    position: absolute;
-    bottom: 24px;
-    left: 22px;
-    font: 26px UbuntuRegular, sans-serif;
-    color: #ffffff;
-    margin-bottom: 0;
-  }
-
-  .story-summary {
-    width: 100%;
-    padding: 20px;
-    overflow: hidden;
-  }
-}
-
-.disp_b_768 {
-  display: none;
 }
