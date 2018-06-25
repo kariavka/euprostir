@@ -11,4 +11,5 @@ export default {
   stories: 'Stories',
   practices: 'Practices',
   nothingfound: 'Nothing found',
+  search: 'Search',
 };

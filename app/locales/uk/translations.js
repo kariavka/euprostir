@@ -11,4 +11,5 @@ export default {
   stories: 'Історії',
   practices: 'Практики',
   nothingfound: 'Нічого не знайдено',
+  search: 'Пошук',
 };
