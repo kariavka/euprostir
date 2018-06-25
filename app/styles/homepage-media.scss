@@ -1,7 +1,12 @@
 /* Extra small devices (mobile: phones, 767px and down) */
 @media only screen and (max-width: 767px) {
   .sect-stories {
-    padding-top: 0;
+    padding-top: 30px;
+
+    .slogan-name-stories {
+      position: static;
+      width: auto;
+    }
 
     .cont2-sect-stories {
       margin-top: 23px;
@@ -21,6 +26,209 @@
           font-size: 20px;
           margin-bottom: 0;
           line-height: 1.1em;
+          height: 3.3em;
+        }
+
+        .story-summary {
+        }
+      }
+    }
+
+    .block-stories {
+
+    }
+  }
+
+  .sect-practices {
+    margin-top: 92px;
+    padding-bottom: 30px;
+
+    .cont2-sect-practices {
+      margin-top: 46px;
+
+      .block-practice {
+        height: auto !important;
+        max-width: 332px;
+        margin: 0 auto 30px !important;
+
+        .about-practice {
+          height: auto;
+          padding: 21px 15px 30px;
+        }
+
+        .summary-practice {
+          font: 14px UbuntuRegular, sans-serif;
+          margin-top: 14px;
+          line-height: 1.3;
+          display: none;
+        }
+      }
+    }
+
+    .btn-practices {
+      margin-top: 20px !important;
+    }
+
+    .btn-practices-en {
+      margin-bottom: 70px !important;
+    }
+  }
+
+  .sect-opportunities {
+
+    .category-name-opportunities {
+      font-size: 30px;
+    }
+
+    .cont2-sect-opportunities {
+      margin-top: 0 !important;
+      margin-bottom: 30px !important;
+
+      .row {
+        padding: 0 !important;
+        margin: 0 !important;
+
+        .col-md-3 {
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+      }
+
+      .block-opportunity {
+        height: auto;
+        padding: 0 !important;
+        margin-bottom: 0;
+
+        .img-opportunity {
+          height: 100px !important;
+        }
+
+        .top-opportunity {
+          width: 45%;
+          float: left;
+        }
+
+        .about-opportunity {
+          padding: 10px 10px 0;
+          width: 50%;
+          float: left;
+        }
+
+        .title-opportunity {
+          font: 16px UbuntuRegular, sans-serif;
+          margin-bottom: 0;
+          line-height: 1.1em;
+          height: 4.3em;
+        }
+      }
+
+      .block-opportunity:after,
+      .block-opportunity:before {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    }
+  }
+
+  .sect-courses {
+    .cont2-sect-courses {
+      margin-top: 48px;
+    }
+
+    .box-video-big {
+      height: 226px;
+      display: none;
+    }
+
+    .cont3-sect-courses {
+      margin-top: 0;
+    }
+
+    .box-video-small {
+      height: auto;
+      width: 100%;
+      max-width: 332px;
+      margin: 0 auto 30px;
+    }
+
+    .btn-courses {
+      margin-top: 25px;
+    }
+  }
+
+  .sect-events {
+    .block-event-container {
+      padding: 15px 0 !important;
+      height: auto !important;
+      cursor: pointer;
+
+      .block-event {
+        width: 370px !important;
+        height: auto !important;
+        margin: auto !important;
+
+        .dates-event {
+          float: left !important;
+          width: 63px !important;
+          margin-right: 30px !important;
+          padding-top: 0 !important;
+          margin-top: -13px !important;
+
+          .date1-event {
+            .date1-event-day {
+              display: block;
+              font: 60px UbuntuBold, sans-serif;
+              color: #a6a4af;
+              vertical-align: auto !important;
+              padding-top: 0 !important;
+              margin-top: 0 !important;
+            }
+
+            .date1-event-month {
+              display: block;
+              font: 18px UbuntuBold, sans-serif;
+              color: #888796;
+              margin-left: 7px;
+              text-transform: uppercase;
+              vertical-align: auto !important;
+            }
+          }
+
+          .date2-event {
+            .date2-event-day {
+              display: block;
+              font: 60px UbuntuBold, sans-serif;
+              color: #d2d0d6;
+              vertical-align: auto !important;
+            }
+
+            .date2-event-month {
+              display: block;
+              font: 18px UbuntuBold, sans-serif;
+              color: #afaeb8;
+              margin-left: 7px;
+              text-transform: uppercase;
+              vertical-align: auto !important;
+            }
+          }
+        }
+
+        .image-event {
+          float: left;
+          width: calc(100% - 93px) !important;
+          height: 150px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .about-event {
+          margin-left: 90px !important;
+
+          .summary-event {
+            display: none;
+          }
         }
       }
     }
@@ -31,50 +239,113 @@
 @media only screen and (min-width: 768px) {
   .sect-stories {
     padding-top: 30px;
-  }
 
-  .slick-slider {
-    .story-list-block {
-      margin: 0 auto;
-    }
-
-    .slick-slide {
-      display: block;
-      padding: 20px 0;
-
-      .story-title {
-        bottom: 14px;
-        font-size: 20px;
-        margin-bottom: 0;
-        line-height: 1.1em;
+    .slick-slider {
+      .story-list-block {
+        margin: 0 auto;
       }
 
-      .story-summary {
-        width: 100%;
-        padding: 20px 20px;
+      .slick-slide {
+        display: block;
+        padding: 20px 0;
 
-        p {
-          font: 15px UbuntuRegular, sans-serif;
-          height: 4.5em;
-          overflow: hidden;
+        .story-title {
+          bottom: 14px;
+          font-size: 20px;
+          margin-bottom: 0;
+          line-height: 1.1em;
+        }
+
+        .story-summary {
+          width: 100%;
+          padding: 20px 20px;
+
+          p {
+            font: 15px UbuntuRegular, sans-serif;
+            height: 4.5em;
+            overflow: hidden;
+          }
         }
       }
+    }
+  }
+
+  .sect-practices {
+    margin-top: 120px;
+    padding-bottom: 30px;
+
+    .block-practice {
+      height: auto;
+      margin-bottom: 30px;
+
+      .about-practice {
+        height: 205px;
+        padding: 10px 15px;
+      }
+
+      .summary-practice {
+        font: 14px UbuntuRegular, sans-serif;
+        margin-top: 14px;
+        line-height: 1.3;
+      }
+    }
+  }
+
+  .sect-opportunities {
+    .cont2-sect-opportunities {
+      margin-top: 45px;
+    }
+
+    .about-opportunity {
+      padding: 10px 10px 0;
     }
   }
 }
 
 /* Large devices (desktop: laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .slick-slider {
-    .story-list-block {
-      height: auto;
-      width: 100%;
-      box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
+  .sect-stories {
+    .slick-slider {
+      .story-list-block {
+        height: auto;
+        width: 100%;
+        box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
+
+        .story-top {
+          height: auto;
+          max-height: 300px;
+          position: relative;
+        }
+
+        .story-image {
+          height: 300px;
+        }
+
+        .story-title {
+          bottom: 14px;
+          font-size: 24px !important;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+/* Extra large devices (jumbo: large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .sect-stories {
+    .slick-slider {
+      .story-list-block {
+        height: auto;
+        width: 100%;
+        box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
+      }
 
       .story-top {
         height: auto;
         max-height: 300px;
         position: relative;
+
       }
 
       .story-image {
@@ -83,37 +354,9 @@
 
       .story-title {
         bottom: 14px;
-        font-size: 24px !important;
+        font-size: 26px !important;
         margin-bottom: 0;
       }
-    }
-  }
-}
-
-/* Extra large devices (jumbo: large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .slick-slider {
-    .story-list-block {
-      height: auto;
-      width: 100%;
-      box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
-    }
-
-    .story-top {
-      height: auto;
-      max-height: 300px;
-      position: relative;
-
-    }
-
-    .story-image {
-      height: 300px;
-    }
-
-    .story-title {
-      bottom: 14px;
-      font-size: 26px !important;
-      margin-bottom: 0;
     }
   }
 }

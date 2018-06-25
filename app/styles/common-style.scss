@@ -1,0 +1,496 @@
+body {
+  font-family: UbuntuRegular, serif;
+  position: relative;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1680px;
+  padding: 0 30px;
+}
+
+.pos_rel {
+  position: relative;
+}
+
+a:focus, a:hover {
+  background-color: transparent;
+  outline: none;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus {
+  outline: none;
+  outline-offset: 0;
+}
+
+:focus {
+  outline: none;
+  outline-width: 0;
+}
+
+//------------------
+// Category Begin
+
+.block-category-container {
+  text-align: center;
+  border-bottom: 1px solid #BAAFD6;
+
+  .category-text {
+    width: 100%;
+    max-width: 332px;
+    margin: 0 auto;
+    background-color: #fff;
+    top: 24px;
+    padding-bottom: 10px;
+    position: relative;
+  }
+
+  .slogan-name {
+    font: 25px EBGaramondItalic, sans-serif;
+    color: #9884be;
+  }
+
+  .category-name {
+    font: 36px UbuntuMedium, sans-serif;
+    color: #3b4256;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+  }
+
+  .category-name::before {
+    background-image: url(/images/icon_history.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 19px;
+    height: 20px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -35px;
+    top: -10px;
+  }
+}
+
+// Category End
+//------------------
+
+//------------------
+// More Button Begin
+
+.btn-more {
+  background-color: transparent;
+  border: 1px solid #542E91;
+  border-radius: 150px;
+  font: 14px UbuntuRegular, sans-serif;
+  color: #542e91;
+  text-transform: uppercase;
+  padding: 16px 40px;
+}
+
+.btn-more:hover,
+.btn-more:focus,
+.btn-more:active {
+  box-shadow: none;
+  outline: none !important;
+  background-color: #01B1BC;
+  border: 1px solid #01B1BC;
+  color: #fff;
+}
+
+// More Button End
+//------------------
+
+//------------------
+// Study Begin
+
+.sect-courses {
+  padding: 70px 0;
+
+  .slogan-courses {
+    position: absolute;
+    top: -15px;
+    right: -145px;
+  }
+
+  .category-name-courses::before {
+    background-image: url(/images/icon_study.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 25px;
+    height: 21px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -42px;
+    top: -6px;
+  }
+
+  .cont2-sect-courses {
+    margin-top: 76px;
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .box-video-big {
+      height: 390px;
+
+      .visual-video-big {
+        max-width: 693px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        .image-video-big {
+          max-width: 100%;
+          height: 390px;
+          background: no-repeat center center;
+          background-size: cover;
+        }
+      }
+
+      .visual-video-big:hover {
+        .shadow-video-big {
+          opacity: 0.7;
+        }
+      }
+
+      .shadow-video-big {
+        background: url('/images/big_video_shadow.png') no-repeat center center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 390px;
+        transition: all 0.5s ease-out;
+      }
+
+      .text-video-big {
+        padding: 26px 15px 0 21px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+        height: 390px;
+
+        .title-video-big {
+          font: 31px UbuntuRegular, sans-serif;
+          color: #56586b;
+          line-height: 1.1;
+          height: 4.4em;
+          overflow: hidden;
+        }
+
+        .summary-video-big {
+          font: 15px UbuntuRegular, sans-serif;
+          color: #686879;
+          margin-top: 15px;
+          line-height: 1.5em;
+          height: 6em;
+          overflow: hidden;
+        }
+
+        .arrow-video-big {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .cont3-sect-courses {
+    margin-top: 30px;
+
+    .box-video-small {
+      height: 188px;
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 30px;
+
+      .image-video-small {
+        max-width: 100%;
+        width: 100%;
+        height: 188px;
+        background: url('/images/video1.jpg') no-repeat center center;
+        background-size: cover;
+      }
+
+      .shadow-video-small {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 188px;
+        transition: all 0.5s ease-out;
+        background: url('/images/video1_shadow.png') no-repeat center center;
+        background-size: cover;
+      }
+
+      .title-video-small {
+        font: 16px UbuntuRegular, sans-serif;
+        color: #ffffff;
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        padding-right: 20px;
+      }
+    }
+
+    .box-video-small:hover {
+      .shadow-video-small {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .btn-courses {
+    margin-top: 50px;
+  }
+}
+
+// Study End
+//------------------
+
+.sect-events {
+  padding: 40px 0 117px;
+
+  .category-name-events::before {
+    background-image: url(/images/icon_events.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 18px;
+    height: 19px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -42px;
+    top: -6px;
+  }
+
+  .slogan-events {
+    position: absolute;
+    top: -15px;
+    right: -97px;
+  }
+
+  .cont2-sect-events {
+    margin-top: 80px;
+
+    .block-event-container {
+      padding: 15px 0;
+      height: 182px;
+      cursor: pointer;
+
+      .block-event {
+        .dates-event {
+          float: left;
+          width: 150px;
+          margin-right: 30px;
+          padding-top: 11px;
+
+          .date1-event {
+            .date1-event-day {
+              display: inline;
+              font: 60px UbuntuBold, sans-serif;
+              color: #a6a4af;
+              vertical-align: middle;
+            }
+
+            .date1-event-month {
+              display: inline;
+              font: 18px UbuntuBold, sans-serif;
+              color: #888796;
+              margin-left: 7px;
+              text-transform: uppercase;
+              vertical-align: middle;
+            }
+          }
+
+          .date2-event {
+            .date2-event-day {
+              display: inline;
+              font: 60px UbuntuBold, sans-serif;
+              color: #d2d0d6;
+              vertical-align: middle;
+            }
+
+            .date2-event-month {
+              display: inline;
+              font: 18px UbuntuBold, sans-serif;
+              color: #afaeb8;
+              margin-left: 7px;
+              text-transform: uppercase;
+              vertical-align: middle;
+            }
+          }
+        }
+
+        .image-event {
+          float: left;
+          width: calc(100% - 240px);
+          height: 150px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .about-event {
+          margin-left: -60px;
+
+          .title-event {
+            font: 22px UbuntuRegular, sans-serif;
+            color: #3b4256;
+          }
+
+          .summary-event {
+            font: 16px UbuntuRegular, sans-serif;
+            color: #686879;
+            height: 3.5em;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+
+    a:hover {
+      text-decoration: none;
+
+      .date1-event-day {
+        color: #00b0bb !important;
+      }
+
+      .date1-event-month {
+        color: #00b0bb !important;
+      }
+
+      .date2-event-day {
+        color: #bde1e5 !important;
+      }
+
+      .date2-event-month {
+        color: #95d1d7 !important;
+      }
+
+      .title-event {
+        color: #542e91 !important;
+      }
+    }
+
+    .block-event-container:nth-child(2n) {
+      background-color: #F6F6F8;
+    }
+  }
+
+  .btn-events {
+    margin-top: 59px;
+  }
+}
+
+//------------------
+// Menu Mobile Begin
+
+.menu-mobile {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding-top: 27px;
+
+  .btn-close {
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .p30 {
+    padding: 0 30px;
+  }
+
+  .block-lang {
+    margin-top: 0;
+
+    a {
+      font: 14px UbuntuRegular, sans-serif;
+      color: #9884be;
+      margin-right: 15px;
+    }
+
+    a.active {
+      font: 14px UbuntuRegular, sans-serif;
+      color: #542e91;
+    }
+  }
+
+  .menu-mobile-list {
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0;
+
+    a {
+      font: 16px UbuntuRegular, sans-serif;
+      color: #3b4256;
+      text-transform: uppercase;
+      line-height: 1;
+      display: block;
+      height: 100%;
+      padding: 15px 0;
+      padding-left: 30px;
+    }
+
+    a:hover {
+      color: #542e91;
+      text-decoration: none;
+      background-color: #F4F2F9;
+    }
+  }
+
+  .cont2-mobile {
+    margin-top: 80px;
+  }
+
+  .search-mobile {
+    padding: 0 20px;
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+
+    .input-search {
+      height: 40px;
+      border: 0;
+      border-radius: 150px;
+      background-color: #F3F4F6;
+      font: 14px UbuntuRegular, sans-serif;
+      color: #a6a4af;
+      padding: 0 22px;
+      margin-top: 60px;
+    }
+
+    .btn-search-submit {
+      border: 0;
+      background-image: url(/images/search_btn_form.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      height: 19px;
+      width: 19px;
+    }
+  }
+}
+
+// Menu Mobile End
+//------------------

@@ -1,0 +1,90 @@
+/* Extra small devices (mobile: phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .category-text {
+    max-width: 213px !important;
+    top: 32px;
+    padding-bottom: 10px;
+  }
+
+  .category-name {
+    font: 36px UbuntuMedium, sans-serif;
+    margin-bottom: 0;
+  }
+
+  .slogan-name {
+    position: static !important;
+    top: 24px;
+    margin: 0 !important;
+  }
+
+  .container-fluid {
+    width: 100%;
+    max-width: 1680px;
+    padding: 0 0;
+  }
+
+  .box3 {
+    display: none !important;
+  }
+
+  .box2 {
+    padding: 7px 10px 0 4px;
+  }
+}
+
+/* Medium devices (tablet: landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .sect-courses {
+    padding: 40px 0;
+  }
+
+  .visual-video-big {
+    max-width: 400px;
+  }
+
+  .box-video-big {
+    height: 226px;
+  }
+
+  .text-video-big {
+    padding: 10px 10px 0 11px;
+    height: 226px;
+  }
+
+  .title-video-big {
+    font: 21px UbuntuRegular, sans-serif;
+    line-height: 1.1;
+  }
+
+  .arrow-video-big {
+    margin-top: 2px;
+  }
+
+  .box-video-small {
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .title-video-small {
+    font: 15px UbuntuRegular, sans-serif;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    padding-right: 10px;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+
+  .sect-courses {
+    padding: 40px 0 20px;
+  }
+}
+
+/* Large devices (desktop: laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (jumbo: large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
