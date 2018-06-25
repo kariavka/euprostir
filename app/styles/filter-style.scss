@@ -1,4 +1,6 @@
 .filter {
+  margin-bottom: 20px;
+
   .label {
     min-width: 101px;
     font: 14px UbuntuBold, sans-serif;
@@ -72,6 +74,7 @@
     color: #777;
     position: absolute;
     margin-left: -17px;
+    z-index: 1000;
 
     ul {
       font-size: 16px;
@@ -122,29 +125,5 @@
   .dropdownvisible {
     height: auto;
     background-color: #614099;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .filter {
-    padding: 60px 0;
-
-    .label {
-      display: block;
-    }
-
-    .trigger {
-      margin-left: 0;
-    }
-
-    .activetrigger {
-      margin-left: 0;
-    }
-
-    .dropcontainer ul {
-      margin-left: 0;
-      width: 100%;
-      max-width: 400px;
-    }
   }
 }

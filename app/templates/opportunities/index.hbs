@@ -20,8 +20,9 @@
 
         <div class="block1-stories-list"></div>
 
-        {{opportunity/opportunity-list-vertical
-          items=items}}
+        {{post/post-list-vertical
+          items=items
+          endpoint="opportunities.item"}}
 
         {{#if canLoadMore}}
           <div class="text-center">

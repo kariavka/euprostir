@@ -1,0 +1,23 @@
+@media only screen and (max-width: 768px) {
+  .filter {
+    padding: 0;
+
+    .label {
+      display: block;
+    }
+
+    .trigger {
+      margin-left: 0;
+    }
+
+    .activetrigger {
+      margin-left: 0;
+    }
+
+    .dropcontainer ul {
+      margin-left: 0;
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+}

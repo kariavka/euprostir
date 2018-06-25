@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px) {
+  .block-post-list-vertical-item {
+    .image {
+      display: block !important;
+      float: none !important;
+      width: 100% !important;
+      margin-bottom: 20px !important;
+    }
+
+    .about {
+      clear: both;
+      font: 14px UbuntuRegular, sans-serif;
+      line-height: 1.1em;
+      height: 4.3em;
+    }
+  }
+}

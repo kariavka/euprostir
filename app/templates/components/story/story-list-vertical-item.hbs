@@ -1,13 +1,31 @@
-<div class="block-stories-list">
-  {{#link-to "stories.item" item.id}}
-    <div class="pull-left img-box-stories" style="{{item.imageStyle}}"></div>
-  {{/link-to}}
-  <div class="media-body box-stories-list">
-    <div class="title-box-stories-list">
-      {{#link-to endpoint item.id}}
-        {{item.title}}
-      {{/link-to}}
+{{#if media.isMobile}}
+  <div class="block-post-list-vertical-item">
+    <div class="row">
+      <div class="col-sm-12">
+        {{#link-to endpoint item.id}}
+          <div class="image" style="{{item.imageStyle}}"></div>
+        {{/link-to}}
+        <div class="title">
+          {{#link-to endpoint item.id}}
+            {{item.title}}
+          {{/link-to}}
+        </div>
+        <div class="about">{{item.summary}}</div>
+      </div>
     </div>
-    <div class="about-box-stories-list">{{item.summary}}</div>
   </div>
-</div>
+{{else}}
+  <div class="block-post-list-vertical-item">
+    {{#link-to endpoint item.id}}
+      <div class="pull-left image" style="{{item.imageStyle}}"></div>
+    {{/link-to}}
+    <div class="media-body">
+      <div class="title">
+        {{#link-to endpoint item.id}}
+          {{item.title}}
+        {{/link-to}}
+      </div>
+      <div class="about">{{item.summary}}</div>
+    </div>
+  </div>
+{{/if}}
