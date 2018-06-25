@@ -1,32 +1,29 @@
-<section class="opportunity">
+{{#if media.isMobile}}
+  <section class="opportunity">
 
-  <aside id="opportunity-aside" class="opportunity-aside">
-    <div class="ml-3">
-      <div>
-        {{share/share-facebook
-          item=item}}
+    <aside id="opportunity-aside" class="opportunity-aside">
+      <div class="ml-3">
+        <div>
+          {{share/share-facebook
+            item=item}}
+        </div>
+        <div class="mt-3">
+          {{share/share-twitter
+            item=item}}
+        </div>
       </div>
-      <div class="mt-3">
-        {{share/share-twitter
-          item=item}}
-      </div>
-    </div>
-  </aside>
+    </aside>
 
-  <div id="opportunity-article" class="opportunity-article">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-3 col-12 pos_rel">
-          <div class="row">
-            <div class="col-12 text-right">
-              <img class="opportunity-icon" src="/images/icon-opportunity.png" alt="">
-            </div>
-          </div>
-          <div class="row opportunity-date">
-            <div class="col-sm-6 col-6 opportunity-actual">
-              Актуально до:
-            </div>
-            <div class="col-sm-6 col-6">
+    <div id="opportunity-article" class="opportunity-article">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12 col-sm-12 col-12">
+            <div class="opportunity-date">
+              <div class="opportunity-actual">
+                Актуально до:
+                <img class="opportunity-icon" src="/images/icon-opportunity.png" alt="">
+              </div>
               <div class="opportunity-day">
                 {{moment-format item.created "DD"}}
               </div>
@@ -36,43 +33,113 @@
               </div>
             </div>
           </div>
+
+          <div class="col-md-12 col-sm-12 col-12">
+            <div class="opportunity-category">Можливості</div>
+            <div class="opportunity-title">{{item.title}}</div>
+          </div>
+
         </div>
 
-        <div class="col-md-6 offset-md-1 col-sm-9 offset-sm-1 col-xs-12">
-          <div class="opportunity-category">Можливості</div>
-          <div class="opportunity-title">{{item.title}}</div>
+      </div>
+
+      <div class="container cont2-opportunity">
+
+        <div class="row">
+
+          <div class="col-md-12 col-sm-12 col-12">
+            <img src="{{item.image_url}}" class="img-fluid" alt="Заглавна картинка">
+            <div class="opportunity-description">
+              {{{item.description}}}
+            </div>
+          </div>
+
         </div>
 
       </div>
 
     </div>
 
-    <div class="container cont2-opportunity">
+  </section>
+{{else}}
+  <section class="opportunity">
 
-      <div class="row">
+    <aside id="opportunity-aside" class="opportunity-aside">
+      <div class="ml-3">
+        <div>
+          {{share/share-facebook
+            item=item}}
+        </div>
+        <div class="mt-3">
+          {{share/share-twitter
+            item=item}}
+        </div>
+      </div>
+    </aside>
 
-        <div class="col-md-3 col-sm-3">
-          <div class="block-opportunity">
-            {{!--<div class="organizers">Організатори</div>--}}
-            {{!--<ul class="list-organizers">--}}
-            {{!--<li>Проект ЄС для розвитку громадянського суспільства в Україні</li>--}}
-            {{!--<li>Представництво ЄС в Україні</li>--}}
-            {{!--<li>Міністерство закордонних справ України</li>--}}
-            {{!--</ul>--}}
+    <div id="opportunity-article" class="opportunity-article">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-3 col-sm-3 col-12 pos_rel">
+            <div class="row">
+              <div class="col-12 text-right">
+                <img class="opportunity-icon" src="/images/icon-opportunity.png" alt="">
+              </div>
+            </div>
+            <div class="row opportunity-date">
+              <div class="col-sm-6 col-6 opportunity-actual">
+                Актуально до:
+              </div>
+              <div class="col-sm-6 col-6">
+                <div class="opportunity-day">
+                  {{moment-format item.created "DD"}}
+                </div>
+                <div class="opportunity-year">
+                  {{moment-format item.created "MMM"}}
+                  {{moment-format item.created "YYYY"}}
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="col-md-6 offset-md-1 col-sm-9 offset-sm-1 col-xs-12">
+            <div class="opportunity-category">Можливості</div>
+            <div class="opportunity-title">{{item.title}}</div>
+          </div>
+
         </div>
 
-        <div class="col-md-7 offset-md-1 col-sm-9">
-          <img src="{{item.image_url}}" class="img-fluid" alt="Заглавна картинка">
-          <div class="opportunity-description">
-            {{{item.description}}}
+      </div>
+
+      <div class="container cont2-opportunity">
+
+        <div class="row">
+
+          <div class="col-md-3 col-sm-3">
+            <div class="block-opportunity">
+              {{!--<div class="organizers">Організатори</div>--}}
+              {{!--<ul class="list-organizers">--}}
+              {{!--<li>Проект ЄС для розвитку громадянського суспільства в Україні</li>--}}
+              {{!--<li>Представництво ЄС в Україні</li>--}}
+              {{!--<li>Міністерство закордонних справ України</li>--}}
+              {{!--</ul>--}}
+            </div>
           </div>
+
+          <div class="col-md-7 offset-md-1 col-sm-9">
+            <img src="{{item.image_url}}" class="img-fluid" alt="Заглавна картинка">
+            <div class="opportunity-description">
+              {{{item.description}}}
+            </div>
+          </div>
+
         </div>
 
       </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
+{{/if}}
