@@ -1,0 +1,14 @@
+{{#if items}}
+
+  {{#each items as |item index|}}
+    {{post/post-list-vertical-item
+      item=item
+      index=index
+      endpoint=endpoint}}
+  {{/each}}
+
+{{else}}
+
+  {{t "nothingfound"}}
+
+{{/if}}

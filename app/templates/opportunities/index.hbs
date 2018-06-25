@@ -41,8 +41,9 @@
 
           <div class="box1-popular"></div>
 
-          {{opportunity/opportunity-list-popular
-            items=model.popular}}
+          {{post/post-list-popular
+            items=model.popular
+            endpoint="opportunities.item"}}
 
         </div>
       </div>
