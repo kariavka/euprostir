@@ -12,4 +12,5 @@ export default {
   practices: 'Практики',
   nothingfound: 'Нічого не знайдено',
   search: 'Пошук',
+  openmore: 'Відкрити більше',
 };
