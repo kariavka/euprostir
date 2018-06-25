@@ -1,0 +1,62 @@
+.block-post-list-vertical-item {
+  margin-bottom: 34px;
+  clear: both;
+  display: table;
+
+  .image {
+    width: 331px;
+    height: 188px;
+    overflow: hidden;
+    margin-right: 27px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title {
+    font: 18px UbuntuRegular, sans-serif;
+    color: #3b4256;
+    line-height: 1.3em;
+    height: 3.9em;
+    overflow: hidden;
+    margin-bottom: 14px;
+  }
+
+  .title a {
+    font: 18px UbuntuRegular, sans-serif;
+    color: #3b4256;
+  }
+
+  .about {
+    font: 16px UbuntuRegular, sans-serif;
+    color: #686879;
+    line-height: 1.4em;
+    height: 4.2em;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+}
+
+.block-post-list-popular-item {
+  clear: both;
+  display: table;
+  margin-bottom: 20px;
+
+  .image {
+    width: 73px;
+    height: 71px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title {
+    font: 14px UbuntuRegular, sans-serif;
+    color: #3b4256;
+    line-height: 1.3em;
+    height: 5.0em;
+    overflow: hidden;
+    padding-left: 12px;
+    margin-bottom: 0;
+  }
+}

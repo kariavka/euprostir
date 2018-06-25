@@ -63,3 +63,168 @@
 
 // Stories End
 //------------------
+
+//------------------
+// Practices Begin
+
+.sect-practices {
+  margin-top: 140px;
+  padding-bottom: 60px;
+
+  .slogan-name-practices {
+    position: absolute;
+    top: -22px;
+    right: -165px;
+  }
+
+  .category-name-practices::before {
+    background-image: url(/images/icon_practice.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 22px;
+    height: 21px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -35px;
+    top: -10px;
+  }
+
+  .cont2-sect-practices {
+    margin-top: 71px;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      .about-practice {
+        background-color: #614099;
+        box-shadow: none;
+      }
+
+      .title-practice {
+        color: #fff;
+      }
+
+      .summary-practice {
+        color: #d7c5f6;
+      }
+    }
+  }
+
+  .block-practice {
+    height: 390px;
+    margin-bottom: 30px;
+
+    .img-practice {
+      height: 200px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .about-practice {
+      height: 205px;
+      padding: 20px 25px;
+      box-shadow: 0 3px 13px rgba(0, 0, 0, 0.15);
+
+      .title-practice {
+        font: 19px UbuntuRegular, sans-serif;
+        color: #3b4256;
+      }
+
+      .summary-practice {
+        font: 15px UbuntuRegular, sans-serif;
+        color: #686879;
+        margin-top: 20px;
+        line-height: 1.5;
+        height: 4.5em;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .btn-practices {
+    margin-top: 50px;
+  }
+}
+
+// Practices End
+//------------------
+
+//------------------
+// Opportunities Begin
+
+.sect-opportunities {
+  padding: 40px 0;
+
+  .slogan-name-opportunities {
+    position: absolute;
+    top: -22px;
+    right: -155px;
+  }
+
+  .category-name-opportunities::before {
+    background-image: url(/images/icon_ability.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 18px;
+    height: 26px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -35px;
+    top: -10px;
+  }
+
+  .cont2-sect-opportunities {
+    margin-top: 75px;
+
+    .block-opportunity {
+      height: 284px;
+      padding: 15px;
+      margin-bottom: 30px;
+
+      .img-opportunity {
+        height: 135px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .about-opportunity {
+        padding: 19px 15px 0;
+      }
+
+      .title-opportunity {
+        font: 18px UbuntuRegular, sans-serif;
+        color: #3b4256;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      .block-opportunity {
+        background-color: #01B1BC;
+      }
+      .title-opportunity {
+        color: #fff;
+      }
+    }
+
+    .col-md-3 {
+      padding: 0;
+    }
+
+    .btn-opportunities {
+      margin-top: 25px;
+    }
+  }
+}
+
+// Opportunities End
+//------------------

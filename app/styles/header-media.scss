@@ -1,0 +1,212 @@
+/* Extra small devices (mobile: phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .header-top {
+    height: 45px;
+    margin-bottom: 0;
+    background: linear-gradient(to left, #542E91, #765AA7);
+
+    .block-lang {
+      margin-top: 12px;
+
+      a {
+        font: 14px UbuntuRegular, sans-serif;
+        color: #ccc;
+        margin-right: 15px;
+      }
+
+      a.active {
+        font: 14px UbuntuRegular, sans-serif;
+        color: #fff;
+      }
+    }
+
+    i {
+      color: #fff;
+    }
+  }
+
+  .sect-menu {
+    position: relative;
+    top: 0;
+    display: block;
+    margin: 0 !important;
+    padding: 37px 0 20px;
+
+    #top-menu {
+      float: right;
+      position: absolute;
+      //top: -153px;
+      right: 5px;
+      margin: 0;
+    }
+
+    .logotip {
+      width: 183px !important;
+      height: 66px !important;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  .header-desktop {
+    display: none;
+  }
+
+  .header-mobile {
+    display: block;
+    padding: 0;
+    margin: 0;
+
+    i {
+      color: #fff;
+    }
+  }
+
+  .logotip {
+    max-width: 217px;
+    height: 78px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .navbar-toggle {
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+
+  .navbar-toggle .icon-bar {
+    width: 22px;
+    height: 2px;
+  }
+
+  .navbar-collapse {
+    margin: 0;
+    padding: 0 15px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: right;
+  }
+
+  .top-menu li {
+    list-style-type: none;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .nav > li > a {
+    display: block;
+    padding: 12px 10px;
+  }
+
+  .navbar-toggle .icon-bar {
+    width: 22px;
+    height: 2px;
+    border: 1px solid #fff;
+  }
+
+  .navbar-toggle {
+    padding: 10px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-radius: 4px;
+  }
+
+  #top-menu {
+    float: right;
+    margin-top: 0;
+    margin-right: 30px;
+  }
+
+  .menu-fixed .logotip {
+    max-width: 112px;
+    float: left;
+  }
+
+  .menu-fixed.show {
+    height: 46px;
+  }
+
+  .menu-fixed .navbar-toggle .icon-bar {
+    width: 22px;
+    height: 2px;
+    border: 1px solid #000;
+  }
+
+  #top-menu {
+    display: none;
+    float: right;
+    margin-top: 3px;
+    margin-right: 0;
+  }
+
+  .menu-mobile {
+    .btn-search-submit {
+      background-color: #fff !important;
+    }
+  }
+}
+
+/* Medium devices (tablet: landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .header-top {
+    i {
+      color: #fff;
+    }
+  }
+
+  .sect-menu .btn-search {
+    float: right;
+    margin-top: 22px;
+    cursor: pointer;
+  }
+
+  .sect-menu .btn-close {
+    float: right;
+    margin-top: 22px;
+    cursor: pointer;
+  }
+
+  .nav > li > a {
+    padding: 7px 9px;
+    border-radius: 150px;
+  }
+
+  .search {
+    width: 80%;
+    position: absolute;
+    right: 60px;
+    top: 15px;
+  }
+
+  .sect-menu {
+    padding: 20px 0;
+  }
+}
+
+/* Large devices (desktop: laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header-desktop {
+    display: block;
+  }
+
+  .header-mobile {
+    display: none;
+  }
+}
+
+/* Extra large devices (jumbo: large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .header-desktop {
+    display: block;
+  }
+
+  .header-mobile {
+    display: none;
+  }
+}

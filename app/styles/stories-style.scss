@@ -11,50 +11,11 @@
     min-height: 400px;
   }
 
-  .img-box-stories {
-    width: 331px;
-    height: 188px;
-    overflow: hidden;
-    margin-right: 27px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .title-box-stories-list {
-    font: 18px UbuntuRegular, sans-serif;
-    color: #3b4256;
-    line-height: 1.3em;
-    height: 3.9em;
-    overflow: hidden;
-    margin-bottom: 14px;
-  }
-
-  .title-box-stories-list a {
-    font: 18px UbuntuRegular, sans-serif;
-    color: #3b4256;
-  }
-
-  .about-box-stories-list {
-    font: 16px UbuntuRegular, sans-serif;
-    color: #686879;
-    line-height: 1.4em;
-    height: 4.2em;
-    overflow: hidden;
-    margin-bottom: 0;
-  }
-
   .box-stories-list {
     padding-top: 24px;
     padding-right: 0;
     padding-left: 0;
     padding-bottom: 0;
-  }
-
-  .block-stories-list {
-    margin-bottom: 34px;
-    clear: both;
-    display: table;
   }
 
   .block1-stories-list {
@@ -74,30 +35,6 @@
       color: #3b4256;
       margin-top: 60px;
       text-transform: uppercase;
-    }
-
-    .box-popular {
-      clear: both;
-      display: table;
-      margin-bottom: 20px;
-
-      .img-box-popular {
-        width: 73px;
-        height: 71px;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .title-box-popular {
-        font: 14px UbuntuRegular, sans-serif;
-        color: #3b4256;
-        line-height: 1.3em;
-        height: 5.0em;
-        overflow: hidden;
-        padding-left: 12px;
-        margin-bottom: 0;
-      }
     }
 
     .box1-popular {
@@ -169,7 +106,7 @@
       width: 100%;
       font: 16px UbuntuRegular, sans-serif;
       line-height: 1.1em;
-      max-height: 3.3em;
+      max-height: 3.2em;
       padding: 0;
       overflow: hidden;
       //background-color: yellow;
