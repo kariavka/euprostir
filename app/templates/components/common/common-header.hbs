@@ -1,44 +1,63 @@
-<header class="header-top header-desktop">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-sm-6 col-xs-3">
-        <div class="block-lang">
-          {{#link-to "index"}}UA{{/link-to}}
-          {{#link-to "en"}}EN{{/link-to}}
+{{#if media.isMobile}}
+  <header class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="block-lang">
+            {{#link-to "index"}}UA{{/link-to}}
+            {{#link-to "en"}}EN{{/link-to}}
+          </div>
         </div>
-      </div>
-      <div class="col-md-6 col-sm-6 col-xs-3 disp_n_768">
-        <div class="block-social-desktop text-right">
-          <a href="https://www.facebook.com/EuProstir" target="_blank"><img src="/images/ic_f_top.png" alt=""/></a>
-          <a href="https://twitter.com/EuProstir" target="_blank"><img src="/images/ic_tw_top.png" alt=""/></a>
+        <div class="col-6">
+          <div class="block-lang text-right">
+            <div role="button" onclick="$('.menu-mobile').show('slide');">
+              {{material-design-icon name='menu'}}
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<header class="header-top header-mobile">
-  <div class="container">
-    <div class="row">
-      <div class="col-6">
-        <div class="block-lang">
-          {{#link-to "index"}}UA{{/link-to}}
-          {{#link-to "en"}}EN{{/link-to}}
+  <div class="menu-mobile" style="display: none;">
+    <div class="container p30">
+      <div class="row">
+        <div class="col-6">
+          <div class="block-lang">
+            {{#link-to "index"}}UA{{/link-to}}
+            {{#link-to "en"}}EN{{/link-to}}
+          </div>
+        </div>
+        <div class="col-6 text-right">
+          <div onclick="$('.menu-mobile').hide('slide');">
+            <img src="/images/close_menu.png" alt=""/>
+          </div>
         </div>
       </div>
-      <div class="col-6">
-        <div class="block-lang text-right">
-          <div role="button" onclick="$('.menu-mobile').show('slide');">
-            {{material-design-icon name='menu'}}
+    </div>
+    <ul class="menu-mobile-list">
+      <li>{{#link-to "index"}}Головна{{/link-to}}</li>
+      <li>{{#link-to "stories.index"}}Історії{{/link-to}}</li>
+      <li>{{#link-to "practices.index"}}Практики{{/link-to}}</li>
+      <li>{{#link-to "opportunities.index"}}Можливості{{/link-to}}</li>
+    </ul>
+    <form action="" method="post" class="search-mobile">
+      <input type="search" name="" placeholder="{{t "search"}}" class="input-search col-8"/>
+      <input type="submit" name="" value="" class="btn-search-submit"/>
+    </form>
+    <div class="container p30 cont2-mobile">
+      <div class="row">
+        <div class="col-6">
+          <div class="social-mobile">
+            <a class="icon_f" href="https://www.facebook.com/EuProstir" target="_blank"></a>
+            <a class="icon_tw" href="https://twitter.com/EuProstir" target="_blank"></a>
           </div>
         </div>
       </div>
     </div>
   </div>
-</header>
 
-{{#if media.isMobile}}
-  <section class="sect-menu sect-menu-mobile {{if isStoryItem 'sect-menu-inverted' ''}}">
+  <section class="sect-menu {{if isStoryItem 'sect-menu-inverted' ''}}">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12">
@@ -50,6 +69,25 @@
     </div>
   </section>
 {{else}}
+  <header class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-3">
+          <div class="block-lang">
+            {{#link-to "index"}}UA{{/link-to}}
+            {{#link-to "en"}}EN{{/link-to}}
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-3 disp_n_768">
+          <div class="block-social-desktop text-right">
+            <a href="https://www.facebook.com/EuProstir" target="_blank"><img src="/images/ic_f_top.png" alt=""/></a>
+            <a href="https://twitter.com/EuProstir" target="_blank"><img src="/images/ic_tw_top.png" alt=""/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
   <section class="sect-menu sect-menu-desktop {{if isStoryItem 'sect-menu-inverted' ''}}">
     <div class="container">
       <div class="row">
@@ -82,41 +120,3 @@
     </div>
   </section>
 {{/if}}
-
-<div class="menu-mobile" style="display: none;">
-  <div class="container p30">
-    <div class="row">
-      <div class="col-6">
-        <div class="block-lang">
-          {{#link-to "index"}}UA{{/link-to}}
-          {{#link-to "en"}}EN{{/link-to}}
-        </div>
-      </div>
-      <div class="col-6 text-right">
-        <div onclick="$('.menu-mobile').hide('slide');">
-          <img src="/images/close_menu.png" alt=""/>
-        </div>
-      </div>
-    </div>
-  </div>
-  <ul class="menu-mobile-list">
-    <li>{{#link-to "index"}}Головна{{/link-to}}</li>
-    <li>{{#link-to "stories.index"}}Історії{{/link-to}}</li>
-    <li>{{#link-to "practices.index"}}Практики{{/link-to}}</li>
-    <li>{{#link-to "opportunities.index"}}Можливості{{/link-to}}</li>
-  </ul>
-  <form action="" method="post" class="search-mobile">
-    <input type="search" name="" placeholder="{{t "search"}}" class="input-search col-8"/>
-    <input type="submit" name="" value="" class="btn-search-submit"/>
-  </form>
-  <div class="container p30 cont2-mobile">
-    <div class="row">
-      <div class="col-6">
-        <div class="social-mobile">
-          <a class="icon_f" href="https://www.facebook.com/EuProstir" target="_blank"></a>
-          <a class="icon_tw" href="https://twitter.com/EuProstir" target="_blank"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
