@@ -1,6 +1,5 @@
 /* Extra small devices (mobile: phones, 767px and down) */
 @media only screen and (max-width: 767px) {
-
   .name_category_opportunity {
     font-size: 30px;
   }
@@ -12,6 +11,10 @@
   .opportunity {
     position: relative;
     padding-top: 35px;
+
+    .opportunity-aside {
+      display: none;
+    }
 
     .opportunity-date {
       text-align: left;
@@ -36,7 +39,7 @@
   }
 
   .cont2-opportunity {
-    margin-top: 40px;
+    margin-top: 40px !important;
   }
 
   .block-opportunity {
