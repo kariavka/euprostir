@@ -23,6 +23,7 @@ export default Route.extend({
   // Model
   model() {
     const store = get(this, 'store');
+    const dateStart = moment().format('YYYY-MM-DD');
 
     return hash({
       stories: store.query('post', {
@@ -44,6 +45,7 @@ export default Route.extend({
         per_page: 4,
         lira: config.neuronet.uk.opportunities,
         sort: '-created',
+        date_start: dateStart,
         'filter[featured]': true,
       }),
       courses: store.query('post', {
