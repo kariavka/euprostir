@@ -3,6 +3,7 @@ import {inject} from '@ember/service';
 import {get} from '@ember/object';
 import {hash} from 'rsvp';
 import config from 'euprostir/config/environment';
+import moment from 'moment';
 
 export default Route.extend({
   // Services
@@ -20,21 +21,24 @@ export default Route.extend({
   // Model
   model(params) {
     const store = get(this, 'store');
-    let lira = config.neuronet.uk.opportunities;
-    let filter = params.f;
-    let liraWithFilter = (filter) ? lira + ',' + filter : lira;
+    const lira = config.neuronet.uk.opportunities;
+    const filter = params.f;
+    const liraWithFilter = (filter) ? lira + ',' + filter : lira;
+    const dateStart = moment().format('YYYY-MM-DD');
 
     return hash({
       items: store.query('post', {
         page: 1,
         per_page: 4,
-        lira: liraWithFilter
+        lira: liraWithFilter,
+        date_start: dateStart,
       }),
       popular: store.query('post', {
         page: 1,
         per_page: 3,
         lira: lira,
-        sort: '-views'
+        sort: '-views',
+        date_start: dateStart,
       }),
     });
   },
