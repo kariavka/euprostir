@@ -7,7 +7,7 @@ export default Component.extend({
 
     $('.slick-slider').not('.slick-initialized').slick({
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 10000,
       slidesToShow: 3,
       slidesToScroll: 3,
       dots: true,
