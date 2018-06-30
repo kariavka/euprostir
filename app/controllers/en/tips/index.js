@@ -43,7 +43,7 @@ export default Controller.extend({
       const store = get(this, 'store');
       let page = get(this, 'page');
       let pages = get(this, 'pages');
-      let lira = config.neuronet.uk.practices;
+      let lira = config.neuronet.en.practices;
       let filter = get(this, 'f');
 
       if (filter) {

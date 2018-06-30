@@ -162,6 +162,12 @@ footer {
     color: #555;
   }
 
+  .text-eu-en {
+    width: 267px;
+    height: 31px;
+    font-size: 14px;
+  }
+
   .logo-eu {
     width: 330px;
     height: 32px;
@@ -196,7 +202,18 @@ footer {
     font: 14px UbuntuRegular, sans-serif;
     color: #fff;
     text-align: right;
-    margin-top: 38px;
+    margin-top: 10px;
+  }
+
+  .livarava {
+    font: 12px UbuntuRegular, sans-serif;
+    color: #fff;
+    text-align: right;
+    margin-top: 10px;
+
+    a {
+      color: #fff;
+    }
   }
 
   .logo {

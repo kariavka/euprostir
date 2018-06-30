@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <p class="name-stories-list">{{t "practices"}}</p>
+        <p class="name-stories-list">{{t "tips"}}</p>
       </div>
     </div>
   </div>
@@ -14,7 +14,7 @@
         {{common/common-filter-en
           class="filter"
           filters=filters
-          endpoint="en.practices.index"
+          endpoint="en.tips.index"
           showDropdown=showDropdown
           currentFilter=f}}
 
@@ -22,7 +22,7 @@
 
         {{post/post-list-vertical
           items=items
-          endpoint="en.practices.item"}}
+          endpoint="en.tips.item"}}
 
         {{#if canLoadMore}}
           <div class="text-center">
@@ -43,7 +43,7 @@
 
           {{post/post-list-popular
             items=model.popular
-            endpoint="en.practices.item"}}
+            endpoint="en.tips.item"}}
 
         </div>
       </div>
