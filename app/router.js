@@ -40,7 +40,7 @@ Router.map(function () {
     this.route('stories', function () {
       this.route('item', {path: '/:id'});
     });
-    this.route('practices', function () {
+    this.route('tips', function () {
       this.route('item', {path: '/:id'});
     });
     this.route('page', {path: '/:uid/'});

@@ -10,6 +10,7 @@ export default {
   // "key.with.interpolation": "Text with {{anInterpolation}}"
   stories: 'Історії',
   practices: 'Практики',
+  tips: 'Практики',
   nothingfound: 'Нічого не знайдено',
   search: 'Пошук',
   openmore: 'Відкрити більше',
