@@ -9,7 +9,8 @@ export default {
   //
   // "key.with.interpolation": "Text with {{anInterpolation}}"
   stories: 'Stories',
-  practices: 'Tips',
+  practices: 'Practices',
+  tips: 'Tips',
   nothingfound: 'Nothing found',
   search: 'Search',
   openmore: 'Open more',

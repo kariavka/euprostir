@@ -9,7 +9,7 @@ export default Route.extend({
   store: inject(),
 
   // Title
-  title: 'Practices - EU.Prostir',
+  title: 'Tips - EU.Prostir',
 
   // Params
   queryParams: {
