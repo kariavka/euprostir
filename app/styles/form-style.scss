@@ -1,0 +1,30 @@
+.gform .gf-radio.custom-radio {
+  padding-left: 0;
+  margin-right: 0;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.gform .gf-radio.custom-radio .custom-control-label::before {
+  top: 2rem;
+  left: 50%;
+  margin-left: -0.5rem;
+  border: #aaaaaa 1px solid;
+  background: none;
+}
+
+.gform .gf-radio.custom-radio .custom-control-label::after {
+  top: 2rem;
+  left: 50%;
+  margin-left: -0.5rem;
+}
+
+.gform label, .gf-label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.gform label.gf-text-normal {
+  font-weight: normal;
+  text-transform: none;
+}
