@@ -45,6 +45,10 @@ module.exports = function (environment) {
         filters: {
           stories: [
             {
+              name: 'Успішні проекти',
+              lira: '133742',
+            },
+            {
               name: 'Візії розвитку громадянського суспільства',
               lira: '133129',
             }, {
@@ -59,9 +63,6 @@ module.exports = function (environment) {
             }, {
               name: 'Ефективні комунікації',
               lira: '133136',
-            }, {
-              name: 'Історії проектів ЄС',
-              lira: '133742',
             }
           ],
           practices: [
@@ -109,6 +110,10 @@ module.exports = function (environment) {
         filters: {
           stories: [
             {
+              name: 'Successful projects',
+              lira: '133745',
+            },
+            {
               name: 'Vision of civil society',
               lira: '133603',
             }, {
@@ -123,9 +128,6 @@ module.exports = function (environment) {
             }, {
               name: 'Effective communication',
               lira: '133611',
-            }, {
-              name: 'Stories of EU projects',
-              lira: '133745',
             }
           ],
           practices: [
