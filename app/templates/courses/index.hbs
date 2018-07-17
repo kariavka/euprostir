@@ -1,1 +1,302 @@
-{{outlet}}
+<section class="courses">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 pos_rel">
+        <div class="cat-courses">навчання</div>
+        <div class="t-courses">Онлайн курси</div>
+        <div class="t-popular-courses">наші популярні курси</div>
+      </div>
+    </div>
+  </div>
+  <div class="block-popular-courses">
+    <div class="container">
+      <div class="row">
+
+        {{#each model.popular as |item|}}
+        <div class="col-md-4 col-sm-4">
+          <a href="">
+            <div class="popular-courses">
+              <div class="photo-popular-courses">
+                <img src="{{item.image_url}}" alt="">
+              </div>
+              <div class="about-popular-courses">
+                <div class="title-popular-courses">{{item.title}}</div>
+                <div class="summary-popular-courses">{{item.summary}}</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        {{/each}}
+
+      </div>
+    </div>
+  </div>
+
+  <div class="block-courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="t-choose-course">обери курс для себе</div>
+        </div>
+      </div>
+    </div>
+    <div class="container select-courses">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="t_cat">Перегляд за:</p>
+          <input name="" type="hidden" id="" value="Темою"><a class="trigger" href="#">Темою</a>
+          <div class="dropcontainer">
+            <ul class="dropdownhidden">
+              <li><a href="#">Темою</a></li>
+              <li><a href="#">Візії розвитку громадянського суспільства</a></li>
+              <li><a href="#">Соціальне підприємництво</a></li>
+              <li><a href="#">Соціальні послуги стратегії</a></li>
+              <li><a href="#">Управління організаціями</a></li>
+              <li><a href="#">Ефективні комунікації</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container block-list-courses">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <a href="">
+            <div class="box-courses">
+              <img class="photo-small-courses" src="/images/photo-small-courses.jpg" alt="">
+              <div class="box-about-courses">
+                <div class="title-courses">
+                  Громадський Простір спільно з Проектом ЄС
+                </div>
+                <div class="summary-courses">Громадські експерти проаналізували різні аспекти державної політики
+                  сприяння розвитку громадянського
+                </div>
+                <div class="block-icon-courses">
+                  <div><img src="/images/icon1-courses.png" alt=""> 4 лекції</div>
+                  <div><img src="/images/icon2-courses.png" alt=""> 19 хвилин лекція</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="">
+            <div class="box-courses">
+              <img class="photo-small-courses" src="/images/photo-small-courses.jpg" alt="">
+              <div class="box-about-courses">
+                <div class="title-courses">
+                  Громадський Простір спільно з Проектом ЄС
+                </div>
+                <div class="summary-courses">Громадські експерти проаналізували різні аспекти державної політики
+                  сприяння розвитку громадянського
+                </div>
+                <div class="block-icon-courses">
+                  <div><img src="/images/icon1-courses.png" alt=""> 4 лекції</div>
+                  <div><img src="/images/icon2-courses.png" alt=""> 19 хвилин лекція</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="">
+            <div class="box-courses">
+              <img class="photo-small-courses" src="/images/photo-small-courses.jpg" alt="">
+              <div class="box-about-courses">
+                <div class="title-courses">
+                  Громадський Простір спільно з Проектом ЄС
+                </div>
+                <div class="summary-courses">Громадські експерти проаналізували різні аспекти державної політики
+                  сприяння розвитку громадянського
+                </div>
+                <div class="block-icon-courses">
+                  <div><img src="/images/icon1-courses.png" alt=""> 4 лекції</div>
+                  <div><img src="/images/icon2-courses.png" alt=""> 19 хвилин лекція</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="">
+            <div class="box-courses">
+              <img class="photo-small-courses" src="/images/photo-small-courses.jpg" alt="">
+              <div class="box-about-courses">
+                <div class="title-courses">
+                  Громадський Простір спільно з Проектом ЄС
+                </div>
+                <div class="summary-courses">Громадські експерти проаналізували різні аспекти державної політики
+                  сприяння розвитку громадянського
+                </div>
+                <div class="block-icon-courses">
+                  <div><img src="/images/icon1-courses.png" alt=""> 4 лекції</div>
+                  <div><img src="/images/icon2-courses.png" alt=""> 19 хвилин лекція</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="">
+            <div class="box-courses">
+              <img class="photo-small-courses" src="/images/photo-small-courses.jpg" alt="">
+              <div class="box-about-courses">
+                <div class="title-courses">
+                  Громадський Простір спільно з Проектом ЄС
+                </div>
+                <div class="summary-courses">Громадські експерти проаналізували різні аспекти державної політики
+                  сприяння розвитку громадянського
+                </div>
+                <div class="block-icon-courses">
+                  <div><img src="/images/icon1-courses.png" alt=""> 4 лекції</div>
+                  <div><img src="/images/icon2-courses.png" alt=""> 19 хвилин лекція</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="">
+            <div class="box-courses">
+              <img class="photo-small-courses" src="/images/photo-small-courses.jpg" alt="">
+              <div class="box-about-courses">
+                <div class="title-courses">
+                  Громадський Простір спільно з Проектом ЄС
+                </div>
+                <div class="summary-courses">Громадські експерти проаналізували різні аспекти державної політики
+                  сприяння розвитку громадянського
+                </div>
+                <div class="block-icon-courses">
+                  <div><img src="/images/icon1-courses.png" alt=""> 4 лекції</div>
+                  <div><img src="/images/icon2-courses.png" alt=""> 19 хвилин лекція</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="">
+            <div class="box-courses">
+              <img class="photo-small-courses" src="/images/photo-small-courses.jpg" alt="">
+              <div class="box-about-courses">
+                <div class="title-courses">
+                  Громадський Простір спільно з Проектом ЄС
+                </div>
+                <div class="summary-courses">Громадські експерти проаналізували різні аспекти державної політики
+                  сприяння розвитку громадянського
+                </div>
+                <div class="block-icon-courses">
+                  <div><img src="/images/icon1-courses.png" alt=""> 4 лекції</div>
+                  <div><img src="/images/icon2-courses.png" alt=""> 19 хвилин лекція</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="">
+            <div class="box-courses">
+              <img class="photo-small-courses" src="/images/photo-small-courses.jpg" alt="">
+              <div class="box-about-courses">
+                <div class="title-courses">
+                  Громадський Простір спільно з Проектом ЄС
+                </div>
+                <div class="summary-courses">Громадські експерти проаналізували різні аспекти державної політики
+                  сприяння розвитку громадянського
+                </div>
+                <div class="block-icon-courses">
+                  <div><img src="/images/icon1-courses.png" alt=""> 4 лекції</div>
+                  <div><img src="/images/icon2-courses.png" alt=""> 19 хвилин лекція</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="">
+            <div class="box-courses">
+              <img class="photo-small-courses" src="/images/photo-small-courses.jpg" alt="">
+              <div class="box-about-courses">
+                <div class="title-courses">
+                  Громадський Простір спільно з Проектом ЄС
+                </div>
+                <div class="summary-courses">Громадські експерти проаналізували різні аспекти державної політики
+                  сприяння розвитку громадянського
+                </div>
+                <div class="block-icon-courses">
+                  <div><img src="/images/icon1-courses.png" alt=""> 4 лекції</div>
+                  <div><img src="/images/icon2-courses.png" alt=""> 19 хвилин лекція</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="">
+            <div class="box-courses">
+              <img class="photo-small-courses" src="/images/photo-small-courses.jpg" alt="">
+              <div class="box-about-courses">
+                <div class="title-courses">
+                  Громадський Простір спільно з Проектом ЄС
+                </div>
+                <div class="summary-courses">Громадські експерти проаналізували різні аспекти державної політики
+                  сприяння розвитку громадянського
+                </div>
+                <div class="block-icon-courses">
+                  <div><img src="/images/icon1-courses.png" alt=""> 4 лекції</div>
+                  <div><img src="/images/icon2-courses.png" alt=""> 19 хвилин лекція</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="">
+            <div class="box-courses">
+              <img class="photo-small-courses" src="/images/photo-small-courses.jpg" alt="">
+              <div class="box-about-courses">
+                <div class="title-courses">
+                  Громадський Простір спільно з Проектом ЄС
+                </div>
+                <div class="summary-courses">Громадські експерти проаналізували різні аспекти державної політики
+                  сприяння розвитку громадянського
+                </div>
+                <div class="block-icon-courses">
+                  <div><img src="/images/icon1-courses.png" alt=""> 4 лекції</div>
+                  <div><img src="/images/icon2-courses.png" alt=""> 19 хвилин лекція</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="">
+            <div class="box-courses">
+              <img class="photo-small-courses" src="/images/photo-small-courses.jpg" alt="">
+              <div class="box-about-courses">
+                <div class="title-courses">
+                  Громадський Простір спільно з Проектом ЄС
+                </div>
+                <div class="summary-courses">Громадські експерти проаналізували різні аспекти державної політики
+                  сприяння розвитку громадянського
+                </div>
+                <div class="block-icon-courses">
+                  <div><img src="/images/icon1-courses.png" alt=""> 4 лекції</div>
+                  <div><img src="/images/icon2-courses.png" alt=""> 19 хвилин лекція</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <a class="btn btn_more btn_events">відкрити більше</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
