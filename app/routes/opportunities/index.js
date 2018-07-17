@@ -1,9 +1,9 @@
 import Route from '@ember/routing/route';
 import {inject} from '@ember/service';
-import {get, set} from '@ember/object';
-import {reads} from '@ember/object/computed';
+import {get} from '@ember/object';
 import {hash} from 'rsvp';
-import getLira from 'euprostir/utils/get-lira';
+import config from 'euprostir/config/environment';
+import moment from 'moment';
 
 export default Route.extend({
   // Services
@@ -21,25 +21,24 @@ export default Route.extend({
   // Model
   model(params) {
     const store = get(this, 'store');
-    let lira = getLira('opportunities');
-    let liraWithFilter;
-    let filter = params.f;
-
-    if (filter) {
-      liraWithFilter = lira + ',' + filter;
-    }
+    const lira = config.neuronet.uk.opportunities;
+    const filter = params.f;
+    const liraWithFilter = (filter) ? lira + ',' + filter : lira;
+    const dateStart = moment().format('YYYY-MM-DD');
 
     return hash({
       items: store.query('post', {
         page: 1,
         per_page: 4,
-        lira: liraWithFilter
+        lira: liraWithFilter,
+        date_start: dateStart,
       }),
       popular: store.query('post', {
         page: 1,
         per_page: 3,
         lira: lira,
-        sort: '-views'
+        sort: '-views',
+        date_start: dateStart,
       }),
     });
   },

@@ -1,2 +1,27 @@
 {{opportunity/opportunity-item
   item=model.item}}
+
+<section class="story-footer sect-stories">
+
+  <div class="block-category-container text-center">
+    <div class="category-text">
+      <p class="category-name category-name-stories">Інші можливості</p>
+    </div>
+  </div>
+
+  {{story/story-list-horizontal
+    class="story-list-horizontal"
+    items=model.items
+    endpoint="opportunities.item"}}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{#link-to "opportunities.index" class="btn btn-more btn-opportunities"}}
+          відкрити більше
+        {{/link-to}}
+      </div>
+    </div>
+  </div>
+
+</section>

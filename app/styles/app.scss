@@ -1,12 +1,24 @@
 @import "ember-bootstrap/bootstrap";
 @import "font-awesome";
-@import "fonts";
-@import "slick-theme";
-@import "slick";
-@import "style";
-@import "media";
+@import "common-fonts";
 @import "common-style";
 @import "common-media";
+@import "common-slick";
+@import "common-slick-theme";
+@import "filter-style";
+@import "filter-media";
+@import "form-style";
+@import "form-media";
+@import "header-style";
+@import "header-media";
+@import "footer-style";
+@import "footer-media";
+@import "homepage-style";
+@import "homepage-media";
+@import "page-style";
+@import "page-media";
+@import "posts-style";
+@import "posts-media";
 @import "stories-style";
 @import "stories-media";
 @import "story-style";
@@ -15,9 +27,10 @@
 @import "practices-media";
 @import "practice-style";
 @import "practice-media";
-@import "opportunities";
 @import "opportunity-style";
 @import "opportunity-media";
+@import "static-style";
+@import "static-media";
 @import "courses-style";
 @import "courses-media";
 
@@ -25,7 +38,7 @@
   z-index: 9999;
 
   span {
-    background-color: #d9534f;
+    background-color: #3b4256;
     height: 4px;
   }
 }

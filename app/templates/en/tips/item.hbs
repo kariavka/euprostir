@@ -1,0 +1,27 @@
+{{practice/practice-item
+  item=model.item}}
+
+<section class="story-footer sect-stories">
+
+  <div class="block-category-container text-center">
+    <div class="category-text">
+      <p class="category-name category-name-stories">Other tips</p>
+    </div>
+  </div>
+
+  {{story/story-list-horizontal
+    class="story-list-horizontal"
+    items=model.items
+    endpoint="en.tips.item"}}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{#link-to "en.tips.index" class="btn btn-more btn-stories"}}
+          open more
+        {{/link-to}}
+      </div>
+    </div>
+  </div>
+
+</section>

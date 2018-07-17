@@ -24,7 +24,6 @@ export default Component.extend({
 
     $(window).scroll(function () {
       const isFixedMenu = get(this, 'isFixedMenu');
-      const isStoryItem = get(this, 'isStoryItem');
       const scroll = $(window).scrollTop();
       const sectMenu = $('.sect-menu');
 

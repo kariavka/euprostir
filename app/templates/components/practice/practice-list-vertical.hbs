@@ -2,12 +2,13 @@
 
   {{#each items as |item index|}}
     {{practice/practice-list-vertical-item
+      class="row d-flex align-items-stretch"
       item=item
-      class="row d-flex align-items-stretch"}}
+      endpoint=endpoint}}
   {{/each}}
 
 {{else}}
 
-  Нічого не знайдено.
+  {{t "nothingfound"}}
 
 {{/if}}

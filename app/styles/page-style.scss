@@ -1,0 +1,57 @@
+.block-members {
+  text-align: justify;
+  padding: 0;
+}
+
+.block-member {
+  width: 240px;
+  display: inline-block;
+  text-align: left;
+  //margin-right: 10px;
+}
+
+.block-member:nth-child(4) {
+  margin-right: 0;
+}
+
+.image-member {
+  width: 240px;
+  height: 240px;
+}
+
+.name-member {
+  font: 14px UbuntuBold, sans-serif;
+  color: #3b4256;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.about-member {
+  font: 14px UbuntuRegular, sans-serif;
+  color: #79788b;
+  margin-top: 20px;
+  line-height: 1.1em;
+  max-height: 6.5em;
+  overflow: hidden;
+}
+
+.link-member {
+  font: 14px UbuntuRegular, sans-serif;
+  color: #79788b;
+  margin-top: 15px;
+}
+
+.title-member {
+  font: 18px UbuntuBold, sans-serif;
+  color: #3b4256;
+  text-transform: uppercase;
+}
+
+.summary-member {
+  font: 17px UbuntuRegular, sans-serif;
+  color: #454552;
+  margin-top: 20px;
+  line-height: 1.1em;
+}
+
+.anchor-member {}

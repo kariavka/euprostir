@@ -4,11 +4,11 @@
     {{story/story-list-vertical-item
       item=item
       index=index
-      class="row d-flex align-items-stretch"}}
+      endpoint=endpoint}}
   {{/each}}
 
 {{else}}
 
-  Нічого не знайдено.
+  {{t "nothingfound"}}
 
 {{/if}}

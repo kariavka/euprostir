@@ -6,13 +6,11 @@
 
       <div class="col-md-3 order-md-1 col-sm-3 order-2">
         <ul class="menu_foot">
-          <li><a href="">Про Європейський Простір</a></li>
-          <li><a href="">Про Together EU4Civil Society </a></li>
+          <li>{{#link-to "page" 'about-euprostir'}}Про Європейський Простір{{/link-to}}</li>
+          <li>{{#link-to "page" 'about-together'}}Про Together EU4Civil Society{{/link-to}}</li>
           <li>{{#link-to "stories.index"}}Історії{{/link-to}}</li>
           <li>{{#link-to "practices.index"}}Практики{{/link-to}}</li>
           <li>{{#link-to "opportunities.index"}}Можливості {{/link-to}}</li>
-          <li>{{#link-to "courses.index"}}Навчання{{/link-to}}</li>
-          <li>{{#link-to "resources.index"}}Ресурси{{/link-to}}</li>
         </ul>
       </div>
 
@@ -21,12 +19,15 @@
           <li><img class="ic_tel" src="/images/ic_tel.png" alt=""> +380 (44) 220 0764</li>
           <li><img class="ic_tel" src="/images/ic_mail.png" alt=""> eu@prostir.ua</li>
           <li>&nbsp;</li>
-          <li><a class="icon_f" href=""></a><a class="icon_tw" href=""></a></li>
+          <li>
+            <a class="icon_f" href="https://www.facebook.com/EuProstir" target="_blank"></a>
+            <a class="icon_tw" href="https://twitter.com/EuProstir" target="_blank"></a>
+          </li>
         </ul>
       </div>
 
       <div class="col-md-6 order-md-3 col-sm-6 order-1">
-        <div class="box_mailing">
+        <div class="box-mailing">
           <div class="media">
             <img class="pull-left ic_big_mail" src="/images/ic_big_mail.png" alt="">
             <div class="media-body">
@@ -35,11 +36,13 @@
             </div>
           </div>
           <div class="clearfix"></div>
-          <form action="/" method="post" class="form1">
+          <form
+            action="https://prostir.us12.list-manage.com/subscribe/post?u=d413bd349b5700b3385999b59&amp;id=00098ff31e"
+            method="post" class="form1" target="_blank">
             <div class="row">
               <div class="col-md-12">
-                <input name="" placeholder="Ваш Email" type="text">
-                <button type="submit" class="btn btn-default ">
+                <input name="EMAIL" placeholder="Ваш Email" type="text">
+                <button type="submit" name="subscribe" value="Subscribe" class="btn btn-default ">
                   Підписатись
                 </button>
               </div>
@@ -54,13 +57,18 @@
   <div class="container cont2_footer">
     <div class="row">
       <div class="col-md-6 col-sm-6">
-        <img class="ic_es" src="/images/ic_es.png" alt="">
+        <div class="message-eu">
+          <img class="flag-eu" src="/images/flag-eu.svg" alt="">
+          <div class="text-eu">
+            Проект фінансується Європейським Союзом та реалізується консорціумом під керівництвом FCG
+          </div>
+        </div>
       </div>
       <div class="col-md-6 col-sm-6">
         <div class="block_ic_foot">
-          <img src="/images/ic1_foot.png" alt="">
-          <img src="/images/ic2_foot.png" alt="">
-          <img src="/images/ic3_foot.png" alt="">
+          <img class="logo-fcg" src="/images/logo-fcg.svg" alt="">
+          <img class="logo-ice" src="/images/logo-ice.svg" alt="">
+          <img class="logo-eurasia" src="/images/logo-eurasia.svg" alt="">
         </div>
       </div>
     </div>
@@ -68,14 +76,22 @@
 
 </footer>
 
-<div class="under_footer">
+<div class="under-footer">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-sm-6">
-        <img src="/images/logo_EP.png" alt="">
+        <img class="logo" src="/images/logo-together-o.svg" alt="">
       </div>
       <div class="col-md-6 col-sm-6">
-        <p class="copy">© 2018 Європейський Простір</p>
+        <div class="copy">
+          &copy; 2018 Європейський Простір
+        </div>
+        <div class="livarava">
+          Powered by
+          <a href="https://www.livarava.com/">LivaRava</a>
+          <a href="https://www.livarava.com/en/cloud/">Cloud</a> and
+          <a href="https://www.livarava.com/en/framework/">Framework</a>
+        </div>
       </div>
     </div>
   </div>

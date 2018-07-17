@@ -2,6 +2,7 @@
   item=model.item}}
 
 <section class="story-footer sect-stories">
+
   <div class="block-category-container text-center">
     <div class="category-text">
       <p class="category-name category-name-stories">Інші історії</p>
@@ -9,7 +10,9 @@
   </div>
 
   {{story/story-list-horizontal
-    items=model.items}}
+    class="story-list-horizontal"
+    items=model.items
+    endpoint="stories.item"}}
 
   <div class="container">
     <div class="row">

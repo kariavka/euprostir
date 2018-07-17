@@ -1,0 +1,33 @@
+<form {{action "search" on='submit'}}
+  action="" method="post" class="search" style="display: none;">
+
+  {{input
+    class="input-search"
+    placeholder=(t "search")
+    type="search"
+    value=q
+    key-down=(action (mut isSearchMade) false)}}
+
+  <input type="submit" name="" value="" class="btn-search-submit">
+
+  {{#if isSearchMade}}
+    <div class="search-results">
+      {{#if stories}}
+        {{#each stories as |item|}}
+          {{#link-to 'stories.item' item.id}}{{item.title}}{{/link-to}}
+        {{/each}}
+      {{/if}}
+      {{#if practices}}
+        {{#each practices as |item|}}
+          {{#link-to 'practices.item' item.id}}{{item.title}}{{/link-to}}
+        {{/each}}
+      {{/if}}
+      {{#if opportunities}}
+        {{#each opportunities as |item|}}
+          {{#link-to 'opportunities.item' item.id}}{{item.title}}{{/link-to}}
+        {{/each}}
+      {{/if}}
+    </div>
+  {{/if}}
+
+</form>

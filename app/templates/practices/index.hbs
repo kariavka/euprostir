@@ -1,39 +1,28 @@
-<section class="practices-section">
-
-  <div class="container practices-section-container1">
+<section class="sect-practices-list">
+  <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="practices-section-header">Практики</div>
+        <p class="name-stories-list">Практики</p>
       </div>
     </div>
   </div>
-
-  <div class="container practices-section-container2">
+  <div class="container cont2-sect-stories-list">
     <div class="row">
 
       <div class="col-md-9 col-sm-9">
 
-        <div class="filter">
-          <span class="filter-label">Перегляд за:</span>
-          <span class="filter-trigger {{if showDropdown 'filter-trigger-active'}}" {{action 'toggleDropdown'}}>Темою</span>
-
-          {{#if showDropdown}}
-            <div class="filter-dropdown-container">
-              <ul class="filter-dropdown-visible">
-                <li><a href="#">Темою</a></li>
-                <li>{{#link-to "practices.index" (query-params f=null)}}Всі{{/link-to}}</li>
-                {{#each filters as |filter|}}
-                  <li>{{#link-to "practices.index" (query-params f=filter.lira)}}{{filter.name}}{{/link-to}}</li>
-                {{/each}}
-              </ul>
-            </div>
-          {{/if}}
-        </div>
+        {{common/common-filter
+          class="filter"
+          filters=filters
+          endpoint="practices.index"
+          showDropdown=showDropdown
+          currentFilter=f}}
 
         <div class="block1-stories-list"></div>
 
-        {{practice/practice-list-vertical
-          items=items}}
+        {{post/post-list-vertical
+          items=items
+          endpoint="practices.item"}}
 
         {{#if canLoadMore}}
           <div class="text-center">
@@ -52,12 +41,12 @@
 
           <div class="box1-popular"></div>
 
-          {{practice/practice-list-popular
-            items=model.popular}}
+          {{post/post-list-popular
+            items=model.popular
+            endpoint="practices.item"}}
 
         </div>
       </div>
     </div>
   </div>
-
 </section>

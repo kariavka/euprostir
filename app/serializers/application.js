@@ -1,8 +1,8 @@
 import DS from 'ember-data';
-import Ember from 'ember';
+import {underscore} from '@ember/string';
 
 export default DS.JSONAPISerializer.extend({
   keyForAttribute(attr) {
-    return Ember.String.underscore(attr);
+    return underscore(attr);
   }
 });

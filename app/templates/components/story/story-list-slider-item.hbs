@@ -1,18 +1,15 @@
 <div>
-  {{#link-to "stories.item" item.id}}
-    <div class="story-block">
+  {{#link-to endpoint item.id}}
+    <div class="story-list-block">
       <div class="story-top">
-        <div class="story-category">
-          <div class="box1"></div>
-          <div class="box2">соціальне підприємництво</div>
-          <div class="box3"></div>
-        </div>
         <div class="story-image" style="{{item.imageStyle}}"></div>
         <div class="story-shadow"></div>
-        <p class="story-title">{{item.title}}</p>
+        <div class="story-title">{{item.title}}</div>
       </div>
-      <div class="story-summary">
-        <p>{{item.summary}}</p>
+      <div class="story-footer">
+        <div class="story-summary">
+          {{item.summary}}
+        </div>
       </div>
     </div>
   {{/link-to}}

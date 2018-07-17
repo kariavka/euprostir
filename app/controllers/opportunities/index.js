@@ -3,7 +3,7 @@ import {inject} from '@ember/service';
 import {get, set, computed} from '@ember/object';
 import {reads} from '@ember/object/computed';
 import {A} from '@ember/array';
-import getLira from 'euprostir/utils/get-lira';
+import config from 'euprostir/config/environment';
 
 export default Controller.extend({
   // Services
@@ -29,24 +29,7 @@ export default Controller.extend({
   // Init
   init: function () {
     this._super();
-
-    const filters = [{
-      name: 'Візії розвитку громадянського суспільства',
-      lira: 133129,
-    }, {
-      name: 'Соціальне підприємництво',
-      lira: 38405,
-    }, {
-      name: 'Соціальні послуги стратегії',
-      lira: 133132,
-    }, {
-      name: 'Управління організаціями',
-      lira: 133134,
-    }, {
-      name: 'Ефективні комунікації',
-      lira: 133136,
-    }];
-
+    const filters = config.neuronet.uk.filters.opportunities;
     set(this, 'filters', filters);
   },
 
@@ -60,7 +43,7 @@ export default Controller.extend({
       const store = get(this, 'store');
       let page = get(this, 'page');
       let pages = get(this, 'pages');
-      let lira = getLira('opportunities');
+      let lira = config.neuronet.uk.opportunities;
       let filter = get(this, 'f');
       let liraWithFilter = (filter) ? lira + ',' + filter : lira;
 

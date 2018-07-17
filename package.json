@@ -1,6 +1,6 @@
 {
   "name": "euprostir",
-  "version": "0.9.0",
+  "version": "0.14.8",
   "private": true,
   "description": "Euprostir Website",
   "license": "LivaRava License",
@@ -28,7 +28,6 @@
     "ember-cli-document-title": "^0.4.0",
     "ember-cli-eslint": "^4.2.1",
     "ember-cli-facebook-js-sdk": "^2.0.1",
-    "ember-cli-head": "^0.4.1",
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
@@ -43,11 +42,13 @@
     "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",
+    "ember-click-outside": "^1.0.0",
     "ember-data": "~3.1.0",
     "ember-export-application-global": "^2.0.0",
     "ember-fetch": "^3.3.1",
     "ember-font-awesome": "^4.0.0-rc.3",
     "ember-froala-editor": "^2.6.5",
+    "ember-i18n": "^5.2.1",
     "ember-load-initializers": "^1.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-moment": "^7.6.0",
@@ -63,5 +64,8 @@
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
   }
 }

@@ -1,10 +1,10 @@
-<div class="block-stories-list">
-  {{#link-to "practices.item" item.id}}
+<div class="block-post-list-vertical-item">
+  {{#link-to endpoint item.id}}
     <div class="pull-left img-box-stories" style="{{item.imageStyle}}"></div>
   {{/link-to}}
   <div class="media-body box-stories-list">
     <div class="title-box-stories-list">
-      {{#link-to "practices.item" item.id}}
+      {{#link-to endpoint item.id}}
         {{item.title}}
       {{/link-to}}
     </div>

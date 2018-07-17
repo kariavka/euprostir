@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="name-stories-list">Історії</div>
+        <p class="name-stories-list">Історії</p>
       </div>
     </div>
   </div>
@@ -11,27 +11,17 @@
 
       <div class="col-md-9 col-sm-9">
 
-        <div class="filter">
-          <span class="filter-label">Перегляд за:</span>
-          <span class="filter-trigger {{if showDropdown 'filter-trigger-active'}}" {{action 'toggleDropdown'}}>Темою</span>
-
-          {{#if showDropdown}}
-            <div class="filter-dropdown-container">
-              <ul class="filter-dropdown-visible">
-                <li><a href="#">Темою</a></li>
-                <li>{{#link-to "stories.index" (query-params f=null)}}Всі{{/link-to}}</li>
-                {{#each filters as |filter|}}
-                  <li>{{#link-to "stories.index" (query-params f=filter.lira)}}{{filter.name}}{{/link-to}}</li>
-                {{/each}}
-              </ul>
-            </div>
-          {{/if}}
-        </div>
+        {{common/common-filter
+          filters=filters
+          endpoint="stories.index"
+          showDropdown=showDropdown
+          currentFilter=f}}
 
         <div class="block1-stories-list"></div>
 
-        {{story/story-list-vertical
-          items=items}}
+        {{post/post-list-vertical
+          items=items
+          endpoint="stories.item"}}
 
         {{#if canLoadMore}}
           <div class="text-center">
@@ -50,8 +40,9 @@
 
           <div class="box1-popular"></div>
 
-          {{story/story-list-popular
-            items=model.popular}}
+          {{post/post-list-popular
+            items=model.popular
+            endpoint="stories.item"}}
 
         </div>
       </div>

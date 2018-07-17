@@ -1,0 +1,13 @@
+{{#if items}}
+
+  {{#each items as |item|}}
+    {{post/post-list-popular-item
+      item=item
+      endpoint=endpoint}}
+  {{/each}}
+
+{{else}}
+
+  {{t 'nothingfound'}}
+
+{{/if}}

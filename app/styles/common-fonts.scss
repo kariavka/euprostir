@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'UbuntuRegular';
+  src: url('/fonts/UbuntuRegular.eot');
+  src: url('/fonts/UbuntuRegular.eot') format('embedded-opentype'),
+  url('/fonts/UbuntuRegular.woff2') format('woff2'),
+  url('/fonts/UbuntuRegular.woff') format('woff'),
+  url('/fonts/UbuntuRegular.ttf') format('truetype'),
+  url('/fonts/UbuntuRegular.svg#UbuntuRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'UbuntuMedium';
+  src: url('/fonts/UbuntuMedium.eot');
+  src: url('/fonts/UbuntuMedium.eot') format('embedded-opentype'),
+  url('/fonts/UbuntuMedium.woff2') format('woff2'),
+  url('/fonts/UbuntuMedium.woff') format('woff'),
+  url('/fonts/UbuntuMedium.ttf') format('truetype'),
+  url('/fonts/UbuntuMedium.svg#UbuntuMedium') format('svg');
+}
+
+@font-face {
+  font-family: 'UbuntuBold';
+  src: url('/fonts/UbuntuBold.eot');
+  src: url('/fonts/UbuntuBold.eot') format('embedded-opentype'),
+  url('/fonts/UbuntuBold.woff2') format('woff2'),
+  url('/fonts/UbuntuBold.woff') format('woff'),
+  url('/fonts/UbuntuBold.ttf') format('truetype'),
+  url('/fonts/UbuntuBold.svg#UbuntuBold') format('svg');
+}
+
+@font-face {
+  font-family: 'UbuntuItalic';
+  src: url('/fonts/UbuntuItalic.eot');
+  src: url('/fonts/UbuntuItalic.eot') format('embedded-opentype'),
+  url('/fonts/UbuntuItalic.woff2') format('woff2'),
+  url('/fonts/UbuntuItalic.woff') format('woff'),
+  url('/fonts/UbuntuItalic.ttf') format('truetype'),
+  url('/fonts/UbuntuItalic.svg#UbuntuItalic') format('svg');
+}
+
+@font-face {
+  font-family: 'EBGaramondItalic';
+  src: url('/fonts/EBGaramond-Italic.eot');
+  src: url('/fonts/EBGaramond-Italic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/EBGaramond-Italic.woff2') format('woff2'),
+  url('/fonts/EBGaramond-Italic.woff') format('woff'),
+  url('/fonts/EBGaramond-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('/fonts/SourceSansPro-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}

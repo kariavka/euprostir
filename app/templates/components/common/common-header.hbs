@@ -1,55 +1,93 @@
-<header class="header-top header-desktop">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-sm-6 col-xs-3">
-        <div class="block-lang">
-          <a class="ua" href="">UA</a>
-          <a class="en" href="">EN</a>
+{{#if media.isMobile}}
+  <header class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="block-lang">
+            {{#link-to "index"}}UA{{/link-to}}
+            {{#link-to "en"}}EN{{/link-to}}
+          </div>
         </div>
-      </div>
-      <div class="col-md-6 col-sm-6 col-xs-3 disp_n_768">
-        <div class="block-social-desktop text-right">
-          <a href=""><img src="/images/ic_f_top.png" alt=""/></a>
-          <a href=""><img src="/images/ic_tw_top.png" alt=""/></a>
+        <div class="col-6">
+          <div class="block-lang text-right">
+            <div role="button" onclick="$('.menu-mobile').show('slide');">
+              {{material-design-icon name='menu'}}
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<header class="header-top header-mobile">
-  <div class="container">
-    <div class="row">
-      <div class="col-6">
-        <div class="block-lang">
-          <a class="ua" href="">UA</a>
-          <a class="en" href="">EN</a>
+  <div class="menu-mobile" style="display: none;">
+    <div class="container p30">
+      <div class="row">
+        <div class="col-6">
+          <div class="block-lang">
+            {{#link-to "index"}}UA{{/link-to}}
+            {{#link-to "en"}}EN{{/link-to}}
+          </div>
+        </div>
+        <div class="col-6 text-right">
+          <div onclick="$('.menu-mobile').hide('slide');">
+            <img src="/images/close_menu.png" alt=""/>
+          </div>
         </div>
       </div>
-      <div class="col-6">
-        <div class="block-lang text-right">
-          <div role="button" onclick="$('.menu-mobile').show('slide');">
-            {{material-design-icon name='menu'}}
+    </div>
+    <ul class="menu-mobile-list">
+      <li>{{#link-to "index"}}Головна{{/link-to}}</li>
+      <li>{{#link-to "stories.index"}}Історії{{/link-to}}</li>
+      <li>{{#link-to "practices.index"}}Практики{{/link-to}}</li>
+      <li>{{#link-to "opportunities.index"}}Можливості{{/link-to}}</li>
+    </ul>
+    <form action="" method="post" class="search-mobile">
+      <input type="search" name="" placeholder="{{t "search"}}" class="input-search col-8"/>
+      <input type="submit" name="" value="" class="btn-search-submit"/>
+    </form>
+    <div class="container p30 cont2-mobile">
+      <div class="row">
+        <div class="col-6">
+          <div class="social-mobile">
+            <a class="icon_f" href="https://www.facebook.com/EuProstir" target="_blank"></a>
+            <a class="icon_tw" href="https://twitter.com/EuProstir" target="_blank"></a>
           </div>
         </div>
       </div>
     </div>
   </div>
-</header>
 
-{{#if media.isMobile}}
-  <section class="sect-menu sect-menu-mobile">
+  <section class="sect-menu {{if isStoryItem 'sect-menu-inverted' ''}}">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12">
           {{#link-to "index"}}
-            <img class="logotip" src="/images/logo_mob.png" alt="">
+            <div class="logotip" alt=""></div>
           {{/link-to}}
         </div>
       </div>
     </div>
   </section>
 {{else}}
+  <header class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-3">
+          <div class="block-lang">
+            {{#link-to "index"}}UA{{/link-to}}
+            {{#link-to "en"}}EN{{/link-to}}
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-3 disp_n_768">
+          <div class="block-social-desktop text-right">
+            <a href="https://www.facebook.com/EuProstir" target="_blank"><img src="/images/ic_f_top.png" alt=""/></a>
+            <a href="https://twitter.com/EuProstir" target="_blank"><img src="/images/ic_tw_top.png" alt=""/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
   <section class="sect-menu sect-menu-desktop {{if isStoryItem 'sect-menu-inverted' ''}}">
     <div class="container">
       <div class="row">
@@ -65,8 +103,6 @@
                 <li>{{#link-to "stories.index" (query-params f=null)}}Історії{{/link-to}}</li>
                 <li>{{#link-to "practices.index"  (query-params f=null)}}Практики{{/link-to}}</li>
                 <li>{{#link-to "opportunities.index"  (query-params f=null)}}Можливості{{/link-to}}</li>
-                <li>{{#link-to "courses.index" (query-params f=null)}}Навчання{{/link-to}}</li>
-                <li>{{#link-to "resources.index" (query-params f=null)}}Ресурси{{/link-to}}</li>
               </ul>
             </div>
           </div>
@@ -77,53 +113,10 @@
             <a onclick="$('.search').toggle('slide');$('.btn-close').hide('');$('.btn-search').show('');">
               <img class="btn-close" style="display: none;" src="/images/close_btn.png" alt="">
             </a>
-            <form action="" method="post" class="search" style="display: none;">
-              <input type="search" name="" placeholder="Пошук" class="input-search">
-              <input type="submit" name="" value="" class="btn-search-submit">
-            </form>
+            {{common/common-search}}
           </div>
         </div>
       </div>
     </div>
   </section>
 {{/if}}
-
-<div class="menu-mobile" style="display: none;">
-  <div class="container p30">
-    <div class="row">
-      <div class="col-6">
-        <div class="block-lang">
-          <a class="ua" href="">UA</a>
-          <a class="en" href="">EN</a>
-        </div>
-      </div>
-      <div class="col-6 text-right">
-        <div onclick="$('.menu-mobile').hide('slide');">
-          <img src="/images/close_menu.png" alt=""/>
-        </div>
-      </div>
-    </div>
-  </div>
-  <ul class="menu-mobile-list">
-    <li>{{#link-to "index"}}Головна{{/link-to}}</li>
-    <li>{{#link-to "stories.index"}}Історії{{/link-to}}</li>
-    <li>{{#link-to "practices.index"}}Практики{{/link-to}}</li>
-    <li>{{#link-to "opportunities.index"}}Можливості{{/link-to}}</li>
-    <li>{{#link-to "courses.index"}}Навчання{{/link-to}}</li>
-    <li>{{#link-to "resources.index"}}Ресурси{{/link-to}}</li>
-  </ul>
-  <form action="" method="post" class="search-mobile">
-    <input type="search" name="" placeholder="поиск" class="input-search col-8"/>
-    <input type="submit" name="" value="" class="btn-search-submit"/>
-  </form>
-  <div class="container p30 cont2-mobile">
-    <div class="row">
-      <div class="col-6">
-        <div class="social-mobile">
-          <a class="icon_f" href=""></a>
-          <a class="icon_tw" href=""></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>

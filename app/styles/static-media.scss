@@ -1,0 +1,32 @@
+@media only screen and (max-width: 992px) {
+  .team-photo {
+    display: block;
+    float: right !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .static {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
+
+  .team-photo {
+    display: block;
+    float: none !important;
+  }
+
+  .box-team-static {
+    text-align: left;
+  }
+
+  .block-team-static::before,
+  .block-contact-static::before {
+    width: 830px;
+  }
+
+  #block-share-static {
+    display: none;
+  }
+}

@@ -1,17 +1,15 @@
-<div class="row">
+{{#if items}}
 
-  {{#if items}}
+  {{#each items as |item|}}
+    {{opportunity/opportunity-list-horizontal-item
+      class="col-md-3 col-sm-3"
+      item=item}}
+  {{/each}}
 
-    {{#each items as |item|}}
-      {{opportunity/opportunity-list-horizontal-item
-        class="col-md-3 col-sm-3"
-        item=item}}
-    {{/each}}
+{{else}}
 
-  {{else}}
+  <div class="col-md-3 col-sm-3">
+    {{t "nothingfound"}}
+  </div>
 
-    Нічого не знайдено.
-
-  {{/if}}
-
-</div>
+{{/if}}
