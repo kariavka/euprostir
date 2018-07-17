@@ -13,10 +13,13 @@ export default Component.extend({
   currentFilterLabel: computed('filters', 'currentFilter', function () {
     const filters = get(this, 'filters');
     const currentFilter = parseInt(get(this, 'currentFilter'));
-    let currentLabel;
+    debugger;
+    let currentLabel = null;
     for (let i = 0; i < filters.length; i++) {
-      if (filters[i].lira === currentFilter) {
-        currentLabel = filters[i].name;
+      const lira = parseInt(filters[i].lira);
+      const name = filters[i].name;
+      if (lira === currentFilter) {
+        currentLabel = name;
       }
     }
     return currentLabel;
