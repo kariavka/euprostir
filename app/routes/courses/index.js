@@ -1,15 +1,16 @@
 import Route from '@ember/routing/route';
 import {inject} from '@ember/service';
-import {get} from '@ember/object';
+import {get, set} from '@ember/object';
+import {reads} from '@ember/object/computed';
 import {hash} from 'rsvp';
-import config from 'euprostir/config/environment';
+import getLira from 'euprostir/utils/get-lira';
 
 export default Route.extend({
   // Services
   store: inject(),
 
   // Title
-  title: 'Навчальні курси - Європейський простір',
+  title: 'Онлайн курси - Європейський простір',
 
   // Params
   queryParams: {
@@ -19,14 +20,18 @@ export default Route.extend({
   // Model
   model(params) {
     const store = get(this, 'store');
-    let lira = config.neuronet.uk.courses;
+    let lira = getLira('courses');
+    let liraWithFilter = lira;
     let filter = params.f;
-    let liraWithFilter = (filter) ? lira + ',' + filter : lira;
+
+    if (filter) {
+      liraWithFilter = lira + ',' + filter;
+    }
 
     return hash({
       items: store.query('post', {
         page: 1,
-        per_page: 4,
+        per_page: 8,
         lira: liraWithFilter
       }),
       popular: store.query('post', {

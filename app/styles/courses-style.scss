@@ -1,16 +1,7 @@
-.courses {
-  padding: 55px 0;
+.courses-section {
+  padding-top: 55px;
 
-  .t-courses {
-    font: 38px UbuntuRegular, sans-serif;
-    color: #3b4256;
-  }
-
-  .pos_rel {
-    position: relative;
-  }
-
-  .cat-courses {
+  .courses-category {
     background-image: url(/images/bg-category-courses.png);
     background-repeat: no-repeat;
     background-position: top center;
@@ -27,7 +18,12 @@
     left: 268px;
   }
 
-  .t-popular-courses {
+  .courses-online-header {
+    font: 38px UbuntuRegular, sans-serif;
+    color: #3b4256;
+  }
+
+  .courses-popular-header {
     text-align: center;
     font: 18px UbuntuBold, sans-serif;
     color: #3b4256;
@@ -35,131 +31,153 @@
     margin-top: 75px;
   }
 
-  .block-popular-courses {
+  .courses-list-popular {
     background: linear-gradient(to right, #542E91, #765AA7);
     padding: 35px 0;
     margin-top: 30px;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      .courses-list-popular-item {
+        background-color: #00AFBB;
+      }
+
+      .courses-list-popular-item-title,
+      .courses-list-popular-item-summary {
+        color: #fff;
+      }
+    }
+
+    .courses-list-popular-item {
+      width: 100%;
+      max-width: 332px;
+      height: 375px;
+      background-color: #fff;
+
+      .courses-list-popular-item-picture {
+        height: 188px;
+        overflow: hidden;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .courses-list-popular-item-about {
+        padding: 20px 30px 0 20px;
+      }
+
+      .courses-list-popular-item-title {
+        font: 19px UbuntuRegular, sans-serif;
+        color: #3b4256;
+        line-height: 1em;
+        height: 2em;
+        overflow: hidden;
+      }
+
+      .courses-list-popular-item-summary {
+        font: 14px UbuntuRegular, sans-serif;
+        color: #686879;
+        margin-top: 15px;
+        line-height: 1.4em;
+        height: 5.6em;
+        overflow: hidden;
+      }
+    }
   }
 
-  .block-popular-courses a {
-    text-decoration: none;
-  }
-
-  .block-popular-courses a:hover .popular-courses {
-    background-color: #00AFBB;
-  }
-
-  .block-popular-courses a:hover .title-popular-courses, .block-popular-courses a:hover .summary-popular-courses {
-    color: #fff;
-  }
-
-  .popular-courses {
-    width: 100%;
-    max-width: 332px;
-    height: 375px;
-    background-color: #fff;
-  }
-
-  .photo-popular-courses {
-    height: 188px;
-    overflow: hidden;
-  }
-
-  .about-popular-courses {
-    padding: 20px 30px 0 20px;
-  }
-
-  .title-popular-courses {
-    font: 19px UbuntuRegular, sans-serif;
-    color: #3b4256;
-  }
-
-  .summary-popular-courses {
-    font: 14px UbuntuRegular, sans-serif;
-    color: #686879;
-    margin-top: 15px;
-    line-height: 1.4;
-  }
-
-  .block-courses {
+  .filter-trigger {
     background-color: #F9F9FA;
-    padding: 90px 0;
+  }
+}
+
+.courses-tile-container {
+  background-color: #F9F9FA;
+  padding: 90px 0;
+
+  .courses-select-container {
+    margin-top: 30px;
   }
 
-  .t-choose-course {
+  .courses-select-header {
     font: 18px UbuntuBold, sans-serif;
     color: #3b4256;
     text-transform: uppercase;
   }
 
-  .block-courses .trigger {
-    background: #F9F9FA url(/images/select-arrow-open.png) 96% center no-repeat;
-  }
-
-  .block-list-courses .col-md-3 {
-    padding: 0;
-  }
-
-  .box-courses {
-    padding: 15px;
-    height: 375px;
-  }
-
-  .box-about-courses {
-    padding: 19px 15px 0;
-  }
-
-  .title-courses {
-    font: 18px UbuntuRegular, sans-serif;
-    color: #3b4256;
-  }
-
-  .summary-courses {
-    font: 14px UbuntuRegular, sans-serif;
-    color: #686879;
-    margin-top: 15px;
-  }
-
-  .dropcontainer {
-    z-index: 10;
-  }
-
-  .block-list-courses {
+  .courses-list-tile {
     margin-top: 30px;
+
+    .row .col-md-3:nth-child(2n) .courses-list-tile-item {
+      background-color: #fff;
+    }
+
+    .col-md-3 {
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      .courses-list-tile-item {
+        background-color: #fff;
+        box-shadow: 0 0 15px rgba(15, 15, 16, 0.15);
+        z-index: 10;
+        position: relative;
+      }
+    }
+
+    .courses-list-tile-item {
+      padding: 15px;
+      height: 375px;
+
+      .courses-list-tile-item-picture {
+        height: 135px;
+        margin: 0 auto;
+        display: block;
+        overflow: hidden;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .courses-list-tile-item-about {
+        padding: 19px 15px 0;
+
+        .courses-list-tile-item-title {
+          font: 18px UbuntuRegular, sans-serif;
+          color: #3b4256;
+          height: 2.5em;
+          overflow: hidden;
+        }
+
+        .courses-list-tile-item-summary {
+          font: 14px UbuntuRegular, sans-serif;
+          color: #686879;
+          margin-top: 15px;
+          line-height: 1.1em;
+          height: 5.5em;
+          overflow: hidden;
+        }
+
+        .courses-list-tile-item-info {
+          font: 14px UbuntuRegular, sans-serif;
+          color: #888796;
+          margin-top: 20px;
+
+          img {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
   }
 
-  .block-list-courses a {
-    text-decoration: none;
+  .btn-more {
+    margin-top: 59px;
   }
-
-  .block-icon-courses {
-    font: 14px UbuntuRegular, sans-serif;
-    color: #888796;
-    margin-top: 20px;
-  }
-
-  .block-icon-courses img {
-    margin-right: 5px;
-  }
-
-  .block-list-courses a:hover .box-courses {
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(15, 15, 16, 0.15);
-    z-index: 10;
-    position: relative;
-  }
-
-  .block-list-courses .row .col-md-3:nth-child(2n) .box-courses {
-    background-color: #fff;
-  }
-
-  .photo-small-courses {
-    margin: 0 auto;
-    display: block;
-  }
-
-  .select-courses {
-    margin-top: 30px;
-  }
-
 }

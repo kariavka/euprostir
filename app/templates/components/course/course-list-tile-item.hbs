@@ -1,1 +1,13 @@
-{{yield}}
+{{#link-to "courses.item" item.id}}
+  <div class="courses-list-tile-item">
+    <div class="courses-list-tile-item-picture" style="{{item.imageStyle}}" alt=""></div>
+    <div class="courses-list-tile-item-about">
+      <div class="courses-list-tile-item-title">
+        {{item.title}}
+      </div>
+      <div class="courses-list-tile-item-summary">
+        {{item.summary}}
+      </div>
+    </div>
+  </div>
+{{/link-to}}
