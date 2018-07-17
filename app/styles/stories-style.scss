@@ -1,0 +1,178 @@
+.sect-stories-list {
+  padding: 55px 0;
+
+  .name-stories-list {
+    font: 38px UbuntuRegular, sans-serif;
+    color: #3b4256;
+  }
+
+  .cont2-sect-stories-list {
+    margin-top: 25px;
+    min-height: 400px;
+  }
+
+  .box-stories-list {
+    padding-top: 24px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .block1-stories-list {
+    margin-top: 40px;
+  }
+
+  .sect-stories-list {
+    overflow-x: hidden;
+  }
+
+  .block-popular {
+    margin-top: 21px;
+    margin-left: 4px;
+
+    .t-popular {
+      font: 18px UbuntuBold, sans-serif;
+      color: #3b4256;
+      margin-top: 60px;
+      text-transform: uppercase;
+    }
+
+    .box1-popular {
+      margin-top: 38px;
+    }
+  }
+
+  .block-popular::before {
+    background-color: #BAAFD6;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 700px;
+  }
+
+  .btn-stories {
+    max-width: 207px;
+    display: block;
+    margin: 80px auto 0;
+  }
+}
+
+.story-list-block {
+  width: 100%;
+  height: 388px;
+  box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
+
+  .story-top {
+    height: 265px;
+    position: relative;
+  }
+
+  .story-category {
+    position: absolute;
+    right: 0;
+    top: 12px;
+
+    div {
+      display: inline-block;
+    }
+  }
+
+  .story-image {
+    height: 265px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .story-title {
+    position: absolute;
+    bottom: 24px;
+    left: 22px;
+    font: 26px UbuntuRegular, sans-serif;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+
+  .story-footer {
+    width: 100%;
+    font: 16px UbuntuRegular, sans-serif;
+    color: #686879;
+    padding: 2em 20px 3em;
+    height: 8em;
+    overflow: hidden;
+    //background-color: green;
+
+    .story-summary {
+      width: 100%;
+      font: 16px UbuntuRegular, sans-serif;
+      line-height: 1.1em;
+      max-height: 3.2em;
+      padding: 0;
+      overflow: hidden;
+      //background-color: yellow;
+    }
+  }
+}
+
+.story-list-slider {
+  .slick-slider {
+    .slides {
+      padding: 0;
+    }
+
+    .slick-slider img {
+      margin: 0 auto;
+    }
+
+    .slick-dots {
+      bottom: -36px;
+
+      li {
+        position: relative;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin: 0 4px;
+        padding: 0;
+        cursor: pointer;
+
+        button {
+          width: 15px;
+          height: 15px;
+          display: block;
+          background-color: transparent;
+          border: 1px solid #AFAEB8;
+          border-radius: 50px;
+          -moz-border-radius: 50px;
+          -webkit-border-radius: 50px;
+        }
+      }
+
+      .slick-active {
+        button {
+          background-color: #7C62AB;
+          opacity: 1;
+          border: 1px solid transparent;
+        }
+
+        button::before {
+          opacity: 0 !important;
+        }
+      }
+    }
+
+    .slick-slide {
+      display: block;
+      padding: 20px 15px;
+
+      a:hover {
+        text-decoration: none;
+      }
+    }
+
+  }
+}
+
+.story-list-horizontal {
+
+}
