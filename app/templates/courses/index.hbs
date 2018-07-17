@@ -29,23 +29,12 @@
       <div class="row">
         <div class="col-md-12">
 
-          <div class="filter">
-            <span class="filter-label">Перегляд за:</span>
-            <span class="filter-trigger {{if showDropdown 'filter-trigger-active'}}" {{action
-              'toggleDropdown'}}>Темою</span>
-
-            {{#if showDropdown}}
-              <div class="filter-dropdown-container">
-                <ul class="filter-dropdown-visible">
-                  <li><a href="#">Темою</a></li>
-                  <li>{{#link-to "courses.index" (query-params f=null)}}Всі{{/link-to}}</li>
-                  {{#each filters as |filter|}}
-                    <li>{{#link-to "courses.index" (query-params f=filter.lira)}}{{filter.name}}{{/link-to}}</li>
-                  {{/each}}
-                </ul>
-              </div>
-            {{/if}}
-          </div>
+          {{common/common-filter
+            class="filter"
+            filters=filters
+            endpoint="courses.index"
+            showDropdown=showDropdown
+            currentFilter=f}}
 
         </div>
       </div>
