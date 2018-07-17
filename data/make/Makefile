@@ -14,7 +14,10 @@ build:
 	ember b --environment="production"
 
 deploy:
-	scp -r dist/** euprostir@94.130.108.105:~/dist/
+	@read -p "Are You Sure? [Y/n] " sure && case "$$sure" in [yY]) scp -r dist/** euprostir@94.130.108.105:~/dist/;; *) exit;; esac
+
+demo:
+	scp -r dist/** euprostir@94.130.108.105:~/demo/
 
 release:
 	git checkout develop; git push; git checkout master; git push
