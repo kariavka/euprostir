@@ -1,5 +1,6 @@
-import Ember from 'ember';
 import DS from 'ember-data';
+import {computed} from '@ember/object';
+import {htmlSafe} from '@ember/string';
 
 export default DS.Model.extend({
   title: DS.attr('string'),
@@ -10,7 +11,7 @@ export default DS.Model.extend({
   path: DS.attr('string'),
 
   // Page Name
-  pageName: Ember.computed('path', function () {
+  pageName: computed('path', function () {
     let path = this.get('path');
     let start = 4;
     let end = path.length - 1;
@@ -20,10 +21,10 @@ export default DS.Model.extend({
   // Image
   image: DS.belongsTo('neuron'),
   image_url: DS.attr('string'),
-  imageStyle: Ember.computed('image_url', function () {
+  imageStyle: computed('image_url', function () {
     let url = this.get('image_url');
     if (!url) return;
-    return Ember.String.htmlSafe(`background-image: url(${url});`);
+    return htmlSafe(`background-image: url(${url});`);
   }),
 
   // Relationships
