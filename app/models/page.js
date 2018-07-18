@@ -9,6 +9,8 @@ export default DS.Model.extend({
   language: DS.attr('string'),
   created: DS.attr('date'),
   path: DS.attr('string'),
+  views: DS.attr('number', {defaultValue: 0}),
+  comments: DS.attr('number', {defaultValue: 0}),
 
   // Page Name
   pageName: computed('path', function () {

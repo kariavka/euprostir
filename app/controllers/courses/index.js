@@ -3,7 +3,7 @@ import {inject} from '@ember/service';
 import {get, set, computed} from '@ember/object';
 import {reads} from '@ember/object/computed';
 import {A} from '@ember/array';
-import getLira from 'euprostir/utils/get-lira';
+import config from 'euprostir/config/environment';
 
 export default Controller.extend({
   // Services
@@ -22,33 +22,14 @@ export default Controller.extend({
   filters: null,
 
   // Flags
-  canLoadMore: computed('model.items.meta.total_results', 'items.length', function () {
-    const totalResults = get(this, 'model.items.meta.total_results');
-    const loadedResults = get(this, 'items.length');
-    return loadedResults < totalResults;
+  canLoadMore: computed('page', 'pages', function () {
+    return get(this, 'page') < get(this, 'pages');
   }),
 
   // Init
   init: function () {
     this._super();
-
-    const filters = [{
-      name: 'Візії розвитку громадянського суспільства',
-      lira: 133129,
-    }, {
-      name: 'Соціальне підприємництво',
-      lira: 38405,
-    }, {
-      name: 'Соціальні послуги стратегії',
-      lira: 133132,
-    }, {
-      name: 'Управління організаціями',
-      lira: 133134,
-    }, {
-      name: 'Ефективні комунікації',
-      lira: 133136,
-    }];
-
+    const filters = config.neuronet.uk.filters.courses;
     set(this, 'filters', filters);
   },
 
@@ -62,17 +43,20 @@ export default Controller.extend({
       const store = get(this, 'store');
       let page = get(this, 'page');
       let pages = get(this, 'pages');
-      let lira = getLira('courses');
+      let lira = config.neuronet.uk.courses;
       let filter = get(this, 'f');
-      let liraWithFilter = (filter) ? lira + ',' + filter : lira;
+
+      if (filter) {
+        lira = lira + ',' + filter;
+      }
 
       if (page <= pages) {
         page = page + 1;
         set(this, 'page', page);
-        store.query('post', {
+        store.query('page', {
           page: page,
-          per_page: 8,
-          lira: liraWithFilter
+          per_page: 4,
+          lira: lira
         }).then((newItems) => {
           let items = A();
           const oldItems = get(this, 'items');
