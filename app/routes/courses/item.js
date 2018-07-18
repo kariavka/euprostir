@@ -17,14 +17,14 @@ export default Route.extend({
     const store = get(this, 'store');
 
     return hash({
-      item: store.findRecord('post', params.id, {reload: true}),
-      items: store.query('post', {
+      item: store.findRecord('page', params.id, {reload: true}),
+      items: store.query('page', {
         lira: config.neuronet.uk.courses,
-        per_page: 4,
+        per_page: 5,
         page: 1,
         sort: '-created',
       }).then((data) => {
-        return data.rejectBy('id', params.id).slice(0, 3)
+        return data.rejectBy('id', params.id).slice(0, 4)
       }),
     });
   },

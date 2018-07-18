@@ -1,0 +1,429 @@
+.course {
+  padding-top: 0;
+  padding-bottom: 80px;
+
+  .top-course {
+    background: linear-gradient(to right, #542E91, #765AA7);
+    padding: 90px 0 165px;
+  }
+
+  .cat-course {
+    background-image: url(/images/bg-category-course.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 27px;
+    width: 108px;
+    margin: auto;
+    font: 12px UbuntuMedium, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 7px;
+  }
+
+  .title-course {
+    font: 38px UbuntuRegular, sans-serif;
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  .t-autors {
+    font: 14px UbuntuBold, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 43px;
+  }
+
+  .block-autors {
+    margin-top: 20px;
+  }
+
+  .name-autor-cours {
+    font: 16px UbuntuRegular, sans-serif;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  .name-autor-cours img {
+    margin-right: 10px;
+    margin-top: -3px;
+  }
+
+  .block-right-course {
+    text-align: right;
+  }
+
+  .btn-test {
+    font: 19px UbuntuRegular, sans-serif;
+    color: #542e91;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: 150px;
+    border: 1px solid transparent;
+    max-width: 202px;
+    width: 100%;
+    padding: 18px 0;
+  }
+
+  .btn-test:hover {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+
+  }
+
+  .btn-resourse {
+    font: 14px UbuntuRegular, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-radius: 150px;
+    border: 1px solid #fff;
+    max-width: 144px;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 30px;
+  }
+
+  .btn-resourse:hover {
+    color: #542e91;
+    background-color: #fff;
+    border: 1px solid transparent;
+
+  }
+
+  .block-time-course {
+    font: 14px UbuntuRegular, sans-serif;
+    color: #ffffff;
+    margin-top: 75px;
+  }
+
+  .block-time-course div {
+    margin-bottom: 7px;
+  }
+
+  .block-time-course img {
+    margin-left: 10px;
+    margin-top: -3px;
+  }
+
+  .block-video-curse {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin: -125px 0 15px;
+    border: 30px solid #fff;
+    border-bottom: 0;
+  }
+
+  .big_video_shadow-curse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    transition: all 0.5s ease-out;
+
+  }
+
+  .block-video-curse:hover .big_video_shadow-curse {
+    opacity: 0.7;
+  }
+
+  .name-video-course {
+    font-size: 13px;
+    color: #888796;
+    position: relative;
+    top: -17px;
+  }
+
+  .summary-img2-story {
+    font: 13px UbuntuItalic, sans-serif;
+    color: #888796;
+    max-width: 410px;
+    margin-left: 45px;
+    display: inline-block;
+  }
+
+  .video-curse .col-md-12 {
+    padding: 0;
+  }
+
+  .about-video-course {
+    margin-left: 30px;
+  }
+
+  .summary-video-course {
+    font: 13px UbuntuItalic, sans-serif;
+    color: #888796;
+    max-width: 410px;
+    margin-left: 45px;
+    display: inline-block;
+  }
+
+  .cont2-course {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .block-kav-course {
+    font: 31px EBGaramondItalic, sans-serif;
+    color: #3b4256;
+    width: 270px;
+    line-height: 1.2;
+    float: left;
+    margin-left: -100px;
+  }
+
+  .kav-course {
+    display: block;
+  }
+
+  .img-course {
+    max-width: 626px;
+    margin-bottom: 10px;
+  }
+
+  .block-img-course {
+    margin-left: -30px;
+    margin-top: 30px;
+  }
+
+  .list-course {
+    margin-top: 30px;
+  }
+
+  .btn-nav-course {
+    font: 14px UbuntuRegular, sans-serif;
+    color: #542e91;
+    text-transform: uppercase;
+    border: 1px solid #542E91;
+    border-radius: 150px;
+    background-color: transparent;
+    max-width: 140px;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0 15px;
+  }
+
+  .block-nav-course {
+    margin-top: 100px;
+  }
+
+  .btn1-nav-course img {
+    margin-right: 10px;
+  }
+
+  .btn2-nav-course img {
+    margin-left: 10px;
+  }
+
+  .modal-content {
+    background-clip: padding-box;
+    background-color: transparent;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: none;
+    outline: 0 none;
+    position: relative;
+    text-align: center;
+    z-index: 1000000000000;
+  }
+
+  .modal-header {
+    border-bottom: none;
+    padding: 15px;
+  }
+
+  .close {
+    color: #fff;
+    float: right;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0.7;
+    text-shadow: none;
+  }
+
+  .form-test {
+    padding: 25px 30px;
+  }
+
+  .block-form-test {
+    padding: 15px;
+    background-color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .title-form-test {
+    font: 18px UbuntuBold, sans-serif;
+    color: #3b4255;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+
+  .form-test input {
+    height: 30px;
+    width: 100%;
+    font: 16px UbuntuRegular, sans-serif;
+    color: #7c62ab;
+    border: 0;
+    border-bottom: 1px solid #BAAFD6;
+    padding: 0 15px 1px;
+    margin-bottom: 45px;
+    padding-top: 0;
+    margin-top: 6px;
+  }
+
+  .form-test button, .btn_close {
+    height: 50px;
+    width: 100%;
+    max-width: 168px;
+    margin: 0 auto;
+    background-color: transparent;
+    font: 14px UbuntuRegular, sans-serif;
+    color: #542e91;
+    text-transform: uppercase;
+    border: 1px solid #542E91;
+    border-radius: 150px;
+  }
+
+  table td [class*="col-"], table th [class*="col-"] {
+    display: block;
+    float: none;
+    position: relative;
+  }
+
+  .box-modal {
+    background: transparent none repeat scroll 0 0 !important;
+    border-radius: 5px;
+    color: #3c3c3c;
+    min-height: 120px;
+    padding: 20px;
+    position: relative;
+    width: auto !important;
+  }
+
+  label {
+    text-align: left;
+    display: block;
+    font: 14px UbuntuBold;
+    text-transform: uppercase;
+    color: #3b4256;
+  }
+
+  /***** ���������� ��� ���� ********/
+
+  .summary-course {
+    font: 16px UbuntuRegular, sans-serif;
+    color: #fff;
+    max-width: 320px;
+    margin: 40px auto;
+    line-height: 1.1em;
+    height: 5.4em;
+    overflow: hidden;
+  }
+
+  .top-course-info {
+    background: linear-gradient(to right, #542E91, #765AA7);
+    padding: 90px 0;
+  }
+
+  .content-course {
+    background-color: #F0F0F3;
+    padding: 90px 0;
+    margin: 90px 0 0;
+  }
+
+  .t-content-course {
+    font: 22px UbuntuBold, sans-serif;
+    color: #3b4256;
+    text-transform: uppercase;
+    text-align: center;
+
+  }
+
+  .block-teacher {
+    padding: 80px 0;
+  }
+
+  .t-teacher {
+    font: 22px UbuntuBold, sans-serif;
+    color: #3b4256;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .box-teacher {
+    width: 241px;
+    display: inline-block;
+    text-align: left;
+
+  }
+
+  .box-teacher2 {
+    margin-left: 83px;
+  }
+
+  .name-teacher {
+    font: 14px UbuntuBold, sans-serif;
+    color: #3b4256;
+    text-transform: uppercase;
+    margin-top: 15px;
+  }
+
+  .about-teacher {
+    font: 14px UbuntuRegular, sans-serif;
+    color: #79788b;
+    margin-top: 20px;
+  }
+
+  .block-all-teacher {
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  .block-share-course {
+    background-color: #614099;
+    padding: 45px 0;
+  }
+
+  .block-share-f {
+    width: 46px;
+    display: inline-block;
+  }
+
+  .block-share-tw {
+    width: 46px;
+    display: inline-block;
+    margin-left: 30px;
+  }
+
+  .block-share-course span {
+    font: 10px UbuntuRegular, sans-serif;
+    color: #fff;
+  }
+}
+
+.course-info {
+  background-color: #FBFBFC;
+  padding-bottom: 0;
+}
+
+.course-footer {
+  padding-top: 90px;
+
+  .more-courses {
+    //background-color: #FBFBFC;
+    padding: 0 0 40px;
+  }
+
+  .t-more-courses {
+    font: 30px UbuntuMedium, sans-serif;
+    color: #3b4256;
+    text-transform: uppercase;
+  }
+}

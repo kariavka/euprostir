@@ -1,0 +1,121 @@
+/* Extra small devices (mobile: phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+
+  .top-course {
+    padding: 45px 0;
+  }
+
+  .top-course-info {
+    padding: 45px 0;
+  }
+
+  .title-course {
+    line-height: 1.1;
+  }
+
+  .block-video-curse {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .block-right-course {
+    text-align: left;
+  }
+
+  .block-time-course img {
+    margin-left: 0;
+    margin-top: 3px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .btn-test {
+    display: block;
+    margin-top: 60px;
+  }
+
+  .block-time-course {
+    margin-top: 55px;
+  }
+
+  .summary-video-course {
+    margin-left: 0;
+    display: inline-block;
+  }
+
+  .about-video-course {
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+
+  .name-video-course {
+    top: -9px;
+    margin-left: 0;
+  }
+
+  .title2-story {
+    font: 20px UbuntuBold, sans-serif;
+  }
+
+  .cont2-course {
+    margin-top: 40px;
+  }
+
+  .block-kav-course {
+    font: 31px EBGaramondItalic, sans-serif;
+    width: 270px;
+    float: none;
+    margin-left: -100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .form-test {
+    padding: 10px 10px;
+  }
+
+  .title-form-test {
+    margin-bottom: 40px;
+  }
+
+  .form-test input {
+    margin-bottom: 35px;
+  }
+
+  .content-course {
+    padding: 50px 0;
+    margin: 60px 0 0;
+  }
+
+  .block-teacher {
+    padding: 50px 0;
+  }
+
+  .block-all-teacher {
+    margin-top: 40px;
+  }
+
+  .box-teacher2 {
+    margin-left: 30px;
+  }
+
+  .box-teacher {
+    width: 147px;
+    text-align: left;
+  }
+
+}
+
+/* Large devices (desktop: laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+  .img-course {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .box-teacher2 {
+    margin-left: 23px;
+  }
+
+}

@@ -1,23 +1,26 @@
 {{course/course-item
   item=model.item}}
 
-<section class="story-footer sect-stories">
+<section class="course-footer courses-tile-container">
 
-  <div class="block-category-container text-center">
-    <div class="category-text">
-      <p class="category-name category-name-stories">Інші курси</p>
+  <div class="more-courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="t-more-courses">Більше курсів</div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  {{post/post-list-horizontal
-    class="story-list-horizontal"
-    items=model.items
-    endpoint="courses.item"}}
+    {{course/course-list-tile
+      items=model.items}}
+
+  </div>
 
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        {{#link-to "practices.index" class="btn btn-more btn-stories"}}
+        {{#link-to "courses.index" class="btn btn-more btn-stories"}}
           відкрити більше
         {{/link-to}}
       </div>
