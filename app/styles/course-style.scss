@@ -202,10 +202,15 @@
     border: 1px solid #542E91;
     border-radius: 150px;
     background-color: transparent;
-    max-width: 140px;
-    width: 100%;
-    padding: 15px 0;
-    margin: 0 15px;
+    //max-width: 140px;
+    //width: 100%;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .btn-nav-course:hover {
+    color: #fff !important;
+    background-color: #542E91;
   }
 
   .block-nav-course {
