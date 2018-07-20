@@ -217,4 +217,14 @@
     margin-left: 22px;
     margin-top: -5px;
   }
+
+  .block-popular::before {
+    content: "";
+    height: 1px;
+    width: 1000px;
+    background-color: #BAAFD6;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
 }
