@@ -1,1 +1,30 @@
-{{outlet}}
+{{course/course-item
+  item=model.item}}
+
+<section class="course-footer courses-tile-container">
+
+  <div class="more-courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="t-more-courses">Більше курсів</div>
+        </div>
+      </div>
+    </div>
+
+    {{course/course-list-tile
+      items=model.items}}
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{#link-to "courses.index" class="btn btn-more btn-stories"}}
+          відкрити більше
+        {{/link-to}}
+      </div>
+    </div>
+  </div>
+
+</section>

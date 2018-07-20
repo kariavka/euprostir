@@ -1,1 +1,70 @@
-{{outlet}}
+<section class="courses-section">
+
+  <div class="container courses-header-container">
+    <div class="row">
+      <div class="col-md-12 pos-rel">
+        <div class="courses-category">навчання</div>
+        <div class="courses-online-header">Онлайн курси</div>
+        <div class="courses-popular-header">наші популярні курси</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="courses-popular-container">
+    {{course/course-list-popular
+      items=model.popular}}
+  </div>
+
+  <div class="courses-tile-container">
+
+    <div class="container courses-select-container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="courses-select-header">обери курс для себе</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container courses-select-container">
+      <div class="row">
+        <div class="col-md-12">
+
+          {{common/common-filter
+            class="filter"
+            filters=filters
+            endpoint="courses.index"
+            showDropdown=showDropdown
+            currentFilter=f}}
+
+        </div>
+      </div>
+    </div>
+
+    {{#if items}}
+      {{course/course-list-tile
+        items=items}}
+
+      {{#if canLoadMore}}
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div {{action "loadMore"}} class="btn btn-more">відкрити більше</div>
+            </div>
+          </div>
+        </div>
+      {{/if}}
+
+    {{else}}
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mt-4">
+            Нічого не знайдено.
+          </div>
+        </div>
+      </div>
+
+    {{/if}}
+
+  </div>
+
+</section>

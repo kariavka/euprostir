@@ -1,0 +1,11 @@
+<div class="container courses-list-tile">
+  <div class="row">
+
+    {{#each items as |item|}}
+      {{course/course-list-tile-item
+        class="col-md-3 col-sm-6"
+        item=item}}
+    {{/each}}
+
+  </div>
+</div>
