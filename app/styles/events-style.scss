@@ -1,5 +1,5 @@
 .sect-events {
-  padding: 0;
+  padding: 0 0 55px 0;
   overflow-x: hidden;
 
   .events-title {
@@ -79,12 +79,12 @@
 
       .about-event {
         .title-event {
-          font: 22px UbuntuRegular, sans-serif;
+          font: 18px UbuntuRegular, sans-serif;
           color: #3b4256;
         }
 
         .summary-event {
-          font: 16px UbuntuRegular, sans-serif;
+          font: 14px UbuntuRegular, sans-serif;
           color: #686879;
           height: 3.5em;
           overflow: hidden;
