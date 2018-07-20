@@ -37,9 +37,10 @@
     </div>
     <ul class="menu-mobile-list">
       <li>{{#link-to "index"}}Головна{{/link-to}}</li>
-      <li>{{#link-to "stories.index"}}Історії{{/link-to}}</li>
-      <li>{{#link-to "practices.index"}}Практики{{/link-to}}</li>
-      <li>{{#link-to "opportunities.index"}}Можливості{{/link-to}}</li>
+      <li>{{#link-to "stories.index" (query-params f=null)}}Історії{{/link-to}}</li>
+      <li>{{#link-to "practices.index" (query-params f=null)}}Практики{{/link-to}}</li>
+      <li>{{#link-to "opportunities.index" (query-params f=null)}}Можливості{{/link-to}}</li>
+      <li>{{#link-to "courses.index" (query-params f=null)}}Навчання{{/link-to}}</li>
     </ul>
     <form action="" method="post" class="search-mobile">
       <input type="search" name="" placeholder="{{t "search"}}" class="input-search col-8"/>
@@ -96,13 +97,14 @@
             <div class="logotip" alt=""></div>
           {{/link-to}}
         </div>
-        <div class="col-md-9 col-sm-9 pos_rel">
+        <div class="col-md-9 col-sm-9 pos-rel">
           <div class="top-menu">
             <div class="navbar-collapse">
               <ul class="nav nav-pills">
                 <li>{{#link-to "stories.index" (query-params f=null)}}Історії{{/link-to}}</li>
-                <li>{{#link-to "practices.index"  (query-params f=null)}}Практики{{/link-to}}</li>
-                <li>{{#link-to "opportunities.index"  (query-params f=null)}}Можливості{{/link-to}}</li>
+                <li>{{#link-to "practices.index" (query-params f=null)}}Практики{{/link-to}}</li>
+                <li>{{#link-to "opportunities.index" (query-params f=null)}}Можливості{{/link-to}}</li>
+                <li>{{#link-to "courses.index" (query-params f=null)}}Навчання{{/link-to}}</li>
               </ul>
             </div>
           </div>

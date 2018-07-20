@@ -22,6 +22,9 @@ Router.map(function () {
 
   this.route('courses', function () {
     this.route('item', {path: '/:id'});
+    this.route('lecture', function() {
+      this.route('item', {path: '/:id'});
+    });
   });
 
   this.route('events', function () {

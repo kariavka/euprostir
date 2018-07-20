@@ -39,7 +39,7 @@ module.exports = function (environment) {
         stories: '131961,131968',
         practices: '131961,131972',
         opportunities: '131961,131974',
-        courses: '131961,131968',
+        courses: '131961,134733',
         events: '131961,131968',
         about: '131961,132034',
         filters: {
@@ -84,6 +84,24 @@ module.exports = function (environment) {
             }
           ],
           opportunities: [
+            {
+              name: 'Візії розвитку громадянського суспільства',
+              lira: '133129',
+            }, {
+              name: 'Соціальне підприємництво',
+              lira: '38405',
+            }, {
+              name: 'Соціальні послуги',
+              lira: '133132',
+            }, {
+              name: 'Управління організаціями',
+              lira: '133134',
+            }, {
+              name: 'Ефективні комунікації',
+              lira: '133136',
+            }
+          ],
+          courses: [
             {
               name: 'Візії розвитку громадянського суспільства',
               lira: '133129',
