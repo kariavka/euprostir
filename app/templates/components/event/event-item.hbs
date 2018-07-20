@@ -1,1 +1,145 @@
-{{yield}}
+{{#if media.isMobile}}
+  <section class="sect-event">
+
+    <aside id="event-aside" class="event-aside">
+      <div class="ml-3">
+        <div>
+          {{share/share-facebook
+            item=item}}
+        </div>
+        <div class="mt-3">
+          {{share/share-twitter
+            item=item}}
+        </div>
+      </div>
+    </aside>
+
+    <div id="event-article" class="event-article">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12 col-sm-12 col-12">
+            <div class="event-date">
+              <div class="event-actual">
+                Актуально до:
+                <img class="event-icon" src="/images/icon-event.png" alt="">
+              </div>
+              <div class="event-day">
+                {{moment-format item.created "DD"}}
+              </div>
+              <div class="event-year">
+                {{moment-format item.created "MMM"}}
+                {{moment-format item.created "YYYY"}}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-12">
+            <div class="event-category">Події</div>
+            <div class="event-title">{{item.title}}</div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container cont2-event">
+
+        <div class="row">
+
+          <div class="col-md-12 col-sm-12 col-12">
+            <img src="{{item.image_url}}" class="img-fluid" alt="Заглавна картинка">
+            <div class="event-description">
+              {{{item.description}}}
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+{{else}}
+  <section class="sect-event">
+
+    <aside id="event-aside" class="event-aside">
+      <div class="ml-3">
+        <div>
+          {{share/share-facebook
+            item=item}}
+        </div>
+        <div class="mt-3">
+          {{share/share-twitter
+            item=item}}
+        </div>
+      </div>
+    </aside>
+
+    <div id="event-article" class="event-article">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-3 col-sm-3 col-12 pos_rel">
+            <div class="row">
+              <div class="col-12 text-right">
+                <img class="event-icon" src="/images/icon-event.png" alt="">
+              </div>
+            </div>
+            <div class="row event-date">
+              <div class="col-sm-6 col-6 event-actual">
+                Актуально до:
+              </div>
+              <div class="col-sm-6 col-6">
+                <div class="event-day">
+                  {{moment-format item.created "DD"}}
+                </div>
+                <div class="event-year">
+                  {{moment-format item.created "MMM"}}
+                  {{moment-format item.created "YYYY"}}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 offset-md-1 col-sm-9 offset-sm-1 col-xs-12">
+            <div class="event-category">Можливості</div>
+            <div class="event-title">{{item.title}}</div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container cont2-event">
+
+        <div class="row">
+
+          <div class="col-md-3 col-sm-3">
+            <div class="block-event">
+              {{!--<div class="organizers">Організатори</div>--}}
+              {{!--<ul class="list-organizers">--}}
+              {{!--<li>Проект ЄС для розвитку громадянського суспільства в Україні</li>--}}
+              {{!--<li>Представництво ЄС в Україні</li>--}}
+              {{!--<li>Міністерство закордонних справ України</li>--}}
+              {{!--</ul>--}}
+            </div>
+          </div>
+
+          <div class="col-md-7 offset-md-1 col-sm-9">
+            <img src="{{item.image_url}}" class="img-fluid" alt="Заглавна картинка">
+            <div class="event-description">
+              {{{item.description}}}
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+{{/if}}
