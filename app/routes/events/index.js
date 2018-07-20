@@ -26,7 +26,7 @@ export default Route.extend({
     return hash({
       items: store.query('post', {
         page: 1,
-        per_page: 4,
+        per_page: 10,
         lira: liraWithFilter
       }),
       popular: store.query('post', {
