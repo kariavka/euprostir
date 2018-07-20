@@ -49,8 +49,15 @@
 
         {{!--<div class="year-events">2018</div>--}}
 
+        {{common/common-filter
+          class="filter"
+          filters=filters
+          endpoint="events.index"
+          showDropdown=showDropdown
+          currentFilter=f}}
+
         <div class="block-events">
-          {{#each model.items as |item|}}
+          {{#each items as |item|}}
             {{#link-to "events.item" item.id}}
               <div class="block-event">
                 <div class="row">
@@ -88,11 +95,14 @@
           {{/each}}
         </div>
 
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <a class="btn btn-more btn-events">відкрити більше</a>
+        {{#if canLoadMore}}
+          <div class="text-center">
+            <div {{action "loadMore"}}
+              class="btn btn-more btn-events">
+              відкрити більше
+            </div>
           </div>
-        </div>
+        {{/if}}
 
       </div>
 
