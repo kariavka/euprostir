@@ -1,7 +1,6 @@
-.opportunity {
+.sect-opportunity {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 120px;
+  padding: 0;
 
   .opportunity-article {
     display: block;
@@ -146,5 +145,19 @@
   .stop {
     position: relative;
     z-index: 101;
+  }
+}
+
+.sect-opportunity-footer {
+  padding: 0 0 80px;
+  margin-top: 120px;
+  clear: both;
+
+  .btn-opportunities {
+    margin-top: 80px;
+  }
+
+  a {
+    text-decoration: none;
   }
 }

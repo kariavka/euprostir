@@ -1,4 +1,4 @@
-.story-header {
+.sect-story-header {
   background-image: url(/images/banner-story.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -44,7 +44,7 @@
   }
 }
 
-.story-body {
+.sect-story-body {
   position: relative;
   padding: 95px 0 0;
 
@@ -212,8 +212,9 @@
   }
 }
 
-.story-footer {
-  padding: 80px 0;
+.sect-story-footer {
+  padding: 0 0 80px;
+  margin-top: 120px;
   clear: both;
 
   .btn-stories {

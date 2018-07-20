@@ -1,23 +1,23 @@
 {{practice/practice-item
   item=model.item}}
 
-<section class="story-footer sect-stories">
+<section class="sect-practice-footer">
 
   <div class="block-category-container text-center">
     <div class="category-text">
-      <p class="category-name category-name-stories">Інші практики</p>
+      <p class="category-name category-name-practices">Інші практики</p>
     </div>
   </div>
 
-  {{story/story-list-horizontal
-    class="story-list-horizontal"
+  {{post/post-list-horizontal
+    class="post-list-horizontal"
     items=model.items
     endpoint="practices.item"}}
 
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        {{#link-to "practices.index" class="btn btn-more btn-stories"}}
+        {{#link-to "practices.index" class="btn btn-more btn-practices"}}
           відкрити більше
         {{/link-to}}
       </div>
