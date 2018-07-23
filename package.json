@@ -1,6 +1,6 @@
 {
   "name": "euprostir",
-  "version": "0.15.0",
+  "version": "0.15.1",
   "private": true,
   "description": "EuProstir Website",
   "license": "LivaRava License",
@@ -51,6 +51,7 @@
     "ember-i18n": "^5.2.1",
     "ember-load-initializers": "^1.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
+    "ember-metrics": "^0.12.1",
     "ember-moment": "^7.6.0",
     "ember-resolver": "^4.0.0",
     "ember-responsive": "^3.0.0-beta.3",
