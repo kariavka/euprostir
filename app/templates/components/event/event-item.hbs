@@ -20,16 +20,32 @@
 
           <div class="col-md-12 col-sm-12 col-12">
             <div class="event-date">
+
               <div class="event-actual">
                 <img class="event-icon" src="/images/icon-opportunity.png" alt="">
               </div>
-              <div class="event-day">
-                {{moment-format item.created "DD"}}
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="event-day">
+                    {{moment-format item.created "DD"}}
+                  </div>
+                  <div class="event-year">
+                    {{moment-format item.created "MMM"}}
+                    {{moment-format item.created "YYYY"}}
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="event-day">
+                    {{moment-format item.created "DD"}}
+                  </div>
+                  <div class="event-year">
+                    {{moment-format item.created "MMM"}}
+                    {{moment-format item.created "YYYY"}}
+                  </div>
+                </div>
               </div>
-              <div class="event-year">
-                {{moment-format item.created "MMM"}}
-                {{moment-format item.created "YYYY"}}
-              </div>
+
             </div>
           </div>
 
@@ -87,14 +103,21 @@
                 <img class="event-icon" src="/images/icon-opportunity.png" alt="">
               </div>
             </div>
-            <div class="row event-date">
-              <div class="col-sm-6 col-6 event-actual">
-              </div>
-              <div class="col-sm-6 col-6">
+            <div class="event-date">
+              <div class="event-date-begin">
                 <div class="event-day">
                   {{moment-format item.created "DD"}}
                 </div>
                 <div class="event-year">
+                  {{moment-format item.created "MMM"}}
+                  {{moment-format item.created "YYYY"}}
+                </div>
+              </div>
+              <div class="event-date-end">
+                <div class="event-end-day">
+                  {{moment-format item.created "-DD"}}
+                </div>
+                <div class="event-end-year">
                   {{moment-format item.created "MMM"}}
                   {{moment-format item.created "YYYY"}}
                 </div>
