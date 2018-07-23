@@ -185,6 +185,14 @@ module.exports = function (environment) {
     moment: {
       includeLocales: true
     },
+
+    metricsAdapters: [{
+      name: 'GoogleAnalytics',
+      environments: ['local', 'master', 'development', 'production'],
+      config: {
+        id: 'UA-63942379-2',
+      }
+    }],
   };
 
   if (environment === 'local') {
