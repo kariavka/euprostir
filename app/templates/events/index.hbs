@@ -66,13 +66,16 @@
                     <div class="dates-event">
 
                       <div class="date1-event">
-                        <div class="date1-event-day">{{moment-format item.created "DD"}}</div>
-                        <div class="date1-event-month">{{moment-format item.created "MMM"}}</div>
+                        <div class="date1-event-day">{{moment-format item.startdate "DD" timeZone=item.timezone}}</div>
+                        <div class="date1-event-month">{{moment-format item.startdate "MMM"
+                                                                       timeZone=item.timezone}}</div>
                       </div>
 
                       <div class="date2-event">
-                        {{!--<div class="date2-event-day">{{moment-format item.created "DD"}}</div>--}}
-                        {{!--<div class="date2-event-month">{{moment-format item.created "MMM"}}</div>--}}
+                        {{#unless item.isStartEndSameDay}}
+                          <div class="date2-event-day">{{moment-format item.enddate "DD" timeZone=item.timezone}}</div>
+                          <div class="date2-event-month">{{moment-format item.enddate "MMM" timeZone=item.timezone}}</div>
+                        {{/unless}}
                       </div>
 
                     </div>
