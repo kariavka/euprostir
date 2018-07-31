@@ -40,7 +40,7 @@ module.exports = function (environment) {
         practices: '131961,131972',
         opportunities: '131961,131974',
         courses: '131961,134733',
-        events: '131961,131968',
+        events: '131961',
         about: '131961,132034',
         filters: {
           stories: [
@@ -199,12 +199,7 @@ module.exports = function (environment) {
     ENV.api = {
       host: 'http://local.livarava.com',
       path: '/api/v2',
-      key: ''
-    };
-
-    ENV.neuronet = {
-      site: 4964,
-      uk: {}
+      key: 'db459552-f2c6-49b0-b160-a28d5d05936a'
     };
   }
 
