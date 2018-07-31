@@ -28,20 +28,20 @@
               <div class="row">
                 <div class="col-sm-6">
                   <div class="event-day">
-                    {{moment-format item.created "DD"}}
+                    {{moment-format item.startdate "DD"}}
                   </div>
                   <div class="event-year">
-                    {{moment-format item.created "MMM"}}
-                    {{moment-format item.created "YYYY"}}
+                    {{moment-format item.startdate "MMM"}}
+                    {{moment-format item.startdate "YYYY"}}
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="event-day">
-                    {{moment-format item.created "DD"}}
+                    {{moment-format item.enddate "DD"}}
                   </div>
                   <div class="event-year">
-                    {{moment-format item.created "MMM"}}
-                    {{moment-format item.created "YYYY"}}
+                    {{moment-format item.enddate "MMM"}}
+                    {{moment-format item.enddate "YYYY"}}
                   </div>
                 </div>
               </div>
@@ -106,20 +106,20 @@
             <div class="event-date">
               <div class="event-date-begin">
                 <div class="event-day">
-                  {{moment-format item.created "DD"}}
+                  {{moment-format item.startdate "DD"}}
                 </div>
                 <div class="event-year">
-                  {{moment-format item.created "MMM"}}
-                  {{moment-format item.created "YYYY"}}
+                  {{moment-format item.startdate "MMM"}}
+                  {{moment-format item.startdate "YYYY"}}
                 </div>
               </div>
               <div class="event-date-end">
                 <div class="event-end-day">
-                  {{moment-format item.created "-DD"}}
+                  -{{moment-format item.enddate "DD"}}
                 </div>
                 <div class="event-end-year">
-                  {{moment-format item.created "MMM"}}
-                  {{moment-format item.created "YYYY"}}
+                  {{moment-format item.enddate "MMM"}}
+                  {{moment-format item.enddate "YYYY"}}
                 </div>
               </div>
             </div>

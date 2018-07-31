@@ -17,9 +17,9 @@ export default Route.extend({
     const store = get(this, 'store');
 
     return hash({
-      item: store.findRecord('post', params.id, {reload: true}),
-      items: store.query('post', {
-        lira: config.neuronet.uk.stories,
+      item: store.findRecord('event', params.id, {reload: true}),
+      items: store.query('event', {
+        lira: config.neuronet.uk.events,
         per_page: 4,
         page: 1,
         sort: '-created',
