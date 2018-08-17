@@ -24,7 +24,7 @@ export default Route.extend({
     const lira = config.neuronet.uk.opportunities;
     const filter = params.f;
     const liraWithFilter = (filter) ? lira + ',' + filter : lira;
-    const dateStart = moment().format('YYYY-MM-DD');
+    const dateStart = moment().utc().format('YYYY-MM-DD');
 
     return hash({
       items: store.query('post', {
@@ -32,6 +32,7 @@ export default Route.extend({
         per_page: 4,
         lira: liraWithFilter,
         date_start: dateStart,
+        'filter[display]': 'public',
       }),
       popular: store.query('post', {
         page: 1,
@@ -39,6 +40,7 @@ export default Route.extend({
         lira: lira,
         sort: '-views',
         date_start: dateStart,
+        'filter[display]': 'public',
       }),
     });
   },
