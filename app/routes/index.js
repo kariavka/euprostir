@@ -32,6 +32,7 @@ export default Route.extend({
         lira: config.neuronet.uk.stories,
         sort: '-created',
         'filter[featured]': true,
+        'filter[display]': 'public',
       }),
       practices: store.query('post', {
         page: 1,
@@ -39,6 +40,7 @@ export default Route.extend({
         lira: config.neuronet.uk.practices,
         sort: '-created',
         'filter[featured]': true,
+        'filter[display]': 'public',
       }),
       opportunities: store.query('post', {
         page: 1,
@@ -47,6 +49,7 @@ export default Route.extend({
         sort: '-created',
         date_start: dateStart,
         'filter[featured]': true,
+        'filter[display]': 'public',
       }),
       courses: store.query('post', {
         page: 1,
@@ -54,6 +57,7 @@ export default Route.extend({
         lira: config.neuronet.uk.courses,
         sort: '-created',
         'filter[featured]': true,
+        'filter[display]': 'public',
       }),
       events: store.query('post', {
         page: 1,
@@ -61,6 +65,7 @@ export default Route.extend({
         lira: config.neuronet.uk.events,
         sort: '-created',
         'filter[featured]': true,
+        'filter[display]': 'public',
       }),
     });
   },

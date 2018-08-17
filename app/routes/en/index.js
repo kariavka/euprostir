@@ -22,6 +22,7 @@ export default Route.extend({
         lira: config.neuronet.en.stories,
         sort: '-created',
         'filter[featured]': true,
+        'filter[display]': 'public',
       }),
       practices: store.query('post', {
         page: 1,
@@ -29,6 +30,7 @@ export default Route.extend({
         lira: config.neuronet.en.practices,
         sort: '-created',
         'filter[featured]': true,
+        'filter[display]': 'public',
       }),
     });
   },
