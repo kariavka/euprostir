@@ -103,6 +103,12 @@
       }
     }
   }
+
+  .btn-search {
+    background: url(/images/search_btn.png) no-repeat;
+    width: 19px;
+    height: 19px;
+  }
 }
 
 .sect-menu-inverted {
@@ -131,6 +137,12 @@
         }
       }
     }
+  }
+
+  .btn-search {
+    background: url(/images/search_btn-white.png) no-repeat;
+    width: 19px;
+    height: 19px;
   }
 }
 
