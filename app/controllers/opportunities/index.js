@@ -41,7 +41,7 @@ export default Controller.extend({
 
     loadMore() {
       const store = get(this, 'store');
-      const page = get(this, 'page');
+      let page = get(this, 'page');
       const pages = get(this, 'pages');
       const lira = config.neuronet.uk.opportunities;
       const filter = get(this, 'f');
