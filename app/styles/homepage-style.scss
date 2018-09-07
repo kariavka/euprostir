@@ -233,7 +233,7 @@
 // Courses Begin
 
 .sect-courses {
-  padding: 70px 0;
+  padding-bottom: 70px;
 
   .slogan-courses {
     position: absolute;
@@ -263,6 +263,7 @@
 
     .video-big-box {
       height: 390px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 
       .visual-video-big {
         max-width: 693px;
@@ -299,7 +300,6 @@
 
       .text-video-big {
         padding: 26px 15px 0 21px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
         height: 390px;
 
         .title-video-big {
