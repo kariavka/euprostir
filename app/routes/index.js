@@ -51,7 +51,7 @@ export default Route.extend({
         'filter[featured]': true,
         'filter[display]': 'public',
       }),
-      courses: store.query('post', {
+      courses: store.query('page', {
         page: 1,
         per_page: 4,
         lira: config.neuronet.uk.courses,
