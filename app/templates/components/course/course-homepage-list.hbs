@@ -4,7 +4,7 @@
 
       <div class="col-md-4 col-sm-4">
         {{#link-to "courses.item" first.id}}
-          <div class="box-video-small">
+          <div class="video-small-box">
             <div class="image-video-small" style="{{first.imageStyle}}"></div>
             <div class="shadow-video-small"></div>
             <p class="title-video-small">{{first.title}}</p>
@@ -19,7 +19,7 @@
     <div class="row">
 
       <div class="col-md-12 col-sm-12">
-        <div class="box-video-big media">
+        <div class="video-big-box media">
           <div class="visual-video-big">
             {{#link-to "courses.item" first.id}}
               <div class="image-video-big" style="{{first.imageStyle}}"></div>
@@ -44,10 +44,10 @@
 <div class="container cont3-sect-courses">
   <div class="row">
 
-    {{#each nextThree as |item|}}
+    {{#each courses as |item|}}
       <div class="col-md-4 col-sm-4">
         {{#link-to "courses.item" item.id}}
-          <div class="box-video-small">
+          <div class="video-small-box">
             <div class="image-video-small" style="{{item.imageStyle}}"></div>
             <div class="shadow-video-small"></div>
             <p class="title-video-small">{{item.title}}</p>

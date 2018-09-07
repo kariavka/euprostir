@@ -71,4 +71,31 @@
     </div>
 
   </section>
+
+  <section class="sect-courses">
+
+    <div class="block-category-container text-center">
+      <div class="category-text">
+        <p class="category-name category-name-opportunities">Навчання</p>
+        <p class="slogan-name slogan-name-opportunities">що збагачують</p>
+      </div>
+    </div>
+
+    <div class="container cont2-sect-courses">
+      {{course/course-homepage-list
+        class="row"
+        items=model.courses
+        endpoint="courses.item"}}
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          {{#link-to "courses.index" class="btn btn-more btn-courses"}}
+            відкрити більше
+          {{/link-to}}
+        </div>
+      </div>
+    </div>
+  </section>
 {{/common/common-content}}
