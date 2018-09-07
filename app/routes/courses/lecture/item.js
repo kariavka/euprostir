@@ -20,6 +20,7 @@ export default Route.extend({
       item: store.findRecord('page', params.id, {reload: true}),
       items: store.query('page', {
         lira: config.neuronet.uk.courses,
+        'filter[display]': 'public',
         per_page: 5,
         page: 1,
         sort: '-created',
