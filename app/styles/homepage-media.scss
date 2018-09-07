@@ -137,7 +137,7 @@
       margin-top: 48px;
     }
 
-    .box-video-big {
+    .video-big-box {
       height: 226px;
       display: none;
     }
@@ -146,7 +146,7 @@
       margin-top: 0;
     }
 
-    .box-video-small {
+    .video-small-box {
       height: auto;
       width: 100%;
       max-width: 332px;
@@ -291,6 +291,48 @@
 
     .about-opportunity {
       padding: 10px 10px 0;
+    }
+  }
+
+  .sect-courses {
+    padding: 40px 0;
+
+    .visual-video-big {
+      max-width: 400px;
+    }
+
+    .video-big-box {
+      height: 226px;
+    }
+
+    .text-video-big {
+      padding: 10px 10px 0 11px;
+      height: 226px;
+    }
+
+    .title-video-big {
+      font: 21px UbuntuRegular, sans-serif;
+      line-height: 1.1;
+    }
+
+    .arrow-video-big {
+      margin-top: 2px;
+    }
+
+    .video-small-box {
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    .title-video-small {
+      font: 15px UbuntuRegular, sans-serif;
+      color: #ffffff;
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+      padding-right: 10px;
+      line-height: 1;
+      margin-bottom: 5px;
     }
   }
 }

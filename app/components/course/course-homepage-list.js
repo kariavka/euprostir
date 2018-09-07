@@ -10,8 +10,8 @@ export default Component.extend({
   first: computed('items', function () {
     return get(this, 'items.firstObject');
   }),
-  nextThree: computed('items', function () {
+  courses: computed('items', function () {
     const items = get(this, 'items');
-    return items.slice(1, 4);
+    return items.slice(0, 3);
   }),
 });
