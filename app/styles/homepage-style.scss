@@ -180,6 +180,7 @@
 
   .cont2-sect-opportunities {
     margin-top: 75px;
+    margin-bottom: 50px;
 
     .block-opportunity {
       height: 284px;
@@ -200,6 +201,8 @@
       .title-opportunity {
         font: 18px UbuntuRegular, sans-serif;
         color: #3b4256;
+        overflow-y: hidden;
+        height: 6em;
       }
     }
 
@@ -221,7 +224,7 @@
     }
 
     .btn-opportunities {
-      margin-top: 25px;
+      margin-top: 50px;
     }
   }
 }
@@ -375,6 +378,7 @@
 
   .btn-courses {
     margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 
