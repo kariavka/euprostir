@@ -7,7 +7,7 @@
           <div class="cat-course">навчання</div>
           <div class="title-course">{{item.title}}</div>
           {{!--<div class="image-course">--}}
-            {{!--<img class="image-fluid" src="{{item.image_url}}">--}}
+          {{!--<img class="image-fluid" src="{{item.image_url}}">--}}
           {{!--</div>--}}
           {{!--<div class="summary-course">{{item.summary}}</div>--}}
         </div>
@@ -38,12 +38,14 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <div class="block-share-f">
-            <a href=""><img src="/images/share-f.png" alt=""></a>
-            <span>241</span>
+            {{share/share-facebook
+              item=item
+              color="#fff"}}
           </div>
           <div class="block-share-tw">
-            <a href=""><img src="/images/share-tw.png" alt=""></a>
-            <span>0</span>
+            {{share/share-twitter
+              item=item
+              color="#fff"}}
           </div>
         </div>
       </div>
