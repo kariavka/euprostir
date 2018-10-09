@@ -27,13 +27,15 @@ export default Route.extend({
       items: store.query('post', {
         page: 1,
         per_page: 4,
-        lira: liraWithFilter
+        lira: liraWithFilter,
+        'filter[display]': 'public',
       }),
       popular: store.query('post', {
         page: 1,
         per_page: 3,
         lira: lira,
-        sort: '-views'
+        sort: '-views',
+        'filter[display]': 'public',
       }),
     });
   },
