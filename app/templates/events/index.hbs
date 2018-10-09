@@ -56,47 +56,8 @@
           showDropdown=showDropdown
           currentFilter=f}}
 
-        <div class="block-event">
-          {{#each items as |item|}}
-            {{#link-to "events.item" item.id}}
-              <div class="block-event">
-                <div class="row">
-                  <div class="col-md-6 col-sm-12 col-12">
-
-                    <div class="event-dates">
-
-                      <div class="event-date1">
-                        <div class="event-date1-day">{{moment-format item.startdate "DD" timeZone=item.timezone}}</div>
-                        <div class="event-date1-month">{{moment-format item.startdate "MMM"
-                                                                       timeZone=item.timezone}}</div>
-                      </div>
-
-                      <div class="event-date2">
-                        {{#unless item.isStartEndSameDay}}
-                          <div class="event-date2-day">{{moment-format item.enddate "DD" timeZone=item.timezone}}</div>
-                          <div class="event-date2-month">{{moment-format item.enddate "MMM" timeZone=item.timezone}}</div>
-                        {{/unless}}
-                      </div>
-
-                    </div>
-
-                    <div class="event-image" style="{{item.imageStyle}}"></div>
-
-                  </div>
-
-                  <div class="col-md-6 col-sm-12 col-12">
-
-                    <div class="event-about">
-                      <p class="event-title">{{item.title}}</p>
-                      <p class="event-summary">{{item.summary}}</p>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            {{/link-to}}
-          {{/each}}
-        </div>
+        {{event/event-list-vertical
+          items=model.items}}
 
         {{#if canLoadMore}}
           <div class="text-center">

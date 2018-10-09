@@ -1,1 +1,11 @@
-{{yield}}
+<div class="block-events">
+
+  {{#each items as |item|}}
+
+    {{event/event-list-homepage-item
+      class="block-event-container"
+      item=item}}
+
+  {{/each}}
+
+</div><!--block-events-->
