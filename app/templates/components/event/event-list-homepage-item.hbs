@@ -1,1 +1,32 @@
-{{yield}}
+{{#link-to "events.item" item.id}}
+  <div class="block-event">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-5 col-sm-12 col-xs-12">
+          <div class="event-dates">
+            <div class="event-date1">
+              <span class="event-date1-day">{{moment-format item.startdate "DD"}}</span>
+              <span class="event-date1-month">{{moment-format item.startdate "MMM"}}</span>
+            </div>
+            {{#unless item.isOneDayEvent}}
+              <div class="event-date2">
+                <span class="event-date2-day">{{moment-format item.enddate "DD"}}</span>
+                <span class="event-date2-month">{{moment-format item.enddate "MMM"}}</span>
+              </div>
+            {{/unless}}
+          </div>
+          <div class="event-image" style="{{item.imageStyle}}"></div>
+        </div>
+
+        <div class="col-md-7 col-sm-12 col-xs-12">
+          <div class="event-about">
+            <div class="event-title mb-2">{{item.title}}</div>
+            <div class="event-summary">{{item.summary}}</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+{{/link-to}}

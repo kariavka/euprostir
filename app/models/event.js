@@ -55,6 +55,11 @@ export default DS.Model.extend({
   organizer: DS.belongsTo('neuron'),
 
   // Computed
+  isOneDayEvent: computed('startdate', 'enddate', function () {
+    const startday = get(this, 'startdate').format('YYYY-MM-DD');
+    const endday = get(this, 'enddate').format('YYYY-MM-DD');
+    return (startday === endday);
+  }),
   isStartEndSameDay: computed('startdate', 'enddate', function () {
     const startday = get(this, 'startdate').format('YYYY-MM-DD');
     const endday = get(this, 'enddate').format('YYYY-MM-DD');

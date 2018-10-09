@@ -1,120 +1,139 @@
 .sect-events {
   padding: 0 0 55px 0;
+  padding-bottom: 70px !important;
   overflow-x: hidden;
 
-  .events-title {
-    font: 38px UbuntuRegular, sans-serif;
-    color: #3b4256;
+  .slogan-name-events {
+    position: absolute;
+    top: -15px;
+    right: -80px;
+  }
+
+  .category-name-events::before {
+    background-image: url(/images/icon_events.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 25px;
+    height: 21px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -42px;
+    top: -6px;
   }
 
   .cont2-sect-events {
-    margin-top: 25px;
-    min-height: 400px;
+    margin-top: 75px;
 
     .block-events {
-      a:nth-child(even) {
+      .block-event {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .event-dates {
+          float: left;
+          width: 140px;
+          margin-right: 5px;
+          padding: 0;
+
+          .event-date1 {
+            .event-date1-day {
+              display: inline;
+              font: 60px UbuntuBold, sans-serif;
+              color: #a6a4af;
+              vertical-align: middle;
+            }
+
+            .event-date1-month {
+              display: inline;
+              font: 17px UbuntuRegular, sans-serif;
+              color: #888796;
+              margin-left: 10px;
+              text-transform: uppercase;
+              vertical-align: middle;
+            }
+          }
+
+          .event-date2 {
+            .event-date2-day {
+              display: inline;
+              font: 60px UbuntuBold, sans-serif;
+              color: #d2d0d6;
+              vertical-align: middle;
+            }
+
+            .event-date2-month {
+              display: inline;
+              font: 18px UbuntuBold, sans-serif;
+              color: #afaeb8;
+              margin-left: 10px;
+              text-transform: uppercase;
+              vertical-align: middle;
+            }
+          }
+        }
+
+        .event-image {
+          float: left;
+          width: calc(100% - 150px);
+          height: 140px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .event-about {
+          .event-title {
+            font: 22px UbuntuRegular, sans-serif;
+            color: #3b4256;
+          }
+
+          .event-summary {
+            font: 16px UbuntuRegular, sans-serif;
+            color: #686879;
+            height: 3.5em;
+            overflow: hidden;
+          }
+        }
+      }
+
+      *:nth-child(even) {
         .block-event {
           background-color: #F6F6F8;
         }
       }
-    }
 
-    .block-event {
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      a:hover {
+        text-decoration: none;
 
-      .dates-event {
-        float: left;
-        width: 140px;
-        margin-right: 5px;
-        padding: 0;
-
-        .date1-event {
-          .date1-event-day {
-            display: inline;
-            font: 60px UbuntuBold, sans-serif;
-            color: #a6a4af;
-            vertical-align: middle;
-          }
-
-          .date1-event-month {
-            display: inline;
-            font: 17px UbuntuRegular, sans-serif;
-            color: #888796;
-            margin-left: 10px;
-            text-transform: uppercase;
-            vertical-align: middle;
-          }
+        .event-date1-day {
+          color: #00b0bb !important;
         }
 
-        .date2-event {
-          .date2-event-day {
-            display: inline;
-            font: 60px UbuntuBold, sans-serif;
-            color: #d2d0d6;
-            vertical-align: middle;
-          }
-
-          .date2-event-month {
-            display: inline;
-            font: 18px UbuntuBold, sans-serif;
-            color: #afaeb8;
-            margin-left: 10px;
-            text-transform: uppercase;
-            vertical-align: middle;
-          }
-        }
-      }
-
-      .image-event {
-        float: left;
-        width: calc(100% - 150px);
-        height: 140px;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .about-event {
-        .title-event {
-          font: 18px UbuntuRegular, sans-serif;
-          color: #3b4256;
+        .event-date1-month {
+          color: #00b0bb !important;
         }
 
-        .summary-event {
-          font: 14px UbuntuRegular, sans-serif;
-          color: #686879;
-          height: 3.5em;
-          overflow: hidden;
+        .event-date2-day {
+          color: #bde1e5 !important;
+        }
+
+        .event-date2-month {
+          color: #95d1d7 !important;
+        }
+
+        .event-title {
+          color: #542e91 !important;
         }
       }
     }
+  }
 
-    a:hover {
-      text-decoration: none;
-
-      .date1-event-day {
-        color: #00b0bb !important;
-      }
-
-      .date1-event-month {
-        color: #00b0bb !important;
-      }
-
-      .date2-event-day {
-        color: #bde1e5 !important;
-      }
-
-      .date2-event-month {
-        color: #95d1d7 !important;
-      }
-
-      .title-event {
-        color: #542e91 !important;
-      }
-    }
+  .events-title {
+    font: 38px UbuntuRegular, sans-serif;
+    color: #3b4256;
   }
 
   .year-events {
@@ -176,25 +195,6 @@
 
   .box_events_first {
     margin-top: 0;
-  }
-
-  .category-name-events::before {
-    background-image: url(/images/icon_events.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    width: 18px;
-    height: 19px;
-    content: "";
-    display: block;
-    position: absolute;
-    right: -42px;
-    top: -6px;
-  }
-
-  .slogan-events {
-    position: absolute;
-    top: -15px;
-    right: -97px;
   }
 
   .btn-events {

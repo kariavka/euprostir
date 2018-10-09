@@ -169,15 +169,15 @@
         height: auto !important;
         margin: auto !important;
 
-        .dates-event {
+        .event-dates {
           float: left !important;
           width: 63px !important;
           margin-right: 30px !important;
           padding-top: 0 !important;
           margin-top: -13px !important;
 
-          .date1-event {
-            .date1-event-day {
+          .event-date1 {
+            .event-date1-day {
               display: block;
               font: 60px UbuntuBold, sans-serif;
               color: #a6a4af;
@@ -186,7 +186,7 @@
               margin-top: 0 !important;
             }
 
-            .date1-event-month {
+            .event-date1-month {
               display: block;
               font: 18px UbuntuBold, sans-serif;
               color: #888796;
@@ -196,15 +196,15 @@
             }
           }
 
-          .date2-event {
-            .date2-event-day {
+          .event-date2 {
+            .event-date2-day {
               display: block;
               font: 60px UbuntuBold, sans-serif;
               color: #d2d0d6;
               vertical-align: auto !important;
             }
 
-            .date2-event-month {
+            .event-date2-month {
               display: block;
               font: 18px UbuntuBold, sans-serif;
               color: #afaeb8;
@@ -215,7 +215,7 @@
           }
         }
 
-        .image-event {
+        .event-image {
           float: left;
           width: calc(100% - 93px) !important;
           height: 150px;
@@ -224,10 +224,10 @@
           background-size: cover;
         }
 
-        .about-event {
+        .event-about {
           margin-left: 90px !important;
 
-          .summary-event {
+          .event-summary {
             display: none;
           }
         }
