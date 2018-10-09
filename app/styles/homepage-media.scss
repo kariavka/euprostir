@@ -160,76 +160,78 @@
 
   .sect-events {
     .block-event-container {
-      padding: 15px 0 !important;
+      padding: 15px !important;
+    }
+
+    .block-event {
+      width: 370px !important;
       height: auto !important;
-      cursor: pointer;
+      margin: auto !important;
 
-      .block-event {
-        width: 370px !important;
-        height: auto !important;
-        margin: auto !important;
+      .event-dates {
+        float: left !important;
+        width: 63px !important;
+        margin-right: 30px !important;
+        padding-top: 0 !important;
+        margin-top: -13px !important;
 
-        .event-dates {
-          float: left !important;
-          width: 63px !important;
-          margin-right: 30px !important;
-          padding-top: 0 !important;
-          margin-top: -13px !important;
-
-          .event-date1 {
-            .event-date1-day {
-              display: block;
-              font: 60px UbuntuBold, sans-serif;
-              color: #a6a4af;
-              vertical-align: auto !important;
-              padding-top: 0 !important;
-              margin-top: 0 !important;
-            }
-
-            .event-date1-month {
-              display: block;
-              font: 18px UbuntuBold, sans-serif;
-              color: #888796;
-              margin-left: 7px;
-              text-transform: uppercase;
-              vertical-align: auto !important;
-            }
+        .event-date1 {
+          .event-date1-day {
+            display: block !important;
+            font: 60px UbuntuBold, sans-serif;
+            color: #a6a4af;
+            line-height: 50px;
+            padding-top: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
           }
 
-          .event-date2 {
-            .event-date2-day {
-              display: block;
-              font: 60px UbuntuBold, sans-serif;
-              color: #d2d0d6;
-              vertical-align: auto !important;
-            }
-
-            .event-date2-month {
-              display: block;
-              font: 18px UbuntuBold, sans-serif;
-              color: #afaeb8;
-              margin-left: 7px;
-              text-transform: uppercase;
-              vertical-align: auto !important;
-            }
+          .event-date1-month {
+            display: block !important;
+            font: 18px UbuntuRegular, sans-serif;
+            color: #888796;
+            margin-top: -9px !important;
+            text-transform: uppercase;
+            vertical-align: auto !important;
+            text-align: center !important;
           }
         }
 
-        .event-image {
-          float: left;
-          width: calc(100% - 93px) !important;
-          height: 150px;
-          background-position: center center;
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-
-        .event-about {
-          margin-left: 90px !important;
-
-          .event-summary {
-            display: none;
+        .event-date2 {
+          .event-date2-day {
+            display: block !important;
+            font: 60px UbuntuBold, sans-serif;
+            color: #d2d0d6;
+            margin-bottom: 0 !important;
           }
+
+          .event-date2-month {
+            display: block !important;
+            font: 18px UbuntuRegular, sans-serif;
+            color: #afaeb8;
+            margin-top: -9px !important;
+            text-transform: uppercase;
+            font-weight: normal !important;
+            vertical-align: auto !important;
+            text-align: center !important;
+          }
+        }
+      }
+
+      .event-image {
+        float: left;
+        width: calc(100% - 93px) !important;
+        height: 150px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .event-about {
+        margin-left: 90px !important;
+
+        .event-summary {
+          display: none;
         }
       }
     }

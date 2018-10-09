@@ -6,13 +6,13 @@
         <div class="col-md-5 col-sm-12 col-xs-12">
           <div class="event-dates">
             <div class="event-date1">
-              <span class="event-date1-day">{{moment-format item.startdate "DD"}}</span>
-              <span class="event-date1-month">{{moment-format item.startdate "MMM"}}</span>
+              <div class="event-date1-day">{{moment-format item.startdate "DD"}}</div>
+              <div class="event-date1-month">{{moment-format item.startdate "MMM"}}</div>
             </div>
             {{#unless item.isOneDayEvent}}
               <div class="event-date2">
-                <span class="event-date2-day">{{moment-format item.enddate "DD"}}</span>
-                <span class="event-date2-month">{{moment-format item.enddate "MMM"}}</span>
+                <div class="event-date2-day">{{moment-format item.enddate "DD"}}</div>
+                <div class="event-date2-month">{{moment-format item.enddate "MMM"}}</div>
               </div>
             {{/unless}}
           </div>
