@@ -1,0 +1,30 @@
+<div class="filters">
+  <div class="label">Перегляд за:</div>
+
+  {{#event/event-filter name="Темою" class="filter"}}
+    <li>{{#link-to endpoint (query-params f=null)}}Всі{{/link-to}}</li>
+    {{#each filters as |filter|}}
+      <li>{{#link-to endpoint (query-params f=filter.lira)}}{{filter.name}}{{/link-to}}</li>
+    {{/each}}
+  {{/event/event-filter}}
+
+  {{#event/event-filter name="Місяцем" class="filter"}}
+    <li>{{#link-to endpoint (query-params m=1)}}Січень{{/link-to}}</li>
+    <li>{{#link-to endpoint (query-params m=2)}}Лютий{{/link-to}}</li>
+    <li>{{#link-to endpoint (query-params m=3)}}Березень{{/link-to}}</li>
+    <li>{{#link-to endpoint (query-params m=4)}}Квітень{{/link-to}}</li>
+    <li>{{#link-to endpoint (query-params m=5)}}Травень{{/link-to}}</li>
+    <li>{{#link-to endpoint (query-params m=6)}}Червень{{/link-to}}</li>
+    <li>{{#link-to endpoint (query-params m=7)}}Липень{{/link-to}}</li>
+    <li>{{#link-to endpoint (query-params m=8)}}Серпень{{/link-to}}</li>
+    <li>{{#link-to endpoint (query-params m=9)}}Вересень{{/link-to}}</li>
+    <li>{{#link-to endpoint (query-params m=10)}}Жовтень{{/link-to}}</li>
+    <li>{{#link-to endpoint (query-params m=11)}}Листопад{{/link-to}}</li>
+    <li>{{#link-to endpoint (query-params m=12)}}Грудень{{/link-to}}</li>
+  {{/event/event-filter}}
+
+  {{#event/event-filter name="Роком" class="filter"}}
+    <li>{{#link-to endpoint (query-params y=2019)}}2019{{/link-to}}</li>
+    <li>{{#link-to endpoint (query-params y=2018)}}2018{{/link-to}}</li>
+  {{/event/event-filter}}
+</div>

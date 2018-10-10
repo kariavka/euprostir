@@ -4,14 +4,17 @@ import {get, set, computed} from '@ember/object';
 import {reads} from '@ember/object/computed';
 import {A} from '@ember/array';
 import config from 'euprostir/config/environment';
+import moment from 'moment';
 
 export default Controller.extend({
   // Services
   store: inject(),
 
   // Params
-  queryParams: ['f'],
+  queryParams: ['f', 'm', 'y'],
   f: null,
+  m: null,
+  y: null,
 
   // Properties
   items: null,
@@ -29,8 +32,18 @@ export default Controller.extend({
   // Init
   init: function () {
     this._super();
-    const filters = config.neuronet.uk.filters.stories;
+    const filters = config.neuronet.uk.filters.events;
+    const now = moment();
+    const month = now.format("M");
+    const year = now.format("YYYY");
+
+    // debugger;
+
     set(this, 'filters', filters);
+    set(this, 'month', month);
+    set(this, 'year', year);
+    set(this, 'm', month);
+    set(this, 'y', year);
   },
 
   // Actions
@@ -43,7 +56,7 @@ export default Controller.extend({
       const store = get(this, 'store');
       let page = get(this, 'page');
       let pages = get(this, 'pages');
-      let lira = config.neuronet.uk.stories;
+      let lira = config.neuronet.uk.events;
       let filter = get(this, 'f');
 
       if (filter) {
@@ -53,7 +66,7 @@ export default Controller.extend({
       if (page <= pages) {
         page = page + 1;
         set(this, 'page', page);
-        store.query('post', {
+        store.query('event', {
           page: page,
           per_page: 5,
           lira: lira

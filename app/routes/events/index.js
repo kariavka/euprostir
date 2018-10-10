@@ -13,21 +13,25 @@ export default Route.extend({
 
   // Params
   queryParams: {
-    f: {refreshModel: true}
+    f: {refreshModel: true},
+    m: {refreshModel: true},
+    y: {refreshModel: true},
   },
 
   // Model
   model(params) {
     const store = get(this, 'store');
-    let lira = config.neuronet.uk.events;
-    let filter = params.f;
-    let liraWithFilter = (filter) ? lira + ',' + filter : lira;
+    const lira = config.neuronet.uk.events;
+    const filter = params.f;
+    const liraWithFilter = (filter) ? lira + ',' + filter : lira;
+    const date = params.m + params.y;
 
     return hash({
       items: store.query('event', {
         page: 1,
         per_page: 5,
-        lira: liraWithFilter
+        lira: liraWithFilter,
+        date
       }),
       popular: store.query('event', {
         page: 1,

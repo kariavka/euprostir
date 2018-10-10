@@ -18,46 +18,14 @@
 
       <div class="col-md-9 col-sm-9">
 
-        {{!--<p class="t_cat">Перегляд за:</p>--}}
-        {{!--<input name="" type="hidden" id="" value="Темою"><a class="trigger" href="#">Темою</a>--}}
-
-        {{!--<div class="dropcontainer">--}}
-        {{!--<ul class="dropdownhidden">--}}
-        {{!--<li><a href="#">Темою</a></li>--}}
-        {{!--<li><a href="#">Візії розвитку громадянського суспільства</a></li>--}}
-        {{!--<li><a href="#">Соціальне підприємництво</a></li>--}}
-        {{!--<li><a href="#">Соціальні послуги стратегії</a></li>--}}
-        {{!--<li><a href="#">Управління організаціями</a></li>--}}
-        {{!--<li><a href="#">Ефективні комунікації</a></li>--}}
-        {{!--</ul>--}}
-        {{!--</div>--}}
-
-        {{!--<div class="block-select-date">--}}
-        {{!--<input name="" type="hidden" id="" value="Датою"><a class="trigger" href="#">Датою</a>--}}
-
-        {{!--<div class="dropcontainer">--}}
-        {{!--<ul class="dropdownhidden">--}}
-        {{!--<li><a href="#">Датою</a></li>--}}
-        {{!--<li><a href="#">Дата 1</a></li>--}}
-        {{!--<li><a href="#">Дата 2</a></li>--}}
-        {{!--<li><a href="#">Дата 3</a></li>--}}
-        {{!--<li><a href="#">Дата 4</a></li>--}}
-        {{!--</ul>--}}
-        {{!--</div>--}}
-
-        {{!--</div>--}}
-
-        {{!--<div class="year-events">2018</div>--}}
-
-        {{common/common-filter
+        {{event/event-filters
           class="filter"
-          filters=filters
           endpoint="events.index"
-          showDropdown=showDropdown
-          currentFilter=f}}
+          showDropdown=showDropdown}}
 
         {{event/event-list-vertical
-          items=model.items}}
+          items=items
+          isLoading=model.items.isLoading}}
 
         {{#if canLoadMore}}
           <div class="text-center">
