@@ -80,6 +80,7 @@
     margin: 0;
     padding: 0;
     z-index: 1000;
+    min-width: 170px;
 
     ul {
       font-size: 16px;
@@ -94,7 +95,6 @@
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-      width: 340px;
 
       li {
         background-color: #614099;
