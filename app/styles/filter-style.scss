@@ -17,7 +17,7 @@
     font-family: UbuntuRegular, sans-serif;
     color: #7c62ab;
     font-size: 16px;
-    display: inline-block;
+    display: inline;
     border-bottom: 1px solid #BAAFD6;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -29,8 +29,10 @@
     padding-right: 0;
     padding-left: 0;
     padding-bottom: 4px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     cursor: pointer;
+    overflow: hidden;
   }
 
   .trigger:hover {
@@ -41,7 +43,7 @@
   .activetrigger {
     color: #fff !important;
     font-size: 16px;
-    display: inline-block;
+    display: inline;
     background: #614099;
     border-bottom: 1px solid #614099;
     -webkit-box-sizing: border-box;
@@ -49,12 +51,13 @@
     box-sizing: border-box;
     text-decoration: none;
     width: auto;
-    min-width: 170px;
+    min-width: 150px;
     padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 4px;
     margin-left: 0;
+    margin-right: 0;
   }
 
   a.activetrigger {
@@ -108,12 +111,17 @@
         a {
           color: #fff;
           padding-top: 10px;
-          padding-right: 20px;
-          padding-left: 20px;
+          padding-left: 10px;
+          padding-right: 23px;
           padding-bottom: 10px;
           text-decoration: none;
           display: block;
         }
+      }
+
+      li.active {
+        background: #542E91;
+        outline: none;
       }
 
       li:hover {

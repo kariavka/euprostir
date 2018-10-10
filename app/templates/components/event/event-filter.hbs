@@ -1,6 +1,6 @@
 {{#click-outside action=(action 'closeDropdown')}}
   <div class="trigger {{if showDropdown 'activetrigger'}}" {{action 'toggleDropdown'}}>
-    {{if currentFilterLabel currentFilterLabel name}}
+    {{if label label name}}
     <i class="fa fa-caret-{{if showDropdown 'up' 'down'}}"></i>
   </div>
 
