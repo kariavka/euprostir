@@ -26,6 +26,8 @@
     margin-top: 75px;
 
     .block-events {
+      padding-top: 15px;
+
       .block-event {
         margin-top: 0;
         margin-bottom: 0;
@@ -216,6 +218,9 @@
     margin-top: -5px;
   }
 
+  .block-popular {
+  }
+
   .block-popular::before {
     content: "";
     height: 1px;
@@ -224,5 +229,45 @@
     position: absolute;
     top: 15px;
     left: 15px;
+  }
+
+  .block-calendar {
+    padding-top: 75px;
+
+    .ember-power-calendar-nav-control {
+      font-size: 12px;
+      font-weight: 100;
+      color: #7c62ab;
+    }
+
+    .ember-power-calendar-nav-title {
+      font-size: 15px;
+      text-transform: capitalize;
+    }
+
+    .ember-power-calendar-weekday,
+    .ember-power-calendar-day {
+      font-size: 14px;
+      padding: 5px;
+      text-transform: uppercase;
+    }
+
+    .ember-power-calendar-weekday {
+      color: #aaa;
+    }
+
+    .ember-power-calendar-day--current-month {
+      background-color: #eee;
+    }
+
+    .ember-power-calendar-day--other-month {
+      background-color: #fff;
+      color: #fff;
+    }
+
+    .booooold {
+      font-weight: 900;
+      font-family: UbuntuBold, sans-serif;
+    }
   }
 }
