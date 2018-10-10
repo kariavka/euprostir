@@ -19,13 +19,16 @@
       <div class="col-md-9 col-sm-9">
 
         {{event/event-filters
-          class="filter"
           endpoint="events.index"
-          showDropdown=showDropdown}}
+          filter=f month=m year=y}}
 
-        {{event/event-list-vertical
-          items=items
-          isLoading=model.items.isLoading}}
+        {{#if isLoading}}
+          <i class="fa fa-spinner fa-spin"></i>
+          Завантажуються події...
+        {{else}}
+          {{event/event-list-vertical
+            items=items}}
+        {{/if}}
 
         {{#if canLoadMore}}
           <div class="text-center">
@@ -41,7 +44,10 @@
       <div class="col-md-3 col-sm-3">
         <div class="block-popular">
           <div class="block-calendar">
-            {{event/event-calendar}}
+            {{event/event-calendar
+              isLoading=isLoading
+              endpoint="events.index"
+              center=date}}
           </div>
         </div>
       </div>

@@ -4,13 +4,13 @@ import config from 'euprostir/config/environment';
 
 export default Component.extend({
   // Properties
-  filters: null,
+  subjectFilters: null,
   currentFilter: null,
 
   init() {
     this._super(...arguments);
-    const filters = config.neuronet.uk.filters.events;
-    set(this, 'filters', filters);
+    const subjectFilters = config.neuronet.uk.filters.events;
+    set(this, 'subjectFilters', subjectFilters);
   },
 
   // Computed

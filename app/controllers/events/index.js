@@ -33,17 +33,7 @@ export default Controller.extend({
   init: function () {
     this._super();
     const filters = config.neuronet.uk.filters.events;
-    const now = moment();
-    const month = now.format("M");
-    const year = now.format("YYYY");
-
-    // debugger;
-
     set(this, 'filters', filters);
-    set(this, 'month', month);
-    set(this, 'year', year);
-    set(this, 'm', month);
-    set(this, 'y', year);
   },
 
   // Actions

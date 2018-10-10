@@ -1,12 +1,12 @@
 import Route from '@ember/routing/route';
-import {inject} from '@ember/service';
-import {get} from '@ember/object';
+import {inject as service} from '@ember/service';
+import {get, set} from '@ember/object';
 import {hash} from 'rsvp';
 import config from 'euprostir/config/environment';
 
 export default Route.extend({
   // Services
-  store: inject(),
+  store: service(),
 
   // Title
   title: 'Події - Європейський простір',
@@ -43,8 +43,30 @@ export default Route.extend({
   },
 
   setupController: function (controller, model) {
-    controller.set('showDropdown', false);
-    controller.set('model', model);
-    controller.set('items', model.items);
+    const now = moment();
+    const nowMonth = now.month() + 1;
+    const nowYear = now.year();
+    const paramMonth = parseInt(get(controller, 'm'));
+    const paramYear = parseInt(get(controller, 'y'));
+    const month = paramMonth || nowMonth;
+    const year = paramYear || nowYear;
+    const date = new Date(year, month - 1, 1);
+
+    set(controller, 'isLoading', false);
+    set(controller, 'date', date);
+    set(controller, 'month', month);
+    set(controller, 'year', year);
+    set(controller, 'model', model);
+    set(controller, 'items', model.items);
+  },
+
+  actions: {
+
+    loading(transition, originRoute) {
+      const controller = this.controllerFor('events.index');
+      set(controller, 'isLoading', true);
+      return true; // allows the loading template to be shown
+    },
+
   },
 });

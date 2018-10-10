@@ -1,16 +1,13 @@
 <div class="block-events">
 
-  {{#if isLoading}}
-    <i class="fa fa-spinner fa-spin"></i>
-    Завантажується...
+  {{#each items as |item|}}
+    {{event/event-list-homepage-item
+      class="block-event-container"
+      item=item}}
   {{else}}
-    {{#each items as |item|}}
-
-      {{event/event-list-homepage-item
-        class="block-event-container"
-        item=item}}
-
-    {{/each}}
-  {{/if}}
+    <div class="alert alert-info">
+      Подій не знайдено.
+    </div>
+  {{/each}}
 
 </div><!--block-events-->

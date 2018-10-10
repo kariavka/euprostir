@@ -6,7 +6,7 @@
 
   {{#if showDropdown}}
     <div class="dropcontainer">
-      <ul class="dropdownvisible">
+      <ul class="dropdownvisible" {{action 'closeDropdown'}}>
         {{yield}}
       </ul>
     </div>

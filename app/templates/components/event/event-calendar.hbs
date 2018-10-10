@@ -3,27 +3,33 @@
   onCenterChange=(action (mut center) value="date") as |calendar|}}
 
   <nav class="ember-power-calendar-nav">
-    <button type="button"
-            class="ember-power-calendar-nav-control"
-            onclick={{action calendar.actions.moveCenter -1 'month'}}>
+    {{#link-to endpoint (query-params m=prev.month y=prev.year)
+               tagName="button" class="ember-power-calendar-nav-control"}}
       <i class="fa fa-arrow-left"></i>
-    </button>
+    {{/link-to}}
     <div class="ember-power-calendar-nav-title">
-      {{moment-format calendar.center 'MMMM YYYY'}}
+      {{#if isLoading}}
+        <i class="fa fa-spinner fa-spin"></i>
+        Загрузка...
+      {{else}}
+        {{moment-format calendar.center 'MMMM YYYY'}}
+      {{/if}}
     </div>
-    <button class="ember-power-calendar-nav-control"
-            onclick={{action calendar.actions.moveCenter 1 'month'}}>
+    {{#link-to endpoint (query-params m=next.month y=next.year)
+               tagName="button" class="ember-power-calendar-nav-control"}}
       <i class="fa fa-arrow-right"></i>
-    </button>
+    {{/link-to}}
   </nav>
 
-  {{#calendar.days as |day|}}
-    {{#with (moment-format day.date 'ddd') as |weekday|}}
-      {{#if (eq day.number 10)}}
-        <strong class="booooold">{{day.number}}</strong>
-      {{else}}
-        {{day.number}}
-      {{/if}}
-    {{/with}}
-  {{/calendar.days}}
+  {{#unless isLoading}}
+    {{#calendar.days as |day|}}
+      {{#with (moment-format day.date 'ddd') as |weekday|}}
+        {{#if (eq day.number 10)}}
+          <strong class="booooold">{{day.number}}</strong>
+        {{else}}
+          {{day.number}}
+        {{/if}}
+      {{/with}}
+    {{/calendar.days}}
+  {{/unless}}
 {{/power-calendar}}
