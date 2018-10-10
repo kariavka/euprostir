@@ -23,13 +23,7 @@
 
   {{#unless isLoading}}
     {{#calendar.days as |day|}}
-      {{#with (moment-format day.date 'ddd') as |weekday|}}
-        {{#if (eq day.number 10)}}
-          <strong class="booooold">{{day.number}}</strong>
-        {{else}}
-          {{day.number}}
-        {{/if}}
-      {{/with}}
+      {{{event-calendar-day day items}}}
     {{/calendar.days}}
   {{/unless}}
 {{/power-calendar}}

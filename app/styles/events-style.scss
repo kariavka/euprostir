@@ -249,16 +249,27 @@
     .ember-power-calendar-weekday,
     .ember-power-calendar-day {
       font-size: 14px;
-      padding: 5px;
       text-transform: uppercase;
     }
 
     .ember-power-calendar-weekday {
+      padding: 5px;
       color: #aaa;
     }
 
     .ember-power-calendar-day--current-month {
       background-color: #eee;
+
+      .unactive {
+        padding: 5px;
+      }
+
+      .active {
+        font-weight: bold;
+        padding: 5px;
+        background-color: #7c62ab;
+        color: #fff;
+      }
     }
 
     .ember-power-calendar-day--other-month {
