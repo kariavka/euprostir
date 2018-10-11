@@ -41,6 +41,7 @@ module.exports = function (environment) {
         opportunities: '131961,131974',
         courses: '131961,134733',
         events: '131961',
+        resources: '131961,136375',
         about: '131961,132034',
         filters: {
           stories: [

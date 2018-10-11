@@ -1,12 +1,12 @@
 import Component from '@ember/component';
-import {inject} from '@ember/service';
+import {inject as service} from '@ember/service';
 import {get, set, computed} from '@ember/object';
 import $ from 'jquery';
 
 export default Component.extend({
   // Services
-  media: inject(),
-  router: inject(),
+  media: service(),
+  router: service(),
 
   // Properties
   isFixedMenu: false,

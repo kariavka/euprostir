@@ -1,14 +1,14 @@
 import EmberRouter from '@ember/routing/router';
 import RouterScroll from 'ember-router-scroll';
 import {get} from '@ember/object';
-import {inject} from '@ember/service';
+import {inject as service} from '@ember/service';
 import {scheduleOnce} from '@ember/runloop';
 import config from './config/environment';
 
 const Router = EmberRouter.extend(RouterScroll, {
   location: config.locationType,
   rootURL: config.rootURL,
-  metrics: inject(),
+  metrics: service(),
 
   didTransition() {
     this._super(...arguments);
