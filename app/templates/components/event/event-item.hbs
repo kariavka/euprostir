@@ -140,12 +140,14 @@
 
           <div class="col-md-3 col-sm-3">
             <div class="block-event">
-              <div class="organizers">Організатори</div>
-              <ul class="list-organizers">
-                <li>{{item.organizer.title}}</li>
-                {{!--<li>Представництво ЄС в Україні</li>--}}
-                {{!--<li>Міністерство закордонних справ України</li>--}}
-              </ul>
+              {{#if item.organizer}}
+                <div class="organizers">Організатори</div>
+                <ul class="list-organizers">
+                  <li>{{item.organizer.title}}</li>
+                  {{!--<li>Представництво ЄС в Україні</li>--}}
+                  {{!--<li>Міністерство закордонних справ України</li>--}}
+                </ul>
+              {{/if}}
             </div>
           </div>
 
