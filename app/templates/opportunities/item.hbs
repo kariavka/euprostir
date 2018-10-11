@@ -1,16 +1,16 @@
 {{opportunity/opportunity-item
   item=model.item}}
 
-<section class="story-footer sect-stories">
+<section class="sect-opportunity-footer">
 
   <div class="block-category-container text-center">
     <div class="category-text">
-      <p class="category-name category-name-stories">Інші можливості</p>
+      <p class="category-name category-name-opportunities">Інші можливості</p>
     </div>
   </div>
 
-  {{story/story-list-horizontal
-    class="story-list-horizontal"
+  {{post/post-list-horizontal
+    class="post-list-horizontal"
     items=model.items
     endpoint="opportunities.item"}}
 

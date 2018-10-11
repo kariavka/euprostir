@@ -1,0 +1,64 @@
+/* Extra small devices (mobile: phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .events {
+    .block_date_events {
+      width: 63px;
+    }
+  }
+}
+
+/* Medium devices (tablet: landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (desktop: laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+
+  .events {
+
+    .box_events2:nth-child(2n)::before {
+      display: none;
+    }
+
+    .box_events2 {
+      position: relative;
+      height: auto;
+    }
+
+    .year-events {
+      text-align: center;
+      margin-left: 0
+    }
+
+    .title_events {
+      margin-left: 78px;
+      margin-top: 0;
+    }
+
+    .block_date_events {
+      width: auto;
+    }
+
+    .btn_events {
+      margin-top: 59px;
+      margin: 0 auto;
+      display: block;
+      max-width: 208px;
+      margin-top: 30px;
+    }
+
+    .block-calendar {
+
+    }
+  }
+}
+
+/* Extra large devices (jumbo: large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1450px) {
+
+}

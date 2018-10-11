@@ -1,10 +1,12 @@
 @import "ember-bootstrap/bootstrap";
+@import "ember-power-calendar";
 @import "font-awesome";
 @import "common-fonts";
 @import "common-style";
 @import "common-media";
 @import "common-slick";
 @import "common-slick-theme";
+@import "common-calendar";
 @import "filter-style";
 @import "filter-media";
 @import "form-style";
@@ -27,6 +29,8 @@
 @import "practices-media";
 @import "practice-style";
 @import "practice-media";
+@import "opportunities-style";
+@import "opportunities-media";
 @import "opportunity-style";
 @import "opportunity-media";
 @import "courses-style";
@@ -37,6 +41,10 @@
 @import "courses-media";
 @import "course-style";
 @import "course-media";
+@import "events-style";
+@import "events-media";
+@import "event-style";
+@import "event-media";
 
 .loading-slider {
   z-index: 9999;

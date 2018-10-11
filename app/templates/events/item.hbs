@@ -1,1 +1,27 @@
-{{outlet}}
+{{event/event-item
+  item=model.item}}
+
+<section class="sect-event-footer">
+
+  <div class="block-category-container text-center">
+    <div class="category-text">
+      <div class="category-name category-name-events">Інші події</div>
+    </div>
+  </div>
+
+  {{post/post-list-horizontal
+    class="post-list-horizontal"
+    items=model.items
+    endpoint="events.item"}}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{#link-to "events.index" class="btn btn-more btn-events"}}
+          відкрити більше
+        {{/link-to}}
+      </div>
+    </div>
+  </div>
+
+</section>

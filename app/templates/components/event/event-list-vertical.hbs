@@ -1,0 +1,13 @@
+<div class="block-events">
+
+  {{#each items as |item|}}
+    {{event/event-list-homepage-item
+      class="block-event-container"
+      item=item}}
+  {{else}}
+    <div class="alert alert-info">
+      Подій не знайдено.
+    </div>
+  {{/each}}
+
+</div><!--block-events-->

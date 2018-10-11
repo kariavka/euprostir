@@ -1,6 +1,6 @@
 /* Extra small devices (mobile: phones, 767px and down) */
 @media only screen and (max-width: 767px) {
-  .story-header {
+  .sect-story-header {
     padding-top: 30px;
     padding-bottom: 30px;
 
@@ -32,7 +32,7 @@
     }
   }
 
-  .story-body {
+  .sect-story-body {
     padding: 45px 0 0;
 
     .story-time {
@@ -141,7 +141,7 @@
     margin-left: 15px;
   }
 
-  .story-footer {
+  .sect-story-footer {
     padding: 30px 0 55px;
 
     .block-category-container {
@@ -167,7 +167,7 @@
 
 /* Medium devices (tablet: landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .story-header {
+  .sect-story-header {
     padding-top: 20px;
 
     .story-title {
@@ -177,7 +177,7 @@
     }
   }
 
-  .story-body {
+  .sect-story-body {
     .story-description {
       margin-left: 0;
     }
@@ -199,7 +199,7 @@
 
 /* Large devices (desktop: laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .story-header {
+  .sect-story-header {
     .story-title {
       font-size: 40px;
       line-height: 1.1;
@@ -210,7 +210,7 @@
 
 /* Extra large devices (jumbo: large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .story-header {
+  .sect-story-header {
     .story-title {
       font-size: 40px;
       line-height: 1.1;
@@ -220,7 +220,7 @@
 }
 
 @media only screen and (min-width: 1450px) {
-  .story-header {
+  .sect-story-header {
     //background-image: url(/images/banner-story.jpg);
     background-repeat: no-repeat;
     background-position: center center;

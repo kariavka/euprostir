@@ -1,0 +1,76 @@
+/* Extra small devices (mobile: phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  .name_category_event {
+    font-size: 30px;
+  }
+
+  .time-practice::before {
+    display: none;
+  }
+
+  .sect-event {
+    position: relative;
+    padding-top: 35px;
+
+    .event-aside {
+      display: none;
+    }
+
+    .event-date {
+      text-align: left;
+      font: 80px UbuntuBold, sans-serif;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    .event-icon {
+      float: none;
+      position: absolute;
+      right: 15px;
+    }
+
+    .event-category {
+      margin-top: 40px;
+    }
+
+    .event-title {
+      font: 30px UbuntuRegular, sans-serif;
+    }
+  }
+
+  .cont2-event {
+    margin-top: 40px !important;
+  }
+
+  .block-event {
+    margin-top: 40px;
+    padding-top: 50px;
+  }
+
+}
+
+/* Medium devices (tablet: landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (desktop: laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .event-date {
+    .actual {
+      font: 18px UbuntuRegular, sans-serif;
+      color: #888795;
+      display: block;
+    }
+  }
+}
+
+/* Extra large devices (jumbo: large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1450px) {
+
+}
+

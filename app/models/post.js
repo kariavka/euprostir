@@ -1,6 +1,6 @@
+import DS from 'ember-data';
 import {computed, get} from '@ember/object';
 import {htmlSafe} from '@ember/string';
-import DS from 'ember-data';
 
 export default DS.Model.extend({
   title: DS.attr('string'),
