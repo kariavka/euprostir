@@ -21,6 +21,8 @@
 @import "page-media";
 @import "posts-style";
 @import "posts-media";
+@import "static-style";
+@import "static-media";
 @import "stories-style";
 @import "stories-media";
 @import "story-style";
@@ -35,16 +37,16 @@
 @import "opportunity-media";
 @import "courses-style";
 @import "courses-media";
-@import "static-style";
-@import "static-media";
-@import "courses-style";
-@import "courses-media";
 @import "course-style";
 @import "course-media";
 @import "events-style";
 @import "events-media";
 @import "event-style";
 @import "event-media";
+@import "resources-style";
+@import "resources-media";
+@import "resource-style";
+@import "resource-media";
 
 .loading-slider {
   z-index: 9999;

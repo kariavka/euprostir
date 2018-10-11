@@ -1,6 +1,6 @@
 import Route from '@ember/routing/route';
 import {makeArray} from '@ember/array';
-import {inject} from '@ember/service';
+import {inject as service} from '@ember/service';
 import {set} from '@ember/object';
 import ResetScrollMixin from 'ember-cli-reset-scroll';
 import LoadingSliderMixin from '../mixins/loading-slider';
@@ -11,7 +11,7 @@ export default Route.extend(
   ResetScrollMixin,
   {
     // Service
-    i18n: inject(),
+    i18n: service(),
 
     // Title
     title: function (tokens) {

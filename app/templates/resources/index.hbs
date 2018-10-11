@@ -1,1 +1,49 @@
-{{outlet}}
+<section class="sect-resources-list">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="name-resources-list">Ресурси</p>
+      </div>
+    </div>
+  </div>
+  <div class="container cont2-sect-resources-list">
+    <div class="row">
+
+      <div class="col-md-9 col-sm-9">
+
+        {{resource/resource-filters
+          endpoint="resources.index"
+          subject=s type=t}}
+
+        <div class="block1-resources-list"></div>
+
+        {{post/post-list-vertical
+          items=items
+          endpoint="resources.item"}}
+
+        {{#if canLoadMore}}
+          <div class="text-center">
+            <div {{action "loadMore"}}
+              class="btn btn-more btn-resources">
+              відкрити більше
+            </div>
+          </div>
+        {{/if}}
+
+      </div>
+
+      <div class="col-md-3 col-sm-3">
+        <div class="block-popular">
+          <div class="t-popular">популярне</div>
+
+          <div class="box1-popular"></div>
+
+          {{post/post-list-popular
+            items=model.popular
+            endpoint="resources.item"}}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

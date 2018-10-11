@@ -5,8 +5,10 @@ import config from 'euprostir/config/environment';
 export default Component.extend({
   // Properties
   subjectFilters: null,
-  currentFilter: null,
+  monthFilters: null,
+  yearFilters: null,
 
+  // Init
   init() {
     this._super(...arguments);
     const subjectFilters = config.neuronet.uk.filters.events;
