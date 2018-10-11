@@ -1,5 +1,5 @@
 import Route from '@ember/routing/route';
-import {inject} from '@ember/service';
+import {inject as service} from '@ember/service';
 import {get, set} from '@ember/object';
 import {hash} from 'rsvp';
 import config from 'euprostir/config/environment';
@@ -7,8 +7,8 @@ import moment from 'moment';
 
 export default Route.extend({
   // Services
-  store: inject(),
-  i18n: inject(),
+  store: service(),
+  i18n: service(),
 
   // Title
   title: 'Європейський простір',

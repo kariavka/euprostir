@@ -1,1 +1,27 @@
-{{outlet}}
+{{page/page-item
+  item=model.item}}
+
+<section class="sect-resource-footer">
+
+  <div class="block-category-container text-center">
+    <div class="category-text">
+      <p class="category-name category-name-resources">Інші ресурси</p>
+    </div>
+  </div>
+
+  {{resource/resource-list-horizontal
+    class="resource-list-horizontal"
+    items=model.items
+    endpoint="resources.item"}}
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{#link-to "resources.index" class="btn btn-more btn-resources"}}
+          відкрити більше
+        {{/link-to}}
+      </div>
+    </div>
+  </div>
+
+</section>

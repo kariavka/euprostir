@@ -1,0 +1,22 @@
+<div class="filters">
+  <div class="label">Перегляд за:</div>
+
+  {{#resource/resource-filter name="Темою" class="filter" value=subject filters=subjectFilters}}
+    <li>{{#link-to endpoint (query-params s=null)}}Всі{{/link-to}}</li>
+    {{#each subjectFilters as |filter|}}
+      <li class="{{if (eq filter.value subject) 'active'}}">
+        {{#link-to endpoint (query-params s=filter.value)}}{{filter.name}}{{/link-to}}
+      </li>
+    {{/each}}
+  {{/resource/resource-filter}}
+
+  {{#resource/resource-filter name="Типом" class="filter" value=type filters=typeFilters}}
+    <li>{{#link-to endpoint (query-params t=null)}}Всі{{/link-to}}</li>
+    {{#each typeFilters as |filter|}}
+      <li class="{{if (eq filter.value type) 'active'}}">
+        {{#link-to endpoint (query-params t=filter.value)}}{{filter.name}}{{/link-to}}
+      </li>
+    {{/each}}
+  {{/resource/resource-filter}}
+
+</div>

@@ -1,12 +1,12 @@
 import Component from '@ember/component';
-import {inject} from '@ember/service';
+import {inject as service} from '@ember/service';
 import {get, set} from '@ember/object';
 import config from 'euprostir/config/environment';
 
 export default Component.extend({
   // Store
-  store: inject(),
-  i18n: inject(),
+  store: service(),
+  i18n: service(),
 
   // Flags
   isSearchMade: false,

@@ -1,12 +1,12 @@
 import Route from '@ember/routing/route';
-import {inject} from '@ember/service';
+import {inject as service} from '@ember/service';
 import {get, set} from '@ember/object';
 import {hash} from 'rsvp';
 import config from 'euprostir/config/environment';
 
 export default Route.extend({
   // Services
-  store: inject(),
+  store: service(),
 
   // Model
   model(params) {

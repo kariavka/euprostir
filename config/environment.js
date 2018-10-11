@@ -41,6 +41,7 @@ module.exports = function (environment) {
         opportunities: '131961,131974',
         courses: '131961,134733',
         events: '131961',
+        resources: '131961,136375',
         about: '131961,132034',
         filters: {
           stories: [
@@ -137,6 +138,22 @@ module.exports = function (environment) {
               value: '133136',
             }
           ],
+          resources: {
+            subjects: [
+              {value: '133129', name: 'Візії розвитку громадянського суспільства',},
+              {value: '38405', name: 'Соціальне підприємництво',},
+              {value: '133132', name: 'Соціальні послуги',},
+              {value: '133134', name: 'Управління організаціями',},
+              {value: '133136', name: 'Ефективні комунікації',}
+            ],
+            types: [
+              {value: '136405', name: 'Посібники',},
+              {value: '136407', name: 'Дослідження',},
+              {value: '136409', name: 'Грантові проекти',},
+              {value: '13422', name: 'Політики',},
+              {value: '136412', name: 'Онлайн курси',}
+            ],
+          },
         },
 
       },

@@ -1,11 +1,11 @@
 import Component from '@ember/component';
-import {inject} from '@ember/service';
+import {inject as service} from '@ember/service';
 import {get} from '@ember/object';
 
 export default Component.extend({
   // Services
-  i18n: inject(),
-  media: inject(),
+  i18n: service(),
+  media: service(),
 
   didRender() {
     this._super(...arguments);

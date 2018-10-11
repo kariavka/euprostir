@@ -1,5 +1,5 @@
 import Controller from '@ember/controller';
-import {inject} from '@ember/service';
+import {inject as service} from '@ember/service';
 import {get, set, computed} from '@ember/object';
 import {reads} from '@ember/object/computed';
 import {A} from '@ember/array';
@@ -8,7 +8,7 @@ import moment from 'moment';
 
 export default Controller.extend({
   // Services
-  store: inject(),
+  store: service(),
 
   // Params
   queryParams: ['f'],

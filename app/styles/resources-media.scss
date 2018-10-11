@@ -1,0 +1,38 @@
+@media only screen and (max-width: 768px) {
+  .sect-resources-list {
+    padding: 60px 0;
+
+    .block1-resources-list {
+      margin-top: 0 !important;
+    }
+
+    .box-resources-list {
+      padding: 10px 20px;
+    }
+
+    .btn-resources {
+      margin-top: 53px;
+    }
+
+    .block-popular {
+      margin-top: 85px;
+      margin-bottom: 70px !important;
+    }
+
+    .block-popular::before {
+      width: 100%;
+    }
+  }
+
+  .resource-list-horizontal {
+    .row {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .col-md-4 {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+}

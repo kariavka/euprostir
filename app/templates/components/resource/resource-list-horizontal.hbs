@@ -1,0 +1,10 @@
+<div class="container-fluid cont2-sect-resources">
+  <div class="row">
+    {{#each items as |item|}}
+      {{resource/resource-list-horizontal-item
+        class="col-md-4"
+        item=item
+        endpoint=endpoint}}
+    {{/each}}
+  </div>
+</div>
