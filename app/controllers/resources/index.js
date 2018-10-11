@@ -10,12 +10,14 @@ export default Controller.extend({
   store: service(),
 
   // Params
-  queryParams: ['f'],
-  f: null,
+  queryParams: ['s', 't'],
+  s: null,
+  t: null,
 
   // Properties
   items: null,
   page: 1,
+  per_page: 4,
   pages: reads('model.items.meta.total_pages'),
 
   // Filters
@@ -29,7 +31,7 @@ export default Controller.extend({
   // Init
   init: function () {
     this._super();
-    const filters = config.neuronet.uk.filters.stories;
+    const filters = config.neuronet.uk.filters.resources;
     set(this, 'filters', filters);
   },
 
@@ -38,21 +40,25 @@ export default Controller.extend({
     loadMore() {
       const store = get(this, 'store');
       let page = get(this, 'page');
-      let pages = get(this, 'pages');
-      let lira = config.neuronet.uk.stories;
-      let filter = get(this, 'f');
+      const pages = get(this, 'pages');
+      const lira = config.neuronet.uk.resources;
+      const subject = get(this, 's');
+      const type = get(this, 't');
+      const filters = [];
 
-      if (filter) {
-        lira = lira + ',' + filter;
-      }
+      filters.push(lira);
+      if (subject) filters.push(subject);
+      if (type) filters.push(type);
+
+      const liraWithFilters = (filters.length > 0) ? filters.join(',') : lira;
 
       if (page <= pages) {
         page = page + 1;
         set(this, 'page', page);
         store.query('post', {
           page: page,
-          per_page: 4,
-          lira: lira,
+          per_page: get(this, 'per_page'),
+          lira: liraWithFilters,
           'filter[display]': 'public',
         }).then((newItems) => {
           let items = A();

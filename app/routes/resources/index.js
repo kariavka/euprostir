@@ -10,24 +10,31 @@ export default Route.extend({
 
   // Title
   title: 'Ресурси - Європейський простір',
+  per_page: 4,
 
   // Params
   queryParams: {
-    f: {refreshModel: true}
+    s: {refreshModel: true},
+    t: {refreshModel: true},
   },
 
   // Model
   model(params) {
     const store = get(this, 'store');
-    let lira = config.neuronet.uk.resources;
-    let filter = params.f;
-    let liraWithFilter = (filter) ? lira + ',' + filter : lira;
+    const lira = config.neuronet.uk.resources;
+    const filters = [];
+
+    filters.push(lira);
+    if (params.s) filters.push(params.s);
+    if (params.t) filters.push(params.t);
+
+    const liraWithFilters = (filters.length > 0) ? filters.join(',') : lira;
 
     return hash({
       items: store.query('post', {
         page: 1,
-        per_page: 4,
-        lira: liraWithFilter,
+        per_page: get(this, 'per_page'),
+        lira: liraWithFilters,
         'filter[display]': 'public',
       }),
       popular: store.query('post', {
@@ -41,8 +48,9 @@ export default Route.extend({
   },
 
   setupController: function (controller, model) {
-    controller.set('showDropdown', false);
     controller.set('model', model);
     controller.set('items', model.items);
+    controller.set('page', 1);
+    controller.set('per_page', get(this, 'per_page'));
   },
 });

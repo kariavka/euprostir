@@ -1,0 +1,115 @@
+.sect-resources-list {
+  padding: 0 0 55px 0;
+
+  .name-resources-list {
+    font: 38px UbuntuRegular, sans-serif;
+    color: #3b4256;
+  }
+
+  .cont2-sect-resources-list {
+    margin-top: 0;
+    min-height: 400px;
+  }
+
+  .box-resources-list {
+    padding-top: 24px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .block1-resources-list {
+    margin-top: 40px;
+  }
+
+  .sect-resources-list {
+    overflow-x: hidden;
+  }
+
+  .block-popular {
+    margin-top: 21px;
+    margin-left: 4px;
+
+    .t-popular {
+      font: 18px UbuntuBold, sans-serif;
+      color: #3b4256;
+      margin-top: 60px;
+      text-transform: uppercase;
+    }
+
+    .box1-popular {
+      margin-top: 38px;
+    }
+  }
+
+  .block-popular::before {
+    background-color: #BAAFD6;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 700px;
+  }
+
+  .btn-resources {
+    max-width: 207px;
+    display: block;
+    margin: 80px auto 0;
+  }
+}
+
+.resource-list-block {
+  width: 100%;
+  height: 388px;
+  box-shadow: 0 3px 13px rgba(15, 15, 16, 0.15);
+
+  .resource-top {
+    height: 265px;
+    position: relative;
+  }
+
+  .resource-category {
+    position: absolute;
+    right: 0;
+    top: 12px;
+
+    div {
+      display: inline-block;
+    }
+  }
+
+  .resource-image {
+    height: 265px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .resource-title {
+    position: absolute;
+    bottom: 24px;
+    left: 22px;
+    font: 26px UbuntuRegular, sans-serif;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+
+  .resource-footer {
+    width: 100%;
+    font: 16px UbuntuRegular, sans-serif;
+    color: #686879;
+    padding: 2em 20px 3em;
+    height: 8em;
+    overflow: hidden;
+    //background-color: green;
+
+    .resource-summary {
+      width: 100%;
+      font: 16px UbuntuRegular, sans-serif;
+      line-height: 1.1em;
+      max-height: 3.2em;
+      padding: 0;
+      overflow: hidden;
+      //background-color: yellow;
+    }
+  }
+}
