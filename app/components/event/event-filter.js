@@ -11,8 +11,9 @@ export default Component.extend({
 
   // Computed
   label: computed('filters.*', 'value', function () {
-    const filters = get(this, 'filters');
     const value = get(this, 'value');
+    const filters = get(this, 'filters');
+    if (!filters) return null;
     const filtered = filters.filter((item) => item.value === value);
     return (filtered.length > 0) ? filtered[0].name : null;
   }),

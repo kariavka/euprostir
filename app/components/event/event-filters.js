@@ -29,24 +29,8 @@ export default Component.extend({
       {value: '2019', name: '2019'},
     ];
 
-
     set(this, 'subjectFilters', subjectFilters);
     set(this, 'monthFilters', monthFilters);
     set(this, 'yearFilters', yearFilters);
   },
-
-  // Computed
-  currentFilterLabel: computed('filters', 'currentFilter', function () {
-    const filters = get(this, 'filters');
-    const currentFilter = parseInt(get(this, 'currentFilter'));
-    let currentLabel = null;
-    for (let i = 0; i < filters.length; i++) {
-      const lira = parseInt(filters[i].lira);
-      const name = filters[i].name;
-      if (lira === currentFilter) {
-        currentLabel = name;
-      }
-    }
-    return currentLabel;
-  }),
 });
