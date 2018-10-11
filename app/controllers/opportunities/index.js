@@ -4,6 +4,7 @@ import {get, set, computed} from '@ember/object';
 import {reads} from '@ember/object/computed';
 import {A} from '@ember/array';
 import config from 'euprostir/config/environment';
+import moment from 'moment';
 
 export default Controller.extend({
   // Services

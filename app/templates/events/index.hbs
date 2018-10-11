@@ -1,1 +1,60 @@
-{{outlet}}
+<section class="sect-events">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-12">
+        <p class="events-title">Події</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container cont2-sect-events">
+
+    <div class="row">
+
+      <div class="col-md-9 col-sm-9">
+
+        {{event/event-filters
+          endpoint="events.index"
+          subject=f month=m year=y}}
+
+        {{#if isLoading}}
+          <i class="fa fa-spinner fa-spin"></i>
+          Завантажуються події...
+        {{else}}
+          {{event/event-list-vertical
+            items=items}}
+        {{/if}}
+
+        {{#if canLoadMore}}
+          <div class="text-center">
+            <div {{action "loadMore"}}
+              class="btn btn-more btn-events">
+              відкрити більше
+            </div>
+          </div>
+        {{/if}}
+
+      </div>
+
+      <div class="col-md-3 col-sm-3">
+        <div class="block-popular">
+          <div class="block-calendar">
+            {{event/event-calendar
+              isLoading=isLoading
+              endpoint="events.index"
+              center=date
+              items=items}}
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

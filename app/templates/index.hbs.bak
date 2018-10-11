@@ -111,29 +111,29 @@
 
                 <div class="col-md-6 col-sm-12 col-12">
 
-                  <div class="dates-event">
+                  <div class="event-dates">
 
-                    <div class="date1-event">
-                      <div class="date1-event-day">20</div>
-                      <div class="date1-event-month">Бер</div>
+                    <div class="event-date1">
+                      <div class="event-date1-day">20</div>
+                      <div class="event-date1-month">Бер</div>
                     </div>
 
-                    <div class="date2-event">
-                      <div class="date2-event-day">07</div>
-                      <div class="date2-event-month">Тра</div>
+                    <div class="event-date2">
+                      <div class="event-date2-day">07</div>
+                      <div class="event-date2-month">Тра</div>
                     </div>
 
                   </div>
 
-                  <div class="image-event" style="{{item.imageStyle}}"></div>
+                  <div class="event-image" style="{{item.imageStyle}}"></div>
 
                 </div>
 
                 <div class="col-md-6 col-sm-12 col-12">
 
-                  <div class="about-event">
-                    <p class="title-event">{{item.title}}</p>
-                    <p class="summary-event">{{item.summary}}</p>
+                  <div class="event-about">
+                    <p class="event-title">{{item.title}}</p>
+                    <p class="event-summary">{{item.summary}}</p>
                   </div>
 
                 </div>

@@ -1,0 +1,28 @@
+<div class="filters">
+  <div class="label">Перегляд за:</div>
+
+  {{#event/event-filter name="Темою" class="filter" value=subject filters=subjectFilters}}
+    <li>{{#link-to endpoint (query-params f=null)}}Всі{{/link-to}}</li>
+    {{#each subjectFilters as |filter|}}
+      <li class="{{if (eq filter.value subject) 'active'}}">
+        {{#link-to endpoint (query-params f=filter.value)}}{{filter.name}}{{/link-to}}
+      </li>
+    {{/each}}
+  {{/event/event-filter}}
+
+  {{#event/event-filter name="Місяцем" class="filter" value=month filters=monthFilters}}
+    {{#each monthFilters as |filter|}}
+      <li class="{{if (eq filter.value month) 'active'}}">
+        {{#link-to endpoint (query-params m=filter.value)}}{{filter.name}}{{/link-to}}
+      </li>
+    {{/each}}
+  {{/event/event-filter}}
+
+  {{#event/event-filter name="Роком" class="filter" value=year filters=yearFilters}}
+    {{#each yearFilters as |filter|}}
+      <li class="{{if (eq filter.value year) 'active'}}">
+        {{#link-to endpoint (query-params y=filter.value)}}{{filter.name}}{{/link-to}}
+      </li>
+    {{/each}}
+  {{/event/event-filter}}
+</div>

@@ -59,7 +59,7 @@ export default Route.extend({
         'filter[featured]': true,
         'filter[display]': 'public',
       }),
-      events: store.query('post', {
+      events: store.query('event', {
         page: 1,
         per_page: 3,
         lira: config.neuronet.uk.events,

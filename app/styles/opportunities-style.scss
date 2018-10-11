@@ -1,0 +1,59 @@
+.sect-opportunities-list {
+  padding: 0 0 55px 0;
+
+  .name-opportunities-list {
+    font: 38px UbuntuRegular, sans-serif;
+    color: #3b4256;
+  }
+
+  .cont2-sect-opportunities-list {
+    margin-top: 0;
+    min-height: 400px;
+  }
+
+  .box-opportunities-list {
+    padding-top: 24px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .block1-opportunities-list {
+    margin-top: 40px;
+  }
+
+  .sect-opportunities-list {
+    overflow-x: hidden;
+  }
+
+  .block-popular {
+    margin-top: 21px;
+    margin-left: 4px;
+
+    .t-popular {
+      font: 18px UbuntuBold, sans-serif;
+      color: #3b4256;
+      margin-top: 60px;
+      text-transform: uppercase;
+    }
+
+    .box1-popular {
+      margin-top: 38px;
+    }
+  }
+
+  .block-popular::before {
+    background-color: #BAAFD6;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 700px;
+  }
+
+  .btn-opportunities {
+    clear: both;
+    max-width: 207px;
+    display: block;
+    margin: 80px auto 0;
+  }
+}

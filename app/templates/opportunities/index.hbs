@@ -1,24 +1,24 @@
-<section class="sect-stories-list">
+<section class="sect-opportunities-list">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <p class="name-stories-list">Можливості</p>
+        <p class="name-opportunities-list">Можливості</p>
       </div>
     </div>
   </div>
-  <div class="container cont2-sect-stories-list">
+  <div class="container cont2-sect-opportunities-list">
     <div class="row">
 
       <div class="col-md-9 col-sm-9">
 
-        {{common/common-filter
+        {{common/common-filters
           class="filter"
           filters=filters
           endpoint="opportunities.index"
           showDropdown=showDropdown
           currentFilter=f}}
 
-        <div class="block1-stories-list"></div>
+        <div class="block1-opportunities-list"></div>
 
         {{post/post-list-vertical
           items=items
@@ -27,7 +27,7 @@
         {{#if canLoadMore}}
           <div class="text-center">
             <div {{action "loadMore"}}
-              class="btn btn-more btn-stories">
+              class="btn btn-more btn-opportunities">
               відкрити більше
             </div>
           </div>

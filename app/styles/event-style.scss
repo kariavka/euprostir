@@ -1,0 +1,189 @@
+.sect-event {
+  position: relative;
+  padding: 0;
+
+  .event-article {
+    display: block;
+  }
+
+  .event-aside {
+    display: block;
+    float: left;
+    width: 100px;
+    font-size: 25px;
+    color: #542E91;
+
+    a {
+      color: #542E91;
+      text-decoration: none;
+    }
+  }
+
+  .event-category {
+    background-image: url(/images/bg-category-courses.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 27px;
+    width: 108px;
+    margin: 0;
+    font: 12px UbuntuMedium, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 7px;
+  }
+
+  .event-icon {
+    float: right;
+  }
+
+  .event-date {
+    margin-bottom: 0;
+    margin-top: 20px;
+
+    .event-date-begin,
+    .event-date-end {
+      display: inline-block;
+      float: left;
+    }
+
+    .event-actual {
+      font: 15px UbuntuRegular, sans-serif;
+      color: #888795 !important;
+      padding-top: 15px;
+    }
+
+    .event-day {
+      font: 90px UbuntuBold, sans-serif;
+      color: #00aab6;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    .event-year {
+      font: 18px UbuntuRegular, sans-serif;
+      color: #00aab6;
+      text-transform: uppercase;
+      text-align: left;
+      padding-left: 5px;
+    }
+
+    .event-end-day {
+      font: 90px UbuntuBold, sans-serif;
+      color: #d2d0d6;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    .event-end-year {
+      //background-color: #ee0000;
+      font: 18px UbuntuRegular, sans-serif;
+      color: #d2d0d6;
+      text-transform: uppercase;
+      text-align: left;
+      margin-left: 30px;
+      padding-left: 5px;
+      width: 100%;
+    }
+  }
+
+  .event-title {
+    font: 38px UbuntuRegular, sans-serif;
+    color: #3b4256;
+    margin-top: 20px;
+  }
+
+  .cont2-event {
+    margin-top: 80px;
+  }
+
+  .organizers {
+    font: 18px UbuntuBold, sans-serif;
+    color: #3b4256;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  .list-organizers {
+    margin-top: 40px;
+  }
+
+  .list-organizers li {
+    list-style-type: none;
+    font: 14px UbuntuRegular, sans-serif;
+    color: #777787;
+    text-transform: uppercase;
+    padding-top: 5px;
+    margin-bottom: 25px;
+    position: relative;
+  }
+
+  .list-organizers li::before {
+    content: "";
+    background-image: url(/images/icon-organizers.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: -38px;
+    top: 5px;
+  }
+
+  .list-organizers li:hover {
+    color: #3b4256;
+  }
+
+  .list-organizers li:hover:before {
+    background-position: 0 -18px;
+  }
+
+  .event-description {
+    font-size: 17px;
+    color: #3b4256;
+    margin-top: 34px;
+    margin-bottom: 0;
+  }
+
+  .block-event {
+    margin-top: 70px;
+  }
+
+  .block-event::before {
+    content: "";
+    height: 1px;
+    width: 610px;
+    background-color: #BAAFD6;
+    position: absolute;
+    top: 9px;
+    right: 0;
+  }
+
+  .pos_rel {
+    position: relative;
+  }
+
+  .sticky {
+    position: fixed;
+    z-index: 101;
+  }
+
+  .stop {
+    position: relative;
+    z-index: 101;
+  }
+}
+
+.sect-event-footer {
+  padding: 0 0 80px;
+  margin-top: 120px;
+  clear: both;
+
+  .btn-events {
+    margin-top: 80px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

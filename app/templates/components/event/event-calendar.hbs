@@ -1,0 +1,29 @@
+{{#power-calendar
+  center=center
+  onCenterChange=(action (mut center) value="date") as |calendar|}}
+
+  <nav class="ember-power-calendar-nav">
+    {{#link-to endpoint (query-params m=prev.month y=prev.year)
+               tagName="button" class="ember-power-calendar-nav-control"}}
+      <i class="fa fa-arrow-left"></i>
+    {{/link-to}}
+    <div class="ember-power-calendar-nav-title">
+      {{#if isLoading}}
+        <i class="fa fa-spinner fa-spin"></i>
+        Загрузка...
+      {{else}}
+        {{moment-format calendar.center 'MMMM YYYY'}}
+      {{/if}}
+    </div>
+    {{#link-to endpoint (query-params m=next.month y=next.year)
+               tagName="button" class="ember-power-calendar-nav-control"}}
+      <i class="fa fa-arrow-right"></i>
+    {{/link-to}}
+  </nav>
+
+  {{#unless isLoading}}
+    {{#calendar.days as |day|}}
+      {{{event-calendar-day day items}}}
+    {{/calendar.days}}
+  {{/unless}}
+{{/power-calendar}}

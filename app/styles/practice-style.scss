@@ -5,9 +5,8 @@
   margin-bottom: 0;
 }
 
-.practice-body {
+.sect-practice-body {
   position: relative;
-  padding-bottom: 120px;
 }
 
 .practice-article {
@@ -72,4 +71,18 @@
 
 #block-share-practice {
   top: 75px;
+}
+
+.sect-practice-footer {
+  margin-top: 120px;
+  padding: 0 0 80px;
+  clear: both;
+
+  .btn-practices {
+    margin-top: 80px;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
