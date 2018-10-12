@@ -225,3 +225,40 @@
     text-decoration: none;
   }
 }
+
+.resource-list-vertical-item {
+  margin-bottom: 34px;
+  clear: both;
+  display: block;
+
+  .image {
+    width: 331px;
+    height: 188px;
+    overflow: hidden;
+    margin-right: 27px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title {
+    font: 18px UbuntuBold, sans-serif;
+    color: #3b4256;
+    line-height: 1.3em;
+    overflow: hidden;
+    margin-bottom: 14px;
+  }
+
+  .title a {
+    font: 18px UbuntuRegular, sans-serif;
+    color: #3b4256;
+  }
+
+  .about {
+    font: 16px UbuntuRegular, sans-serif;
+    color: #686879;
+    line-height: 1.4em;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+}
