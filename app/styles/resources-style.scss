@@ -6,9 +6,35 @@
     color: #3b4256;
   }
 
-  .cont2-sect-resources-list {
+  .sect-resources-list-cont2 {
     margin-top: 0;
     min-height: 400px;
+
+    .filters {
+      .label {
+        display: inline-block;
+        line-height: 29px;
+        vertical-align: top;
+        padding-top: 10px;
+      }
+
+      .filter {
+        display: inline-block;
+        vertical-align: top;
+
+        .trigger {
+          width: auto;
+          min-width: 200px !important;
+          display: inline-block;
+        }
+
+        .activetrigger {
+          width: auto;
+          min-width: 220px !important;
+          display: inline-block;
+        }
+      }
+    }
   }
 
   .box-resources-list {

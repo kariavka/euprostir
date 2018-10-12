@@ -10,7 +10,7 @@ export default Route.extend({
 
   // Title
   title: 'Ресурси - Європейський простір',
-  per_page: 4,
+  per_page: 20,
 
   // Params
   queryParams: {

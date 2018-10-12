@@ -3,6 +3,15 @@
 
   .filter {
     display: inline-block;
+
+    div {
+      width: 100%;
+
+      .trigger {
+        width: 100%;
+        min-width: 250px;
+      }
+    }
   }
 
   .label {
@@ -51,7 +60,7 @@
     box-sizing: border-box;
     text-decoration: none;
     width: auto;
-    min-width: 150px;
+    min-width: 170px !important;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;

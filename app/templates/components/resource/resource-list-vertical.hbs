@@ -1,0 +1,16 @@
+{{#if items}}
+
+  {{#each items as |item index|}}
+    {{resource/resource-list-vertical-item
+      item=item
+      index=index
+      endpoint=endpoint}}
+  {{/each}}
+
+{{else}}
+
+  <div class="alert alert-info">
+    {{t "nothingfound"}}
+  </div>
+
+{{/if}}
