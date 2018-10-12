@@ -1,7 +1,7 @@
 .sect-resource-header {
-  background-image: url(/images/banner-resource.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
+  //background-image: url(/images/banner-resource.jpg);
+  //background-repeat: no-repeat;
+  //background-position: center center;
   height: 100vh;
   background-size: cover;
   margin-top: -190px;
@@ -21,18 +21,17 @@
   }
 
   .resource-category {
-    background-image: url(/images/bg-category-resource.png);
-    background-repeat: no-repeat;
-    background-position: top center;
+    //background-image: url(/images/bg-category-resource.png);
+    //background-repeat: no-repeat;
+    //background-position: top center;
     height: 23px;
-    margin: 0 auto;
     width: 106px;
     font: 12px UbuntuMedium, sans-serif;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
     padding-top: 3px;
-    margin-top: 50px;
+    margin: 50px auto 0;
   }
 
   .resource-summary {
@@ -134,9 +133,9 @@
 
   .list-resource li::before {
     content: "";
-    background-image: url(/images/check-list-resource.png);
-    background-repeat: no-repeat;
-    background-position: top center;
+    //background-image: url(/images/check-list-resource.png);
+    //background-repeat: no-repeat;
+    //background-position: top center;
     height: 12px;
     width: 13px;
     position: absolute;
@@ -223,42 +222,5 @@
 
   a {
     text-decoration: none;
-  }
-}
-
-.resource-list-vertical-item {
-  margin-bottom: 34px;
-  clear: both;
-  display: block;
-
-  .image {
-    width: 331px;
-    height: 188px;
-    overflow: hidden;
-    margin-right: 27px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .title {
-    font: 18px UbuntuBold, sans-serif;
-    color: #3b4256;
-    line-height: 1.3em;
-    overflow: hidden;
-    margin-bottom: 14px;
-  }
-
-  .title a {
-    font: 18px UbuntuRegular, sans-serif;
-    color: #3b4256;
-  }
-
-  .about {
-    font: 16px UbuntuRegular, sans-serif;
-    color: #686879;
-    line-height: 1.4em;
-    overflow: hidden;
-    margin-bottom: 0;
   }
 }
