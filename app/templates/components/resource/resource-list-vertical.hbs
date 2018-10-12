@@ -1,11 +1,14 @@
 {{#if items}}
 
-  {{#each items as |item index|}}
-    {{resource/resource-list-vertical-item
-      item=item
-      index=index
-      endpoint=endpoint}}
-  {{/each}}
+  <div class="resources-list-vertical">
+    {{#each items as |item index|}}
+      {{resource/resource-list-vertical-item
+        class="resources-list-vertical-item"
+        item=item
+        index=index
+        endpoint=endpoint}}
+    {{/each}}
+  </div>
 
 {{else}}
 

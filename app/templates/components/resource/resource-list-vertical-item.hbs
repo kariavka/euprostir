@@ -1,8 +1,6 @@
-<div class="resource-list-vertical-item">
+{{#link-to endpoint item.id}}
   <div class="title">
-    {{#link-to endpoint item.id}}
-      {{item.title}}
-    {{/link-to}}
+    {{item.title}}
   </div>
   <div class="about">{{item.summary}}</div>
-</div>
+{{/link-to}}
