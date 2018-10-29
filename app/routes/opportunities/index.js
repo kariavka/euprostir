@@ -33,14 +33,15 @@ export default Route.extend({
         lira: liraWithFilter,
         date_start: dateStart,
         'filter[display]': 'public',
+        sort: '-created',
       }),
       popular: store.query('post', {
         page: 1,
         per_page: 3,
         lira: lira,
-        sort: '-views',
         date_start: dateStart,
         'filter[display]': 'public',
+        sort: '-views',
       }),
     });
   },
