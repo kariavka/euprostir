@@ -117,6 +117,12 @@
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
+
+    .fr-video {
+      iframe {
+        height: 180px !important;
+      }
+    }
   }
 
   .block-right-course {
