@@ -4,7 +4,6 @@ import {get, set, computed} from '@ember/object';
 import {reads} from '@ember/object/computed';
 import {A} from '@ember/array';
 import config from 'euprostir/config/environment';
-import moment from 'moment';
 
 export default Controller.extend({
   // Services
@@ -44,10 +43,13 @@ export default Controller.extend({
 
     loadMore() {
       const store = get(this, 'store');
+      const per_page = get(this, 'per_page');
+      const pages = get(this, 'pages');
+      const filter = get(this, 'f');
+      const month = get(this, 'month');
+      const year = get(this, 'year');
       let page = get(this, 'page');
-      let pages = get(this, 'pages');
       let lira = config.neuronet.uk.events;
-      let filter = get(this, 'f');
 
       if (filter) {
         lira = lira + ',' + filter;
@@ -57,9 +59,9 @@ export default Controller.extend({
         page = page + 1;
         set(this, 'page', page);
         store.query('event', {
-          page: page,
-          per_page: 5,
-          lira: lira
+          page, per_page,
+          lira, month, year,
+          sort: 'startdate',
         }).then((newItems) => {
           let items = A();
           const oldItems = get(this, 'items');
