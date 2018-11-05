@@ -12,7 +12,7 @@ export default Route.extend({
 
   // Title
   title: 'Події - Європейський простір',
-  per_page: 20,
+  per_page: 10,
 
   // Params
   queryParams: {
@@ -35,7 +35,7 @@ export default Route.extend({
     return hash({
       items: store.query('event', {
         page: 1,
-        per_page: 10,
+        per_page,
         lira: liraWithFilter,
         month, year,
         sort: 'startdate',
