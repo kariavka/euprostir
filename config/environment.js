@@ -150,7 +150,7 @@ module.exports = function (environment) {
             types: [
               {value: '136405', name: 'Посібники',},
               {value: '136407', name: 'Дослідження',},
-              {value: '137291', name: 'Інструменти',},
+              {value: '137301', name: 'Інструменти',},
               {value: '13422', name: 'Політики',},
               {value: '136412', name: 'Онлайн курси',}
             ],
