@@ -38,7 +38,7 @@ export default Route.extend({
         per_page,
         lira: liraWithFilter,
         month, year,
-        sort: 'startdate',
+        sort: '-created',
       })
     });
   },
