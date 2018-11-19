@@ -58,6 +58,7 @@ export default Controller.extend({
           lira: liraWithFilter,
           date_start: dateStart,
           'filter[display]': 'public',
+          sort: '-created',
         }).then((newItems) => {
           let items = A();
           const oldItems = get(this, 'items');
