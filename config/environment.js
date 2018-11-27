@@ -228,6 +228,18 @@ module.exports = function (environment) {
       config: {
         id: 'UA-63942379-2',
       }
+    }, {
+      name: 'GoogleTagManager',
+      environments: ['local', 'master', 'development', 'production'],
+      config: {
+        id: 'GTM-PPQD967',
+      }
+    }, {
+      name: 'FacebookPixel',
+      environments: ['local', 'master', 'development', 'production'],
+      config: {
+        id: '298724054314874'
+      }
     }],
   };
 
