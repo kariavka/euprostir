@@ -11,12 +11,14 @@
 
       <div class="col-md-9 col-sm-9">
 
-        {{common/common-filters
+        {{#common/common-filters
           class="filter"
           filters=filters
           endpoint="practices.index"
           showDropdown=showDropdown
           currentFilter=f}}
+          <li>{{#link-to 'page' 'best-practices'}}Кращі практики{{/link-to}}</li>
+        {{/common/common-filters}}
 
         <div class="block1-stories-list"></div>
 
