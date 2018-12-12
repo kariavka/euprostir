@@ -68,9 +68,6 @@ module.exports = function (environment) {
           ],
           practices: [
             {
-              name: 'Візії розвитку громадянського суспільства',
-              lira: '133129',
-            }, {
               name: 'Соціальне підприємництво',
               lira: '38405',
             }, {
