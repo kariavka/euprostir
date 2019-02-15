@@ -171,26 +171,14 @@ module.exports = function (environment) {
               name: 'Social entrepreneurship',
               lira: '133605',
             }, {
-              name: 'Social services',
-              lira: '133607',
-            }, {
               name: 'Management of CSOs',
               lira: '133609',
-            }, {
-              name: 'Effective communication',
-              lira: '133611',
             }
           ],
           practices: [
             {
-              name: 'Vision of civil society',
-              lira: '133603',
-            }, {
               name: 'Social entrepreneurship',
               lira: '133605',
-            }, {
-              name: 'Social services',
-              lira: '133607',
             }, {
               name: 'Management of CSOs',
               lira: '133609',
