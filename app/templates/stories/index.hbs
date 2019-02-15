@@ -11,11 +11,13 @@
 
       <div class="col-md-9 col-sm-9">
 
-        {{common/common-filters
+        {{#common/common-filters
           filters=filters
           endpoint="stories.index"
           showDropdown=showDropdown
           currentFilter=f}}
+          <li>{{#link-to 'page' 're-vision'}}Спецпроект РеВізія{{/link-to}}</li>
+        {{/common/common-filters}}
 
         <div class="block1-stories-list"></div>
 

@@ -9,15 +9,15 @@
     </div>
   </div>
 
-  {{post/post-list-horizontal
-    class="post-list-horizontal"
+  {{story/story-list-horizontal-v2
+    class="story-list-horizontal"
     items=model.items
     endpoint="practices.item"}}
 
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        {{#link-to "practices.index" class="btn btn-more btn-practices"}}
+        {{#link-to "practices.index" class="btn btn-more btn-stories"}}
           відкрити більше
         {{/link-to}}
       </div>
