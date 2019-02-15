@@ -1,10 +1,12 @@
-<div class="container-fluid cont2-sect-stories">
+<div class="container-fluid">
   <div class="row">
+
     {{#each items as |item|}}
       {{story/story-list-horizontal-v2-item
-        class="col-md-4"
+        class="col-md-4 col-sm-4"
         item=item
         endpoint=endpoint}}
     {{/each}}
+
   </div>
 </div>
