@@ -38,14 +38,21 @@
 
       <div class="col-md-3 col-sm-3">
         <div class="block-popular">
-          <div class="t-popular">популярне</div>
+          <div>
+            {{#link-to 'page' 're-vision'}}
+              <img src="/images/revision.png"
+                   class="img img-fluid mb-4"
+                   style="margin-top: 40px !important;">
+            {{/link-to}}
+          </div>
+
+          <div class="t-popular mt-0">популярне</div>
 
           <div class="box1-popular"></div>
 
           {{post/post-list-popular
             items=model.popular
             endpoint="stories.item"}}
-
         </div>
       </div>
     </div>
