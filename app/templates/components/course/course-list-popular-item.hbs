@@ -1,10 +1,12 @@
-{{#link-to "courses.item" item.id}}
-  <div class="courses-list-popular-item">
-    <div class="courses-list-popular-item-picture" style="{{item.imageStyle}}">
+<div class="text-center">
+  {{#link-to "courses.item" item.id}}
+    <div class="courses-list-popular-item">
+      <div class="courses-list-popular-item-picture" style="{{item.imageStyle}}">
+      </div>
+      <div class="courses-list-popular-item-about">
+        <div class="courses-list-popular-item-title">{{item.title}}</div>
+        <div class="courses-list-popular-item-summary">{{item.summary}}</div>
+      </div>
     </div>
-    <div class="courses-list-popular-item-about">
-      <div class="courses-list-popular-item-title">{{item.title}}</div>
-      <div class="courses-list-popular-item-summary">{{item.summary}}</div>
-    </div>
-  </div>
-{{/link-to}}
+  {{/link-to}}
+</div>

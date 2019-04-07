@@ -56,7 +56,8 @@ export default Controller.extend({
         store.query('page', {
           page: page,
           per_page: 4,
-          lira: lira
+          lira: lira,
+          'filter[display]': 'public',
         }).then((newItems) => {
           let items = A();
           const oldItems = get(this, 'items');
