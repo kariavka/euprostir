@@ -1,21 +1,24 @@
 {{#click-outside action=(action 'closeDropdown')}}
-  <div class="filter">
-    <span class="label">View by:</span>
-    <span class="trigger {{if showDropdown 'activetrigger'}}" {{action 'toggleDropdown'}}>
-    {{if currentFilterLabel currentFilterLabel 'Subject'}}
-      <i class="fa fa-caret-{{if showDropdown 'up' 'down'}}"></i>
-  </span>
+  <div class="filters">
+    <div class="label">View by:</div>
 
-    {{#if showDropdown}}
-      <div class="dropcontainer">
-        <ul class="dropdownvisible">
-          <li><a href="#">Subject</a></li>
-          <li>{{#link-to endpoint (query-params f=null)}}All{{/link-to}}</li>
-          {{#each filters as |filter|}}
-            <li>{{#link-to endpoint (query-params f=filter.lira)}}{{filter.name}}{{/link-to}}</li>
-          {{/each}}
-        </ul>
+    <div class="filter">
+      <div class="trigger {{if showDropdown 'activetrigger'}}" {{action 'toggleDropdown'}}>
+        {{if currentFilterLabel currentFilterLabel 'Subject'}}
+        <i class="fa fa-caret-{{if showDropdown 'up' 'down'}}"></i>
       </div>
-    {{/if}}
+
+      {{#if showDropdown}}
+        <div class="dropcontainer">
+          <ul class="dropdownvisible">
+            <li>{{#link-to endpoint (query-params f=null)}}All{{/link-to}}</li>
+            {{yield}}
+            {{#each filters as |filter|}}
+              <li>{{#link-to endpoint (query-params f=filter.lira)}}{{filter.name}}{{/link-to}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      {{/if}}
+    </div>
   </div>
 {{/click-outside}}

@@ -1,6 +1,6 @@
 import Route from '@ember/routing/route';
 import {inject as service} from '@ember/service';
-import {get} from '@ember/object';
+import {get, set} from '@ember/object';
 import {hash} from 'rsvp';
 import config from 'euprostir/config/environment';
 
@@ -23,6 +23,7 @@ export default Route.extend({
     const store = get(this, 'store');
     const lira = config.neuronet.uk.resources;
     const filters = [];
+    const per_page = get(this, 'per_page');
 
     filters.push(lira);
     if (params.s) filters.push(params.s);
@@ -33,7 +34,7 @@ export default Route.extend({
     return hash({
       items: store.query('post', {
         page: 1,
-        per_page: get(this, 'per_page'),
+        per_page,
         lira: liraWithFilters,
         'filter[display]': 'public',
       }),
@@ -48,9 +49,9 @@ export default Route.extend({
   },
 
   setupController: function (controller, model) {
-    controller.set('model', model);
-    controller.set('items', model.items);
-    controller.set('page', 1);
-    controller.set('per_page', get(this, 'per_page'));
+    set(controller, 'model', model);
+    set(controller, 'items', model.items);
+    set(controller, 'page', 1);
+    set(controller, 'per_page', get(this, 'per_page'));
   },
 });

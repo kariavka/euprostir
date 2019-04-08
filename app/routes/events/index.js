@@ -12,6 +12,7 @@ export default Route.extend({
 
   // Title
   title: 'Події - Європейський простір',
+  per_page: 10,
 
   // Params
   queryParams: {
@@ -23,6 +24,7 @@ export default Route.extend({
   // Model
   model(params) {
     const store = get(this, 'store');
+    const per_page = get(this, 'per_page');
     const lira = config.neuronet.uk.events;
     const filter = params.f;
     const liraWithFilter = (filter) ? lira + ',' + filter : lira;
@@ -33,16 +35,11 @@ export default Route.extend({
     return hash({
       items: store.query('event', {
         page: 1,
-        per_page: 5,
+        per_page,
         lira: liraWithFilter,
-        month, year
-      }),
-      popular: store.query('event', {
-        page: 1,
-        per_page: 3,
-        lira: lira,
-        sort: '-views'
-      }),
+        month, year,
+        sort: '-created',
+      })
     });
   },
 
@@ -55,6 +52,7 @@ export default Route.extend({
     const month = paramMonth || nowMonth;
     const year = paramYear || nowYear;
     const date = new Date(year, month - 1, 1);
+    const per_page = get(this, 'per_page');
 
     set(controller, 'isLoading', false);
     set(controller, 'date', date);
@@ -62,6 +60,7 @@ export default Route.extend({
     set(controller, 'year', year);
     set(controller, 'model', model);
     set(controller, 'items', model.items);
+    set(controller, 'per_page', per_page);
   },
 
   actions: {

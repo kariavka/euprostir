@@ -47,6 +47,31 @@
     padding-top: 50px;
   }
 
+  .sect-opportunity-footer {
+    padding: 30px 0 55px;
+
+    .block-category-container {
+      margin-top: 42px;
+
+      .category-name-opportunities {
+        font: 26px UbuntuMedium, sans-serif;
+        margin-bottom: 9px;
+      }
+    }
+
+    .opportunity-list-block {
+      width: 100%;
+      margin: 0 auto 30px;
+    }
+
+    .btn-opportunities {
+      margin-top: 33px;
+    }
+  }
+
+  .practice-aside {
+    display: none;
+  }
 }
 
 /* Medium devices (tablet: landscape tablets, 768px and up) */

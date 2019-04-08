@@ -63,7 +63,7 @@ export default Route.extend({
         page: 1,
         per_page: 3,
         lira: config.neuronet.uk.events,
-        sort: '-created',
+        sort: '-startdate',
         'filter[featured]': true,
         'filter[display]': 'public',
       }),

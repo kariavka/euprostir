@@ -13,6 +13,32 @@
   .cont2-practice {
     margin-top: 40px;
   }
+
+  .sect-practice-footer {
+    padding: 30px 0 55px;
+
+    .block-category-container {
+      margin-top: 42px;
+
+      .category-name-practices {
+        font: 26px UbuntuMedium, sans-serif;
+        margin-bottom: 9px;
+      }
+    }
+
+    .practice-list-block {
+      width: 100%;
+      margin: 0 auto 30px;
+    }
+
+    .btn-practices {
+      margin-top: 33px;
+    }
+  }
+
+  .practice-aside {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 992px) {

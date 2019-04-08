@@ -40,6 +40,7 @@ export default Controller.extend({
     loadMore() {
       const store = get(this, 'store');
       let page = get(this, 'page');
+      const per_page = get(this, 'per_page');
       const pages = get(this, 'pages');
       const lira = config.neuronet.uk.resources;
       const subject = get(this, 's');
@@ -56,8 +57,7 @@ export default Controller.extend({
         page = page + 1;
         set(this, 'page', page);
         store.query('post', {
-          page: page,
-          per_page: get(this, 'per_page'),
+          page, per_page,
           lira: liraWithFilters,
           'filter[display]': 'public',
         }).then((newItems) => {

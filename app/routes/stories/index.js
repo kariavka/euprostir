@@ -29,13 +29,14 @@ export default Route.extend({
         per_page: 4,
         lira: liraWithFilter,
         'filter[display]': 'public',
+        sort: '-created',
       }),
       popular: store.query('post', {
         page: 1,
         per_page: 3,
         lira: lira,
-        sort: '-views',
         'filter[display]': 'public',
+        sort: '-views',
       }),
     });
   },

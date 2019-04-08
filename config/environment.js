@@ -68,9 +68,6 @@ module.exports = function (environment) {
           ],
           practices: [
             {
-              name: 'Візії розвитку громадянського суспільства',
-              lira: '133129',
-            }, {
               name: 'Соціальне підприємництво',
               lira: '38405',
             }, {
@@ -144,12 +141,13 @@ module.exports = function (environment) {
               {value: '38405', name: 'Соціальне підприємництво',},
               {value: '133132', name: 'Соціальні послуги',},
               {value: '133134', name: 'Управління організаціями',},
-              {value: '133136', name: 'Ефективні комунікації',}
+              {value: '133136', name: 'Ефективні комунікації',},
+              {value: '137299', name: 'Інновації',},
             ],
             types: [
               {value: '136405', name: 'Посібники',},
               {value: '136407', name: 'Дослідження',},
-              {value: '136409', name: 'Грантові проекти',},
+              {value: '137301', name: 'Інструменти',},
               {value: '13422', name: 'Політики',},
               {value: '136412', name: 'Онлайн курси',}
             ],
@@ -173,26 +171,14 @@ module.exports = function (environment) {
               name: 'Social entrepreneurship',
               lira: '133605',
             }, {
-              name: 'Social services',
-              lira: '133607',
-            }, {
               name: 'Management of CSOs',
               lira: '133609',
-            }, {
-              name: 'Effective communication',
-              lira: '133611',
             }
           ],
           practices: [
             {
-              name: 'Vision of civil society',
-              lira: '133603',
-            }, {
               name: 'Social entrepreneurship',
               lira: '133605',
-            }, {
-              name: 'Social services',
-              lira: '133607',
             }, {
               name: 'Management of CSOs',
               lira: '133609',
@@ -226,6 +212,18 @@ module.exports = function (environment) {
       environments: ['local', 'master', 'development', 'production'],
       config: {
         id: 'UA-63942379-2',
+      }
+    }, {
+      name: 'GoogleTagManager',
+      environments: ['local', 'master', 'development', 'production'],
+      config: {
+        id: 'GTM-PPQD967',
+      }
+    }, {
+      name: 'FacebookPixel',
+      environments: ['local', 'master', 'development', 'production'],
+      config: {
+        id: '298724054314874'
       }
     }],
   };
