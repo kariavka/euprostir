@@ -31,6 +31,88 @@
     margin-top: 75px;
   }
 
+  .course-list-slider {
+    background: linear-gradient(to right, #542E91, #765AA7);
+    padding: 35px 0;
+    margin-top: 30px;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      .courses-list-popular-item {
+        background-color: #00AFBB;
+      }
+
+      .courses-list-popular-item-title,
+      .courses-list-popular-item-summary {
+        color: #fff;
+      }
+    }
+
+    .courses-list-popular-item {
+      width: 100%;
+      max-width: 332px;
+      height: 375px;
+      background-color: #fff;
+
+      .courses-list-popular-item-picture {
+        height: 188px;
+        overflow: hidden;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .courses-list-popular-item-about {
+        padding: 20px 30px 0 20px;
+      }
+
+      .courses-list-popular-item-title {
+        font: 19px UbuntuRegular, sans-serif;
+        color: #3b4256;
+        line-height: 1em;
+        height: 2em;
+        overflow: hidden;
+      }
+
+      .courses-list-popular-item-summary {
+        font: 14px UbuntuRegular, sans-serif;
+        color: #686879;
+        margin-top: 15px;
+        line-height: 1.4em;
+        height: 5.6em;
+        overflow: hidden;
+      }
+    }
+
+    .slick-list {
+      margin-bottom: 1em;
+    }
+
+    .slick-dots {
+      bottom: -40px;
+
+      button {
+        background-color: transparent;
+        border: 1px solid #AFAEB8;
+        width: 15px;
+        height: 15px;
+        display: block;
+        border-radius: 50px;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+      }
+    }
+
+    .slick-active {
+      button {
+        background-color: #fff;
+      }
+    }
+  }
+
   .courses-list-popular {
     background: linear-gradient(to right, #542E91, #765AA7);
     padding: 35px 0;
