@@ -11,8 +11,10 @@
   </div>
 
   <div class="courses-popular-container">
-    {{course/course-list-popular
-      items=model.popular}}
+    {{course/course-list-slider
+      class="course-list-slider"
+      items=model.popular
+      endpoint="stories.item"}}
   </div>
 
   <div class="courses-tile-container">

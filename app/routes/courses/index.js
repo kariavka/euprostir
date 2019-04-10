@@ -33,7 +33,7 @@ export default Route.extend({
       }),
       popular: store.query('page', {
         page: 1,
-        per_page: 3,
+        per_page: 6,
         lira: lira,
         'filter[display]': 'public',
         sort: '-views,-created',

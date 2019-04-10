@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+
+      <div class="course-slider slick-slider">
+        {{#each items as |item|}}
+          {{course/course-list-popular-item
+            item=item
+            endpoint=endpoint}}
+        {{/each}}
+      </div>
+
+    </div>
+  </div>
+</div>
