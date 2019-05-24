@@ -36,7 +36,7 @@ export default Route.extend({
         per_page: 6,
         lira: lira,
         'filter[display]': 'public',
-        sort: '-views,-created',
+        sort: 'views,-created',
       }),
     });
   },
