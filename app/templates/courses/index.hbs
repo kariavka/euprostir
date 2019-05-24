@@ -22,41 +22,14 @@
     <div class="container courses-select-container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <div class="courses-select-header">НАВЧАННЯ, ЩО ЗБАГАЧУЄ</div>
+          <div class="courses-select-header">КУРСИ</div>
         </div>
       </div>
     </div>
 
-    <div class="container courses-select-container">
-      <div class="row">
-        <div class="col-md-12">
-
-          {{common/common-filters
-            class="filter"
-            filters=filters
-            endpoint="courses.index"
-            showDropdown=showDropdown
-            currentFilter=f
-            defaultFilterLabel='Розділом'}}
-
-        </div>
-      </div>
-    </div>
-
-    {{#if items}}
+    {{#if model.courses}}
       {{course/course-list-tile
-        items=items}}
-
-      {{#if canLoadMore}}
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <div {{action "loadMore"}} class="btn btn-more">відкрити більше</div>
-            </div>
-          </div>
-        </div>
-      {{/if}}
-
+        items=model.courses}}
     {{else}}
       <div class="container">
         <div class="row">
@@ -65,7 +38,27 @@
           </div>
         </div>
       </div>
+    {{/if}}
 
+    <div class="container courses-select-container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="courses-select-header">ВІДЕО</div>
+        </div>
+      </div>
+    </div>
+
+    {{#if model.videos}}
+      {{course/course-list-tile
+        items=model.videos}}
+    {{else}}
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mt-4">
+            Нічого не знайдено.
+          </div>
+        </div>
+      </div>
     {{/if}}
 
   </div>

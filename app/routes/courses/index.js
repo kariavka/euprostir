@@ -20,22 +20,33 @@ export default Route.extend({
   model(params) {
     const store = get(this, 'store');
     let lira = config.neuronet.uk.courses;
-    let filter = params.f;
-    let liraWithFilter = (filter) ? lira + ',' + filter : lira;
+    let liraCourses = lira + ',136412';
+    let liraVideos = lira + ',142442';
+    // let filter = params.f;
+    // let liraWithFilter = (filter) ? lira + ',' + filter : lira;
 
     return hash({
-      items: store.query('page', {
-        page: 1,
-        per_page: 4,
-        lira: liraWithFilter,
-        sort: '-created',
-        'filter[display]': 'public',
-      }),
       popular: store.query('page', {
         page: 1,
         per_page: 6,
         lira: lira,
         sort: 'views,-created',
+        'filter[display]': 'public',
+        'filter[featured]': true,
+      }),
+      courses: store.query('page', {
+        page: 1,
+        per_page: 4,
+        lira: liraCourses,
+        sort: '-created',
+        'filter[display]': 'public',
+        'filter[featured]': true,
+      }),
+      videos: store.query('page', {
+        page: 1,
+        per_page: 4,
+        lira: liraVideos,
+        sort: '-created',
         'filter[display]': 'public',
         'filter[featured]': true,
       }),
