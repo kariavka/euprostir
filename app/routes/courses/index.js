@@ -28,15 +28,16 @@ export default Route.extend({
         page: 1,
         per_page: 4,
         lira: liraWithFilter,
-        'filter[display]': 'public',
         sort: '-created',
+        'filter[display]': 'public',
       }),
       popular: store.query('page', {
         page: 1,
         per_page: 6,
         lira: lira,
-        'filter[display]': 'public',
         sort: 'views,-created',
+        'filter[display]': 'public',
+        'filter[featured]': true,
       }),
     });
   },
