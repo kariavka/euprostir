@@ -5,6 +5,7 @@ export default Component.extend({
   // Properties
   filters: null,
   currentFilter: null,
+  defaultFilterLabel: 'Темою',
 
   // Flags
   showDropdown: false,
