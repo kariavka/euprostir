@@ -19,47 +19,16 @@
 
   <div class="courses-tile-container">
 
-    <div class="container courses-select-container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <div class="courses-select-header">КУРСИ</div>
-        </div>
-      </div>
-    </div>
+    {{course/course-list-tile-more
+      title="КУРСИ"
+      itemsInitial=model.courses
+      lira=model.liraCourses
+    }}
 
-    {{#if model.courses}}
-      {{course/course-list-tile
-        items=model.courses}}
-    {{else}}
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 mt-4">
-            Нічого не знайдено.
-          </div>
-        </div>
-      </div>
-    {{/if}}
-
-    <div class="container courses-select-container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <div class="courses-select-header">ВІДЕО</div>
-        </div>
-      </div>
-    </div>
-
-    {{#if model.videos}}
-      {{course/course-list-tile
-        items=model.videos}}
-    {{else}}
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 mt-4">
-            Нічого не знайдено.
-          </div>
-        </div>
-      </div>
-    {{/if}}
+    {{course/course-list-tile-more
+      title="ВІДЕО"
+      itemsInitial=model.videos
+      lira=model.liraVideos}}
 
   </div>
 
