@@ -1,0 +1,34 @@
+<div class="container courses-select-container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <div class="courses-select-header">{{title}}</div>
+    </div>
+  </div>
+</div>
+
+{{#if items}}
+  {{course/course-list-tile
+    items=items}}
+
+  {{#if hasMore}}
+    <div class="text-center mt-5 mb-5">
+      <div {{action "loadMore"}}
+        class="btn btn-more">
+        {{#unless isLoading}}
+          відкрити більше
+        {{else}}
+          <i class="fa fa-spin fa-spinner"></i>
+          завантажується...
+        {{/unless}}
+      </div>
+    </div>
+  {{/if}}
+{{else}}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mt-4">
+        Нічого не знайдено.
+      </div>
+    </div>
+  </div>
+{{/if}}
