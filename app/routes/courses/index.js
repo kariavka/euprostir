@@ -11,19 +11,12 @@ export default Route.extend({
   // Title
   title: 'Навчальні курси - Європейський простір',
 
-  // Params
-  queryParams: {
-    f: {refreshModel: true}
-  },
-
   // Model
-  model(params) {
+  model() {
     const store = get(this, 'store');
     let lira = config.neuronet.uk.courses;
     let liraCourses = lira + ',136412';
     let liraVideos = lira + ',142442';
-    // let filter = params.f;
-    // let liraWithFilter = (filter) ? lira + ',' + filter : lira;
 
     return hash({
       popular: store.query('page', {
@@ -42,6 +35,7 @@ export default Route.extend({
         'filter[display]': 'public',
         'filter[featured]': true,
       }),
+      liraCourses,
       videos: store.query('page', {
         page: 1,
         per_page: 4,
@@ -50,12 +44,7 @@ export default Route.extend({
         'filter[display]': 'public',
         'filter[featured]': true,
       }),
+      liraVideos,
     });
-  },
-
-  setupController: function (controller, model) {
-    controller.set('showDropdown', false);
-    controller.set('model', model);
-    controller.set('items', model.items);
   },
 });
