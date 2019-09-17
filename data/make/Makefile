@@ -14,7 +14,7 @@ build:
 	ember b --environment="production"
 
 deploy:
-	@read -p "Are You Sure? [Y/n] " sure && case "$$sure" in [yY]) scp -r dist/** euprostir@94.130.108.105:~/dist/;; *) exit;; esac
+	@read -p "Are You Sure? [y/N] " sure && case "$$sure" in [yY]) scp -r dist/** euprostir@94.130.108.105:~/dist/;; *) exit;; esac
 
 demo:
 	scp -r dist/** euprostir@94.130.108.105:~/demo/
