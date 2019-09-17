@@ -3,11 +3,14 @@ import {computed} from '@ember/object';
 import config from 'euprostir/config/environment';
 
 export default DS.JSONAPIAdapter.extend({
-  host: config.api.host,
-  namespace: 'api/v2',
+    host: config.api.host,
+    namespace: 'api/v2',
 
-  // Headers
-  headers: computed('config', function () {
-    return {'X-LivaRava-ApiKey': config.api.key};
-  }),
+    // Headers
+    headers: computed('config', function () {
+        return {
+            'X-LivaRava-ApiKey': config.api.key,
+            'X-LivaRava-Cache': '1',
+        };
+    }),
 });
