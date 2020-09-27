@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="text-left p30">
+<!--      <div onclick="$('.menu-mobile').hide('slide');">-->
+<!--        <img src="/images/close_menu.png" alt=""/>-->
+<!--      </div>-->
+      <a onclick="$( '.search767' ).toggle('slide');$('.btn-search-inputmobile').hide('');$('.btn-close').show('');">
+        <div class="btn-search-inputmobile"></div>
+      </a>
+      <a onclick="$( '.search767' ).toggle('slide');$('.btn-close').hide('');$('.btn-search-inputmobile').show('');">
+        <img class="btn-close" style="display: none;" src="/images/close_btn.png" alt="">
+      </a>
+    </div>
+  </div>
+</div>
+<!--<div class="search-mobile">-->
+  <form  {{action "search" on='submit'}} class="search767" method="post" style="display: none;">
+    {{input
+            class="input-search-inputmobile"
+            placeholder="Пошук на сайті..."
+            type="search"
+            value=q
+            key-down=(action (mut isSearchMade) false)
+    }}
+    <input type="submit" name="" value="" class="btn-search-submit-inputmobile">
+    {{#if isSearchMade}}
+      <div class="search-results-inputmobile">
+        {{#if stories}}
+          {{#each stories as |item|}}
+            {{#link-to 'stories.item' item.id}}{{item.title}}{{/link-to}}
+          {{/each}}
+        {{/if}}
+        {{#if practices}}
+          {{#each practices as |item|}}
+            {{#link-to 'practices.item' item.id}}{{item.title}}{{/link-to}}
+          {{/each}}
+        {{/if}}
+        {{#if opportunities}}
+          {{#each opportunities as |item|}}
+            {{#link-to 'opportunities.item' item.id}}{{item.title}}{{/link-to}}
+          {{/each}}
+        {{/if}}
+      </div>
+    {{/if}}
+  </form>
+<!--</div>-->

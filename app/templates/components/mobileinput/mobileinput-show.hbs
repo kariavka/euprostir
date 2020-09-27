@@ -1,0 +1,34 @@
+<div class="search-mobile">
+        <input type="text" id="box" name="searchbox" placeholder="{{t "search"}}"  autofocus />
+<!--        <input type="submit" name="" value="" class="btn-search-submit"/>-->
+  <input type="button" value="Youtube" onclick="search_youtube()"/>
+  <input type="button" value="TorrentZ" onclick="search_torrentz()"/>
+<!--<p> 1 {{this.qq.value}}</p>-->
+  <script>
+    function search_youtube(){
+      var add="https://www.youtube.com/results";
+      var box = document.getElementById("box");
+      box.name="search_query"
+      if(box.value)
+      {
+        var form = open().document.createElement("form");
+        form.action=add;
+        form.appendChild(box.cloneNode(false))
+        form.submit();
+      }
+    }
+
+    function search_torrentz(){
+      var add="https://www.torrentz.com/search";
+      var box = document.getElementById("box");
+      box.name="q"
+      if(box.value)
+      {
+        var form = open().document.createElement("form");
+        form.action=add;
+        form.appendChild(box.cloneNode(false))
+        form.submit();
+      }
+    }
+  </script>
+</div>

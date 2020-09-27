@@ -44,16 +44,22 @@
       <li>{{#link-to "events.index" (query-params m=null y=null)}}Події{{/link-to}}</li>
       <li>{{#link-to "resources.index" (query-params f=null t=null)}}Ресурси{{/link-to}}</li>
     </ul>
-    <form action="" method="post" class="search-mobile">
-      <input type="search" name="" placeholder="{{t "search"}}" class="input-search col-8"/>
-      <input type="submit" name="" value="" class="btn-search-submit"/>
-    </form>
+<!--    <div class="search-mobile">-->
+<!--      <input type="search" name="" placeholder="{{t "search"}}" class="input-search col-8"/>-->
+<!--      <input type="submit" name="" value="" class="btn-search-submit"/>-->
+<!--    </div>-->
+<!--    {{mobileinput/mobileinput-show}}-->
+<!--    {{mobileinput/mobileinput-input}}-->
+    {{mobileinput/mobileinput-search}}
+<!--    <div class="container">-->
     <div class="container p30 cont2-mobile">
       <div class="row">
         <div class="col-6">
           <div class="social-mobile">
-            <a class="icon_f" href="https://www.facebook.com/EuProstir" target="_blank"></a>
-            <a class="icon_tw" href="https://twitter.com/EuProstir" target="_blank"></a>
+          <a href="https://www.facebook.com/EuProstir" target="_blank">
+            <img src="/images/ic_tel.png" alt="Фейс"/></a>
+          <a href="https://twitter.com/EuProstir" target="_blank">
+            <img src="/images/ic-mail.png" alt="Твит"/></a>
           </div>
         </div>
       </div>
