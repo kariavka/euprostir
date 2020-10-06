@@ -8,16 +8,20 @@
             {{#link-to "en"}}EN{{/link-to}}
           </div>
         </div>
-        <div class="col-6">
-<!--            <div class="block-lang text-right">-->
+        <div class="col-3">
+          <div class="block-lang">
             <div role="button" onclick="$('.menu-mobile-inputmobile').show('slide');">
               {{material-design-icon name='search'}}
             </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="block-lang">
             <div role="button" onclick="$('.menu-mobile').show('slide');">
               {{material-design-icon name='menu'}}
             </div>
           </div>
-<!--        </div>-->
+        </div>
       </div>
     </div>
   </header>
@@ -47,69 +51,53 @@
       <li>{{#link-to "events.index" (query-params m=null y=null)}}Події{{/link-to}}</li>
       <li>{{#link-to "resources.index" (query-params f=null t=null)}}Ресурси{{/link-to}}</li>
     </ul>
-<!--    <div class="search-mobile">-->
-<!--      <input type="search" name="" placeholder="{{t "search"}}" class="input-search col-8"/>-->
-<!--      <input type="submit" name="" value="" class="btn-search-submit"/>-->
-<!--    </div>-->
-<!--    {{mobileinput/mobileinput-show}}-->
-<!--    {{mobileinput/mobileinput-input}}-->
-<!--    {{mobileinput/mobileinput-search}}-->
-<!--    <div class="container">-->
+    <!--    <div class="search-mobile">-->
+    <!--      <input type="search" name="" placeholder="{{t "search"}}" class="input-search col-8"/>-->
+    <!--      <input type="submit" name="" value="" class="btn-search-submit"/>-->
+    <!--    </div>-->
     <div class="container p30 cont2-mobile">
       <div class="row">
         <div class="col-6">
           <div class="social-mobile">
-          <a href="https://www.facebook.com/EuProstir" target="_blank">
-            <img src="/images/share-f.png" alt="Фейс"/></a>
-          <a href="https://twitter.com/EuProstir" target="_blank">
-            <img src="/images/share-tw.png" alt="Твит"/></a>
+            <a href="https://www.facebook.com/EuProstir" target="_blank">
+              <img src="/images/share-f.png" alt="Фейс"/></a>
+            <a href="https://twitter.com/EuProstir" target="_blank">
+              <img src="/images/share-tw.png" alt="Твит"/></a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-
-
   <div class="menu-mobile-inputmobile" style="display: none;">
-    <div class="container p30">
+    <div class="container">
       <div class="row">
-        <div class="col-6">
-          <div class="block-lang">
-            {{#link-to "index"}}UA{{/link-to}}
-            {{#link-to "en"}}EN{{/link-to}}
-          </div>
-        </div>
-        <div class="col-6 text-right">
+        <!--        <div class="col-11">-->
+        {{mobileinput/mobileinput-search}}
+        <!--        </div>-->
+        <!--        <div class="col-1">-->
+        <div class="text-right">
           <div onclick="$('.menu-mobile-inputmobile').hide('slide');">
             <img src="/images/close_menu.png" alt=""/>
           </div>
         </div>
+        <!--        </div>-->
       </div>
     </div>
-   <!--    <div class="search-mobile">-->
+    <!--    <div class="search-mobile">-->
     <!--      <input type="search" name="" placeholder="{{t "search"}}" class="input-search col-8"/>-->
     <!--      <input type="submit" name="" value="" class="btn-search-submit"/>-->
     <!--    </div>-->
     <!--    {{mobileinput/mobileinput-show}}-->
     <!--    {{mobileinput/mobileinput-input}}-->
-    {{mobileinput/mobileinput-search}}
   </div>
-
-
-
-
-
-
-
-
 
   <section class="sect-menu {{if isStoryItem 'sect-menu-inverted' ''}}">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12">
           {{#link-to "index"}}
-            <div class="logotip" ></div>
+            <div class="logotip"></div>
           {{/link-to}}
         </div>
       </div>
@@ -140,7 +128,7 @@
       <div class="row">
         <div class="col-md-3 col-sm-3">
           {{#link-to "index"}}
-            <div class="logotip" ></div>
+            <div class="logotip"></div>
           {{/link-to}}
         </div>
         <div class="col-md-9 col-sm-9 pos-rel">
