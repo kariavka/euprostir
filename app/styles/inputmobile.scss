@@ -1,6 +1,108 @@
 /* Extra small devices (mobile: phones, 767px and down) */
 @media only screen and (max-width: 767px) {
 
+  //------------------
+  // Menu Mobile Inputmobile Begin
+
+  .menu-mobile-inputmobile {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding-top: 27px;
+
+    .btn-close {
+      float: right;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .p30 {
+      padding: 0 30px;
+    }
+
+    .block-lang {
+      margin-top: 0;
+
+      a {
+        font: 14px UbuntuRegular, sans-serif;
+        color: #9884be;
+        margin-right: 15px;
+      }
+
+      a.active {
+        font: 14px UbuntuRegular, sans-serif;
+        color: #542e91;
+      }
+    }
+
+    .menu-mobile-list {
+      padding: 0;
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+
+    li {
+      list-style-type: none;
+      margin: 0;
+
+      a {
+        font: 16px UbuntuRegular, sans-serif;
+        color: #3b4256;
+        text-transform: uppercase;
+        line-height: 1;
+        display: block;
+        height: 100%;
+        padding: 15px 0;
+        padding-left: 30px;
+      }
+
+      a:hover {
+        color: #542e91;
+        text-decoration: none;
+        background-color: #F4F2F9;
+      }
+    }
+
+    .cont2-mobile {
+      margin-top: 80px;
+    }
+
+    .search-mobile {
+      padding: 0 20px;
+      width: 100%;
+      text-align: left;
+      margin-top: 15px;
+
+      .input-search {
+        height: 40px;
+        border: 0;
+        border-radius: 150px;
+        background-color: #F3F4F6;
+        font: 14px UbuntuRegular, sans-serif;
+        color: #a6a4af;
+        padding: 0 22px;
+        margin-top: 60px;
+      }
+
+      .btn-search-submit {
+        border: 0;
+        background-image: url(/images/search_btn_form.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        height: 19px;
+        width: 19px;
+      }
+    }
+  }
+
+  // Menu Mobile Inputmobile End
+  //------------------
+
   //.btn-search {
   //  float: right;
   //  margin-top: 22px;
