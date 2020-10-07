@@ -2,20 +2,20 @@
   <header class="header-top">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-8">
           <div class="block-lang">
             {{#link-to "index"}}UA{{/link-to}}
             {{#link-to "en"}}EN{{/link-to}}
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-2 text-right">
           <div class="block-lang">
             <div role="button" onclick="$('.menu-mobile-inputmobile').show('slide');">
               {{material-design-icon name='search'}}
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-2 text-left">
           <div class="block-lang">
             <div role="button" onclick="$('.menu-mobile').show('slide');">
               {{material-design-icon name='menu'}}
@@ -25,7 +25,7 @@
       </div>
     </div>
   </header>
-
+  <!--Контейнер Меню-->
   <div class="menu-mobile" style="display: none;">
     <div class="container p30">
       <div class="row">
@@ -68,15 +68,15 @@
       </div>
     </div>
   </div>
-
+  <!--Контейнер Пошук на сайті-->
   <div class="menu-mobile-inputmobile" style="display: none;">
     <div class="container">
       <div class="row">
-        <!--        <div class="col-11">-->
+        <!--                <div class="col-11">-->
         {{mobileinput/mobileinput-search}}
-        <!--        </div>-->
+        <!--                </div>-->
         <!--        <div class="col-1">-->
-        <div class="text-right">
+        <div class="col-1 text-right">
           <div onclick="$('.menu-mobile-inputmobile').hide('slide');">
             <img src="/images/close_menu.png" alt=""/>
           </div>
