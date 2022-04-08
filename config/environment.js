@@ -36,6 +36,11 @@ module.exports = function (environment) {
         neuronet: {
             site: 131961,
             uk: {
+                war: {
+                    news: '131961,179845',
+                    stories: '131961,179902',
+                    opportunities: '131961,184445',
+                },
                 stories: '131961,131968',
                 practices: '131961,131972',
                 opportunities: '131961,131974',

@@ -8,6 +8,3 @@ RUN npm install -g ember-cli@3.1.0
 RUN mkdir /app
 WORKDIR /app
 RUN yarn install
-
-EXPOSE 4200
-CMD ["ember", "s", "--environment=master"]

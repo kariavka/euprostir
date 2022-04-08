@@ -1,125 +1,132 @@
 {{#common/common-content}}
-  <section class="sect-stories">
+<section class="text-center">
+  {{#link-to "war"}}
+  <img src="https://store.livarava.com/9e023f7a-b732-11ec-91a0-5254a2021b2b.png" class="img-fluid"
+    alt="Війна. ОГС України">
+  {{/link-to}}
+</section>
 
-    <div class="block-category-container text-center">
-      <div class="category-text">
-        <p class="category-name category-name-stories">Історії</p>
-        <p class="slogan-name slogan-name-stories">що надихають</p>
+<section class="sect-stories">
+
+  <div class="block-category-container text-center">
+    <div class="category-text">
+      <p class="category-name category-name-stories">Історії</p>
+      <p class="slogan-name slogan-name-stories">що надихають</p>
+    </div>
+  </div>
+
+  <div class="container-fluid cont2-sect-stories">
+    {{story/story-list-slider
+    class="story-list-slider"
+    items=model.stories
+    endpoint="stories.item"}}
+  </div>
+
+</section>
+
+<section class="sect-practices">
+
+  <div class="block-category-container text-center">
+    <div class="category-text">
+      <p class="category-name category-name-practices">Практики</p>
+      <p class="slogan-name slogan-name-practices">які допомагають</p>
+    </div>
+  </div>
+
+  <div class="container cont2-sect-practices">
+    {{practice/practice-list-horizontal
+    items=model.practices
+    endpoint="practices.item"}}
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{#link-to "practices.index" class="btn btn-more btn-practices"}}
+        відкрити більше
+        {{/link-to}}
       </div>
     </div>
+  </div>
 
-    <div class="container-fluid cont2-sect-stories">
-      {{story/story-list-slider
-        class="story-list-slider"
-        items=model.stories
-        endpoint="stories.item"}}
+</section>
+
+<section class="sect-opportunities mb-5">
+
+  <div class="block-category-container text-center">
+    <div class="category-text">
+      <p class="category-name category-name-opportunities">Можливості</p>
+      <p class="slogan-name slogan-name-opportunities">що змінюють</p>
     </div>
+  </div>
 
-  </section>
+  <div class="container cont2-sect-opportunities">
+    {{opportunity/opportunity-list-horizontal
+    class="row"
+    items=model.opportunities
+    endpoint="opportunities.item"}}
+  </div>
 
-  <section class="sect-practices">
-
-    <div class="block-category-container text-center">
-      <div class="category-text">
-        <p class="category-name category-name-practices">Практики</p>
-        <p class="slogan-name slogan-name-practices">які допомагають</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{#link-to "opportunities.index" class="btn btn-more btn-opportunities"}}
+        відкрити більше
+        {{/link-to}}
       </div>
     </div>
+  </div>
 
-    <div class="container cont2-sect-practices">
-      {{practice/practice-list-horizontal
-        items=model.practices
-        endpoint="practices.item"}}
+</section>
+
+<section class="sect-courses">
+
+  <div class="block-category-container text-center">
+    <div class="category-text">
+      <p class="category-name category-name-courses">Навчання</p>
+      <p class="slogan-name slogan-name-courses">що збагачує</p>
     </div>
+  </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          {{#link-to "practices.index" class="btn btn-more btn-practices"}}
-            відкрити більше
-          {{/link-to}}
-        </div>
+  {{course/course-list-homepage
+  items=model.courses
+  endpoint="courses.item"}}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{#link-to "courses.index" class="btn btn-more btn-courses"}}
+        відкрити більше
+        {{/link-to}}
       </div>
     </div>
+  </div>
+</section>
 
-  </section>
+<section class="sect-events">
 
-  <section class="sect-opportunities mb-5">
+  <div class="block-category-container text-center">
+    <div class="category-text">
+      <p class="category-name category-name-events">Події</p>
+      <p class="slogan-name slogan-name-events">що вражають</p>
+    </div>
+  </div>
 
-    <div class="block-category-container text-center">
-      <div class="category-text">
-        <p class="category-name category-name-opportunities">Можливості</p>
-        <p class="slogan-name slogan-name-opportunities">що змінюють</p>
+  <div class="container cont2-sect-events">
+    {{event/event-list-homepage
+    items=model.events
+    endpoint="events.item"}}
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{#link-to "events.index" class="btn btn-more btn-events"}}
+        відкрити більше
+        {{/link-to}}
       </div>
     </div>
-
-    <div class="container cont2-sect-opportunities">
-      {{opportunity/opportunity-list-horizontal
-        class="row"
-        items=model.opportunities
-        endpoint="opportunities.item"}}
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          {{#link-to "opportunities.index" class="btn btn-more btn-opportunities"}}
-            відкрити більше
-          {{/link-to}}
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="sect-courses">
-
-    <div class="block-category-container text-center">
-      <div class="category-text">
-        <p class="category-name category-name-courses">Навчання</p>
-        <p class="slogan-name slogan-name-courses">що збагачує</p>
-      </div>
-    </div>
-
-    {{course/course-list-homepage
-      items=model.courses
-      endpoint="courses.item"}}
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          {{#link-to "courses.index" class="btn btn-more btn-courses"}}
-            відкрити більше
-          {{/link-to}}
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sect-events">
-
-    <div class="block-category-container text-center">
-      <div class="category-text">
-        <p class="category-name category-name-events">Події</p>
-        <p class="slogan-name slogan-name-events">що вражають</p>
-      </div>
-    </div>
-
-    <div class="container cont2-sect-events">
-      {{event/event-list-homepage
-        items=model.events
-        endpoint="events.item"}}
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          {{#link-to "events.index" class="btn btn-more btn-events"}}
-            відкрити більше
-          {{/link-to}}
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
 {{/common/common-content}}

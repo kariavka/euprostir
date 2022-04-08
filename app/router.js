@@ -55,8 +55,6 @@ Router.map(function () {
 
   this.route('page', {path: '/:uid/'});
 
-  this.route('notfound');
-
   this.route('en', function () {
     this.route('stories', function () {
       this.route('item', {path: '/:id'});
@@ -67,6 +65,14 @@ Router.map(function () {
     this.route('page', {path: '/:uid/'});
     this.route('notfound');
   });
+
+  this.route('news', function() {
+    this.route('item', {path: '/:id'});
+  });
+
+  this.route('war');
+  
+  this.route('notfound');
 });
 
 export default Router;
