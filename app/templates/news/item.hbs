@@ -1,1 +1,27 @@
-{{outlet}}
+{{news/news-item
+  item=model.item}}
+
+<section class="sect-practice-footer">
+
+  <div class="block-category-container text-center">
+    <div class="category-text">
+      <p class="category-name category-name-practices">Інші новини</p>
+    </div>
+  </div>
+
+  {{story/story-list-horizontal-v2
+    class="story-list-horizontal"
+    items=model.items
+    endpoint="news.item"}}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{#link-to "news.index" class="btn btn-more btn-stories"}}
+          відкрити більше
+        {{/link-to}}
+      </div>
+    </div>
+  </div>
+
+</section>
