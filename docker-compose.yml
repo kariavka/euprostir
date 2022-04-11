@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: "ember s --port 4200 --live-reload-port 7020 --environment=master"
+    ports:
+    - 4200:4200
+    - 7020:7020
+    volumes:
+    - .:/app
+    - node_modules:/app/node_modules
+volumes:
+  node_modules:

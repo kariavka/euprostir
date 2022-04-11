@@ -8,5 +8,5 @@
   "disableAnalytics": false,
   "liveReload": true,
   "watcher": "polling",
-  "port": 4205
+  "port": 4200
 }
