@@ -33,6 +33,7 @@ export default Route.extend({
         lira: liraWithFilter,
         date_start: dateStart,
         'filter[display]': 'public',
+        'filter[language]': 'uk',
         sort: '-created',
       }),
       popular: store.query('post', {
@@ -41,6 +42,7 @@ export default Route.extend({
         lira: lira,
         date_start: dateStart,
         'filter[display]': 'public',
+        'filter[language]': 'uk',
         sort: '-views',
       }),
     });

@@ -61,7 +61,7 @@ export default Controller.extend({
         store.query('event', {
           page, per_page,
           lira, month, year,
-          sort: 'startdate',
+          sort: '-startdate',
         }).then((newItems) => {
           let items = A();
           const oldItems = get(this, 'items');
