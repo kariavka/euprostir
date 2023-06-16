@@ -1,15 +1,21 @@
 version: '3.7'
+
 services:
-  web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    command: "ember s --port 4200 --live-reload-port 7020 --environment=master"
-    ports:
-    - 4200:4200
-    - 7020:7020
+  euprostir:
+    image: danlynn/ember-cli:3.1.4-node_10.1
+    hostname: euprostir
+    container_name: euprostir
     volumes:
-    - .:/app
-    - node_modules:/app/node_modules
+      - .:/myapp
+      - .bash_history:/root/.bash_history
+      - node_modules:/myapp/node_modules
+    tmpfs:
+      - /myapp/tmp
+    ports:
+      - "4200:4200"
+      - "7020:7020"
+      - "7357:7357"
+    command: "ember server --environment=master"
+
 volumes:
   node_modules:
