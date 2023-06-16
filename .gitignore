@@ -3,9 +3,6 @@
 # idea
 /.idea
 
-# makefile
-/Makefile
-
 # compiled output
 /dist
 /tmp

@@ -44,8 +44,8 @@
       <li>{{#link-to "events.index" (query-params m=null y=null)}}Події{{/link-to}}</li>
       <li>{{#link-to "resources.index" (query-params f=null t=null)}}Ресурси{{/link-to}}</li>
     </ul>
-    <form action="" method="post" class="search-mobile">
-      <input type="search" name="" placeholder="{{t "search"}}" class="input-search col-8"/>
+    <form action="/search" method="get" class="search-mobile">
+      <input type="text" name="q" placeholder="{{t "search"}}" class="input-search col-8"/>
       <input type="submit" name="" value="" class="btn-search-submit"/>
     </form>
     <div class="container p30 cont2-mobile">

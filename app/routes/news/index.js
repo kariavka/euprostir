@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
-import {inject as service} from '@ember/service';
-import {get} from '@ember/object';
-import {hash} from 'rsvp';
+import { inject as service } from '@ember/service';
+import { get } from '@ember/object';
+import { hash } from 'rsvp';
 import config from 'euprostir/config/environment';
 
 export default Route.extend({
@@ -13,7 +13,7 @@ export default Route.extend({
 
   // Params
   queryParams: {
-    f: {refreshModel: true}
+    f: { refreshModel: true }
   },
 
   // Model
@@ -29,6 +29,7 @@ export default Route.extend({
         per_page: 4,
         lira: liraWithFilter,
         'filter[display]': 'public',
+        'filter[language]': 'uk',
         sort: '-created',
       }),
       popular: store.query('post', {
@@ -36,6 +37,7 @@ export default Route.extend({
         per_page: 3,
         lira: lira,
         'filter[display]': 'public',
+        'filter[language]': 'uk',
         sort: '-views',
       }),
     });
