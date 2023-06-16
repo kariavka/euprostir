@@ -64,6 +64,7 @@ Router.map(function () {
     });
     this.route('page', {path: '/:uid/'});
     this.route('notfound');
+    this.route('search');
   });
 
   this.route('news', function() {
@@ -71,8 +72,9 @@ Router.map(function () {
   });
 
   this.route('war');
-  
+
   this.route('notfound');
+  this.route('search');
 });
 
 export default Router;
