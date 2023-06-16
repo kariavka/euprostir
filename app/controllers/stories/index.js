@@ -54,6 +54,7 @@ export default Controller.extend({
           per_page: 4,
           lira: lira,
           'filter[display]': 'public',
+          'filter[language]': 'uk',
         }).then((newItems) => {
           let items = A();
           const oldItems = get(this, 'items');

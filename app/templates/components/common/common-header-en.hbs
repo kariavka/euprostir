@@ -42,8 +42,8 @@
       <li>{{#link-to "en.stories.index"}}{{t "stories"}}{{/link-to}}</li>
       <li>{{#link-to "en.tips.index"}}{{t "tips"}}{{/link-to}}</li>
     </ul>
-    <form action="" method="post" class="search-mobile">
-      <input type="search" name="" placeholder="{{t "search"}}" class="input-search col-8"/>
+    <form action="/en/search" method="get" class="search-mobile">
+      <input type="text" name="q" placeholder="{{t "search"}}" class="input-search col-8"/>
       <input type="submit" name="" value="" class="btn-search-submit"/>
     </form>
     <div class="container p30 cont2-mobile">
@@ -115,7 +115,7 @@
             <a onclick="$('.search').toggle('slide');$('.btn-close').hide('');$('.btn-search').show('');">
               <img class="btn-close" style="display: none;" src="/images/close_btn.png" alt="">
             </a>
-            {{common/common-search}}
+            {{common/common-search-en}}
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 {
   "name": "euprostir",
-  "version": "0.20.0",
+  "version": "0.20.1",
   "private": true,
   "description": "EuProstir Website",
   "license": "LivaRava License",
@@ -66,7 +66,7 @@
     "moment": "^2.20.1"
   },
   "engines": {
-    "node": "^4.5 || 6.* || >= 7.*"
+    "node": "10.* || >= 12"
   },
   "dependencies": {
     "slick-carousel": "^1.8.1"
