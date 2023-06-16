@@ -40,7 +40,7 @@ export default Controller.extend({
             const store = get(this, 'store');
             let page = get(this, 'page');
             let pages = get(this, 'pages');
-            let lira = config.neuronet.uk.stories;
+            let lira = config.neuronet.en.stories;
             let filter = get(this, 'f');
             let search = get(this, 'q');
 
