@@ -11,7 +11,7 @@ export default Route.extend({
     i18n: service(),
 
     // Title
-    title: 'Європейський простір',
+    title: 'Війна - Європейський простір',
 
     // Before Model
     beforeModel() {
