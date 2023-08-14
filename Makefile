@@ -9,19 +9,19 @@ status:
 # 	ember serve --environment="local"
 
 run:
-	sudo docker-compose run --rm --publish 4201:4201 euprostir ember serve --environment="master"
+	sudo docker-compose run --rm --publish 4200:4200 euprostir ember serve --environment="master"
 
 # local:
 # 	ember serve --environment="local"
 
 local:
-	sudo docker-compose run --rm --publish 4201:4201 euprostir ember serve --environment="local"
+	sudo docker-compose run --rm --publish 4200:4200 euprostir ember serve --environment="local"
 
 # master:
 # 	ember serve --environment="master"
 
 master:
-	sudo docker-compose run --rm --publish 4201:4201 euprostir ember serve --environment="master"
+	sudo docker-compose run --rm --publish 4200:4200 euprostir ember serve --environment="master"
 
 down:
 	sudo docker-compose down

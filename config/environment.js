@@ -71,6 +71,9 @@ module.exports = function (environment) {
                         }, {
                             name: 'Ефективні комунікації',
                             lira: '133136',
+                        }, {
+                            name: 'Війна в Україні',
+                            lira: '179902',
                         }
                     ],
                     practices: [
