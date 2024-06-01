@@ -12,11 +12,19 @@
 
                 <div class="col-md-9 col-sm-9">
 
+                    {{#common/common-filters
+                        filters=filters
+                        defaultFilterLabel="Типом"
+                        endpoint="search"
+                        showDropdown=showDropdown
+                        currentFilter=f}}
+                    {{/common/common-filters}}
+
                     <div class="block1-stories-list"></div>
 
                     {{post/post-list-vertical
                         items=items
-                        endpoint="stories.item"}}
+                        endpoint=endpoint}}
 
                     {{#if canLoadMore}}
                         <div class="text-center">
@@ -26,19 +34,6 @@
                         </div>
                     {{/if}}
 
-                </div>
-
-                <div class="col-md-3 col-sm-3">
-                    <div class="block-popular">
-                        <div class="t-popular mt-3">популярне</div>
-
-                        <div class="box1-popular"></div>
-
-                        {{post/post-list-popular
-            items=model.popular
-            endpoint="stories.item"}}
-
-                    </div>
                 </div>
             </div>
         </div>

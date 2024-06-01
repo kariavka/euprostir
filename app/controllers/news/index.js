@@ -39,22 +39,21 @@ export default Controller.extend({
             const store = get(this, 'store');
             let page = get(this, 'page');
             let pages = get(this, 'pages');
+            let per_page = 4;
             let lira = config.neuronet.uk.war.news;
             let filter = get(this, 'f');
 
             if (filter) {
-                lira = lira + ',' + filter;
+                lira = filter;
             }
 
             if (page <= pages) {
                 page = page + 1;
                 set(this, 'page', page);
                 store.query('post', {
-                    page: page,
-                    per_page: 4,
-                    lira: lira,
                     'filter[display]': 'public',
                     'filter[language]': 'uk',
+                    page, per_page, lira,
                 }).then((newItems) => {
                     let items = A();
                     const oldItems = get(this, 'items');

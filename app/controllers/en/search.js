@@ -40,24 +40,23 @@ export default Controller.extend({
             const store = get(this, 'store');
             let page = get(this, 'page');
             let pages = get(this, 'pages');
+            let per_page = 4;
             let lira = config.neuronet.en.stories;
             let filter = get(this, 'f');
             let search = get(this, 'q');
 
             if (filter) {
-                lira = lira + ',' + filter;
+                lira = filter;
             }
 
             if (page <= pages) {
                 page = page + 1;
                 set(this, 'page', page);
                 store.query('post', {
-                    page: page,
-                    per_page: 4,
-                    lira: lira,
-                    q: search,
                     'filter[display]': 'public',
                     'filter[language]': 'en',
+                    page, per_page, lira, q: search,
+                    sort: '-created',
                 }).then((newItems) => {
                     let items = A();
                     const oldItems = get(this, 'items');

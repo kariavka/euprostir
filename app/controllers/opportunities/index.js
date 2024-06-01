@@ -43,22 +43,20 @@ export default Controller.extend({
     loadMore() {
       const store = get(this, 'store');
       let page = get(this, 'page');
+      let per_page = 4;
       const pages = get(this, 'pages');
-      const lira = config.neuronet.uk.opportunities;
       const filter = get(this, 'f');
-      const liraWithFilter = (filter) ? lira + ',' + filter : lira;
+      const lira = (filter) ? filter : config.neuronet.uk.opportunities;
       const dateStart = moment().format('YYYY-MM-DD');
 
       if (page <= pages) {
         page = page + 1;
         set(this, 'page', page);
         store.query('post', {
-          page: page,
-          per_page: 4,
-          lira: liraWithFilter,
-          date_start: dateStart,
           'filter[display]': 'public',
           'filter[language]': 'uk',
+          page, per_page, lira,
+          date_start: dateStart,
           sort: '-created',
         }).then((newItems) => {
           let items = A();

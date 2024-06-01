@@ -2,7 +2,8 @@ import Component from '@ember/component';
 import {inject as service} from '@ember/service';
 import {get, set, computed} from '@ember/object';
 import {reads} from '@ember/object/computed';
-import {A} from '@ember/array';
+import { A } from '@ember/array';
+import config from 'euprostir/config/environment';
 
 export default Component.extend({
   // Services
@@ -45,10 +46,11 @@ export default Component.extend({
       set(this, 'page', page);
 
       store.query('page', {
-        page, per_page, lira,
-        sort: '-created',
+        'filter[site]': config.neuronet.site,
         'filter[display]': 'public',
         'filter[featured]': true,
+        page, per_page, lira,
+        sort: '-created',
       }).then((itemsNew) => {
         let items = A();
         let itemsCurrent = get(this, 'items');

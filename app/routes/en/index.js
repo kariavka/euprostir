@@ -17,20 +17,16 @@ export default Route.extend({
 
     return hash({
       stories: store.query('post', {
-        page: 1,
-        per_page: 9,
-        lira: config.neuronet.en.stories,
-        sort: '-created',
         'filter[featured]': true,
         'filter[display]': 'public',
+        page: 1, per_page: 9, lira: config.neuronet.en.stories,
+        sort: '-created',
       }),
       practices: store.query('post', {
-        page: 1,
-        per_page: 3,
-        lira: config.neuronet.en.practices,
-        sort: '-created',
         'filter[featured]': true,
         'filter[display]': 'public',
+        page: 1, per_page: 3, lira: config.neuronet.en.practices,
+        sort: '-created',
       }),
     });
   },
