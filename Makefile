@@ -36,7 +36,7 @@ build:
 	sudo docker-compose run --rm euprostir ember build --environment="production"
 
 deploy:
-	scp -r dist/** euprostir@94.130.108.105:/home/euprostir/dist
+	scp -r dist/** euprostir@18.153.207.242:/home/euprostir/dist
 
 pull:
 	git checkout develop; git pull; git checkout master; git pull
