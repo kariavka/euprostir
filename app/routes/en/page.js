@@ -16,8 +16,7 @@ export default Route.extend({
     return get(this, 'store').query('page', {
       'filter[site]': siteId,
       'filter[path]': path,
-      per_page: 1,
-      page: 1,
+      per_page: 1, page: 1,
     }).then((pages) => {
       let page = get(pages, 'firstObject');
       if (!page) this.transitionTo('en.notfound');

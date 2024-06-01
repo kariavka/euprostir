@@ -9,8 +9,8 @@ export default DS.JSONAPIAdapter.extend({
     // Headers
     headers: computed('config', function () {
         return {
+            'X-LivaRava-Site': config.neuronet.site,
             'X-LivaRava-ApiKey': config.api.key,
-            'X-LivaRava-Cache': '1',
         };
     }),
 });

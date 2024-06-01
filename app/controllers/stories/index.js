@@ -39,22 +39,18 @@ export default Controller.extend({
       const store = get(this, 'store');
       let page = get(this, 'page');
       let pages = get(this, 'pages');
-      let lira = config.neuronet.uk.stories;
+      let per_page = 4;
       let filter = get(this, 'f');
-
-      if (filter) {
-        lira = lira + ',' + filter;
-      }
+      let lira = filter ? filter : config.neuronet.uk.stories;
 
       if (page <= pages) {
         page = page + 1;
         set(this, 'page', page);
         store.query('post', {
-          page: page,
-          per_page: 4,
-          lira: lira,
           'filter[display]': 'public',
           'filter[language]': 'uk',
+          page, per_page, lira,
+          sort: '-created',
         }).then((newItems) => {
           let items = A();
           const oldItems = get(this, 'items');

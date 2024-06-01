@@ -21,28 +21,23 @@ export default Route.extend({
   // Model
   model(params) {
     const store = get(this, 'store');
-    const lira = config.neuronet.uk.opportunities;
     const filter = params.f;
-    const liraWithFilter = (filter) ? lira + ',' + filter : lira;
+    const lira = filter ? filter : config.neuronet.uk.opportunities;
     const dateStart = moment().utc().format('YYYY-MM-DD');
 
     return hash({
       items: store.query('post', {
-        page: 1,
-        per_page: 4,
-        lira: liraWithFilter,
-        date_start: dateStart,
         'filter[display]': 'public',
         'filter[language]': 'uk',
+        page: 1, per_page: 4, lira,
+        date_start: dateStart,
         sort: '-created',
       }),
       popular: store.query('post', {
-        page: 1,
-        per_page: 3,
-        lira: lira,
-        date_start: dateStart,
         'filter[display]': 'public',
         'filter[language]': 'uk',
+        page: 1, per_page: 3, lira,
+        date_start: dateStart,
         sort: '-views',
       }),
     });

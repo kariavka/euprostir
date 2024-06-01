@@ -47,7 +47,7 @@ export default Controller.extend({
       let filter = get(this, 'f');
 
       if (filter) {
-        lira = lira + ',' + filter;
+        lira = filter;
       }
 
       if (page <= pages) {
