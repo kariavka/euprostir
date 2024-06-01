@@ -52,7 +52,7 @@ export default Controller.extend({
       let lira = config.neuronet.uk.events;
 
       if (filter) {
-        lira = lira + ',' + filter;
+        lira = filter;
       }
 
       if (page <= pages) {

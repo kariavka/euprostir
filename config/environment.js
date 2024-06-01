@@ -37,18 +37,51 @@ module.exports = function (environment) {
             site: 131961,
             uk: {
                 war: {
-                    news: '131961,179845',
-                    stories: '131961,179902',
-                    opportunities: '131961,184445',
+                    news: '179845',
+                    stories: '179902',
+                    opportunities: '184445',
                 },
-                stories: '131961,131968',
-                practices: '131961,131972',
-                opportunities: '131961,131974',
-                courses: '131961,134733',
+                stories: '131968',
+                practices: '131972',
+                opportunities: '131974',
+                courses: '134733',
                 events: '131961',
-                resources: '131961,136375',
-                about: '131961,132034',
+                resources: '136375',
+                about: '132034',
                 filters: {
+                    search: [
+                        {
+                            name: 'Історії',
+                            lira: '131968',
+                            endpoint: 'stories.item',
+                            model: 'post',
+                        }, {
+                            name: 'Практики',
+                            lira: '131972',
+                            endpoint: 'practices.item',
+                            model: 'post',
+                        }, {
+                            name: 'Можливості',
+                            lira: '131974',
+                            endpoint: 'opportunities.item',
+                            model: 'post',
+                        }, {
+                            name: 'Курси',
+                            lira: '136412',
+                            endpoint: 'courses.item',
+                            model: 'post',
+                        }, {
+                            name: 'Події',
+                            lira: '131961',
+                            endpoint: 'events.item',
+                            model: 'event',
+                        }, {
+                            name: 'Ресурси',
+                            lira: '136375',
+                            endpoint: 'resources.item',
+                            model: 'post',
+                        }
+                    ],
                     stories: [
                         {
                             name: 'Відновлення України',
@@ -71,6 +104,9 @@ module.exports = function (environment) {
                         }, {
                             name: 'Ефективні комунікації',
                             lira: '133136',
+                        }, {
+                            name: 'Війна в Україні',
+                            lira: '179902',
                         }
                     ],
                     practices: [
@@ -154,8 +190,8 @@ module.exports = function (environment) {
 
             },
             en: {
-                stories: '131961,133614',
-                practices: '131961,133616',
+                stories: '133614',
+                practices: '133616',
                 filters: {
                     stories: [
                         {

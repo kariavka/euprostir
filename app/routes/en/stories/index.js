@@ -19,23 +19,19 @@ export default Route.extend({
   // Model
   model(params) {
     const store = get(this, 'store');
-    let lira = config.neuronet.en.stories;
     let filter = params.f;
-    let liraWithFilter = (filter) ? lira + ',' + filter : lira;
+    let lira = filter ? filter : config.neuronet.en.stories;
 
     return hash({
       items: store.query('post', {
-        page: 1,
-        per_page: 4,
-        lira: liraWithFilter,
         'filter[display]': 'public',
+        page: 1, per_page: 4, lira,
+        sort: '-created',
       }),
       popular: store.query('post', {
-        page: 1,
-        per_page: 3,
-        lira: lira,
-        sort: '-views',
         'filter[display]': 'public',
+        page: 1, per_page: 3, lira,
+        sort: '-views',
       }),
     });
   },
